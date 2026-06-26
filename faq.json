@@ -254,9 +254,7 @@
         }
       ],
       "related": [
-        "kamatz-katan-names",
-        "kamatz-katan-vs-chataf",
-        "chirik-katan-gadol"
+        "kamatz-katan-vs-chataf"
       ]
     },
     {
@@ -709,7 +707,7 @@
       "id": "shva-after-tenuah-gedolah",
       "category": "shva",
       "question": "Did the Masoretes pronounce shva after a large vowel (tnuah gedolah) as nach? What about modern practice?",
-      "answer": "There is evidence that the Ba'alei HaMasorah (Masoretes) pronounced most shvas after a tnuah gedolah (large vowel) as shva nach. This affects certain trop rules and explains some anomalies in the manuscript tradition.\n\nFor example:\n- The word 'שתים' (shtayim) in Chaggai 1:1 triggers a mahpach before pashta because the shva under the shin was treated as na by the Masoretes — but some evidence suggests they may have given it a 'helping vowel' (an aleph g'nuvah) rather than a full shva na\n- This 'virtual aleph' (aleph g'nuvah) would have affected the sheva as if it were there, even though it wasn't actually pronounced as a separate consonant\n- The evidence includes the fact that it gets a yesiv instead of a pashta in another position, which implies a particular reading tradition\n\nIn modern practice, most ba'alei k'riah pronounce shva after a tnuah gedolah as na (the standard Ashkenazi/Israeli approach). This is generally acceptable, but ba'alei k'riah should be aware that the Masoretic tradition may have been different.\n\nThe gemara (Chullin 60b or similar) discusses these issues and shows that the Ba'alei HaMesorah had a very precise grammatical tradition that modern pronunciation may or may not reflect.",
+      "answer": "There is evidence that the Ba'alei HaMasorah (Masoretes) pronounced most shvas after a tnuah gedolah (large vowel) as shva nach. This affects certain trop rules and explains some anomalies in the manuscript tradition.\n\nFor example:\n- The word 'שתים' (shtayim) in Chaggai 1:1 triggers a mahpach before pashta because the shva under the shin was treated as na by the Masoretes — but some evidence suggests they may have given it a 'helping vowel' (an aleph g'nuvah) rather than a full shva na\n- This 'virtual aleph' (aleph g'nuvah) would have affected the sheva as if it were there, even though it wasn't actually pronounced as a separate consonant\n- The evidence includes the fact that it gets a yesiv instead of a pashta in another position, which implies a particular reading tradition\n\nIn modern practice, most ba'alei k'riah pronounce shva after a tnuah gedolah as na (the standard Ashkenazi/Israeli approach). This is generally acceptable, but ba'alei k'riah should be aware that the Masoretic tradition may have been different.",
       "examples": [
         "שתים (Chaggai 1:1) — the shva under shin may have had an 'aleph g'nuvah' in Masoretic tradition",
         "Shva after tnuah gedolah: modern practice says na, Masoretic evidence may indicate nach"
@@ -1752,8 +1750,7 @@
         }
       ],
       "related": [
-        "kamatz-katan-vs-chataf",
-        "chirik-katan-gadol"
+        "kamatz-katan-vs-chataf"
       ]
     },
     {
@@ -1987,10 +1984,7 @@
           "sender": "~ Avi Herzog"
         }
       ],
-      "related": [
-        "chirik-katan-gadol",
-        "names"
-      ]
+      "related": []
     },
     {
       "id": "chirik-gadol-katan-quality-length",
@@ -2019,10 +2013,7 @@
           "sender": "~ MJ"
         }
       ],
-      "related": [
-        "chirik-katan-gadol",
-        "kamatz-katan-names"
-      ]
+      "related": []
     },
     {
       "id": "cholam-oy-vs-oh",
@@ -2268,8 +2259,7 @@
         }
       ],
       "related": [
-        "shva-nach-under-aleph",
-        "pronunciation"
+        "shva-nach-under-aleph"
       ]
     },
     {
@@ -2405,7 +2395,6 @@
       ],
       "related": [
         "pausal-forms",
-        "kamatz-katan-names",
         "kamatz-katan-vs-chataf"
       ]
     },
@@ -2561,7 +2550,6 @@
         }
       ],
       "related": [
-        "grammar",
         "segolate-nouns"
       ]
     },
@@ -2735,10 +2723,7 @@
           "sender": "~ Dovid H"
         }
       ],
-      "related": [
-        "grammar",
-        "shoresh"
-      ]
+      "related": []
     },
     {
       "id": "yiddish-dikduk-rules",
@@ -3091,7 +3076,6 @@
         }
       ],
       "related": [
-        "munach-types",
         "trop-hierarchy-mafsikim"
       ]
     },
@@ -3455,7 +3439,6 @@
       ],
       "related": [
         "pausal-forms",
-        "pausal-forms-mesharetim",
         "trop-hierarchy-mafsikim"
       ]
     },
@@ -3740,7 +3723,7 @@
         }
       ],
       "related": [
-        "shalshelet-trop",
+        "shalshelet",
         "revii-trop-debates"
       ]
     },
@@ -4484,11 +4467,10 @@
       "id": "zecher-zeicher",
       "category": "haftarah",
       "question": "For Shabbos Zachor, some read 'zecher' with a tzeire (two dots) and others with a segol (three dots) under the zayin. What does the mesorah say about this?",
-      "answer": "The maftir word 'זָכוֹר' (zachor, 'remember!') in Devarim 25:17 is always with a kamatz — that is not debated. The actual debate among ba'alei k'riah is about the vocalization of 'זֵכֶר' (zecher, 'the memory of'), specifically whether the zayin gets a tzeire (two dots, ֵ) or a segol (three dots, ֶ).\n\n**The issue:**\n- The word is derived from the root ז-כ-ר meaning 'memory' or 'mention'\n- The tzeire version (זֵכֶר) has strong manuscript support and is attested in better manuscripts\n- Some have the custom to read with tzeire in one place and segol in another\n\n**Why there are two versions:**\n- Yaakov Baal Koreh: 'There are two versions. Indeed, the tzeire version is better supported (מוסמכת יותר)'\n- The tzeire reflects a connection to the construct form 'zekher Amalek' (the memory of Amalek)\n- The segol version follows a different grammatical pattern for the noun\n\n**In practice:**\n- The tzeire version (two dots) is considered better supported by the mesorah\n- Follow your shul's minhag\n- Some Chabad shuls distinguish between 'zeicher' (with tzeire malei + yud) in Ki Teitzei and 'zecher' (tzeire chaser, no yud) in Beshalach — but this is a separate nuance about the yud, not the tzeire/segol question",
+      "answer": "The maftir word 'זָכוֹר' (zachor, 'remember!') in Devarim 25:17 is always with a kamatz — that is not debated. The actual debate among ba'alei k'riah is about the vocalization of 'זֵכֶר' (zecher, 'the memory of'), specifically whether the zayin gets a tzeire (two dots, ֵ) or a segol (three dots, ֶ).\n\n**The issue:**\n- The word is derived from the root ז-כ-ר meaning 'memory' or 'mention'\n- The tzeire version (זֵכֶר) has strong manuscript support and is attested in better manuscripts\n- Some have the custom to read with tzeire in one place and segol in another\n\n**Why there are two versions:**\n- Yaakov Baal Koreh: 'There are two versions. Indeed, the tzeire version is better supported (מוסמכת יותר)'\n- The tzeire follows the better manuscript tradition\n- The segol version follows a different grammatical tradition\n\n**In practice:**\n- The tzeire version (two dots) is considered better supported by the mesorah\n- Follow your shul's minhag",
       "examples": [
-        "זֵכֶר (tzeire, two dots on zayin) = 'zecher' — better manuscript support",
-        "זֶכֶר (segol, three dots on zayin) = 'zecher' — alternate tradition",
-        "זֵיכֶר (tzeire malei with yud) = 'zeicher' — some distinguish this from zecher"
+    "זֵכֶר (tzeire, two dots on zayin) = 'zecher' — better manuscript support",
+    "זֶכֶר (segol, three dots on zayin) = 'zecher' — alternate tradition"
       ],
       "source_refs": [
         {
@@ -4929,7 +4911,6 @@
         }
       ],
       "related": [
-        "names",
         "kamatz-katan-vs-chataf",
         "pausal-forms"
       ]
@@ -4955,11 +4936,7 @@
           "sender": "Binyomin (Ben) Adler"
         }
       ],
-      "related": [
-        "names",
-        "tefilla",
-        "sources"
-      ]
+      "related": []
     },
     {
       "id": "beer-sheva-shava-vs-sheva-seforno",
@@ -4986,7 +4963,6 @@
         }
       ],
       "related": [
-        "names",
         "pausal-forms",
         "segol-vs-tzeire"
       ]
@@ -5040,7 +5016,6 @@
         }
       ],
       "related": [
-        "names",
         "pausal-forms",
         "tzeire-placement-names"
       ]
@@ -5139,7 +5114,6 @@
         }
       ],
       "related": [
-        "names",
         "kri-ketiv-hou",
         "mesora-reference-works"
       ]
@@ -5579,8 +5553,7 @@
         }
       ],
       "related": [
-        "kamatz-katan-vs-chataf",
-        "sources"
+        "kamatz-katan-vs-chataf"
       ]
     },
     {

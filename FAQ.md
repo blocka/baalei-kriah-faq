@@ -120,9 +120,7 @@ A kamatz katan (short 'o' sound, like 'hope') occurs in a CLOSED UNACCENTED syll
 
 **See also:**
 
-- [kamatz-katan-names](#kamatz-katan-names)
 - [Is a chataf kamatz always a kamatz katan (KK)? And how should a chataf that indicates neither shva-na nor KK be pronounced?](#kamatz-katan-vs-chataf)
-- [chirik-katan-gadol](#chirik-katan-gadol)
 
 ### 3. Should it be לִסְבֹב or לִסְבֹּב (lisvov / lisbov)? Why is there a rafeh (no dagesh)?
 
@@ -520,8 +518,6 @@ For example:
 - The evidence includes the fact that it gets a yesiv instead of a pashta in another position, which implies a particular reading tradition
 
 In modern practice, most ba'alei k'riah pronounce shva after a tnuah gedolah as na (the standard Ashkenazi/Israeli approach). This is generally acceptable, but ba'alei k'riah should be aware that the Masoretic tradition may have been different.
-
-The gemara (Chullin 60b or similar) discusses these issues and shows that the Ba'alei HaMesorah had a very precise grammatical tradition that modern pronunciation may or may not reflect.
 
 **Examples:**
 
@@ -1433,7 +1429,6 @@ No — there is no difference in meaning between כֹל and כָּל. Both mean 
 **See also:**
 
 - [Is a chataf kamatz always a kamatz katan (KK)? And how should a chataf that indicates neither shva-na nor KK be pronounced?](#kamatz-katan-vs-chataf)
-- [chirik-katan-gadol](#chirik-katan-gadol)
 
 ### 44. What is the practical function of a meteg/ga'ya for a ba'al k'riah? When is it essential to pay attention to it?
 
@@ -1687,11 +1682,6 @@ English 'Balaam' — from Greek Septuagint: /a/
 - ~ Alexander Adler #msg9534
 - ~ Avi Herzog #msg9535
 
-**See also:**
-
-- [chirik-katan-gadol](#chirik-katan-gadol)
-- [names](#names)
-
 ### 50. What is the actual difference between chirik gadol and chirik katan? Is it about vowel quality (ee vs i) or length (duration)?
 
 The difference between chirik gadol (large chirik) and chirik katan (small chirik) is fundamentally about LENGTH (duration), not vowel quality ('ee' vs 'i').
@@ -1732,11 +1722,6 @@ Chirik katan (short) — unaccented closed syllable
 - ~ Chaim Komarow #msg12082
 - ~ Sammy Noe #msg12085
 - ~ MJ #msg12098
-
-**See also:**
-
-- [chirik-katan-gadol](#chirik-katan-gadol)
-- [kamatz-katan-names](#kamatz-katan-names)
 
 ### 51. What is the history of the 'oy' vs 'oh' pronunciation of the cholam (e.g. ha-OY-lam vs ha-OH-lam)?
 
@@ -1966,7 +1951,6 @@ The aleph in וְהָאסַפְסֻף (vehasafsuf, 'the mixed multitude/rabble')
 **See also:**
 
 - [Is shva nach under an aleph possible? When does it occur?](#shva-nach-under-aleph)
-- [pronunciation](#pronunciation)
 
 ### 58. Why do Teimanim pronounce ג 'in reverse' (soft/dageshed gimel), and is it only gimel?
 
@@ -2094,7 +2078,6 @@ There is a debate among grammarians about whether the kamatz in דָּת changes
 **See also:**
 
 - [What are pausal forms and why do they sometimes seem to 'override' the plain meaning?](#pausal-forms)
-- [kamatz-katan-names](#kamatz-katan-names)
 - [Is a chataf kamatz always a kamatz katan (KK)? And how should a chataf that indicates neither shva-na nor KK be pronounced?](#kamatz-katan-vs-chataf)
 
 ### 62. Why is 'day one' יום אחד and not יום ראשון? And why is the word order different for other numbers (אחד עשר vs עשרה)?
@@ -2209,7 +2192,6 @@ Yes — the vocalization of מִזְבֵּחַ (altar) changes based on whether 
 
 **See also:**
 
-- [grammar](#grammar)
 - [Why do some segolate nouns shift vowels (she mesh → Shamash, kesef → kasef) while others don't (teven stays teven)?](#segolate-nouns)
 
 ### 67. Is there poetic meter in the Torah's prose sections, or only in the shiros (poems) like Haazinu and Shirat HaYam?
@@ -2356,11 +2338,6 @@ No, they are two different roots with different meanings:
 - ~ Avi Herzog #msg9769
 - ~ Bill #msg9771
 - ~ Dovid H #msg9774
-
-**See also:**
-
-- [grammar](#grammar)
-- [shoresh](#shoresh)
 
 ### 72. Do Yiddish names/words follow Loshon haKodesh dikduk rules?
 
@@ -2635,7 +2612,6 @@ For ba'alei k'riah: In Torah reading (not Eicha/Esther), the ilui distinction is
 
 **See also:**
 
-- [munach-types](#munach-types)
 - [Is there an accepted hierarchy of trop marks by their disjunctive strength? How are the levels of mafsikim ranked?](#trop-hierarchy-mafsikim)
 
 ### 82. What is a munach legarmeh? When is a munach a disjunctive rather than a conjunctive?
@@ -2982,7 +2958,6 @@ Yes — the shalshelet is considered equivalent to a segol for the purpose of pa
 **See also:**
 
 - [What are pausal forms and why do they sometimes seem to 'override' the plain meaning?](#pausal-forms)
-- [pausal-forms-mesharetim](#pausal-forms-mesharetim)
 - [Is there an accepted hierarchy of trop marks by their disjunctive strength? How are the levels of mafsikim ranked?](#trop-hierarchy-mafsikim)
 
 ### 93. Does a shva count as a syllable/beat when determining trop placement (e.g. mesharet of pashta, or metiga zakeif)?
@@ -3251,7 +3226,7 @@ For practical purposes:
 
 **See also:**
 
-- [shalshelet-trop](#shalshelet-trop)
+- [What is the shalshelet (שלשלת) trop mark and where does it appear?](#shalshelet)
 - [Why do some editions show a revii on certain words (like קטנתי) where others show azla geresh or other trop?](#revii-trop-debates)
 
 ### 101. When does a word before pashta get a mahpach vs a mercha? Does a shva na count as a 'separator'?
@@ -3819,19 +3794,17 @@ The maftir word 'זָכוֹר' (zachor, 'remember!') in Devarim 25:17 is always 
 
 **Why there are two versions:**
 - Yaakov Baal Koreh: 'There are two versions. Indeed, the tzeire version is better supported (מוסמכת יותר)'
-- The tzeire reflects a connection to the construct form 'zekher Amalek' (the memory of Amalek)
-- The segol version follows a different grammatical pattern for the noun
+- The tzeire follows the better manuscript tradition
+- The segol version follows a different grammatical tradition
 
 **In practice:**
 - The tzeire version (two dots) is considered better supported by the mesorah
 - Follow your shul's minhag
-- Some Chabad shuls distinguish between 'zeicher' (with tzeire malei + yud) in Ki Teitzei and 'zecher' (tzeire chaser, no yud) in Beshalach — but this is a separate nuance about the yud, not the tzeire/segol question
 
 **Examples:**
 
 - זֵכֶר (tzeire, two dots on zayin) = 'zecher' — better manuscript support
 - זֶכֶר (segol, three dots on zayin) = 'zecher' — alternate tradition
-- זֵיכֶר (tzeire malei with yud) = 'zeicher' — some distinguish this from zecher
 
 **Sources:**
 
@@ -4081,7 +4054,6 @@ Yes — the difference in vocalization reflects a difference in meaning:
 
 **See also:**
 
-- [names](#names)
 - [Is a chataf kamatz always a kamatz katan (KK)? And how should a chataf that indicates neither shva-na nor KK be pronounced?](#kamatz-katan-vs-chataf)
 - [What are pausal forms and why do they sometimes seem to 'override' the plain meaning?](#pausal-forms)
 
@@ -4122,12 +4094,6 @@ There is a discussion about whether saying 'Adoshem' (a portmanteau of Ad-nai + 
 
 - ~ Dror Maor #msg4802
 - Binyomin (Ben) Adler #msg4805
-
-**See also:**
-
-- [names](#names)
-- [tefilla](#tefilla)
-- [sources](#sources)
 
 ### 133. Why is בְּאֵר שֶׁבַע sometimes written as שָׁבַע (shava) with a kamatz and sometimes as שֶׁבַע (sheva) with a segol? What does Seforno say about it?
 
@@ -4170,7 +4136,6 @@ The name בְּאֵר שֶׁבַע (Be'er Sheva) appears in Tanach with two diff
 
 **See also:**
 
-- [names](#names)
 - [What are pausal forms and why do they sometimes seem to 'override' the plain meaning?](#pausal-forms)
 - [There are words where different editions show a segol vs a tzeire (e.g., בנזק, מלמטה). Which is correct and how do you determine?](#segol-vs-tzeire)
 
@@ -4235,7 +4200,6 @@ The name מרדכי (Mordechai) appears in Tanach with a kamatz under the chaf: 
 
 **See also:**
 
-- [names](#names)
 - [What are pausal forms and why do they sometimes seem to 'override' the plain meaning?](#pausal-forms)
 - [In names like ישמעאל and דניאל, why is the tzeire under the ayin/yud and not under the aleph?](#tzeire-placement-names)
 
@@ -4324,7 +4288,6 @@ The name Yissachar (יִשָּׂשכָר) has a complex masoretic history with a
 
 **See also:**
 
-- [names](#names)
 - [Why is 'hee' (she) almost always spelled הוא (masculine 'he') in Tanach?](#kri-ketiv-hou)
 - [Which seforim are used to look up Masorah lists (e.g. missing mappikim, exceptional readings)?](#mesora-reference-works)
 
@@ -4690,7 +4653,6 @@ As a general rule from the group: when Torat HaKore gives a first option, and th
 **See also:**
 
 - [Is a chataf kamatz always a kamatz katan (KK)? And how should a chataf that indicates neither shva-na nor KK be pronounced?](#kamatz-katan-vs-chataf)
-- [sources](#sources)
 
 ### 152. What are good resources for learning trop / ta'amei ha-mikra?
 
