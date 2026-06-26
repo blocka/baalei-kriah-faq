@@ -4481,37 +4481,37 @@
         "ketuvim-trop-systems"
       ]
     },
+{
+  "id": "zecher-zeicher",
+  "category": "haftarah",
+  "question": "For Shabbos Zachor, some read 'zecher' with a tzeire (two dots) and others with a segol (three dots) under the zayin. What does the mesorah say about this?",
+  "answer": "The maftir word 'זָכוֹר' (zachor, 'remember!') in Devarim 25:17 is always with a kamatz — that is not debated. The actual debate among ba'alei k'riah is about the vocalization of 'זֵכֶר' (zecher, 'the memory of'), specifically whether the zayin gets a tzeire (two dots, ֵ) or a segol (three dots, ֶ).\n\n**The issue:**\n- The word is derived from the root ז-כ-ר meaning 'memory' or 'mention'\n- The tzeire version (זֵכֶר) has strong manuscript support and is attested in better manuscripts\n- Some have the custom to read with tzeire in one place and segol in another\n\n**Why there are two versions:**\n- Yaakov Baal Koreh: 'There are two versions. Indeed, the tzeire version is better supported (מוסמכת יותר)'\n- The tzeire reflects a connection to the construct form 'zekher Amalek' (the memory of Amalek)\n- The segol version follows a different grammatical pattern for the noun\n\n**In practice:**\n- The tzeire version (two dots) is considered better supported by the mesorah\n- Follow your shul's minhag\n- Some Chabad shuls distinguish between 'zeicher' (with tzeire malei + yud) in Ki Teitzei and 'zecher' (tzeire chaser, no yud) in Beshalach — but this is a separate nuance about the yud, not the tzeire/segol question",
+  "examples": [
+    "זֵכֶר (tzeire, two dots on zayin) = 'zecher' — better manuscript support",
+    "זֶכֶר (segol, three dots on zayin) = 'zecher' — alternate tradition",
+    "זֵיכֶר (tzeire malei with yud) = 'zeicher' — some distinguish this from zecher"
+  ],
+  "source_refs": [
     {
-      "id": "zecher-zeicher",
-      "category": "haftarah",
-      "question": "Why do some say 'זֵכֶר' (zecher) and others 'זָכָר' (zachor) for Shabbos Zachor? What does the mesorah say?",
-      "answer": "The debate over the correct pronunciation of the Shabbos Zachor reading involves the word 'זָכוֹר' (zachor). There are two main traditions:\n\n1. זָכוֹר with a kamatz: 'Zachor' — the standard pronunciation\n2. זֵכֶר with a tzeirei: 'Zecher' or 'Zeicher' — an alternate tradition\n\nThe Masoretic evidence:\n- The tzeirei version ('zecher' meaning 'memory') has strong manuscript support\n- It is attested in better manuscripts\n- The kamatz version ('zachor' meaning 'remember!') is the imperative form\n\nInterestingly, some have the custom to read 'zeicher' in one place (Ki Teitzei, Devarim 25:17) and 'zecher' in the other (Beshalach, Shemos 17:14). At some Chabad shuls, this distinction is followed.\n\nFor ba'alei k'riah:\n- Follow your shul's minhag\n- Be consistent: don't switch between readings in the middle\n- The difference does NOT change the meaning fundamentally (both refer to remembering Amalek)\n- If your tikkun shows one version and the shul follows another, check before Shabbos\n\nThe root ז-כ-ר can mean both 'remember' (zachor) and 'mention/memory' (ze cher), so the two readings reflect different nuances rather than different mitzvos.",
-      "examples": [
-        "זָכוֹר (Zachor) = 'remember!' imperative — standard in most Ashkenazi shuls",
-        "זֵכֶר / זֵיכֶר (Zecher/Zeicher) = 'the memory of' — strong manuscript support",
-        "Some distinguish: zeicher in Ki Teitzei (Devarim 25:17), zecher in Beshalach (Shemos 17:14)"
-      ],
-      "source_refs": [
-        {
-          "seq": 7628,
-          "date": "",
-          "sender": "~ Sammy Noe"
-        },
-        {
-          "seq": 7629,
-          "date": "",
-          "sender": "יעקב Baal Koreh"
-        },
-        {
-          "seq": 7879,
-          "date": "",
-          "sender": "~ Ezra Arovas"
-        }
-      ],
-      "related": [
-        "he-of-haazinu"
-      ]
+      "seq": 7628,
+      "date": "",
+      "sender": "~ Sammy Noe"
     },
+    {
+      "seq": 7629,
+      "date": "",
+      "sender": "יעקב Baal Koreh"
+    },
+    {
+      "seq": 7879,
+      "date": "",
+      "sender": "~ Ezra Arovas"
+    }
+  ],
+  "related": [
+    "he-of-haazinu"
+  ]
+},
     {
       "id": "aleppo-codex-what-survives",
       "category": "mesora",

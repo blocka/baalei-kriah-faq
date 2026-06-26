@@ -3808,33 +3808,30 @@ Several passages have special niggunim that are well-established but not univers
 
 - [Which trop system is used for each sefer in Ketuvim, and is there a basis for differentiating?](#ketuvim-trop-systems)
 
-### 120. Why do some say 'זֵכֶר' (zecher) and others 'זָכָר' (zachor) for Shabbos Zachor? What does the mesorah say?
+### 120. For Shabbos Zachor, some read 'zecher' with a tzeire (two dots) and others with a segol (three dots) under the zayin. What does the mesorah say about this?
 
-The debate over the correct pronunciation of the Shabbos Zachor reading involves the word 'זָכוֹר' (zachor). There are two main traditions:
+The maftir word 'זָכוֹר' (zachor, 'remember!') in Devarim 25:17 is always with a kamatz — that is not debated. The actual debate among ba'alei k'riah is about the vocalization of 'זֵכֶר' (zecher, 'the memory of'), specifically whether the zayin gets a tzeire (two dots, ֵ) or a segol (three dots, ֶ).
 
-1. זָכוֹר with a kamatz: 'Zachor' — the standard pronunciation
-2. זֵכֶר with a tzeirei: 'Zecher' or 'Zeicher' — an alternate tradition
+**The issue:**
+- The word is derived from the root ז-כ-ר meaning 'memory' or 'mention'
+- The tzeire version (זֵכֶר) has strong manuscript support and is attested in better manuscripts
+- Some have the custom to read with tzeire in one place and segol in another
 
-The Masoretic evidence:
-- The tzeirei version ('zecher' meaning 'memory') has strong manuscript support
-- It is attested in better manuscripts
-- The kamatz version ('zachor' meaning 'remember!') is the imperative form
+**Why there are two versions:**
+- Yaakov Baal Koreh: 'There are two versions. Indeed, the tzeire version is better supported (מוסמכת יותר)'
+- The tzeire reflects a connection to the construct form 'zekher Amalek' (the memory of Amalek)
+- The segol version follows a different grammatical pattern for the noun
 
-Interestingly, some have the custom to read 'zeicher' in one place (Ki Teitzei, Devarim 25:17) and 'zecher' in the other (Beshalach, Shemos 17:14). At some Chabad shuls, this distinction is followed.
-
-For ba'alei k'riah:
+**In practice:**
+- The tzeire version (two dots) is considered better supported by the mesorah
 - Follow your shul's minhag
-- Be consistent: don't switch between readings in the middle
-- The difference does NOT change the meaning fundamentally (both refer to remembering Amalek)
-- If your tikkun shows one version and the shul follows another, check before Shabbos
-
-The root ז-כ-ר can mean both 'remember' (zachor) and 'mention/memory' (ze cher), so the two readings reflect different nuances rather than different mitzvos.
+- Some Chabad shuls distinguish between 'zeicher' (with tzeire malei + yud) in Ki Teitzei and 'zecher' (tzeire chaser, no yud) in Beshalach — but this is a separate nuance about the yud, not the tzeire/segol question
 
 **Examples:**
 
-- זָכוֹר (Zachor) = 'remember!' imperative — standard in most Ashkenazi shuls
-- זֵכֶר / זֵיכֶר (Zecher/Zeicher) = 'the memory of' — strong manuscript support
-- Some distinguish: zeicher in Ki Teitzei (Devarim 25:17), zecher in Beshalach (Shemos 17:14)
+- זֵכֶר (tzeire, two dots on zayin) = 'zecher' — better manuscript support
+- זֶכֶר (segol, three dots on zayin) = 'zecher' — alternate tradition
+- זֵיכֶר (tzeire malei with yud) = 'zeicher' — some distinguish this from zecher
 
 **Sources:**
 
