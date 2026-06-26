@@ -136,7 +136,7 @@ footer {
 <div class="container">
   <h1>Ba'alei K'riah FAQ</h1>
   <div class="sub">Torah reading questions answered from a decade of WhatsApp discussions</div>
-  <div class="stats">109 entries &middot; 15 categories &middot; 481 referenced messages &middot; 28 glossary terms</div>
+  <div class="stats">120 entries &middot; 15 categories &middot; 524 referenced messages &middot; 28 glossary terms</div>
 </div>
 </header>
 
@@ -145,23 +145,23 @@ footer {
   <input type="text" id="search" placeholder="Search entries..." oninput="filterEntries()">
   <select id="catFilter" onchange="filterEntries()">
     <option value="">All categories</option>
-    <option value="nikud-dikduk">Nikud &amp; Dikduk (Vowels &amp; Grammar) (6)</option>
+    <option value="nikud-dikduk">Nikud &amp; Dikduk (Vowels &amp; Grammar) (7)</option>
     <option value="shva">The Shva (5)</option>
     <option value="hataf">Ḥataf Vowels (2)</option>
-    <option value="dagesh-mappik">Dagesh &amp; Mappik (8)</option>
+    <option value="dagesh-mappik">Dagesh &amp; Mappik (9)</option>
     <option value="gaya-meteg">Ga&#x27;ya / Meteg (3)</option>
     <option value="pronunciation">Letter Pronunciation (bgd-k-f-t-p, gutturals) (5)</option>
     <option value="grammar">Grammar &amp; Morphology (10)</option>
-    <option value="trop">Trop / Ta&#x27;amei ha-Mikra (24)</option>
+    <option value="trop">Trop / Ta&#x27;amei ha-Mikra (26)</option>
     <option value="taamei-emet">Ta&#x27;amei Emet (Psalms/Job/Proverbs) (5)</option>
-    <option value="haftarah">Haftarah &amp; Minhagim (7)</option>
+    <option value="haftarah">Haftarah &amp; Minhagim (8)</option>
     <option value="mesora">Mesora &amp; Sefer-Torah Fixing (10)</option>
     <option value="names">Names &amp; Lishonot (3)</option>
-    <option value="tefilla">Tefilla (Nusach &amp; Teamim in Davening) (7)</option>
+    <option value="tefilla">Tefilla (Nusach &amp; Teamim in Davening) (10)</option>
     <option value="sources">Sources, Sefaria &amp; Gilyonot (5)</option>
-    <option value="practical">Practical Ba&#x27;alei K&#x27;riah (9)</option>
+    <option value="practical">Practical Ba&#x27;alei K&#x27;riah (12)</option>
   </select>
-  <span class="count" id="count">109 / 109</span>
+  <span class="count" id="count">120 / 120</span>
 </div>
 
 <div class="category" data-cat="nikud-dikduk">
@@ -247,9 +247,50 @@ Translation choices in siddurim and chumashim often reflect different interpreta
 <a href="#" onclick="scrollToEntry('chataf-as-shva-indicator');return false">Why is there sometimes a ḥataf (e.g. chataf patach) under a non-guttural letter where a shva &amp;#x27;should&amp;#x27; be?</a>
 </div>
 </div></div>
-<div class="entry" data-cat="nikud-dikduk" data-id="pausal-forms" data-q="what are pausal forms and why do they sometimes seem to &amp;#x27;override&amp;#x27; the plain meaning?">
+<div class="entry" data-cat="nikud-dikduk" data-id="mateh-isha-samuch" data-q="why is the nikkud of מַטֶּה sometimes segol and sometimes tzeire? does the same rule apply to אִשָּׁה?">
 <div class="entry-header" onclick="toggleEntry(this)">
 <span class="num">4</span>
+<span class="q">Why is the nikkud of מַטֶּה sometimes segol and sometimes tzeire? Does the same rule apply to אִשָּׁה?</span>
+<span class="toggle">\25BC</span>
+</div>
+<div class="entry-body">
+<div class="answer">The difference is between the absolute (stand-alone/nifrad) form and the construct (samuch) form:
+
+- **מַטֶּה** (segol) = the absolute form, &#x27;a tribe&#x27; (stand-alone)
+- **מַטֵּה** (tzeire) = the construct form, &#x27;tribe of&#x27; (before a nismach)
+
+The same pattern applies to אִשָּׁה:
+- **אִשָּׁה** (kamatz on the shin) = &#x27;a woman&#x27; (absolute)
+- **אֵשֶׁת** (tzeire on the aleph + segol on shin) = &#x27;wife of&#x27; (construct, before a nismach)
+
+However, the group also noted that in some cases in Tanach, the nikkud doesn&#x27;t perfectly follow this rule due to pausal positions, manuscript differences, or exceptions. The general principle is:
+- In pausal positions (at an etnachta or sof passuk), the absolute form sometimes appears even where grammatically a construct would be expected
+- Conversely, the construct form can appear in non-construct contexts when the word is at a pause
+
+For a ba&#x27;al k&#x27;riah encountering a segol/tzeire variation:
+1. Determine if the word is in construct (adding &#x27;of&#x27;) or absolute
+2. Check if it&#x27;s at a pausal position (etenachta, sof passuk)
+3. If it still seems wrong, it may be a manuscript variation (Keter vs Leningrad vs printed editions)</div>
+<div class="examples"><strong>Examples</strong><ul>
+<li>מַטֶּה (segol, absolute) vs מַטֵּה (tzeire, construct &#x27;tribe of&#x27;)</li>
+<li>אִשָּׁה (kamatz, &#x27;woman&#x27;) vs אֵשֶׁת (tzeire + segol, &#x27;wife of&#x27;)</li>
+<li>Same applies to other segolate nouns like דֶּרֶךְ (absolute) vs דֶּרֶךְ (construct depends on position)</li>
+</ul></div>
+<div class="sources"><strong>Sources</strong>
+<span class="src">Dror Maor (2024-08-04) msg#3548</span>
+<span class="src">Moish (2024-08-04) msg#3549</span>
+<span class="src">Avi Herzog (2024-08-04) msg#3550</span>
+<span class="src">Dror Maor (2024-08-04) msg#3551</span>
+<span class="src">MJ (2024-08-04) msg#3552</span>
+</div>
+<div class="see-also"><strong>See also</strong>
+<a href="#" onclick="scrollToEntry('segolate-nouns');return false">Why do some segolate nouns shift vowels (she mesh → Shamash, kesef → kasef) while others don&amp;#x27;t (teven stays teven)?</a>
+<a href="#" onclick="scrollToEntry('pausal-forms');return false">What are pausal forms and why do they sometimes seem to &amp;#x27;override&amp;#x27; the plain meaning?</a>
+</div>
+</div></div>
+<div class="entry" data-cat="nikud-dikduk" data-id="pausal-forms" data-q="what are pausal forms and why do they sometimes seem to &amp;#x27;override&amp;#x27; the plain meaning?">
+<div class="entry-header" onclick="toggleEntry(this)">
+<span class="num">5</span>
 <span class="q">What are pausal forms and why do they sometimes seem to &#x27;override&#x27; the plain meaning?</span>
 <span class="toggle">\25BC</span>
 </div>
@@ -279,7 +320,7 @@ A ba&#x27;al k&#x27;riah should NEVER be corrected for using a pausal form at a 
 </div></div>
 <div class="entry" data-cat="nikud-dikduk" data-id="segol-vs-tzeire" data-q="there are words where different editions show a segol vs a tzeire (e.g., בנזק, מלמטה). which is correct and how do you determine?">
 <div class="entry-header" onclick="toggleEntry(this)">
-<span class="num">5</span>
+<span class="num">6</span>
 <span class="q">There are words where different editions show a segol vs a tzeire (e.g., בנזק, מלמטה). Which is correct and how do you determine?</span>
 <span class="toggle">\25BC</span>
 </div>
@@ -320,7 +361,7 @@ For ba&#x27;alei k&#x27;riah:
 </div></div>
 <div class="entry" data-cat="nikud-dikduk" data-id="vowel-mistake-meaning-change" data-q="if a ba&amp;#x27;al koreh reads the wrong vowel (e.g. a sheva instead of a patach), does that change the meaning?">
 <div class="entry-header" onclick="toggleEntry(this)">
-<span class="num">6</span>
+<span class="num">7</span>
 <span class="q">If a ba&#x27;al koreh reads the wrong vowel (e.g. a sheva instead of a patach), does that change the meaning?</span>
 <span class="toggle">\25BC</span>
 </div>
@@ -346,7 +387,7 @@ For ba&#x27;alei k&#x27;riah:
 <h2>The Shva</h2>
 <div class="entry" data-cat="shva" data-id="shva-after-tenuah-gedolah" data-q="did the masoretes pronounce shva after a large vowel (tnuah gedolah) as nach? what about modern practice?">
 <div class="entry-header" onclick="toggleEntry(this)">
-<span class="num">7</span>
+<span class="num">8</span>
 <span class="q">Did the Masoretes pronounce shva after a large vowel (tnuah gedolah) as nach? What about modern practice?</span>
 <span class="toggle">\25BC</span>
 </div>
@@ -377,7 +418,7 @@ The gemara (Chullin 60b or similar) discusses these issues and shows that the Ba
 </div></div>
 <div class="entry" data-cat="shva" data-id="shva-after-vav-hachibur" data-q="when a vav hachibur is followed by a shva, is that shva na or nach — and what does the masorah say?">
 <div class="entry-header" onclick="toggleEntry(this)">
-<span class="num">8</span>
+<span class="num">9</span>
 <span class="q">When a vav hachibur is followed by a shva, is that shva na or nach — and what does the Masorah say?</span>
 <span class="toggle">\25BC</span>
 </div>
@@ -403,7 +444,7 @@ The gemara (Chullin 60b or similar) discusses these issues and shows that the Ba
 </div></div>
 <div class="entry" data-cat="shva" data-id="shva-na-vs-nach" data-q="what is the difference between shva na and shva nach, and can a shva ever change the meaning of a word?">
 <div class="entry-header" onclick="toggleEntry(this)">
-<span class="num">9</span>
+<span class="num">10</span>
 <span class="q">What is the difference between shva na and shva nach, and can a shva ever change the meaning of a word?</span>
 <span class="toggle">\25BC</span>
 </div>
@@ -428,7 +469,7 @@ The gemara (Chullin 60b or similar) discusses these issues and shows that the Ba
 </div></div>
 <div class="entry" data-cat="shva" data-id="shva-nach-under-aleph" data-q="is shva nach under an aleph possible? when does it occur?">
 <div class="entry-header" onclick="toggleEntry(this)">
-<span class="num">10</span>
+<span class="num">11</span>
 <span class="q">Is shva nach under an aleph possible? When does it occur?</span>
 <span class="toggle">\25BC</span>
 </div>
@@ -453,7 +494,7 @@ Identifying these cases correctly is important for ba&#x27;alei k&#x27;riah beca
 </div></div>
 <div class="entry" data-cat="shva" data-id="shva-syllable" data-q="is a shva na its own syllable (havara)?">
 <div class="entry-header" onclick="toggleEntry(this)">
-<span class="num">11</span>
+<span class="num">12</span>
 <span class="q">Is a shva na its own syllable (havara)?</span>
 <span class="toggle">\25BC</span>
 </div>
@@ -477,7 +518,7 @@ Identifying these cases correctly is important for ba&#x27;alei k&#x27;riah beca
 <h2>Ḥataf Vowels</h2>
 <div class="entry" data-cat="hataf" data-id="chataf-as-shva-indicator" data-q="why is there sometimes a ḥataf (e.g. chataf patach) under a non-guttural letter where a shva &amp;#x27;should&amp;#x27; be?">
 <div class="entry-header" onclick="toggleEntry(this)">
-<span class="num">12</span>
+<span class="num">13</span>
 <span class="q">Why is there sometimes a ḥataf (e.g. chataf patach) under a non-guttural letter where a shva &#x27;should&#x27; be?</span>
 <span class="toggle">\25BC</span>
 </div>
@@ -504,7 +545,7 @@ Identifying these cases correctly is important for ba&#x27;alei k&#x27;riah beca
 </div></div>
 <div class="entry" data-cat="hataf" data-id="hataf-on-non-guttural" data-q="can a chataf appear on non-guttural letters, and how should it be pronounced?">
 <div class="entry-header" onclick="toggleEntry(this)">
-<span class="num">13</span>
+<span class="num">14</span>
 <span class="q">Can a chataf appear on non-guttural letters, and how should it be pronounced?</span>
 <span class="toggle">\25BC</span>
 </div>
@@ -532,7 +573,7 @@ A well-known borderline case is מרדכי (Mordechai): is it מָרְדְּכַ
 <h2>Dagesh &amp; Mappik</h2>
 <div class="entry" data-cat="dagesh-mappik" data-id="dagesh-after-mafsik" data-q="why is there sometimes a dagesh in the first letter of a word after a pausal ta&amp;#x27;am (e.g. the lamed of אֶל־מֹשֶׁה לֵאמֹר, and לֹא before another word)?">
 <div class="entry-header" onclick="toggleEntry(this)">
-<span class="num">14</span>
+<span class="num">15</span>
 <span class="q">Why is there sometimes a dagesh in the first letter of a word after a pausal ta&#x27;am (e.g. the lamed of אֶל־מֹשֶׁה לֵאמֹר, and לֹא before another word)?</span>
 <span class="toggle">\25BC</span>
 </div>
@@ -558,7 +599,7 @@ A well-known borderline case is מרדכי (Mordechai): is it מָרְדְּכַ
 </div></div>
 <div class="entry" data-cat="dagesh-mappik" data-id="dagesh-anomalous" data-q="why do aleph and resh sometimes have a dagesh when they normally cannot take one, as in תביאו and ערומים?">
 <div class="entry-header" onclick="toggleEntry(this)">
-<span class="num">15</span>
+<span class="num">16</span>
 <span class="q">Why do aleph and resh sometimes have a dagesh when they normally cannot take one, as in תביאו and ערומים?</span>
 <span class="toggle">\25BC</span>
 </div>
@@ -584,7 +625,7 @@ These anomalous dageshim are exceptions transmitted by the Masoretic tradition a
 </div></div>
 <div class="entry" data-cat="dagesh-mappik" data-id="dagesh-boundary-rules" data-q="what are the full rules for when a dagesh kal falls away at word boundaries? what about the &amp;#x27;revii ruach&amp;#x27; debate?">
 <div class="entry-header" onclick="toggleEntry(this)">
-<span class="num">16</span>
+<span class="num">17</span>
 <span class="q">What are the full rules for when a dagesh kal falls away at word boundaries? What about the &#x27;revii ruach&#x27; debate?</span>
 <span class="toggle">\25BC</span>
 </div>
@@ -622,9 +663,44 @@ Understanding these rules helps ba&#x27;alei k&#x27;riah predict and verify the 
 <a href="#" onclick="scrollToEntry('dagesh-kal-meaning');return false">Can a dagesh kal ever change the meaning of a word? Is there any example in Tanach?</a>
 </div>
 </div></div>
+<div class="entry" data-cat="dagesh-mappik" data-id="dagesh-kal-exceptions" data-q="why is פרה אדומה (parah adumah) with a rafeh פּ even though it&amp;#x27;s not after אהוי? what are the exceptions to the dagesh kal rule?">
+<div class="entry-header" onclick="toggleEntry(this)">
+<span class="num">18</span>
+<span class="q">Why is פרה אדומה (Parah Adumah) with a rafeh פּ even though it&#x27;s not after אהוי? What are the exceptions to the dagesh kal rule?</span>
+<span class="toggle">\25BC</span>
+</div>
+<div class="entry-body">
+<div class="answer">The rule is: a בגדכפת letter at the start of a word loses its dagesh kal when the previous word ends with אהוי (vowel letters) AND the words are connected conjunctively. However, there are three categories of exceptions where the dagesh remains even after אהוי:
+
+1. **The אהוי is pronounced as a consonant** — e.g., אֵלָיו (the vav is consonantal), בְּצִדָּהּ (the hei has a mappik and is a consonant). In the case of אֵלֶיךָ, the kamatz on the hei makes it effectively &#x27;אליכה&#x27; — the hei is treated as a silent vowel letter, so the following word&#x27;s dagesh drops.
+
+2. **The preceding word has a mafsik (pausal) trop** — e.g., a pashta, zakef, etnachta, etc. The pause preserves the dagesh.
+
+3. **A dagesh chazak would appear anyway** — even in non-בגדכפת letters, if there&#x27;s a grammatical reason for a dagesh chazak, the dagesh kal remains.
+
+For פרה אדומה specifically: the question is why the פ of פרה is rafeh (no dagesh) even though the preceding word doesn&#x27;t end in אהוי. The answer from the group is that it follows a telisha ketana (a conjunctive trop), which elides into the next word, effectively making the connection even stronger — so the dagesh drops.
+
+A simpler way to understand the rule: instead of saying &#x27;dagesh drops after אהוי&#x27;, think of it as &#x27;dagesh drops after a vowel&#x27; — since אהוי simply represent the vowel letters. This automatically handles cases like אֵלֶיךָ where the silent hei acts as a vowel-ending, and explains why פרה after telisha ketana (which creates a vowel-like glide) also drops the dagesh.</div>
+<div class="examples"><strong>Examples</strong><ul>
+<li>פרה אדומה — the פ has no dagesh because of the preceding telisha ketana</li>
+<li>אֵלֶיךָ פּ — the פ keeps its dagesh? No, actually it drops because the hei is a silent vowel letter</li>
+<li>אֵלָיו פּ — the vav is a consonant, so the dagesh in the following word is preserved</li>
+</ul></div>
+<div class="sources"><strong>Sources</strong>
+<span class="src">Ezra Arovas (2024-07-09) msg#2586</span>
+<span class="src">MJ (2024-07-09) msg#2588</span>
+<span class="src">MJ (2024-07-09) msg#2589</span>
+<span class="src">MJ (2024-07-09) msg#2590</span>
+<span class="src">Dovy Pollack (2024-07-09) msg#2591</span>
+</div>
+<div class="see-also"><strong>See also</strong>
+<a href="#" onclick="scrollToEntry('dagesh-boundary-rules');return false">What are the full rules for when a dagesh kal falls away at word boundaries? What about the &amp;#x27;revii ruach&amp;#x27; debate?</a>
+<a href="#" onclick="scrollToEntry('dagesh-after-mafsik');return false">Why is there sometimes a dagesh in the first letter of a word after a pausal ta&amp;#x27;am (e.g. the lamed of אֶל־מֹשֶׁה לֵאמֹר, and לֹא before another word)?</a>
+</div>
+</div></div>
 <div class="entry" data-cat="dagesh-mappik" data-id="dagesh-kal-meaning" data-q="can a dagesh kal ever change the meaning of a word? is there any example in tanach?">
 <div class="entry-header" onclick="toggleEntry(this)">
-<span class="num">17</span>
+<span class="num">19</span>
 <span class="q">Can a dagesh kal ever change the meaning of a word? Is there any example in Tanach?</span>
 <span class="toggle">\25BC</span>
 </div>
@@ -649,7 +725,7 @@ Outside this single exception, a dagesh kal never changes meaning. If you hear s
 </div></div>
 <div class="entry" data-cat="dagesh-mappik" data-id="dagesh-kal-never-changes-meaning" data-q="can a dagesh kal (in a beged-kefet letter) ever change the meaning of a word?">
 <div class="entry-header" onclick="toggleEntry(this)">
-<span class="num">18</span>
+<span class="num">20</span>
 <span class="q">Can a dagesh kal (in a beged-kefet letter) ever change the meaning of a word?</span>
 <span class="toggle">\25BC</span>
 </div>
@@ -666,7 +742,7 @@ Outside this single exception, a dagesh kal never changes meaning. If you hear s
 </div></div>
 <div class="entry" data-cat="dagesh-mappik" data-id="dagesh-mapik-omitted-list" data-q="are there places where a mappik heh is expected but missing, and where can one find the lists?">
 <div class="entry-header" onclick="toggleEntry(this)">
-<span class="num">19</span>
+<span class="num">21</span>
 <span class="q">Are there places where a mappik heh is expected but missing, and where can one find the lists?</span>
 <span class="toggle">\25BC</span>
 </div>
@@ -687,7 +763,7 @@ Outside this single exception, a dagesh kal never changes meaning. If you hear s
 </div></div>
 <div class="entry" data-cat="dagesh-mappik" data-id="mapik-heh-meaning-change" data-q="does a mapik heh change the meaning of a word?">
 <div class="entry-header" onclick="toggleEntry(this)">
-<span class="num">20</span>
+<span class="num">22</span>
 <span class="q">Does a mapik heh change the meaning of a word?</span>
 <span class="toggle">\25BC</span>
 </div>
@@ -707,7 +783,7 @@ Outside this single exception, a dagesh kal never changes meaning. If you hear s
 </div></div>
 <div class="entry" data-cat="dagesh-mappik" data-id="mappik-hei-pronunciation" data-q="how do you pronounce a word with a mappik hei at the end, like אלוה? is there a difference between a mappik hei and a patach under a ches?">
 <div class="entry-header" onclick="toggleEntry(this)">
-<span class="num">21</span>
+<span class="num">23</span>
 <span class="q">How do you pronounce a word with a mappik hei at the end, like אלוה? Is there a difference between a mappik hei and a patach under a ches?</span>
 <span class="toggle">\25BC</span>
 </div>
@@ -743,7 +819,7 @@ Ba&#x27;alei k&#x27;riah must distinguish these three cases. Missing a mappik he
 <h2>Ga&#x27;ya / Meteg</h2>
 <div class="entry" data-cat="gaya-meteg" data-id="gaya-meteg-terminology" data-q="what is the difference between the terms ga&amp;#x27;ya, meteg, ma&amp;#x27;arich, and ma&amp;#x27;amid?">
 <div class="entry-header" onclick="toggleEntry(this)">
-<span class="num">22</span>
+<span class="num">24</span>
 <span class="q">What is the difference between the terms ga&#x27;ya, meteg, ma&#x27;arich, and ma&#x27;amid?</span>
 <span class="toggle">\25BC</span>
 </div>
@@ -761,7 +837,7 @@ Ba&#x27;alei k&#x27;riah must distinguish these three cases. Missing a mappik he
 </div></div>
 <div class="entry" data-cat="gaya-meteg" data-id="meteg-gaya-guide" data-q="what is the practical function of a meteg/ga&amp;#x27;ya for a ba&amp;#x27;al k&amp;#x27;riah? when is it essential to pay attention to it?">
 <div class="entry-header" onclick="toggleEntry(this)">
-<span class="num">23</span>
+<span class="num">25</span>
 <span class="q">What is the practical function of a meteg/ga&#x27;ya for a ba&#x27;al k&#x27;riah? When is it essential to pay attention to it?</span>
 <span class="toggle">\25BC</span>
 </div>
@@ -799,7 +875,7 @@ Ba&#x27;alei k&#x27;riah should pay special attention to metegs in unclear cases
 </div></div>
 <div class="entry" data-cat="gaya-meteg" data-id="meteg-indicates-shva-na" data-q="does a meteg (ga&amp;#x27;ya) indicate that the following shva is na?">
 <div class="entry-header" onclick="toggleEntry(this)">
-<span class="num">24</span>
+<span class="num">26</span>
 <span class="q">Does a meteg (ga&#x27;ya) indicate that the following shva is na?</span>
 <span class="toggle">\25BC</span>
 </div>
@@ -825,7 +901,7 @@ Ba&#x27;alei k&#x27;riah should pay special attention to metegs in unclear cases
 <h2>Letter Pronunciation (bgd-k-f-t-p, gutturals)</h2>
 <div class="entry" data-cat="pronunciation" data-id="cholam-oy-vs-oh" data-q="what is the history of the &amp;#x27;oy&amp;#x27; vs &amp;#x27;oh&amp;#x27; pronunciation of the cholam (e.g. ha-oy-lam vs ha-oh-lam)?">
 <div class="entry-header" onclick="toggleEntry(this)">
-<span class="num">25</span>
+<span class="num">27</span>
 <span class="q">What is the history of the &#x27;oy&#x27; vs &#x27;oh&#x27; pronunciation of the cholam (e.g. ha-OY-lam vs ha-OH-lam)?</span>
 <span class="toggle">\25BC</span>
 </div>
@@ -845,7 +921,7 @@ Ba&#x27;alei k&#x27;riah should pay special attention to metegs in unclear cases
 </div></div>
 <div class="entry" data-cat="pronunciation" data-id="consonant-clusters-shva-nach" data-q="how do you pronounce words with two consecutive shva nach creating impossible consonant clusters, like וַיִּשְׁבְּ or לִקַּטְתְּ?">
 <div class="entry-header" onclick="toggleEntry(this)">
-<span class="num">26</span>
+<span class="num">28</span>
 <span class="q">How do you pronounce words with two consecutive shva nach creating impossible consonant clusters, like וַיִּשְׁבְּ or לִקַּטְתְּ?</span>
 <span class="toggle">\25BC</span>
 </div>
@@ -883,7 +959,7 @@ The important principle: since there is no clear mesorah on exactly how to handl
 </div></div>
 <div class="entry" data-cat="pronunciation" data-id="patach-ganuv" data-q="what is a patach ganuv (g&amp;#x27;nuvah) and how is it pronounced differently from a regular patach?">
 <div class="entry-header" onclick="toggleEntry(this)">
-<span class="num">27</span>
+<span class="num">29</span>
 <span class="q">What is a patach ganuv (g&#x27;nuvah) and how is it pronounced differently from a regular patach?</span>
 <span class="toggle">\25BC</span>
 </div>
@@ -914,7 +990,7 @@ The same concept exists for other vowels — e.g., a kamatz under a final guttur
 </div></div>
 <div class="entry" data-cat="pronunciation" data-id="shva-nach-guttural-pronunciation" data-q="how do you pronounce a word like נחו (nichcho) where a shva nach is under a guttural? and what is nasog achor?">
 <div class="entry-header" onclick="toggleEntry(this)">
-<span class="num">28</span>
+<span class="num">30</span>
 <span class="q">How do you pronounce a word like נחו (nichcho) where a shva nach is under a guttural? And what is nasog achor?</span>
 <span class="toggle">\25BC</span>
 </div>
@@ -941,7 +1017,7 @@ A related issue arises with the word נֶעֶרְמוּ (Ex. 15:8): it is pronou
 </div></div>
 <div class="entry" data-cat="pronunciation" data-id="teimani-gimel" data-q="why do teimanim pronounce ג &amp;#x27;in reverse&amp;#x27; (soft/dageshed gimel), and is it only gimel?">
 <div class="entry-header" onclick="toggleEntry(this)">
-<span class="num">29</span>
+<span class="num">31</span>
 <span class="q">Why do Teimanim pronounce ג &#x27;in reverse&#x27; (soft/dageshed gimel), and is it only gimel?</span>
 <span class="toggle">\25BC</span>
 </div>
@@ -967,7 +1043,7 @@ A related issue arises with the word נֶעֶרְמוּ (Ex. 15:8): it is pronou
 <h2>Grammar &amp; Morphology</h2>
 <div class="entry" data-cat="grammar" data-id="binyan-ambiguity-vayivla" data-q="in shemot 7:12, does וַיִּבְלַע (vayivla) mean &amp;#x27;it swallowed&amp;#x27; (kal) or &amp;#x27;it caused to swallow&amp;#x27; (hif&amp;#x27;il)? does changing the binyan change the meaning?">
 <div class="entry-header" onclick="toggleEntry(this)">
-<span class="num">30</span>
+<span class="num">32</span>
 <span class="q">In Shemot 7:12, does וַיִּבְלַע (vayivla) mean &#x27;it swallowed&#x27; (kal) or &#x27;it caused to swallow&#x27; (hif&#x27;il)? Does changing the binyan change the meaning?</span>
 <span class="toggle">\25BC</span>
 </div>
@@ -1000,7 +1076,7 @@ When in doubt, consult the established nikkud (Keter, Breuer, or a reliable tikk
 </div></div>
 <div class="entry" data-cat="grammar" data-id="grammar-counting-echad" data-q="why is &amp;#x27;day one&amp;#x27; יום אחד and not יום ראשון? and why is the word order different for other numbers (אחד עשר vs עשרה)?">
 <div class="entry-header" onclick="toggleEntry(this)">
-<span class="num">31</span>
+<span class="num">33</span>
 <span class="q">Why is &#x27;day one&#x27; יום אחד and not יום ראשון? And why is the word order different for other numbers (אחד עשר vs עשרה)?</span>
 <span class="toggle">\25BC</span>
 </div>
@@ -1026,7 +1102,7 @@ These patterns have no convincing single explanation — they are just how the l
 </div></div>
 <div class="entry" data-cat="grammar" data-id="infinitive-two-forms" data-q="why are there two seemingly different infinitive forms in tanach (e.g. זָכוֹר / שָׁמוֹר vs. זְכֹר / forms that take prefixes)?">
 <div class="entry-header" onclick="toggleEntry(this)">
-<span class="num">32</span>
+<span class="num">34</span>
 <span class="q">Why are there two seemingly different infinitive forms in Tanach (e.g. זָכוֹר / שָׁמוֹר vs. זְכֹר / forms that take prefixes)?</span>
 <span class="toggle">\25BC</span>
 </div>
@@ -1045,7 +1121,7 @@ These patterns have no convincing single explanation — they are just how the l
 </div></div>
 <div class="entry" data-cat="grammar" data-id="kach-vs-lkach" data-q="why is it קַח (kach) in some places and לְקַח (l&amp;#x27;kach) in others — aren&amp;#x27;t they both the imperative of לָקַח?">
 <div class="entry-header" onclick="toggleEntry(this)">
-<span class="num">33</span>
+<span class="num">35</span>
 <span class="q">Why is it קַח (kach) in some places and לְקַח (l&#x27;kach) in others — aren&#x27;t they both the imperative of לָקַח?</span>
 <span class="toggle">\25BC</span>
 </div>
@@ -1065,7 +1141,7 @@ These patterns have no convincing single explanation — they are just how the l
 </div></div>
 <div class="entry" data-cat="grammar" data-id="mispronounced-seforim-names" data-q="which commonly mispronounced seforim names should i watch out for?">
 <div class="entry-header" onclick="toggleEntry(this)">
-<span class="num">34</span>
+<span class="num">36</span>
 <span class="q">Which commonly mispronounced seforim names should I watch out for?</span>
 <span class="toggle">\25BC</span>
 </div>
@@ -1086,7 +1162,7 @@ These patterns have no convincing single explanation — they are just how the l
 </div></div>
 <div class="entry" data-cat="grammar" data-id="poetic-prose-torah" data-q="is there poetic meter in the torah&amp;#x27;s prose sections, or only in the shiros (poems) like haazinu and shirat hayam?">
 <div class="entry-header" onclick="toggleEntry(this)">
-<span class="num">35</span>
+<span class="num">37</span>
 <span class="q">Is there poetic meter in the Torah&#x27;s prose sections, or only in the shiros (poems) like Haazinu and Shirat HaYam?</span>
 <span class="toggle">\25BC</span>
 </div>
@@ -1117,7 +1193,7 @@ What is clear:
 </div></div>
 <div class="entry" data-cat="grammar" data-id="segolate-nouns" data-q="why do some segolate nouns shift vowels (she mesh → shamash, kesef → kasef) while others don&amp;#x27;t (teven stays teven)?">
 <div class="entry-header" onclick="toggleEntry(this)">
-<span class="num">36</span>
+<span class="num">38</span>
 <span class="q">Why do some segolate nouns shift vowels (she mesh → Shamash, kesef → kasef) while others don&#x27;t (teven stays teven)?</span>
 <span class="toggle">\25BC</span>
 </div>
@@ -1151,7 +1227,7 @@ For ba&#x27;alei k&#x27;riah, this matters because:
 </div></div>
 <div class="entry" data-cat="grammar" data-id="shva-binyan-meaning" data-q="can reading a shva as na vs nach (or changing a binyan) change the meaning of a word in kri&amp;#x27;ah?">
 <div class="entry-header" onclick="toggleEntry(this)">
-<span class="num">37</span>
+<span class="num">39</span>
 <span class="q">Can reading a shva as na vs nach (or changing a binyan) change the meaning of a word in kri&#x27;ah?</span>
 <span class="toggle">\25BC</span>
 </div>
@@ -1179,7 +1255,7 @@ Another important case: the word המטהר at the beginning of Parshas Metzora 
 </div></div>
 <div class="entry" data-cat="grammar" data-id="toldot-spelling-variations" data-q="why is the word תולדות spelled four different ways in sefer bereishis (תולדות, תולדת, תלדת, תלדות)?">
 <div class="entry-header" onclick="toggleEntry(this)">
-<span class="num">38</span>
+<span class="num">40</span>
 <span class="q">Why is the word תולדות spelled four different ways in Sefer Bereishis (תולדות, תולדת, תלדת, תלדות)?</span>
 <span class="toggle">\25BC</span>
 </div>
@@ -1198,7 +1274,7 @@ Another important case: the word המטהר at the beginning of Parshas Metzora 
 </div></div>
 <div class="entry" data-cat="grammar" data-id="yiddish-dikduk-rules" data-q="do yiddish names/words follow loshon hakodesh dikduk rules?">
 <div class="entry-header" onclick="toggleEntry(this)">
-<span class="num">39</span>
+<span class="num">41</span>
 <span class="q">Do Yiddish names/words follow Loshon haKodesh dikduk rules?</span>
 <span class="toggle">\25BC</span>
 </div>
@@ -1225,7 +1301,7 @@ Another important case: the word המטהר at the beginning of Parshas Metzora 
 <h2>Trop / Ta&#x27;amei ha-Mikra</h2>
 <div class="entry" data-cat="trop" data-id="chabad-pazer-as-mercha-kefula" data-q="why do some chabad ba&amp;#x27;alei koreh sing the pazer in the aseres hadibros as a mercha kefula (double mercha)?">
 <div class="entry-header" onclick="toggleEntry(this)">
-<span class="num">40</span>
+<span class="num">42</span>
 <span class="q">Why do some Chabad ba&#x27;alei koreh sing the pazer in the Aseres HaDibros as a mercha kefula (double mercha)?</span>
 <span class="toggle">\25BC</span>
 </div>
@@ -1243,7 +1319,7 @@ Another important case: the word המטהר at the beginning of Parshas Metzora 
 </div></div>
 <div class="entry" data-cat="trop" data-id="dechik-rules" data-q="what is dechik and how does it affect the reading? does it only depend on the trop marks, not the meaning of the verse?">
 <div class="entry-header" onclick="toggleEntry(this)">
-<span class="num">41</span>
+<span class="num">43</span>
 <span class="q">What is dechik and how does it affect the reading? Does it only depend on the trop marks, not the meaning of the verse?</span>
 <span class="toggle">\25BC</span>
 </div>
@@ -1273,7 +1349,7 @@ Ba&#x27;alei k&#x27;riah should follow the trop marks as written, not try to &#x
 </div></div>
 <div class="entry" data-cat="trop" data-id="distinguishing-trop-marks" data-q="how do you distinguish between similar-looking trop marks like pashta vs kadma, and yesiv vs mahpach?">
 <div class="entry-header" onclick="toggleEntry(this)">
-<span class="num">42</span>
+<span class="num">44</span>
 <span class="q">How do you distinguish between similar-looking trop marks like pashta vs kadma, and yesiv vs mahpach?</span>
 <span class="toggle">\25BC</span>
 </div>
@@ -1298,7 +1374,7 @@ Yesiv vs Mahpach (sometimes called mehuppach): The distinguishing feature is not
 </div></div>
 <div class="entry" data-cat="trop" data-id="kadma-vs-pashta" data-q="how do you tell the difference between a kadma and a pashta (and between yetiv and mahpach)?">
 <div class="entry-header" onclick="toggleEntry(this)">
-<span class="num">43</span>
+<span class="num">45</span>
 <span class="q">How do you tell the difference between a kadma and a pashta (and between yetiv and mahpach)?</span>
 <span class="toggle">\25BC</span>
 </div>
@@ -1318,7 +1394,7 @@ Yesiv vs Mahpach (sometimes called mehuppach): The distinguishing feature is not
 </div></div>
 <div class="entry" data-cat="trop" data-id="karnei-fara-not-double-telisha" data-q="is the קַרְנֵי פָארָה (a rare trop note) actually a telisha gedola on top of a telisha ketana, or is it its own symbol?">
 <div class="entry-header" onclick="toggleEntry(this)">
-<span class="num">44</span>
+<span class="num">46</span>
 <span class="q">Is the קַרְנֵי פָארָה (a rare trop note) actually a Telisha Gedola on top of a Telisha Ketana, or is it its own symbol?</span>
 <span class="toggle">\25BC</span>
 </div>
@@ -1338,7 +1414,7 @@ Yesiv vs Mahpach (sometimes called mehuppach): The distinguishing feature is not
 </div></div>
 <div class="entry" data-cat="trop" data-id="mercha-kefulah" data-q="what is mercha kefulah (double mercha) and how does the tipcha-mercha-sof pasuk pattern work?">
 <div class="entry-header" onclick="toggleEntry(this)">
-<span class="num">45</span>
+<span class="num">47</span>
 <span class="q">What is mercha kefulah (double mercha) and how does the tipcha-mercha-sof pasuk pattern work?</span>
 <span class="toggle">\25BC</span>
 </div>
@@ -1370,7 +1446,7 @@ Key point: the mercha before sof pasuk should NOT sound the same as a regular me
 </div></div>
 <div class="entry" data-cat="trop" data-id="munach-legarmeh" data-q="what is a munach legarmeh? when is a munach a disjunctive rather than a conjunctive?">
 <div class="entry-header" onclick="toggleEntry(this)">
-<span class="num">46</span>
+<span class="num">48</span>
 <span class="q">What is a munach legarmeh? When is a munach a disjunctive rather than a conjunctive?</span>
 <span class="toggle">\25BC</span>
 </div>
@@ -1402,7 +1478,7 @@ Correct identification of munach legarmeh vs plain munach matters for knowing wh
 </div></div>
 <div class="entry" data-cat="trop" data-id="nasog-achor-examples" data-q="when does nasog achor (accent retraction) apply? is ויאמרו (לו חכמיו) mil&amp;#x27;eil or milra?">
 <div class="entry-header" onclick="toggleEntry(this)">
-<span class="num">47</span>
+<span class="num">49</span>
 <span class="q">When does nasog achor (accent retraction) apply? Is ויאמרו (לו חכמיו) mil&#x27;eil or milra?</span>
 <span class="toggle">\25BC</span>
 </div>
@@ -1441,9 +1517,44 @@ For a ba&#x27;al k&#x27;riah, correctly identifying nasog achor is important bec
 <a href="#" onclick="scrollToEntry('shva-nach-guttural-pronunciation');return false">How do you pronounce a word like נחו (nichcho) where a shva nach is under a guttural? And what is nasog achor?</a>
 </div>
 </div></div>
+<div class="entry" data-cat="trop" data-id="pashta-yesiv-difference" data-q="when does a word get a pashta vs a yesiv? for example, why does אלה get a yesiv while ואלה gets a pashta?">
+<div class="entry-header" onclick="toggleEntry(this)">
+<span class="num">50</span>
+<span class="q">When does a word get a pashta vs a yesiv? For example, why does אלה get a yesiv while ואלה gets a pashta?</span>
+<span class="toggle">\25BC</span>
+</div>
+<div class="entry-body">
+<div class="answer">The choice between pashta and yesiv depends on where the stress falls in the word:
+
+- **Yesiv (יתיב)**: Used when the word is mil&#x27;eil (stress on the first syllable) AND has no mesharet (conjunctive) trop before it. The yesiv is essentially a &#x27;sitting&#x27; pashta — it goes on the first letter and the word is said with the accent pulled back.
+- **Pashta (פשטא)**: Used when the word is milra (stress on the last syllable) or when there IS a mesharet before it.
+
+For the specific case of אלה (eleh) vs ואלה (v&#x27;eleh):
+- אֵלֶּה (eleh, without vav) — often mil&#x27;eil (stressed on the first syllable), so when it has no mesharet before it, it gets a yesiv
+- וְאֵלֶּה (v&#x27;eleh, with vav) — the vav adds a syllable but the stress stays on the first syllable. However, the vav can function as a mesharet (conjunctive), in which case it gets a pashta instead
+
+**Rule of thumb**:
+- If the word is mil&#x27;eil AND you don&#x27;t see a preceding mesharet → expect a yesiv
+- If the word is milra OR has a preceding mesharet → expect a pashta
+- Some exceptions exist in manuscript traditions
+
+This distinction matters for ba&#x27;alei k&#x27;riah because the musical motif is different: yesiv is more &#x27;sitting&#x27; (hence the name), while pashta is more flowing.</div>
+<div class="examples"><strong>Examples</strong><ul>
+<li>אֵלֶּה (eleh) — mil&#x27;eil, no mesharet → yesiv
+וְאֵלֶּה (v&#x27;eleh) — the vav acts as mesharet → pashta</li>
+<li>Rule: mil&#x27;eil + no mesharet = yesiv; milra or has mesharet = pashta</li>
+</ul></div>
+<div class="sources"><strong>Sources</strong>
+<span class="src">Chaim Fresham (2024-08-08) msg#3692</span>
+<span class="src">MJ (2024-08-08) msg#3694</span>
+</div>
+<div class="see-also"><strong>See also</strong>
+<a href="#" onclick="scrollToEntry('trop-hierarchy-mafsikim');return false">Is there an accepted hierarchy of trop marks by their disjunctive strength? How are the levels of mafsikim ranked?</a>
+</div>
+</div></div>
 <div class="entry" data-cat="trop" data-id="pazer-trop" data-q="what is the pazer (פזר) trop mark and how is it related to the telisha?">
 <div class="entry-header" onclick="toggleEntry(this)">
-<span class="num">48</span>
+<span class="num">51</span>
 <span class="q">What is the pazer (פזר) trop mark and how is it related to the telisha?</span>
 <span class="toggle">\25BC</span>
 </div>
@@ -1477,7 +1588,7 @@ Ba&#x27;alei k&#x27;riah should be aware that some pazer notations in common chu
 </div></div>
 <div class="entry" data-cat="trop" data-id="pesik-vs-meseg-distinction" data-q="what is the difference between a pesik (פְּסִיק) and a meseg (מְסֵג)? do they mean different things?">
 <div class="entry-header" onclick="toggleEntry(this)">
-<span class="num">49</span>
+<span class="num">52</span>
 <span class="q">What is the difference between a pesik (פְּסִיק) and a meseg (מְסֵג)? Do they mean different things?</span>
 <span class="toggle">\25BC</span>
 </div>
@@ -1503,7 +1614,7 @@ Ba&#x27;alei k&#x27;riah should be aware that some pazer notations in common chu
 </div></div>
 <div class="entry" data-cat="trop" data-id="revii-trop-debates" data-q="why do some editions show a revii on certain words (like קטנתי) where others show azla geresh or other trop?">
 <div class="entry-header" onclick="toggleEntry(this)">
-<span class="num">50</span>
+<span class="num">53</span>
 <span class="q">Why do some editions show a revii on certain words (like קטנתי) where others show azla geresh or other trop?</span>
 <span class="toggle">\25BC</span>
 </div>
@@ -1545,7 +1656,7 @@ Other examples of trop differences across editions:
 </div></div>
 <div class="entry" data-cat="trop" data-id="revii-vs-gershayim" data-q="is there a real distinction between a revi&amp;#x27;i (רְבִיעִי) and gershayim (גֵּרְשַׁיִם)? when do different tikkunim disagree?">
 <div class="entry-header" onclick="toggleEntry(this)">
-<span class="num">51</span>
+<span class="num">54</span>
 <span class="q">Is there a real distinction between a revi&#x27;i (רְבִיעִי) and gershayim (גֵּרְשַׁיִם)? When do different tikkunim disagree?</span>
 <span class="toggle">\25BC</span>
 </div>
@@ -1567,7 +1678,7 @@ Other examples of trop differences across editions:
 </div></div>
 <div class="entry" data-cat="trop" data-id="shalshelet" data-q="what is the shalshelet (שלשלת) trop mark and where does it appear?">
 <div class="entry-header" onclick="toggleEntry(this)">
-<span class="num">52</span>
+<span class="num">55</span>
 <span class="q">What is the shalshelet (שלשלת) trop mark and where does it appear?</span>
 <span class="toggle">\25BC</span>
 </div>
@@ -1597,7 +1708,7 @@ For a ba&#x27;al k&#x27;riah, the shalshelet requires special preparation becaus
 </div></div>
 <div class="entry" data-cat="trop" data-id="shva-counts-for-trop" data-q="does a shva count as a syllable/beat when determining trop placement (e.g. mesharet of pashta, or metiga zakeif)?">
 <div class="entry-header" onclick="toggleEntry(this)">
-<span class="num">53</span>
+<span class="num">56</span>
 <span class="q">Does a shva count as a syllable/beat when determining trop placement (e.g. mesharet of pashta, or metiga zakeif)?</span>
 <span class="toggle">\25BC</span>
 </div>
@@ -1620,7 +1731,7 @@ For a ba&#x27;al k&#x27;riah, the shalshelet requires special preparation becaus
 </div></div>
 <div class="entry" data-cat="trop" data-id="taam-elyon-dagesh-difference" data-q="why does לא תרצח have a dagesh in the tav under taam elyon but not under taam tachton?">
 <div class="entry-header" onclick="toggleEntry(this)">
-<span class="num">54</span>
+<span class="num">57</span>
 <span class="q">Why does לא תרצח have a dagesh in the tav under taam elyon but not under taam tachton?</span>
 <span class="toggle">\25BC</span>
 </div>
@@ -1646,7 +1757,7 @@ This illustrates a broader principle: the dagesh kal (lene) after a word ending 
 </div></div>
 <div class="entry" data-cat="trop" data-id="taam-elyon-tachton" data-q="what is taam elyon vs taam tachton for the ten commandments, and which tradition should a ba&amp;#x27;al k&amp;#x27;riah follow?">
 <div class="entry-header" onclick="toggleEntry(this)">
-<span class="num">55</span>
+<span class="num">58</span>
 <span class="q">What is taam elyon vs taam tachton for the Ten Commandments, and which tradition should a ba&#x27;al k&#x27;riah follow?</span>
 <span class="toggle">\25BC</span>
 </div>
@@ -1682,7 +1793,7 @@ The most common practice in Ashkenazi shuls is taam elyon starting with a pashta
 </div></div>
 <div class="entry" data-cat="trop" data-id="taamei-kaf-samech" data-q="what is the taamei kaf-samech system and how does it differ from taamei emet? how do munach-zakef and mercha-tipcha alternate?">
 <div class="entry-header" onclick="toggleEntry(this)">
-<span class="num">56</span>
+<span class="num">59</span>
 <span class="q">What is the taamei kaf-samech system and how does it differ from taamei emet? How do munach-zakef and mercha-tipcha alternate?</span>
 <span class="toggle">\25BC</span>
 </div>
@@ -1725,7 +1836,7 @@ Rav Breuer&#x27;s sefer &#x27;Ta&#x27;amei HaMikra&#x27; (published by Chorev) i
 </div></div>
 <div class="entry" data-cat="trop" data-id="telisha-megillah" data-q="how do you distinguish telisha ketana from telisha gedolah in megillah trop? are they the same as in torah trop?">
 <div class="entry-header" onclick="toggleEntry(this)">
-<span class="num">57</span>
+<span class="num">60</span>
 <span class="q">How do you distinguish telisha ketana from telisha gedolah in Megillah trop? Are they the same as in Torah trop?</span>
 <span class="toggle">\25BC</span>
 </div>
@@ -1763,7 +1874,7 @@ Telisha gedolah: dot on the left, disjunctive, goes down</li>
 </div></div>
 <div class="entry" data-cat="trop" data-id="tevir-complex" data-q="what is the tevir complex / tevirus? which conjunctive trop marks serve tevir?">
 <div class="entry-header" onclick="toggleEntry(this)">
-<span class="num">58</span>
+<span class="num">61</span>
 <span class="q">What is the tevir complex / tevirus? Which conjunctive trop marks serve tevir?</span>
 <span class="toggle">\25BC</span>
 </div>
@@ -1800,7 +1911,7 @@ Tevir can also serve as the &#x27;servant&#x27; (mesharet) of stronger disjuncti
 </div></div>
 <div class="entry" data-cat="trop" data-id="trop-conjunctive-vs-disjunctive" data-q="why are there &amp;#x27;different&amp;#x27; merkhas (or munachs) — are they genuinely different notes or just musical conventions?">
 <div class="entry-header" onclick="toggleEntry(this)">
-<span class="num">59</span>
+<span class="num">62</span>
 <span class="q">Why are there &#x27;different&#x27; merkhas (or munachs) — are they genuinely different notes or just musical conventions?</span>
 <span class="toggle">\25BC</span>
 </div>
@@ -1822,9 +1933,60 @@ Tevir can also serve as the &#x27;servant&#x27; (mesharet) of stronger disjuncti
 <a href="#" onclick="scrollToEntry('kadma-vs-pashta');return false">How do you tell the difference between a kadma and a pashta (and between yetiv and mahpach)?</a>
 </div>
 </div></div>
+<div class="entry" data-cat="trop" data-id="trop-hierarchy-mafsikim" data-q="is there an accepted hierarchy of trop marks by their disjunctive strength? how are the levels of mafsikim ranked?">
+<div class="entry-header" onclick="toggleEntry(this)">
+<span class="num">63</span>
+<span class="q">Is there an accepted hierarchy of trop marks by their disjunctive strength? How are the levels of mafsikim ranked?</span>
+<span class="toggle">\25BC</span>
+</div>
+<div class="entry-body">
+<div class="answer">Yes, the ta&#x27;amei hamikra are organized into a hierarchy of disjunctive &#x27;levels&#x27; (sometimes called &#x27;emperors&#x27; by the group, or the kabbalistic &#x27;kings&#x27; metaphor — קיסר, מלך, משנה, שליש). The commonly accepted ranking from strongest to weakest disjunctive:
+
+**Tier 1 — Emperors (מלכים/קיסרים):**
+- Sof passuk (סוף פסוק) — strongest pause
+- Etnachta (אתנחתא) — second strongest
+
+**Tier 2 — Kings (מלך):**
+- Segol (סגול) — Shalshelet is often grouped here as an alternative to segol on the first word of a pasuk
+- Zakef katan/gadol (זקף) — zakef gadol is in this tier, NOT a lower tier
+- Tipcha (טפחא) — though some rank it slightly lower
+
+**Tier 3 — Dukes (משנה):**
+- Revii (רביע)
+- Zarqa (זרקא)
+- Pashta / Yesiv (פשטא / יתיב)
+- Tevir (תביר)
+
+**Tier 4 — Counts (שליש):**
+- Pazer / Karnei Parah (פזר / קרני פרה)
+- Telisha gedolah (תלישא גדולה)
+- Geresh / Gershayim (גרש / גרשיים)
+- Munach legarmeih (מונח לגרמיה)
+
+There are minor differences of opinion — some rank shalshelet with revii instead of segol, and some rank tipcha slightly differently. But the overall consensus is clear about most trop marks.
+
+For practical purposes:
+- You can never have a higher-tier mafsik within the domain of a lower-tier one (e.g., sof passuk cannot appear within an etnachta phrase)
+- Zakef gadol is definitely NOT a 4th-tier mafsik as some incorrect articles claim — if it were, it couldn&#x27;t appear alongside units ending in a 2nd-tier mafsik, yet we see it does
+- Shalshelet is an alternative to segol when the first word of the pasuk would otherwise take a segol</div>
+<div class="examples"><strong>Examples</strong><ul>
+<li>Kings hierarchy: קיסר (sof passuk, etnachta) &gt; מלך (segol/shalshelet, zakef, tipcha) &gt; משנה (revii, zarqa, pashta, tevir) &gt; שליש (pazer, telisha, geresh, munach legarmeih)</li>
+<li>Shalshelet is commonly accepted as an alternative to segol on the first word of a pasuk</li>
+</ul></div>
+<div class="sources"><strong>Sources</strong>
+<span class="src">Chaim Fresham (2024-08-08) msg#3685</span>
+<span class="src">Dror Maor (2024-08-08) msg#3689</span>
+<span class="src">MG (2024-08-08) msg#3690</span>
+<span class="src">DB (2024-08-08) msg#3691</span>
+</div>
+<div class="see-also"><strong>See also</strong>
+<span>shalshelet-trop</span>
+<a href="#" onclick="scrollToEntry('revii-trop-debates');return false">Why do some editions show a revii on certain words (like קטנתי) where others show azla geresh or other trop?</a>
+</div>
+</div></div>
 <div class="entry" data-cat="trop" data-id="trop-parsing-mahpach-mercha" data-q="when does a word before pashta get a mahpach vs a mercha? does a shva na count as a &amp;#x27;separator&amp;#x27;?">
 <div class="entry-header" onclick="toggleEntry(this)">
-<span class="num">60</span>
+<span class="num">64</span>
 <span class="q">When does a word before pashta get a mahpach vs a mercha? Does a shva na count as a &#x27;separator&#x27;?</span>
 <span class="toggle">\25BC</span>
 </div>
@@ -1862,7 +2024,7 @@ These rules reflect how the Masoretes understood syllable boundaries and the rel
 </div></div>
 <div class="entry" data-cat="trop" data-id="trope-primary-musical-not-punctuation" data-q="is the primary function of trop (cantillation marks) punctuation, or is something else more fundamental?">
 <div class="entry-header" onclick="toggleEntry(this)">
-<span class="num">61</span>
+<span class="num">65</span>
 <span class="q">Is the primary function of trop (cantillation marks) punctuation, or is something else more fundamental?</span>
 <span class="toggle">\25BC</span>
 </div>
@@ -1885,7 +2047,7 @@ These rules reflect how the Masoretes understood syllable boundaries and the rel
 </div></div>
 <div class="entry" data-cat="trop" data-id="zakef-gadol-katon" data-q="what is the difference between zakef gadol and zakef katon? when is zakef used?">
 <div class="entry-header" onclick="toggleEntry(this)">
-<span class="num">62</span>
+<span class="num">66</span>
 <span class="q">What is the difference between zakef gadol and zakef katon? When is zakef used?</span>
 <span class="toggle">\25BC</span>
 </div>
@@ -1923,7 +2085,7 @@ Ba&#x27;alei k&#x27;riah should be careful to distinguish zakef gadol from zakef
 </div></div>
 <div class="entry" data-cat="trop" data-id="zarka-not-followed-by-segol" data-q="can a zarka appear without being followed by a segol?">
 <div class="entry-header" onclick="toggleEntry(this)">
-<span class="num">63</span>
+<span class="num">67</span>
 <span class="q">Can a zarka appear without being followed by a segol?</span>
 <span class="toggle">\25BC</span>
 </div>
@@ -1949,7 +2111,7 @@ Ba&#x27;alei k&#x27;riah should be careful to distinguish zakef gadol from zakef
 <h2>Ta&#x27;amei Emet (Psalms/Job/Proverbs)</h2>
 <div class="entry" data-cat="taamei-emet" data-id="eicha-tune-etnachta-vs-sof-pasuk" data-q="when leining eicha (or the eicha tune), should the etnachta and sof pasuk be sung differently, and does anyone differentiate the tipcha before etnachta from the tipcha before sof pasuk?">
 <div class="entry-header" onclick="toggleEntry(this)">
-<span class="num">64</span>
+<span class="num">68</span>
 <span class="q">When leining Eicha (or the Eicha tune), should the etnachta and sof pasuk be sung differently, and does anyone differentiate the tipcha before etnachta from the tipcha before sof pasuk?</span>
 <span class="toggle">\25BC</span>
 </div>
@@ -1971,7 +2133,7 @@ Ba&#x27;alei k&#x27;riah should be careful to distinguish zakef gadol from zakef
 </div></div>
 <div class="entry" data-cat="taamei-emet" data-id="ketuvim-trop-systems" data-q="which trop system is used for each sefer in ketuvim, and is there a basis for differentiating?">
 <div class="entry-header" onclick="toggleEntry(this)">
-<span class="num">65</span>
+<span class="num">69</span>
 <span class="q">Which trop system is used for each sefer in Ketuvim, and is there a basis for differentiating?</span>
 <span class="toggle">\25BC</span>
 </div>
@@ -1997,7 +2159,7 @@ Ba&#x27;alei k&#x27;riah should be careful to distinguish zakef gadol from zakef
 </div></div>
 <div class="entry" data-cat="taamei-emet" data-id="megillah-trop-differentiations" data-q="should the megillah trop differentiate between etnachta and sof pasuk, or between various munach types?">
 <div class="entry-header" onclick="toggleEntry(this)">
-<span class="num">66</span>
+<span class="num">70</span>
 <span class="q">Should the megillah trop differentiate between etnachta and sof pasuk, or between various munach types?</span>
 <span class="toggle">\25BC</span>
 </div>
@@ -2019,7 +2181,7 @@ Ba&#x27;alei k&#x27;riah should be careful to distinguish zakef gadol from zakef
 </div></div>
 <div class="entry" data-cat="taamei-emet" data-id="oleh-vyored-emet" data-q="what is the oleh v&amp;#x27;yored (עולה ויורד) in taamei emet, and how is it different from regular mercha?">
 <div class="entry-header" onclick="toggleEntry(this)">
-<span class="num">67</span>
+<span class="num">71</span>
 <span class="q">What is the oleh v&#x27;yored (עולה ויורד) in taamei emet, and how is it different from regular mercha?</span>
 <span class="toggle">\25BC</span>
 </div>
@@ -2054,7 +2216,7 @@ Understanding the oleh v&#x27;yored is important for ba&#x27;alei k&#x27;riah wh
 </div></div>
 <div class="entry" data-cat="taamei-emet" data-id="taamei-emet-overview" data-q="what is the taamei emet system and how does it differ from standard torah trope? where can i learn more?">
 <div class="entry-header" onclick="toggleEntry(this)">
-<span class="num">68</span>
+<span class="num">72</span>
 <span class="q">What is the taamei emet system and how does it differ from standard Torah trope? Where can I learn more?</span>
 <span class="toggle">\25BC</span>
 </div>
@@ -2089,9 +2251,41 @@ For learning:
 </div>
 <div class="category" data-cat="haftarah">
 <h2>Haftarah &amp; Minhagim</h2>
+<div class="entry" data-cat="haftarah" data-id="haftarah-brachos-tisha-bav-tune" data-q="are there alternate tunes for the haftarah brachos on tisha b&amp;#x27;av? the regular tune feels too happy for the day.">
+<div class="entry-header" onclick="toggleEntry(this)">
+<span class="num">73</span>
+<span class="q">Are there alternate tunes for the haftarah brachos on Tisha B&#x27;Av? The regular tune feels too happy for the day.</span>
+<span class="toggle">\25BC</span>
+</div>
+<div class="entry-body">
+<div class="answer">There is no well-established alternate tune specifically for the haftarah brachos on Tisha B&#x27;Av. The general practice is to use the regular haftarah brachos tune, just delivered in a quieter, more subdued tone.
+
+Reasons given:
+1. **The content is actually hopeful** — the haftarah brachos (after the Tisha B&#x27;Av afternoon haftarah from Yeshayahu) end with comforting words like &#x27;משמח ציון בבניה&#x27; (Who gladdens Zion with her children). Changing the tune would be incongruous with the positive message.
+2. **All brachos end on a positive note** — there&#x27;s no precedent in the haftarah brachos for a sad tune. Even the brachos of the megillah reading on Tisha B&#x27;Av aren&#x27;t typically altered.
+3. **The pesukim themselves** — the Tisha B&#x27;Av afternoon haftarah is from Yeshayahu 40 (&#x27;Nachamu, nachamu ami&#x27;), which is a consolation prophecy. It&#x27;s not a mournful reading.
+
+Some ba&#x27;alei k&#x27;riah may slow down the pace or lower their voice, but the actual melody remains the same as any other haftarah. There is no established minhag for an alternate nusach for the Tisha B&#x27;Av haftarah brachos outside of specific chassidic or local traditions.
+
+Related to this: the Eicha trop and the kinos have their own special mournful tunes, but the haftarah brachos are a separate category and are not traditionally altered.</div>
+<div class="examples"><strong>Examples</strong><ul>
+<li>Tisha B&#x27;Av afternoon haftarah (Yeshayahu 40) — consolation prophecy, brachos are upbeat</li>
+<li>משמח ציון בבניה — bracha content is positive, so no sad tune change</li>
+<li>Contrast with Eicha trop and kinos which have their own distinct mournful tunes</li>
+</ul></div>
+<div class="sources"><strong>Sources</strong>
+<span class="src">Eliyahu Haschel (2024-08-13) msg#3913</span>
+<span class="src">Dovy Pollack (2024-08-13) msg#3914</span>
+<span class="src">MJ (2024-08-13) msg#3916</span>
+<span class="src">MJ (2024-08-13) msg#3917</span>
+</div>
+<div class="see-also"><strong>See also</strong>
+<a href="#" onclick="scrollToEntry('haftarah-brachos-trop');return false">Why do the brachos before the haftarah have trop/cantillation? Where does the trop come from?</a>
+</div>
+</div></div>
 <div class="entry" data-cat="haftarah" data-id="haftarah-brachos-trop" data-q="why do the brachos before the haftarah have trop/cantillation? where does the trop come from?">
 <div class="entry-header" onclick="toggleEntry(this)">
-<span class="num">69</span>
+<span class="num">74</span>
 <span class="q">Why do the brachos before the haftarah have trop/cantillation? Where does the trop come from?</span>
 <span class="toggle">\25BC</span>
 </div>
@@ -2124,7 +2318,7 @@ Rav Breuer discusses this in his sefer on trop (Ta&#x27;amei HaMikra), and his a
 </div></div>
 <div class="entry" data-cat="haftarah" data-id="haftarah-hashayla-hey" data-q="in the tisha b&amp;#x27;av haftarah, הֶהָ&amp;#x27; אֵין בְּצִיּוֹן — is the leading heh pronounced (hey hashayla)?">
 <div class="entry-header" onclick="toggleEntry(this)">
-<span class="num">70</span>
+<span class="num">75</span>
 <span class="q">In the Tisha b&#x27;Av haftarah, הֶהָ&#x27; אֵין בְּצִיּוֹן — is the leading heh pronounced (hey hashayla)?</span>
 <span class="toggle">\25BC</span>
 </div>
@@ -2144,7 +2338,7 @@ Rav Breuer discusses this in his sefer on trop (Ta&#x27;amei HaMikra), and his a
 </div></div>
 <div class="entry" data-cat="haftarah" data-id="haftarah-tunes-shabbos-chazon" data-q="how is the haftarah of shabbos chazon / tisha b&amp;#x27;av leined — from which pasuk does the eicha tune start and where do you switch back?">
 <div class="entry-header" onclick="toggleEntry(this)">
-<span class="num">71</span>
+<span class="num">76</span>
 <span class="q">How is the haftarah of Shabbos Chazon / Tisha b&#x27;Av leined — from which pasuk does the Eicha tune start and where do you switch back?</span>
 <span class="toggle">\25BC</span>
 </div>
@@ -2166,7 +2360,7 @@ Rav Breuer discusses this in his sefer on trop (Ta&#x27;amei HaMikra), and his a
 </div></div>
 <div class="entry" data-cat="haftarah" data-id="he-of-haazinu" data-q="what is the rule of when a he prefix before hashem&amp;#x27;s name changes pronunciation (moshe motzi)? how does it apply to elokim and adonai?">
 <div class="entry-header" onclick="toggleEntry(this)">
-<span class="num">72</span>
+<span class="num">77</span>
 <span class="q">What is the rule of when a he prefix before Hashem&#x27;s name changes pronunciation (Moshe motzi)? How does it apply to Elokim and Adonai?</span>
 <span class="toggle">\25BC</span>
 </div>
@@ -2195,7 +2389,7 @@ The rule&#x27;s scope: it applies not only to Hashem&#x27;s name but also to Elo
 </div></div>
 <div class="entry" data-cat="haftarah" data-id="megillah-rus-bracha-klaf" data-q="when leining megillat rus from a klaf, what bracha do you make?">
 <div class="entry-header" onclick="toggleEntry(this)">
-<span class="num">73</span>
+<span class="num">78</span>
 <span class="q">When leining Megillat Rus from a klaf, what bracha do you make?</span>
 <span class="toggle">\25BC</span>
 </div>
@@ -2209,7 +2403,7 @@ The rule&#x27;s scope: it applies not only to Hashem&#x27;s name but also to Elo
 </div></div>
 <div class="entry" data-cat="haftarah" data-id="special-tunes-shira-nesiim-masaot" data-q="which parts of leining get special tunes (e.g. az yashir, nesi&amp;#x27;im, masaot), and what is the basis?">
 <div class="entry-header" onclick="toggleEntry(this)">
-<span class="num">74</span>
+<span class="num">79</span>
 <span class="q">Which parts of leining get special tunes (e.g. Az Yashir, Nesi&#x27;im, Masaot), and what is the basis?</span>
 <span class="toggle">\25BC</span>
 </div>
@@ -2238,7 +2432,7 @@ The rule&#x27;s scope: it applies not only to Hashem&#x27;s name but also to Elo
 </div></div>
 <div class="entry" data-cat="haftarah" data-id="zecher-zeicher" data-q="why do some say &amp;#x27;זֵכֶר&amp;#x27; (zecher) and others &amp;#x27;זָכָר&amp;#x27; (zachor) for shabbos zachor? what does the mesorah say?">
 <div class="entry-header" onclick="toggleEntry(this)">
-<span class="num">75</span>
+<span class="num">80</span>
 <span class="q">Why do some say &#x27;זֵכֶר&#x27; (zecher) and others &#x27;זָכָר&#x27; (zachor) for Shabbos Zachor? What does the mesorah say?</span>
 <span class="toggle">\25BC</span>
 </div>
@@ -2281,7 +2475,7 @@ The root ז-כ-ר can mean both &#x27;remember&#x27; (zachor) and &#x27;mention/
 <h2>Mesora &amp; Sefer-Torah Fixing</h2>
 <div class="entry" data-cat="mesora" data-id="aleppo-codex-what-survives" data-q="what parts of the aleppo codex survive, and what is the leningrad codex?">
 <div class="entry-header" onclick="toggleEntry(this)">
-<span class="num">76</span>
+<span class="num">81</span>
 <span class="q">What parts of the Aleppo Codex survive, and what is the Leningrad Codex?</span>
 <span class="toggle">\25BC</span>
 </div>
@@ -2298,7 +2492,7 @@ The root ז-כ-ר can mean both &#x27;remember&#x27; (zachor) and &#x27;mention/
 </div></div>
 <div class="entry" data-cat="mesora" data-id="baalei-mesorah-who" data-q="who are the ba&amp;#x27;alei mesora (masoretes), and what exactly did they do?">
 <div class="entry-header" onclick="toggleEntry(this)">
-<span class="num">77</span>
+<span class="num">82</span>
 <span class="q">Who are the ba&#x27;alei mesora (Masoretes), and what exactly did they do?</span>
 <span class="toggle">\25BC</span>
 </div>
@@ -2323,7 +2517,7 @@ The root ז-כ-ר can mean both &#x27;remember&#x27; (zachor) and &#x27;mention/
 </div></div>
 <div class="entry" data-cat="mesora" data-id="correcting-rav-in-leining" data-q="if a rav or rosh yeshiva makes a mistake in leining (or haftarah), should you correct them?">
 <div class="entry-header" onclick="toggleEntry(this)">
-<span class="num">78</span>
+<span class="num">83</span>
 <span class="q">If a rav or rosh yeshiva makes a mistake in leining (or haftarah), should you correct them?</span>
 <span class="toggle">\25BC</span>
 </div>
@@ -2341,7 +2535,7 @@ The root ז-כ-ר can mean both &#x27;remember&#x27; (zachor) and &#x27;mention/
 </div></div>
 <div class="entry" data-cat="mesora" data-id="eicha-layout-windows" data-q="why does eicha have a unique layout with each pasuk on its own line (the &amp;#x27;windows&amp;#x27; format)?">
 <div class="entry-header" onclick="toggleEntry(this)">
-<span class="num">79</span>
+<span class="num">84</span>
 <span class="q">Why does Eicha have a unique layout with each pasuk on its own line (the &#x27;windows&#x27; format)?</span>
 <span class="toggle">\25BC</span>
 </div>
@@ -2359,7 +2553,7 @@ The root ז-כ-ר can mean both &#x27;remember&#x27; (zachor) and &#x27;mention/
 </div></div>
 <div class="entry" data-cat="mesora" data-id="girsa-vs-machloket" data-q="when different chumashim/tikkunim show different nikkud or trop, is that a &amp;#x27;machloket&amp;#x27; (dispute)?">
 <div class="entry-header" onclick="toggleEntry(this)">
-<span class="num">80</span>
+<span class="num">85</span>
 <span class="q">When different chumashim/tikkunim show different nikkud or trop, is that a &#x27;machloket&#x27; (dispute)?</span>
 <span class="toggle">\25BC</span>
 </div>
@@ -2383,7 +2577,7 @@ The root ז-כ-ר can mean both &#x27;remember&#x27; (zachor) and &#x27;mention/
 </div></div>
 <div class="entry" data-cat="mesora" data-id="kri-ketiv-hou" data-q="why is &amp;#x27;hee&amp;#x27; (she) almost always spelled הוא (masculine &amp;#x27;he&amp;#x27;) in tanach?">
 <div class="entry-header" onclick="toggleEntry(this)">
-<span class="num">81</span>
+<span class="num">86</span>
 <span class="q">Why is &#x27;hee&#x27; (she) almost always spelled הוא (masculine &#x27;he&#x27;) in Tanach?</span>
 <span class="toggle">\25BC</span>
 </div>
@@ -2409,7 +2603,7 @@ Other well-known kri/ketiv examples follow the same pattern: the written text ma
 </div></div>
 <div class="entry" data-cat="mesora" data-id="mesora-reference-works" data-q="which seforim are used to look up masorah lists (e.g. missing mappikim, exceptional readings)?">
 <div class="entry-header" onclick="toggleEntry(this)">
-<span class="num">82</span>
+<span class="num">87</span>
 <span class="q">Which seforim are used to look up Masorah lists (e.g. missing mappikim, exceptional readings)?</span>
 <span class="toggle">\25BC</span>
 </div>
@@ -2428,7 +2622,7 @@ Other well-known kri/ketiv examples follow the same pattern: the written text ma
 </div></div>
 <div class="entry" data-cat="mesora" data-id="mesorah-vs-dialect" data-q="does the &amp;#x27;mesora&amp;#x27; include pronunciation (e.g. ashkenazi vs israeli vs sephardi), or is that just dialect and accent?">
 <div class="entry-header" onclick="toggleEntry(this)">
-<span class="num">83</span>
+<span class="num">88</span>
 <span class="q">Does the &#x27;mesora&#x27; include pronunciation (e.g. Ashkenazi vs Israeli vs Sephardi), or is that just dialect and accent?</span>
 <span class="toggle">\25BC</span>
 </div>
@@ -2449,7 +2643,7 @@ Other well-known kri/ketiv examples follow the same pattern: the written text ma
 </div></div>
 <div class="entry" data-cat="mesora" data-id="tikkun-simanim-vs-chorev-vs-artscroll" data-q="which tikkun/chumash edition is considered most accurate, and how do they differ?">
 <div class="entry-header" onclick="toggleEntry(this)">
-<span class="num">84</span>
+<span class="num">89</span>
 <span class="q">Which tikkun/chumash edition is considered most accurate, and how do they differ?</span>
 <span class="toggle">\25BC</span>
 </div>
@@ -2475,7 +2669,7 @@ Other well-known kri/ketiv examples follow the same pattern: the written text ma
 </div></div>
 <div class="entry" data-cat="mesora" data-id="torat-hakore-approach" data-q="what is the תּוֹרַת הַקּוֹרֵא (torat hakore) approach to pronunciation, and how does it differ from traditional mesora?">
 <div class="entry-header" onclick="toggleEntry(this)">
-<span class="num">85</span>
+<span class="num">90</span>
 <span class="q">What is the תּוֹרַת הַקּוֹרֵא (Torat HaKore) approach to pronunciation, and how does it differ from traditional mesora?</span>
 <span class="toggle">\25BC</span>
 </div>
@@ -2498,7 +2692,7 @@ Other well-known kri/ketiv examples follow the same pattern: the written text ma
 <h2>Names &amp; Lishonot</h2>
 <div class="entry" data-cat="names" data-id="mil&#x27;eil-vs-milra" data-q="is the name rachel (רָחֵל) pronounced mil&amp;#x27;eil or milra, and does the tanach form differ from common usage?">
 <div class="entry-header" onclick="toggleEntry(this)">
-<span class="num">86</span>
+<span class="num">91</span>
 <span class="q">Is the name Rachel (רָחֵל) pronounced mil&#x27;eil or milra, and does the Tanach form differ from common usage?</span>
 <span class="toggle">\25BC</span>
 </div>
@@ -2517,7 +2711,7 @@ Other well-known kri/ketiv examples follow the same pattern: the written text ma
 </div></div>
 <div class="entry" data-cat="names" data-id="nasog-achor" data-q="what is nasog achor (נסוג אחור), and when a word &amp;#x27;retreats&amp;#x27; its accent, why does it sometimes happen even when the next word looks milra?">
 <div class="entry-header" onclick="toggleEntry(this)">
-<span class="num">87</span>
+<span class="num">92</span>
 <span class="q">What is nasog achor (נסוג אחור), and when a word &#x27;retreats&#x27; its accent, why does it sometimes happen even when the next word looks milra?</span>
 <span class="toggle">\25BC</span>
 </div>
@@ -2539,7 +2733,7 @@ Other well-known kri/ketiv examples follow the same pattern: the written text ma
 </div></div>
 <div class="entry" data-cat="names" data-id="tzeire-placement-names" data-q="in names like ישמעאל and דניאל, why is the tzeire under the ayin/yud and not under the aleph?">
 <div class="entry-header" onclick="toggleEntry(this)">
-<span class="num">88</span>
+<span class="num">93</span>
 <span class="q">In names like ישמעאל and דניאל, why is the tzeire under the ayin/yud and not under the aleph?</span>
 <span class="toggle">\25BC</span>
 </div>
@@ -2568,7 +2762,7 @@ If the tzeirei were under the aleph, the ayin would need a vowel — either a sh
 <h2>Tefilla (Nusach &amp; Teamim in Davening)</h2>
 <div class="entry" data-cat="tefilla" data-id="ab-harachaman-vowel-meaning" data-q="in the bracha אָב הָרַחֲמָן / אַב הָרַחֲמִים, should אָב have a kamatz or a patach?">
 <div class="entry-header" onclick="toggleEntry(this)">
-<span class="num">89</span>
+<span class="num">94</span>
 <span class="q">In the bracha אָב הָרַחֲמָן / אַב הָרַחֲמִים, should אָב have a kamatz or a patach?</span>
 <span class="toggle">\25BC</span>
 </div>
@@ -2590,7 +2784,7 @@ If the tzeirei were under the aleph, the ayin would need a vowel — either a sh
 </div></div>
 <div class="entry" data-cat="tefilla" data-id="birkas-kohanim-punctuation" data-q="what is the correct punctuation/commas in birkas kohanim as recited in davening — specifically the &amp;#x27;meshuleshet&amp;#x27; issue?">
 <div class="entry-header" onclick="toggleEntry(this)">
-<span class="num">90</span>
+<span class="num">95</span>
 <span class="q">What is the correct punctuation/commas in Birkas Kohanim as recited in davening — specifically the &#x27;meshuleshet&#x27; issue?</span>
 <span class="toggle">\25BC</span>
 </div>
@@ -2621,7 +2815,7 @@ Rav Breuer (in Da&#x27;at Mikra) discusses the ta&#x27;amei emet of the relevant
 </div></div>
 <div class="entry" data-cat="tefilla" data-id="kaddish-after-leining-why" data-q="why is there a chatzi kaddish after shabbos/weekday leining, and why is there no kaddish after leining at mincha?">
 <div class="entry-header" onclick="toggleEntry(this)">
-<span class="num">91</span>
+<span class="num">96</span>
 <span class="q">Why is there a chatzi kaddish after Shabbos/weekday leining, and why is there NO kaddish after leining at Mincha?</span>
 <span class="toggle">\25BC</span>
 </div>
@@ -2639,9 +2833,109 @@ Rav Breuer (in Da&#x27;at Mikra) discusses the ta&#x27;amei emet of the relevant
 <span class="src">Avi Herzog (2024-07-24) msg#3020</span>
 </div>
 </div></div>
+<div class="entry" data-cat="tefilla" data-id="kol-nidrei-status" data-q="is kol nidrei a neder (vow) annulment, a hataras nedarim, or something else? and why does it have such a distinctive tune?">
+<div class="entry-header" onclick="toggleEntry(this)">
+<span class="num">97</span>
+<span class="q">Is Kol Nidrei a neder (vow) annulment, a hataras nedarim, or something else? And why does it have such a distinctive tune?</span>
+<span class="toggle">\25BC</span>
+</div>
+<div class="entry-body">
+<div class="answer">Kol Nidrei declares all vows made &#x27;from this Yom Kippur to the next&#x27; as null and void. There is extensive discussion about:
+
+1. **Legal mechanism**: Is it a retroactive annulment (hataras nedarim/anullment) or a conditional neder? The Ba&#x27;alei HaTosafos and the Ran debate whether it works at all — if the neder was made without the condition, how can retracting it work? Some say it only applies to nedarim that one will make in the future (opposite of the plain text).
+
+2. **Tune**: The famous tune is not just for drama — it reflects the gravity of standing before Hashem and the need to be released from unfulfilled vows. Different communities have different versions of the tune, but all share a plaintive, drawn-out quality.
+
+3. **Text**: &#x27;From this Yom Kippur to the next Yom Kippur&#x27; — the Geonim already questioned how you can be matir a neder that hasn&#x27;t been made yet, leading to textual variants where some say &#x27;from the previous Yom Kippur.&#x27;
+
+4. **Modern practice**: In most shuls, the chazzan recites Kol Nidrei three times to establish it halachically (beis din requirement for hataras nedarim). The congregation stands throughout.
+
+For ba&#x27;alei k&#x27;riah, Kol Nidrei is interesting because:
+- The trope-like chanting is one of the most recognizable nuscha&#x27;os in the year
+- The bracha before Kol Nidrei (על דעת המקום) has a unique tune
+- It&#x27;s one of the few times the chazzan uses a non-standard nusach that is universally followed</div>
+<div class="examples"><strong>Examples</strong><ul>
+<li>Kol Nidrei tune — one of the most recognizable nuscha&#x27;os in the Jewish year</li>
+<li>Declares vows null &#x27;from this Yom Kippur to the next&#x27; — debate about future vs past</li>
+<li>Recited 3 times to fulfill beis din requirement</li>
+</ul></div>
+<div class="sources"><strong>Sources</strong>
+<span class="src">MJ (2024-05-05) msg#352</span>
+<span class="src">Avi Herzog (2024-05-05) msg#353</span>
+</div>
+</div></div>
+<div class="entry" data-cat="tefilla" data-id="rarest-shemoneh-esrei" data-q="what is the rarest shemoneh esrei? what is the rarest aliyah in the torah reading cycle?">
+<div class="entry-header" onclick="toggleEntry(this)">
+<span class="num">98</span>
+<span class="q">What is the rarest Shemoneh Esrei? What is the rarest aliyah in the Torah reading cycle?</span>
+<span class="toggle">\25BC</span>
+</div>
+<div class="entry-body">
+<div class="answer">**Rarest Shemoneh Esrei:**
+- Motza&#x27;ei Shabbos Chanukah Rosh Chodesh with ותן ברכה before December 4 (in Chutz La&#x27;Aretz)
+- This combines: weekday maariv (Motza&#x27;ei Shabbos), Chanukah additions (יעלה ויבוא), Rosh Chodesh additions, AND the seasonal switch to ותן ברכה (winter request for dew/rain)
+- Only occurs in Chutz La&#x27;Aretz where these factors align; in Eretz Yisrael the calendar is different
+- Last occurrence: ~1994. Next: ~2089.
+- Also rare: a non-leap year version compounds the rarity
+
+**Rarest Aliyah:**
+- A Chazak aliyah when Pekudei falls on Parshas Shekalim and Rosh Chodesh Adar Sheini
+- The group debated: Shishi Chazak (6th aliyah ending Chazak)? No, that&#x27;s not the rarest
+- The rarest is more nuanced and depends on the specific calendar combination
+
+**Other rare trivia discussed:**
+- The six columns in the Torah that don&#x27;t start with a vav
+- Which Nevi&#x27;im have no haftarah
+- Parshios Vayeitzei and Miketz have no petuchah or stumah (open/closed paragraph breaks)
+- Which pesukim are missing individual words due to tikkunei soferim
+
+For ba&#x27;alei k&#x27;riah, these are fun trivia but rarely practical. If you ever encounter the Motza&#x27;ei Shabbos Chanukah Rosh Chodesh combination, congratulations — you&#x27;ve had the rarest possible Shemoneh Esrei in your lifetime.</div>
+<div class="examples"><strong>Examples</strong><ul>
+<li>Rarest Shemoneh Esrei: Motza&#x27;ei Shabbos + Chanukah + Rosh Chodesh + V&#x27;sen Tal U&#x27;Matar (before Dec 4)</li>
+<li>Next occurrence: ~2089 (last: 1994)</li>
+<li>Rarest aliyah debated: Shishi Chazak on specific calendar quirks</li>
+</ul></div>
+<div class="sources"><strong>Sources</strong>
+<span class="src">MG (2024-07-31) msg#3303</span>
+<span class="src">MJ (2024-07-31) msg#3304</span>
+<span class="src">MJ (2024-07-31) msg#3307</span>
+<span class="src">MG (2024-07-31) msg#3312</span>
+<span class="src">MG (2024-07-31) msg#3316</span>
+</div>
+</div></div>
+<div class="entry" data-cat="tefilla" data-id="shehakol-nihyeh" data-q="is the blessing &amp;#x27;שהכל נהיה בדברו&amp;#x27; pronounced with a kamatz or segol under the yud of נהיה? what do the major poskim say?">
+<div class="entry-header" onclick="toggleEntry(this)">
+<span class="num">99</span>
+<span class="q">Is the blessing &#x27;שהכל נהיה בדברו&#x27; pronounced with a kamatz or segol under the yud of נהיה? What do the major poskim say?</span>
+<span class="toggle">\25BC</span>
+</div>
+<div class="entry-body">
+<div class="answer">There is a known machlokes about the nikkud of the word נהיה in the bracha &#x27;שהכל נהיה בדברו&#x27;:
+
+1. **Segol under the yud** (נֶהְיֶה) — this is a nif&#x27;al participle (present tense), meaning &#x27;is brought into being&#x27;. This form matches most other brachos which use present tense (e.g., בורא, נותן). This is the view of the Chachmas Menuchah, quoted by the Magen Avraham.
+
+2. **Kamatz under the yud** (נֶהְיָה) — this would be a nif&#x27;al past tense (&#x27;was brought into being&#x27;). The Magen Avraham (OC 167:8) ultimately paskens that it should be with a kamatz. He mentions that the segol form has an additional meaning problem: it could also be read as the first-person plural kal future (&#x27;we will become&#x27;). The Pri Megadim and Machatzis HaShekel explain further.
+
+3. The Gra (Vilna Gaon) said it with a segol (Maaseh Rav §76).
+
+The Mishnah Berurah does not address this explicitly. The Pri Megadim leans toward kamatz.
+
+**Practical ruling**: The majority of published siddurim used in Ashkenazi shuls today use the kamatz version. Some have a custom to say it with a segol. Either is acceptable since it is a rabbinic bracha, but ba&#x27;alei k&#x27;riah and those particular about dikduk should be aware that the kamatz form has stronger poskim support (Magen Avraham, Pri Megadim) despite the segol being grammatically cleaner (matching the present tense of other brachos).</div>
+<div class="examples"><strong>Examples</strong><ul>
+<li>נֶהְיָה (kamatz) = past tense, &#x27;was brought into being&#x27; — supported by Magen Avraham</li>
+<li>נֶהְיֶה (segol) = present participle, &#x27;is brought into being&#x27; — supported by Chachmas Menuchah and Gra</li>
+</ul></div>
+<div class="sources"><strong>Sources</strong>
+<span class="src">Binyomin (Ben) Adler (2024-07-09) msg#2625</span>
+<span class="src">MJ (2024-07-09) msg#2626</span>
+<span class="src">MG (2024-07-09) msg#2628</span>
+<span class="src">Binyomin (Ben) Adler (2024-07-09) msg#2632</span>
+<span class="src">MG (2024-07-09) msg#2633</span>
+</div>
+</div></div>
 <div class="entry" data-cat="tefilla" data-id="shochen-ad-parsing" data-q="how should שוכן עד מרום וקדוש שמו be parsed in davening — does the punctuation differ between shabbos and yom tov?">
 <div class="entry-header" onclick="toggleEntry(this)">
-<span class="num">92</span>
+<span class="num">100</span>
 <span class="q">How should שוכן עד מרום וקדוש שמו be parsed in davening — does the punctuation differ between Shabbos and Yom Tov?</span>
 <span class="toggle">\25BC</span>
 </div>
@@ -2670,7 +2964,7 @@ A practical solution for Shabbos: use the regular nusach but insert a deliberate
 </div></div>
 <div class="entry" data-cat="tefilla" data-id="siddur-mikra-megilla-brachos-trop" data-q="when reciting the brachos before/after reading a megillah or other sefer, do you use the trop of what you are about to read?">
 <div class="entry-header" onclick="toggleEntry(this)">
-<span class="num">93</span>
+<span class="num">101</span>
 <span class="q">When reciting the brachos before/after reading a megillah or other sefer, do you use the trop of what you are about to read?</span>
 <span class="toggle">\25BC</span>
 </div>
@@ -2686,7 +2980,7 @@ A practical solution for Shabbos: use the regular nusach but insert a deliberate
 </div></div>
 <div class="entry" data-cat="tefilla" data-id="tefilla-punctuation" data-q="where should one pause in common tefilla phrases like מלך אוהב צדקה ומשפט, שומר עמו ישראל לעד, and זה א-לי ענו ואמרו?">
 <div class="entry-header" onclick="toggleEntry(this)">
-<span class="num">94</span>
+<span class="num">102</span>
 <span class="q">Where should one pause in common tefilla phrases like מלך אוהב צדקה ומשפט, שומר עמו ישראל לעד, and זה א-לי ענו ואמרו?</span>
 <span class="toggle">\25BC</span>
 </div>
@@ -2721,7 +3015,7 @@ Ba&#x27;alei tefilla should look up the trop in the source passuk for any phrase
 </div></div>
 <div class="entry" data-cat="tefilla" data-id="tisha-bav-kaddish-before-haftarah" data-q="on tisha b&amp;#x27;av morning, why is kaddish said before the haftarah instead of after?">
 <div class="entry-header" onclick="toggleEntry(this)">
-<span class="num">95</span>
+<span class="num">103</span>
 <span class="q">On Tisha b&#x27;Av morning, why is kaddish said BEFORE the haftarah instead of after?</span>
 <span class="toggle">\25BC</span>
 </div>
@@ -2743,7 +3037,7 @@ Ba&#x27;alei tefilla should look up the trop in the source passuk for any phrase
 <h2>Sources, Sefaria &amp; Gilyonot</h2>
 <div class="entry" data-cat="sources" data-id="better-manuscripts" data-q="what is meant by a &amp;#x27;better manuscript&amp;#x27; when discussing trop/nikkud differences? which manuscripts are authoritative?">
 <div class="entry-header" onclick="toggleEntry(this)">
-<span class="num">96</span>
+<span class="num">104</span>
 <span class="q">What is meant by a &#x27;better manuscript&#x27; when discussing trop/nikkud differences? Which manuscripts are authoritative?</span>
 <span class="toggle">\25BC</span>
 </div>
@@ -2781,7 +3075,7 @@ Ba&#x27;alei k&#x27;riah should be aware that common chumashim (Artscroll, etc.)
 </div></div>
 <div class="entry" data-cat="sources" data-id="learning-trop-resources" data-q="what are good resources for learning trop / ta&amp;#x27;amei ha-mikra?">
 <div class="entry-header" onclick="toggleEntry(this)">
-<span class="num">97</span>
+<span class="num">105</span>
 <span class="q">What are good resources for learning trop / ta&#x27;amei ha-mikra?</span>
 <span class="toggle">\25BC</span>
 </div>
@@ -2801,7 +3095,7 @@ Ba&#x27;alei k&#x27;riah should be aware that common chumashim (Artscroll, etc.)
 </div></div>
 <div class="entry" data-cat="sources" data-id="perakim-origin" data-q="who divided the tanach into chapters (perakim), and are the divisions jewish in origin?">
 <div class="entry-header" onclick="toggleEntry(this)">
-<span class="num">98</span>
+<span class="num">106</span>
 <span class="q">Who divided the Tanach into chapters (perakim), and are the divisions Jewish in origin?</span>
 <span class="toggle">\25BC</span>
 </div>
@@ -2827,7 +3121,7 @@ The books of the Torah (the five chumashim) are Jewish in origin, as is the divi
 </div></div>
 <div class="entry" data-cat="sources" data-id="shnayim-mikra-echad-targum" data-q="what exactly is the mitzvah of שְׁנַיִם מִקְרָא וְאֶחָד תַּרְגּוּם, and how should one fulfill it?">
 <div class="entry-header" onclick="toggleEntry(this)">
-<span class="num">99</span>
+<span class="num">107</span>
 <span class="q">What exactly is the mitzvah of שְׁנַיִם מִקְרָא וְאֶחָד תַּרְגּוּם, and how should one fulfill it?</span>
 <span class="toggle">\25BC</span>
 </div>
@@ -2843,7 +3137,7 @@ The books of the Torah (the five chumashim) are Jewish in origin, as is the divi
 </div></div>
 <div class="entry" data-cat="sources" data-id="targum-onkelos-editions" data-q="which edition of targum onkelos is considered best / most accurate?">
 <div class="entry-header" onclick="toggleEntry(this)">
-<span class="num">100</span>
+<span class="num">108</span>
 <span class="q">Which edition of Targum Onkelos is considered best / most accurate?</span>
 <span class="toggle">\25BC</span>
 </div>
@@ -2864,9 +3158,43 @@ The books of the Torah (the five chumashim) are Jewish in origin, as is the divi
 </div>
 <div class="category" data-cat="practical">
 <h2>Practical Ba&#x27;alei K&#x27;riah</h2>
+<div class="entry" data-cat="practical" data-id="az-yashir-tune" data-q="what is the special tune for az yashir (shiras hayam)? how do ba&amp;#x27;alei k&amp;#x27;riah handle the conflict between the special tune and following the trop accurately?">
+<div class="entry-header" onclick="toggleEntry(this)">
+<span class="num">109</span>
+<span class="q">What is the special tune for Az Yashir (Shiras HaYam)? How do ba&#x27;alei k&#x27;riah handle the conflict between the special tune and following the trop accurately?</span>
+<span class="toggle">\25BC</span>
+</div>
+<div class="entry-body">
+<div class="answer">Az Yashir (Shemos 15) is traditionally read with a special, more elaborate tune distinct from standard Torah trop. This creates a well-known tension between the melody and the trop:
+
+**The problem**: The special tune often doesn&#x27;t sync perfectly with the trup. For example, in some versions of the tune, every pasuk is split into two halves at the same melodic point, regardless of whether that point is an etnachta, zakef, or tipcha. This means you may be pausing at a tipcha with the same weight as an etnachta, which conflates the trop hierarchy.
+
+**Approaches taken by ba&#x27;alei k&#x27;riah:**
+1. **Follow the tune, ignore trop inconsistencies** — most common; the special niggun is the mesorah, and the congregation expects it
+2. **Follow the trop strictly** — pause only at the strongest mafsik in each pasuk, and vary the cadence accordingly (different endings for etnachta vs zakef vs tipcha)
+3. **Hybrid** — sing the special tune but be mafsik at the correct places, even if it means the melody doesn&#x27;t resolve cleanly
+
+**The same issue** exists for the tune of the Masa&#x27;os (Bamidbar 33) and the Nesi&#x27;im (Bamidbar 7).
+
+The majority minhag is to use a special tune for Az Yashir, acknowledging that the trop accuracy is somewhat compromised for the sake of the mesorah/niggun. Ba&#x27;alei k&#x27;riah should be consistent within their own reading and follow their shul&#x27;s custom.</div>
+<div class="examples"><strong>Examples</strong><ul>
+<li>Az Yashir (Shemos 15) — most famous example of special tune conflicting with trop</li>
+<li>Same issue: Masa&#x27;os (Bamidbar 33) and Nesi&#x27;im (Bamidbar 7) — both have special &#x27;marching&#x27; tunes</li>
+<li>Some ba&#x27;alei k&#x27;riah follow the tune; others follow the trop strictly</li>
+</ul></div>
+<div class="sources"><strong>Sources</strong>
+<span class="src">MG (2024-08-12) msg#3908</span>
+<span class="src">MJ (2024-08-12) msg#3909</span>
+<span class="src">Moish (2024-08-12) msg#3910</span>
+</div>
+<div class="see-also"><strong>See also</strong>
+<a href="#" onclick="scrollToEntry('nesiim-special-tune');return false">Why do some ba&amp;#x27;alei k&amp;#x27;riah use a special tune for the Nesi&amp;#x27;im (tribal princes) in Parshas Naso? Is it the same as the tune for Az Yashir or the Masa&amp;#x27;os?</a>
+<a href="#" onclick="scrollToEntry('masaos-special-tune');return false">Why does the Masa&amp;#x27;os (the journeys in Masei, Bamidbar 33) get a special tune? Is it the same as the Nesi&amp;#x27;im tune?</a>
+</div>
+</div></div>
 <div class="entry" data-cat="practical" data-id="bar-mitzvah-maftir-origin" data-q="what is the origin of the custom for a bar mitzvah boy to read maftir and haftarah? and is maftir a distinguished aliyah?">
 <div class="entry-header" onclick="toggleEntry(this)">
-<span class="num">101</span>
+<span class="num">110</span>
 <span class="q">What is the origin of the custom for a Bar Mitzvah boy to read Maftir and Haftarah? And is Maftir a distinguished aliyah?</span>
 <span class="toggle">\25BC</span>
 </div>
@@ -2886,7 +3214,7 @@ Some Sephardi/Eretz Yisrael minhagim: boy gets an aliyah during the main seven</
 </div></div>
 <div class="entry" data-cat="practical" data-id="bediavad-pronunciation-acceptance" data-q="if someone tries to differentiate between letters (e.g. ח/כ) authentically but sometimes slips, is that worse than never making any distinction at all (bedi&amp;#x27;avad)?">
 <div class="entry-header" onclick="toggleEntry(this)">
-<span class="num">102</span>
+<span class="num">111</span>
 <span class="q">If someone tries to differentiate between letters (e.g. ח/כ) authentically but sometimes slips, is that worse than never making any distinction at all (bedi&#x27;avad)?</span>
 <span class="toggle">\25BC</span>
 </div>
@@ -2908,7 +3236,7 @@ Some Sephardi/Eretz Yisrael minhagim: boy gets an aliyah during the main seven</
 </div></div>
 <div class="entry" data-cat="practical" data-id="breath-midword-hefsek" data-q="does taking a breath in the middle of a word constitute a hefsek (interruption) that disqualifies it?">
 <div class="entry-header" onclick="toggleEntry(this)">
-<span class="num">103</span>
+<span class="num">112</span>
 <span class="q">Does taking a breath in the middle of a word constitute a hefsek (interruption) that disqualifies it?</span>
 <span class="toggle">\25BC</span>
 </div>
@@ -2931,7 +3259,7 @@ Some Sephardi/Eretz Yisrael minhagim: boy gets an aliyah during the main seven</
 </div></div>
 <div class="entry" data-cat="practical" data-id="chiyuv-vs-baal-tefilla-tircha" data-q="should someone who can&amp;#x27;t carry a tune (or who is slow) be allowed to daven at the amud for a yahrzeit, or is it tircha d&amp;#x27;tzibura?">
 <div class="entry-header" onclick="toggleEntry(this)">
-<span class="num">104</span>
+<span class="num">113</span>
 <span class="q">Should someone who can&#x27;t carry a tune (or who is slow) be allowed to daven at the amud for a yahrzeit, or is it tircha d&#x27;tzibura?</span>
 <span class="toggle">\25BC</span>
 </div>
@@ -2957,7 +3285,7 @@ Some Sephardi/Eretz Yisrael minhagim: boy gets an aliyah during the main seven</
 </div></div>
 <div class="entry" data-cat="practical" data-id="double-parsha-combining-aliyos" data-q="in a double parsha (e.g. behar-bechukosai), which aliyah do you combine the parshiyos at, when the usual revi&amp;#x27;i won&amp;#x27;t work?">
 <div class="entry-header" onclick="toggleEntry(this)">
-<span class="num">105</span>
+<span class="num">114</span>
 <span class="q">In a double parsha (e.g. Behar-Bechukosai), which aliyah do you combine the parshiyos at, when the usual revi&#x27;i won&#x27;t work?</span>
 <span class="toggle">\25BC</span>
 </div>
@@ -2974,7 +3302,7 @@ Some Sephardi/Eretz Yisrael minhagim: boy gets an aliyah during the main seven</
 </div></div>
 <div class="entry" data-cat="practical" data-id="mapik-heh-in-kaddish" data-q="should the mapik heh be pronounced in kaddish, or is it dropped in aramaic?">
 <div class="entry-header" onclick="toggleEntry(this)">
-<span class="num">106</span>
+<span class="num">115</span>
 <span class="q">Should the mapik heh be pronounced in Kaddish, or is it dropped in Aramaic?</span>
 <span class="toggle">\25BC</span>
 </div>
@@ -2993,9 +3321,88 @@ Some Sephardi/Eretz Yisrael minhagim: boy gets an aliyah during the main seven</
 <a href="#" onclick="scrollToEntry('dagesh-mapik-omitted-list');return false">Are there places where a mappik heh is expected but missing, and where can one find the lists?</a>
 </div>
 </div></div>
+<div class="entry" data-cat="practical" data-id="masaos-special-tune" data-q="why does the masa&amp;#x27;os (the journeys in masei, bamidbar 33) get a special tune? is it the same as the nesi&amp;#x27;im tune?">
+<div class="entry-header" onclick="toggleEntry(this)">
+<span class="num">116</span>
+<span class="q">Why does the Masa&#x27;os (the journeys in Masei, Bamidbar 33) get a special tune? Is it the same as the Nesi&#x27;im tune?</span>
+<span class="toggle">\25BC</span>
+</div>
+<div class="entry-body">
+<div class="answer">The Masa&#x27;os (42 journeys of Bnei Yisrael in the desert, Bamidbar 33) is traditionally read with a special tune, similar to the one used for the Nesi&#x27;im (tribal princes) in Naso and Az Yashir (Shiras HaYam).
+
+**Why a special tune?**
+- It&#x27;s a list — 42 repetitive entries about travel. The tune breaks the monotony.
+- It&#x27;s called a &#x27;marching&#x27; tune, reflecting the travel/journey motif
+- The mesorah (tradition) passed down includes this special niggun
+
+**Does it conflict with trop?**
+- Yes — same issue as Az Yashir. The special tune often doesn&#x27;t respect the sof passuk, blending consecutive pesukim together. This is the biggest objection some ba&#x27;alei k&#x27;riah have with it.
+- Some ba&#x27;alei k&#x27;riah address this by following the trop strictly while using a slightly altered rhythm rather than a full special tune
+- Others use the special tune and accept the trop compromise as part of the mesorah
+
+**Which parshiyos get this treatment?**
+1. Az Yashir (Shemos 15) — Shirah
+2. Nesi&#x27;im (Bamidbar 7) — 12 tribal princes
+3. Masa&#x27;os (Bamidbar 33) — 42 journeys
+
+Not all communities observe all three. Check your shul&#x27;s minhag before doing any special tune.</div>
+<div class="examples"><strong>Examples</strong><ul>
+<li>Masa&#x27;os (Bamidbar 33) — 42 journeys with a special &#x27;marching&#x27; tune</li>
+<li>Same tune used for: Az Yashir (Shemos 15) and Nesi&#x27;im (Bamidbar 7)</li>
+<li>Objection: the tune conflates pesukim, not respecting sof passuk</li>
+</ul></div>
+<div class="sources"><strong>Sources</strong>
+<span class="src">Avi Herzog (2024-06-20) msg#2046</span>
+<span class="src">MJ (2024-06-20) msg#2053</span>
+<span class="src">MG (2024-06-20) msg#2055</span>
+</div>
+<div class="see-also"><strong>See also</strong>
+<a href="#" onclick="scrollToEntry('az-yashir-tune');return false">What is the special tune for Az Yashir (Shiras HaYam)? How do ba&amp;#x27;alei k&amp;#x27;riah handle the conflict between the special tune and following the trop accurately?</a>
+<a href="#" onclick="scrollToEntry('nesiim-special-tune');return false">Why do some ba&amp;#x27;alei k&amp;#x27;riah use a special tune for the Nesi&amp;#x27;im (tribal princes) in Parshas Naso? Is it the same as the tune for Az Yashir or the Masa&amp;#x27;os?</a>
+</div>
+</div></div>
+<div class="entry" data-cat="practical" data-id="nesiim-special-tune" data-q="why do some ba&amp;#x27;alei k&amp;#x27;riah use a special tune for the nesi&amp;#x27;im (tribal princes) in parshas naso? is it the same as the tune for az yashir or the masa&amp;#x27;os?">
+<div class="entry-header" onclick="toggleEntry(this)">
+<span class="num">117</span>
+<span class="q">Why do some ba&#x27;alei k&#x27;riah use a special tune for the Nesi&#x27;im (tribal princes) in Parshas Naso? Is it the same as the tune for Az Yashir or the Masa&#x27;os?</span>
+<span class="toggle">\25BC</span>
+</div>
+<div class="entry-body">
+<div class="answer">The 12 days of the Nesi&#x27;im (Bamidbar 7) are traditionally read with a special &#x27;marching&#x27; tune in many communities. The reasons given include:
+
+1. The Nesi&#x27;im represent a travel/journey motif — each prince brought his offerings, similar to the Masa&#x27;os (journeys) in Masei, which also gets a special tune
+2. It breaks the monotony of 12 nearly identical repetitions
+3. Some associate it with the &#x27;marching&#x27; tune because the Nesi&#x27;im led the camp in their travels
+
+The tune is often described as the same or similar to the tune used for Az Yashir (Shiras HaYam) and the Masa&#x27;os. However, there&#x27;s a notable objection: the Nesi&#x27;im tune doesn&#x27;t always respect the sof passuk (end of verse), blending pesukim together in a way that conflicts with the trop. Some ba&#x27;alei k&#x27;riah deliberately avoid the special tune for this reason.
+
+Minhag varies:
+- Some do the tune for all 12 Nesi&#x27;im plus the concluding pesukim (13th portion)
+- Some only do it for part of them
+- Others (particularly Litvish/yeshivish circles) skip it entirely
+- Yekkish (German) communities may have their own mesorah for it
+
+If your shul has no strong tradition, follow the shul&#x27;s custom or skip the tune to be safe. The key is consistency — don&#x27;t switch mid-aliyah.</div>
+<div class="examples"><strong>Examples</strong><ul>
+<li>The Nesi&#x27;im in Naso (Bamidbar 7) — 12 nearly identical repetitions about each tribal prince&#x27;s offering</li>
+<li>The tune is similar to the one for Masa&#x27;os (Bamidbar 33) and Az Yashir (Shemos 15)</li>
+<li>Objection: the tune conflates pesukim, not respecting the sof passuk divisions</li>
+</ul></div>
+<div class="sources"><strong>Sources</strong>
+<span class="src">Avi Herzog (2024-06-20) msg#2046</span>
+<span class="src">MG (2024-06-20) msg#2049</span>
+<span class="src">Avi Herzog (2024-06-20) msg#2051</span>
+<span class="src">MJ (2024-06-20) msg#2053</span>
+<span class="src">MG (2024-06-20) msg#2055</span>
+</div>
+<div class="see-also"><strong>See also</strong>
+<a href="#" onclick="scrollToEntry('az-yashir-tune');return false">What is the special tune for Az Yashir (Shiras HaYam)? How do ba&amp;#x27;alei k&amp;#x27;riah handle the conflict between the special tune and following the trop accurately?</a>
+<a href="#" onclick="scrollToEntry('masaos-special-tune');return false">Why does the Masa&amp;#x27;os (the journeys in Masei, Bamidbar 33) get a special tune? Is it the same as the Nesi&amp;#x27;im tune?</a>
+</div>
+</div></div>
 <div class="entry" data-cat="practical" data-id="revach-bein-hadvakim" data-q="is a break (revach/רווח) needed between the words &amp;#x27;בני ישראל&amp;#x27; to avoid the yud sounding like part of the previous nun? and what are the general rules for revach bein had&amp;#x27;vakim?">
 <div class="entry-header" onclick="toggleEntry(this)">
-<span class="num">107</span>
+<span class="num">118</span>
 <span class="q">Is a break (revach/רווח) needed between the words &#x27;בני ישראל&#x27; to avoid the yud sounding like part of the previous nun? And what are the general rules for revach bein had&#x27;vakim?</span>
 <span class="toggle">\25BC</span>
 </div>
@@ -3028,7 +3435,7 @@ Examples where breaks are needed: &#x27;כלל לא&#x27;, &#x27;בבר־מצו�
 </div></div>
 <div class="entry" data-cat="practical" data-id="showing-oleh-the-place" data-q="do we need to show the oleh where the aliyah starts (and ends)?">
 <div class="entry-header" onclick="toggleEntry(this)">
-<span class="num">108</span>
+<span class="num">119</span>
 <span class="q">Do we need to show the oleh where the aliyah starts (and ends)?</span>
 <span class="toggle">\25BC</span>
 </div>
@@ -3045,7 +3452,7 @@ Examples where breaks are needed: &#x27;כלל לא&#x27;, &#x27;בבר־מצו�
 </div></div>
 <div class="entry" data-cat="practical" data-id="tochacha-aliya-baal-koreh" data-q="who takes the aliyah of the tochacha (admonition), and why is the ba&amp;#x27;al koreh often called up without being formally &amp;#x27;called&amp;#x27;?">
 <div class="entry-header" onclick="toggleEntry(this)">
-<span class="num">109</span>
+<span class="num">120</span>
 <span class="q">Who takes the aliyah of the tochacha (admonition), and why is the ba&#x27;al koreh often called up without being formally &#x27;called&#x27;?</span>
 <span class="toggle">\25BC</span>
 </div>
