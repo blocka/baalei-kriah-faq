@@ -3059,15 +3059,14 @@
       ]
     },
     {
-      "id": "munach-iluy-mecharbel",
-      "category": "trop",
-      "question": "What is a munach iluy (elevated munach) and a munach mecharbel (destroying munach)? How do they differ from a regular munach?",
-      "answer": "A munach is normally a conjunctive (mesharet) that connects to a following disjunctive (mafsik). However, when a munach appears before certain major mafsikim, its tune changes — these are called **munach ilui** (עילוי, 'elevated').\n\n**Munach Iluy (Munach Ilui):**\n- Occurs before zakef katon, etnachta, zarka, and segol\n- Called 'iluy' because its tune is elevated (R' Elya Bachur: 'נשתנה ניגונו לשבח')\n- The tune goes quickly down and up again, with three notes instead of the regular munach's two notes\n- There are subtle differences between each type (before zakef vs before etnachta vs before zarka) — they are not all identical\n\n**Munach Mecharbel (מכרבל, 'destroying'):**\n- A subtype of munach that appears before a zakef katon when the munach is on the FIRST LETTER of its word\n- It goes up high on that first letter\n- The name 'mecharbel' (from כרבל, to confuse/destroy) may refer to how it 'destroys' the regular syllable pattern\n\n**Comparison with regular munach:**\n- Regular munach: two notes, connects smoothly to the next ta'am\n- Munach iluy (before zakef): three notes, goes down and up\n- Munach iluy (before etnachta/zarka): similar elevation but not identical to the zakef version\n- Munach mecharbel: high note on first letter of its word before zakef\n\nFor ba'alei k'riah: In Torah reading (not Eicha/Esther), these distinctions are widely observed. In Eicha, the segol/etnachta distinction is more often conflated. Listen to recordings of experienced ba'alei k'riah to hear the difference.",
+  "id": "munach-iluy-mecharbel",
+  "category": "trop",
+  "question": "What is a munach ilui (elevated munach) and how does it differ from a regular munach?",
+  "answer": "A munach is normally a conjunctive (mesharet) that connects to a following disjunctive (mafsik). However, when a munach appears before certain major mafsikim, its tune changes — these are called **munach ilui** (עילוי, 'elevated').\n\n**Munach Ilui:**\n- Occurs before etnachta and segol\n- Called 'ilui' because its tune is elevated (R' Elya Bachur: 'נשתנה ניגונו לשבח')\n- The tune goes quickly down and up again, with three notes instead of the regular munach's two notes\n- Some also distinguish a special type before zakef katon, sometimes informally called 'munach mecharbel' (destroying munach) — this is not a standard Masoretic term\n\n**Comparison with regular munach:**\n- Regular munach: two notes, connects smoothly to the next ta'am\n- Munach ilui (before segol/etnachta): three notes, goes down and up\n- The munach before zakef katon may also have a distinct character in some traditions\n\nFor ba'alei k'riah: In Torah reading (not Eicha/Esther), the ilui distinction is widely observed. In Eicha, the segol/etnachta distinction is more often conflated. Listen to recordings of experienced ba'alei k'riah to hear the difference.",
       "examples": [
-        "Regular munach: connects to the following ta'am with a two-note pattern",
-        "Munach iluy before zakef: goes down and up (three notes)",
-        "Munach iluy before etnachta/zarka/segel: elevated, but different from the zakef version",
-        "Munach mecharbel: when the munach is on the first letter of its word before zakef, goes up high"
+    "Regular munach: connects to the following ta'am with a two-note pattern",
+    "Munach ilui before segol/etnachta: goes down and up (three notes)",
+    "Munach before zakef katon: may have a distinct character in some traditions"
       ],
       "source_refs": [
         {
@@ -3133,15 +3132,15 @@
       ]
     },
     {
-      "id": "munach-types-ilui-mecharbel",
-      "category": "trop",
-      "question": "What are the different types of munach — regular, ilui, and mecharbel? What distinguishes them and which trop marks do they precede?",
-      "answer": "The munach (also called shofar holech) is a conjunctive trop mark that comes in three distinct varieties, distinguished by which disjunctive trop they serve:\n\n1. **Regular Munach** — serves most disjunctives (segol, zakef katan, tipcha, pashta, tevir, etc.)\n2. **Munach Ilui** (elevated munach) — serves etnachta and segol specifically. Its name ('ilui' = elevated) comes from its more elaborate musical motif. R' Eliyahu Bachur (Tuv Ta'am) says it's called ilui because 'נשתנה נגונו לשבח' (its tune is changed for enhancement). Early Ashkenazi manuscripts even used a different symbol for it.\n3. **Munach Mecharbel** (destroying/breaking munach) — serves zakef gadol specifically. It has its own unique character.\n\nThese distinctions go back to the earliest Masoretic sources. Rabbeinu Tam wrote a poem detailing which mesharetim serve which mafsikim, mentioning the various types of munach. Early Ashkenazi manuscripts had different symbols for them.\n\nIn modern practice:\n- Most ba'alei k'riah today do not distinguish between these musically, using the same tune for all munachim\n- Some very precise ba'alei k'riah (especially those trained in the Lithuanian/yeshivish tradition) maintain the distinction between ilui and regular munach\n- The mecharbel is the rarest and least commonly distinguished\n\nFor a ba'al k'riah looking to be precise, the key distinction to know is that the munach before a segol or etnachta was historically sung differently from the munach before a pashta or tevir.",
+  "id": "munach-types-ilui-mecharbel",
+  "category": "trop",
+  "question": "What are the different types of munach — regular and ilui? Are there more than two?",
+  "answer": "The munach (also called shofar holech) is a conjunctive trop mark. In Masoretic tradition, two main types of conjunctive munach are distinguished:\n\n1. **Regular Munach** — serves most disjunctives (zakef, tipcha, pashta, tevir, etc.)\n2. **Munach Ilui** (elevated munach) — serves etnachta and segol specifically. Its name ('ilui' = elevated) comes from its more elaborate musical motif. R' Eliyahu Bachur (Tuv Ta'am) says it's called ilui because 'נשתנה נגונו לשבח' (its tune is changed for enhancement). Early Ashkenazi manuscripts even used a different symbol for it.\n\nSome ba'alei k'riah also informally distinguish a third type, sometimes referred to as 'munach mecharbel' (destroying munach), serving zakef katon. This is not a standard Masoretic term but appears in some discussions. There is also a disjunctive munach legarmeh (a separate trope entirely).\n\nThese distinctions go back to the earliest Masoretic sources. Rabbeinu Tam wrote a poem detailing which mesharetim serve which mafsikim, mentioning the various types of munach. Early Ashkenazi manuscripts had different symbols for them.\n\nIn modern practice:\n- Most ba'alei k'riah today do not distinguish between these musically, using the same tune for all munachim\n- Some very precise ba'alei k'riah maintain the distinction between ilui and regular munach\n\nFor a ba'al k'riah looking to be precise, the key distinction to know is that the munach before a segol or etnachta was historically sung differently from the munach before a pashta or tevir.",
       "examples": [
-        "Regular munach: serves segol, zakef, tipcha, pashta, tevir etc.",
-        "Munach ilui: serves etnachta and segol — elevated tune",
-        "Munach mecharbel: serves zakef gadol — 'breaking' munach",
-        "Example: the munach before segol in the Aseres HaDibros is different from the munach before tipcha in regular narrative"
+    "Regular munach: serves zakef, tipcha, pashta, tevir etc.",
+    "Munach ilui: serves etnachta and segol — elevated tune",
+    "Munach legarmeh: a disjunctive munach (not a mesharet)",
+    "Example: the munach before segol in the Aseres HaDibros is different from the munach before tipcha in regular narrative"
       ],
       "source_refs": [
         {
@@ -3636,7 +3635,7 @@
       "id": "tevir-complex",
       "category": "trop",
       "question": "What is the tevir complex / tevirus? Which conjunctive trop marks serve tevir?",
-      "answer": "Tevir is a disjunctive trop mark of the 'emperor' (melech) rank — the second-strongest disjunctive after sof passuk and etnachta. It has its own set of conjunctive trop marks (mesharatim) that serve it, known as the 'tevirus' (tevirus):\n\nConjunctives that serve tevir:\n- Mercha before tevir (the standard connector)\n- Darga (a specific trop shape that serves tevir in certain patterns)\n- Kadma before tevir (alternate connector)\n\nThe rules for which conjunctive is used before tevir depend on:\n- The distance from the previous disjunctive\n- Whether there's a shva na or other separation (similar to the mahpach/mercha rules before pashta)\n- The specific word structure\n\nA shva at the beginning of a word counts as enough separation to change the choice of conjunctive, but a shva after a tnuah gedolah does NOT count as separation (per the Masoretic tradition).\n\nTevir can also serve as the 'servant' (mesharet) of stronger disjunctives in specific contexts, creating a hierarchy within the trop system. Understanding the tevir complex is essential for ba'alei k'riah who want to read trop correctly — misidentifying tevir's conjunctives is a common error.",
+      "answer": "Tevir is a disjunctive trop mark at the 'vice-king' (mishneh) rank. In the trop hierarchy:\n\n- **Emperor** (קיסר): sof passuk, etnachta\n- **King** (מלך): segol/shalshelet, zakef, tipcha\n- **Vice-king** (משנה): revii, zarka, pashta/yetiv, **tevir**\n- **Third** (שליש): pazer, telisha, gershayim, munach legarmeh\n\nTevir has its own set of conjunctive trop marks (mesharatim) that serve it, known as the 'tevirus' (tevirus):\n\nConjunctives that serve tevir:\n- Mercha before tevir (the standard connector)\n- Darga (a specific trop shape that serves tevir in certain patterns)\n- Kadma before tevir (alternate connector)\n\nThe rules for which conjunctive is used before tevir depend on:\n- The distance from the previous disjunctive\n- Whether there's a shva na or other separation (similar to the mahpach/mercha rules before pashta)\n- The specific word structure\n\nA shva at the beginning of a word counts as enough separation to change the choice of conjunctive, but a shva after a tnuah gedolah does NOT count as separation (per the Masoretic tradition).\n\nTevir can also serve as the 'servant' (mesharet) of stronger disjunctives in specific contexts, creating a hierarchy within the trop system. Understanding the tevir complex is essential for ba'alei k'riah who want to read trop correctly — misidentifying tevir's conjunctives is a common error.",
       "examples": [
         "Mercha before tevir: the most common conjunctive serving tevir",
         "Darga before tevir: used when there's a specific distance from the previous disjunctive",
