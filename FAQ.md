@@ -1196,11 +1196,11 @@ Intrinsically, NO. The two versions of a bgd-kft-p letter (e.g. בּ/ב, כּ/כ
 
 ### 36. Are there places where a mappik heh is expected but missing, and where can one find the lists?
 
-Yes — the Masorah lists places where a mappik is expected but does not appear (e.g. וְתֶחֱמַרְנָה בַּחֹמֶר in Shemos, where the vet has a meseg). Not all such places have an accent or meseg on the first letter, so they are not always visually flagged. The canonical reference for such lists is the אָכְלָה וְאָכְלָה, which Rashi calls the מְסֹרֶת הַגְּדוֹלָה (distinct from what we call the מָסוֹרָה גְּדוֹלָה) — the common/accessible edition is Frensdorff's. C.D. Ginsburg's המסורה is massive and comprehensive but harder to search.
+Yes — the Masorah lists places where a mappik is expected but does not appear (e.g. וְתֶחֱמַרְנָה בַּחֹמֶר in Shemos, where the vet has a meteg). Not all such places have an accent or meteg on the first letter, so they are not always visually flagged. The canonical reference for such lists is the אָכְלָה וְאָכְלָה, which Rashi calls the מְסֹרֶת הַגְּדוֹלָה (distinct from what we call the מָסוֹרָה גְּדוֹלָה) — the common/accessible edition is Frensdorff's. C.D. Ginsburg's המסורה is massive and comprehensive but harder to search.
 
 **Examples:**
 
-- וְתֶחֱמַרְנָה בַּחֹמֶר (Shemos) — meseg on the vet
+- וְתֶחֱמַרְנָה בַּחֹמֶר (Shemos) — meteg on the vet
 
 **Sources:**
 
@@ -1381,7 +1381,7 @@ Different editions of Tanach sometimes disagree on nikkud, meteg placement, and 
 
 ### 42. What is the difference between the terms ga'ya, meteg, ma'arich, and ma'amid?
 
-These terms overlap heavily and are often used interchangeably — a point Minchat Shai himself illustrates, to the confusion of readers. R' Eliyahu Bachur (in Tuv Ta'am) states that מְתַג and מַאֲרִיךְ are interchangeable, and that it is a MISTAKE to use גַּעְיָה for anything other than the mark that accompanies a shva. However, that strict claim does not hold up historically: גַּעְיָה appears to be the earlier Masoretic term, while מְתַג (meseg) is a later one, and the Masoretes used גַּעְיָה broadly. The GRA does adopt the restricted usage (ga'ya = the shva-accompanying mark specifically). מַעֲמִיד is likewise used interchangeably with the others. A confounding factor: מַאֲרִיךְ is ALSO another name for the מֵרְכָא (mercha) trop note. Bottom line for readers: treat the terms as largely synonymous unless an author (like the GRA) explicitly restricts גַּעְיָה.
+These terms overlap heavily and are often used interchangeably — a point Minchat Shai himself illustrates, to the confusion of readers. R' Eliyahu Bachur (in Tuv Ta'am) states that מְתַג and מַאֲרִיךְ are interchangeable, and that it is a MISTAKE to use גַּעְיָה for anything other than the mark that accompanies a shva. However, that strict claim does not hold up historically: גַּעְיָה appears to be the earlier Masoretic term, while מְתַג (meteg) is a later one, and the Masoretes used גַּעְיָה broadly. The GRA does adopt the restricted usage (ga'ya = the shva-accompanying mark specifically). מַעֲמִיד is likewise used interchangeably with the others. A confounding factor: מַאֲרִיךְ is ALSO another name for the מֵרְכָא (mercha) trop note. Bottom line for readers: treat the terms as largely synonymous unless an author (like the GRA) explicitly restricts גַּעְיָה.
 
 **Sources:**
 
@@ -1485,7 +1485,7 @@ The vocalization of הַלְוִיִּם (HaLeviim, 'the Levites') differs betwe
 - The word הַלְוִיִּם does not have the word structure that warrants a meteg according to the Tiberian tradition
 - A meteg typically appears on a syllable that is open and suitable for secondary stress
 - If the manuscripts don't have a meteg, Breuer doesn't add one
-- MG noted: 'It doesn't have the word structure that would allow for meseg'
+- MG noted: 'It doesn't have the word structure that would allow for meteg'
 
 **Does the meteg change the pronunciation?**
 - Without a meteg: ha-levi-im (4 syllables, plain shva nach under the lamed)
@@ -1567,7 +1567,7 @@ The rule that a shva after a tenuah gedolah (large vowel) is na has an important
 - The meteg in these words indicates SECONDARY stress, not primary stress
 - The primary stress (shown by the ta'am at the end of the word) is on a different syllable
 - Since the meteg is secondary stress, the shva after it can still be na
-- MG: 'A meseg is a secondary stress. The primary stress is shown by the trop at the end — that would make the rule work'
+- MG: 'A meteg is a secondary stress. The primary stress is shown by the trop at the end — that would make the rule work'
 
 **Additional complication — nasog achor:**
 - When NA (nasog achor) retracts the accent, the shva remains na even though the preceding vowel is a tnuah gedolah
@@ -2523,7 +2523,7 @@ It is its own separate trop note with its own name and its own musical function.
 
 **See also:**
 
-- [What is the difference between a pesik (פְּסִיק) and a meseg (מְסֵג)? Do they mean different things?](#pesik-vs-meseg-distinction)
+- [What is the difference between a pesik (פְּסִיק) and a meteg (מֶתֶג)? Do they mean different things?](#pesik-vs-meseg-distinction)
 
 ### 79. What is mercha kefulah (double mercha) and how does the tipcha-mercha-sof pasuk pattern work?
 
@@ -2838,9 +2838,9 @@ For ba'alei k'riah learning trop: knowing which pesukim/chapters have unusual tr
 - ~ Avi Herzog #msg4528
 - ~ MJ #msg4529
 
-### 88. What is the difference between a pesik (פְּסִיק) and a meseg (מְסֵג)? Do they mean different things?
+### 88. What is the difference between a pesik (פְּסִיק) and a meteg (מֶתֶג)? Do they mean different things?
 
-Yes. A מְסֵג (also called siluq vertical stroke) is the short vertical line placed to the LEFT of a syllable's vowel mark — it serves as a secondary stress indicator or to lengthen the vowel on a closed syllable, and its function depends on the word structure (sometimes indicating shva na, sometimes just lengthening). A פְּסִיק is the longer vertical line placed between words (in the 'gap' between the last letter of one word and the first letter of the next) — it indicates a full disjunctive pause between the two words. In אֱמֶת׳ (ta'amei emet), both terms appear: the vertical line between words (like the stroke in בָּרוּךְ יְהֹוָה׳) is a pesik, while מַהְפַּךְ לְגַרְמֵיהּ and אַזְלָא לְגַרְמֵיהּ are genuinely different notes that happen to look similar. A masoretic list exists distinguishing pesik and legarmei (the line attached to a ta'am note) throughout Tanach.
+Yes. A מֶתֶג (also called ga'ya) is the short vertical line placed to the LEFT of a syllable's vowel mark — it serves as a secondary stress indicator or to lengthen the vowel on a closed syllable, and its function depends on the word structure (sometimes indicating shva na, sometimes just lengthening). A פְּסִיק is the longer vertical line placed between words (in the 'gap' between the last letter of one word and the first letter of the next) — it indicates a full disjunctive pause between the two words. In טעמי אמ״ת (Ta'amei Emet), both terms appear: the vertical line between words (like the stroke in בָּרוּךְ יְהֹוָה׳) is a pesik, while מַהְפַּךְ לְגַרְמֵיהּ and אַזְלָא לְגַרְמֵיהּ are genuinely different notes that happen to look similar. A masoretic list exists distinguishing pesik and legarmei (the line attached to a ta'am note) throughout Tanach.
 
 **Examples:**
 
@@ -3365,7 +3365,7 @@ Yes — but it is extremely rare. Outside of אֱמֶת (Tehillim, Iyov, Mishlei
 
 **See also:**
 
-- [What is the difference between a pesik (פְּסִיק) and a meseg (מְסֵג)? Do they mean different things?](#pesik-vs-meseg-distinction)
+- [What is the difference between a pesik (פְּסִיק) and a meteg (מֶתֶג)? Do they mean different things?](#pesik-vs-meseg-distinction)
 - [Is the primary function of trop (cantillation marks) punctuation, or is something else more fundamental?](#trope-primary-musical-not-punctuation)
 
 ---
@@ -3996,7 +3996,7 @@ A recurring philosophical debate. One position: every community historically spo
 
 ### 129. Which tikkun/chumash edition is considered most accurate, and how do they differ?
 
-Several editions are commonly discussed: (1) תִּקּוּן סִימָנִים (Simanim) — the most widely used tikkun among serious ba'alei koreh; newer versions sometimes have minor updates. (2) תּוֹרַת חַיִּים / חוֹרֶב (Rav Breuer) — a synthetic reconstruction of the Ben Asher text. Notable methodological choices: all chataf patach under non-gutturals replaced with shva; changes to some גַּעְיוֹת הָרְשׁוּת; overall considered very accurate but represents Breuer's editorial judgment in some places. (3) אִישׁ מַצְלִיחַ — generally reliable but differs from Simanim in some readings (e.g. sometimes has a pesik where Simanim has meseg). (4) Artscroll / Koren — widely used but considered less precise than Simanim or Chorev in nikud and trop. Koren is generally considered slightly better than Artscroll. For pure manuscript fidelity, Breuer's Chorev and the original Aleppo Codex photos (what survives) are the gold standard. The Berditchev Tikkun was endorsed by the GRA but does not conform in many places to the Aleppo Codex.
+Several editions are commonly discussed: (1) תִּקּוּן סִימָנִים (Simanim) — the most widely used tikkun among serious ba'alei koreh; newer versions sometimes have minor updates. (2) תּוֹרַת חַיִּים / חוֹרֶב (Rav Breuer) — a synthetic reconstruction of the Ben Asher text. Notable methodological choices: all chataf patach under non-gutturals replaced with shva; changes to some גַּעְיוֹת הָרְשׁוּת; overall considered very accurate but represents Breuer's editorial judgment in some places. (3) אִישׁ מַצְלִיחַ — generally reliable but differs from Simanim in some readings (e.g. sometimes has a pesik where Simanim has meteg). (4) Artscroll / Koren — widely used but considered less precise than Simanim or Chorev in nikud and trop. Koren is generally considered slightly better than Artscroll. For pure manuscript fidelity, Breuer's Chorev and the original Aleppo Codex photos (what survives) are the gold standard. The Berditchev Tikkun was endorsed by the GRA but does not conform in many places to the Aleppo Codex.
 
 **Sources:**
 
