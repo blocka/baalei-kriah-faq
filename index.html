@@ -1,0 +1,1582 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ba'alei K'riah FAQ</title>
+<style>
+:root {
+  --bg: #fafaf9;
+  --surface: #ffffff;
+  --text: #1c1917;
+  --text-muted: #78716c;
+  --accent: #2563eb;
+  --accent-light: #eff6ff;
+  --border: #e7e5e4;
+  --tag-bg: #f5f5f4;
+  --tag-text: #44403c;
+  --shadow: 0 1px 3px rgba(0,0,0,.08);
+}
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+  background: var(--bg); color: var(--text); line-height: 1.6;
+  padding: 0;
+}
+.container { max-width: 900px; margin: 0 auto; padding: 0 20px; }
+
+/* Header */
+header {
+  background: var(--surface); border-bottom: 1px solid var(--border);
+  padding: 32px 0 24px; margin-bottom: 24px;
+}
+header h1 { font-size: 1.75rem; font-weight: 700; margin-bottom: 4px; }
+header .sub { color: var(--text-muted); font-size: .95rem; }
+header .stats { font-size: .85rem; color: var(--text-muted); margin-top: 8px; }
+
+/* Controls */
+.controls {
+  background: var(--surface); border-radius: 12px;
+  padding: 16px 20px; margin-bottom: 24px;
+  box-shadow: var(--shadow); border: 1px solid var(--border);
+  display: flex; gap: 12px; flex-wrap: wrap; align-items: center;
+}
+.controls input {
+  flex: 1; min-width: 200px; padding: 8px 12px;
+  border: 1px solid var(--border); border-radius: 8px;
+  font-size: .9rem; outline: none;
+}
+.controls input:focus { border-color: var(--accent); box-shadow: 0 0 0 3px var(--accent-light); }
+.controls select {
+  padding: 8px 12px; border: 1px solid var(--border); border-radius: 8px;
+  font-size: .9rem; background: var(--surface); outline: none; cursor: pointer;
+}
+.controls .count { font-size: .85rem; color: var(--text-muted); white-space: nowrap; }
+
+/* Category section */
+.category { margin-bottom: 32px; }
+.category h2 {
+  font-size: 1.3rem; font-weight: 600; padding: 12px 0 8px;
+  border-bottom: 2px solid var(--accent); margin-bottom: 16px;
+  color: var(--text);
+}
+
+/* Entry card */
+.entry {
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: 12px; margin-bottom: 12px; overflow: hidden;
+  transition: box-shadow .15s;
+}
+.entry:hover { box-shadow: var(--shadow); }
+.entry-header {
+  padding: 14px 18px; cursor: pointer; display: flex;
+  justify-content: space-between; align-items: flex-start; gap: 12px;
+  user-select: none;
+}
+.entry-header .num {
+  color: var(--accent); font-weight: 600; font-size: .8rem;
+  min-width: 28px; padding-top: 1px;
+}
+.entry-header .q { flex: 1; font-weight: 500; font-size: .95rem; line-height: 1.4; }
+.entry-header .toggle {
+  color: var(--text-muted); font-size: 1.2rem; line-height: 1;
+  transition: transform .2s; flex-shrink: 0;
+}
+.entry.open .entry-header .toggle { transform: rotate(180deg); }
+.entry-body {
+  display: none; padding: 0 18px 16px;
+  border-top: 1px solid var(--border);
+}
+.entry.open .entry-body { display: block; }
+
+.entry-body .answer { margin-top: 12px; font-size: .93rem; color: var(--text); }
+.entry-body .examples { margin-top: 10px; }
+.entry-body .examples strong, .entry-body .sources strong, .entry-body .see-also strong {
+  display: block; font-size: .8rem; text-transform: uppercase;
+  letter-spacing: .04em; color: var(--text-muted); margin-bottom: 4px;
+}
+.entry-body .examples ul { list-style: none; padding: 0; }
+.entry-body .examples li {
+  font-size: .9rem; padding: 4px 0 4px 16px; position: relative;
+}
+.entry-body .examples li::before { content: "\2192"; position: absolute; left: 0; color: var(--accent); }
+.entry-body .sources { margin-top: 10px; }
+.entry-body .sources .src {
+  display: inline-block; font-size: .78rem; color: var(--text-muted);
+  background: var(--tag-bg); padding: 2px 8px; border-radius: 4px;
+  margin: 2px 4px 2px 0;
+}
+.entry-body .see-also { margin-top: 10px; }
+.entry-body .see-also a {
+  color: var(--accent); text-decoration: none; font-size: .88rem;
+  margin-right: 8px;
+}
+.entry-body .see-also a:hover { text-decoration: underline; }
+
+/* Glossary */
+.glossary { margin-bottom: 32px; }
+.glossary h2 {
+  font-size: 1.3rem; font-weight: 600; padding: 12px 0 8px;
+  border-bottom: 2px solid var(--accent); margin-bottom: 16px;
+}
+.glossary-term {
+  padding: 6px 0; border-bottom: 1px solid var(--border);
+}
+.glossary-term:last-child { border-bottom: none; }
+.glossary-term .term { font-weight: 600; font-size: .9rem; }
+.glossary-term .def { font-size: .88rem; color: var(--text-muted); margin-top: 1px; }
+
+/* Footer */
+footer {
+  text-align: center; padding: 32px 0; font-size: .8rem;
+  color: var(--text-muted); border-top: 1px solid var(--border);
+  margin-top: 16px;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  header { padding: 20px 0 16px; }
+  header h1 { font-size: 1.3rem; }
+  .controls { padding: 12px 14px; flex-direction: column; }
+  .controls input { min-width: auto; width: 100%; }
+  .controls select { width: 100%; }
+  .entry-header { padding: 12px 14px; }
+  .entry-body { padding: 0 14px 12px; }
+}
+</style>
+</head>
+<body>
+
+<header>
+<div class="container">
+  <h1>Ba'alei K'riah FAQ</h1>
+  <div class="sub">Torah reading questions answered from a decade of WhatsApp discussions</div>
+  <div class="stats">{len(entries)} entries &middot; 15 categories &middot; 288 referenced messages &middot; 28 glossary terms</div>
+</div>
+</header>
+
+<div class="container">
+<div class="controls">
+  <input type="text" id="search" placeholder="Search entries..." oninput="filterEntries()">
+  <select id="catFilter" onchange="filterEntries()">
+    <option value="">All categories</option>
+    {cat_options}
+  </select>
+  <span class="count" id="count">{len(entries)} / {len(entries)}</span>
+</div>
+
+<div class="category" data-cat="nikud-dikduk">
+<h2>Nikud &amp; Dikduk (Vowels &amp; Grammar)</h2>
+<div class="entry" data-cat="nikud-dikduk" data-id="kamatz-katan-vs-chataf" data-q="is a chataf kamatz always a kamatz katan (kk)? and how should a chataf that indicates neither shva-na nor kk be pronounced?">
+<div class="entry-header" onclick="toggleEntry(this)">
+<span class="num">1</span>
+<span class="q">Is a chataf kamatz always a kamatz katan (KK)? And how should a chataf that indicates neither shva-na nor KK be pronounced?</span>
+<span class="toggle">\25BC</span>
+</div>
+<div class="entry-body">
+<div class="answer">No — a chataf kamatz is not automatically a kamatz katan. Three categories exist: (1) chataf-kamatz used (like chataf-patach) as a shva-na indicator; (2) chataf-kamatz that genuinely carries the kamatz katan (&#x27;o&#x27;) sound; (3) rare cases where the chataf-kamatz symbol specifically denotes KK. Everyone agrees that the genuine-KK instances are pronounced with the &#x27;o&#x27; sound. For a chataf that indicates NEITHER shva-na NOR KK, it is treated like a regular vowel of its type, shortened somewhat (e.g. a chataf-patach as a short patach). Note that Moroccan/Ashkenazi traditions handle the guttural differently (e.g. יַעֲמֹד may be read with a patach on the yod and a cholam-sound on the ayin). The elongated-kamatz convention in Koren/Simanim to flag KK is a modern printer&#x27;s device, not masoretic.</div>
+<div class="examples"><strong>Examples</strong><ul>
+<li>יַעֲמֹד (איש מצליח) — chataf-kamatz = kamatz katan (Ayin has cholam sound)</li>
+<li>וְשָׂדֶה — chataf = shva-na indicator, not KK</li>
+</ul></div>
+<div class="sources"><strong>Sources</strong>
+<span class="src">Ezra Arovas (2024-05-20) msg#690</span>
+<span class="src">MG (2024-05-20) msg#693</span>
+<span class="src">MG (2024-05-20) msg#694</span>
+<span class="src">MJ (2024-05-20) msg#735</span>
+<span class="src">Yaacob (2024-05-20) msg#737</span>
+<span class="src">Yaacob (2024-05-20) msg#738</span>
+</div>
+<div class="see-also"><strong>See also</strong>
+<a href="#" onclick="scrollToEntry('chataf-as-shva-indicator');return false">Why is there sometimes a ḥataf (e.g. chataf patach) under a non-guttural letter where a shva &amp;#x27;should&amp;#x27; be?</a>
+</div>
+</div></div>
+<div class="entry" data-cat="nikud-dikduk" data-id="kamatz-katan-lisvov" data-q="should it be לִסְבֹב or לִסְבֹּב (lisvov / lisbov)? why is there a rafeh (no dagesh)?">
+<div class="entry-header" onclick="toggleEntry(this)">
+<span class="num">2</span>
+<span class="q">Should it be לִסְבֹב or לִסְבֹּב (lisvov / lisbov)? Why is there a rafeh (no dagesh)?</span>
+<span class="toggle">\25BC</span>
+</div>
+<div class="entry-body">
+<div class="answer">Most chumashim have לִסְבֹּב (with a dagesh, &#x27;lisbov&#x27;), but newer editions (and the Tikkun Simanim) have לִסְבֹב with a rafeh (&#x27;lisvov&#x27;). The reasoning for the rafeh: the lamed here is an addition/prefix to the base word סְבֹב, and in analogous cases the added letter takes no dagesh — e.g. the second beit of וַיְהִי בְשָׁכְבוֹ and the dalet of בְּבִגְדוֹ (from בֶּגֶד/בְּגֹד), where the suffix is added to the main word. So by that logic the bet of לִסְבֹב should be rafeh. This is a girsa/edition question more than a &#x27;machloket&#x27; — the better manuscripts and editions lean a particular way.</div>
+<div class="examples"><strong>Examples</strong><ul>
+<li>לִסְבֹב (rafeh) vs לִסְבֹּב (dagesh)</li>
+<li>בְּבִגְדוֹ — added dalet is rafeh</li>
+</ul></div>
+<div class="sources"><strong>Sources</strong>
+<span class="src">Zev Lefkowitz (2024-07-14) msg#2638</span>
+<span class="src">Avi Herzog (2024-07-14) msg#2642</span>
+<span class="src">MJ (2024-07-14) msg#2643</span>
+</div>
+<div class="see-also"><strong>See also</strong>
+<a href="#" onclick="scrollToEntry('dagesh-kal-never-changes-meaning');return false">Can a dagesh kal (in a beged-kefet letter) ever change the meaning of a word?</a>
+</div>
+</div></div>
+<div class="entry" data-cat="nikud-dikduk" data-id="vowel-mistake-meaning-change" data-q="if a ba&amp;#x27;al koreh reads the wrong vowel (e.g. a sheva instead of a patach), does that change the meaning?">
+<div class="entry-header" onclick="toggleEntry(this)">
+<span class="num">3</span>
+<span class="q">If a ba&#x27;al koreh reads the wrong vowel (e.g. a sheva instead of a patach), does that change the meaning?</span>
+<span class="toggle">\25BC</span>
+</div>
+<div class="entry-body">
+<div class="answer">Not necessarily. If the &#x27;wrong&#x27; vowel is simply an allowed allophonic variant of the correct one (e.g. a patach weakening to a shva in a context where that shift is grammatically regular), then it does not change the meaning — it may not even change the sound much. However, if the vowel error produces a genuinely different word (e.g. the famous אֵל תִּירָאוּ &#x27;do not see&#x27; vs אֵל תִּירְאוּ &#x27;do not fear&#x27;), it does change the meaning. In practice, for purposes of correcting a BK, a vowel shift that does not change the meaning is generally left alone בִּדְעָבַד, while one that does change meaning should be corrected. The principle: לִכְתַּחִלָּה one should try to be precise on everything; בִּדְעָבַד the level of concern depends on whether meaning changed.</div>
+<div class="examples"><strong>Examples</strong><ul>
+<li>בְּטַמְּאַכֶם (correct patach) vs בְּטַמְּאֲכֶם — the patach/sheva shift here does not change meaning</li>
+</ul></div>
+<div class="sources"><strong>Sources</strong>
+<span class="src">S.L. (2024-05-05) msg#222</span>
+<span class="src">MJ (2024-05-05) msg#225</span>
+<span class="src">Ezra Arovas (2024-05-05) msg#226</span>
+<span class="src">MJ (2024-05-05) msg#227</span>
+<span class="src">MJ (2024-05-05) msg#228</span>
+</div>
+<div class="see-also"><strong>See also</strong>
+<a href="#" onclick="scrollToEntry('shva-na-vs-nach');return false">What is the difference between shva na and shva nach, and can a shva ever change the meaning of a word?</a>
+<a href="#" onclick="scrollToEntry('dagesh-kal-never-changes-meaning');return false">Can a dagesh kal (in a beged-kefet letter) ever change the meaning of a word?</a>
+</div>
+</div></div>
+</div>
+<div class="category" data-cat="shva">
+<h2>The Shva</h2>
+<div class="entry" data-cat="shva" data-id="shva-na-vs-nach" data-q="what is the difference between shva na and shva nach, and can a shva ever change the meaning of a word?">
+<div class="entry-header" onclick="toggleEntry(this)">
+<span class="num">4</span>
+<span class="q">What is the difference between shva na and shva nach, and can a shva ever change the meaning of a word?</span>
+<span class="toggle">\25BC</span>
+</div>
+<div class="entry-body">
+<div class="answer">A shva na (also called shva na&#x27;, &#x27;moving&#x27;) begins the following syllable — it is read together with the next letter and its vowel as a single syllable (e.g. מְלַאכְךָ, the mem+shva starts the first syllable). A shva nach (&#x27;resting&#x27;) closes the preceding syllable and is not itself a syllable. Crucially, a shva na is NOT an independent syllable of its own; it merely begins the next one, so a word like וַיִּירְאוּ is two syllables, not three. A change in shva type is technically never the root cause of a meaning change — it is always a consequence of some more fundamental change (a long vs. short vowel, or the presence/lack of a dagesh) that carries the meaning. For example יִרְאוּ vs יִירְאוּ, or יִדְמוּ vs יִדְּמוּ: it is the vowel length / dagesh that differs, and the shva shift follows from that. This is why determining shva na/nach matters for kri&#x27;ah: getting it wrong usually signals you have misread the underlying vowel or dagesh.</div>
+<div class="examples"><strong>Examples</strong><ul>
+<li>אל תִּירָאוּ (shva nach on the resh) = &#x27;do not see&#x27; vs אל תִּירְאוּ (shva na) = &#x27;do not fear&#x27; — Bamidbar 14:9 (the difference is actually the yud: תיראו without the yud = &#x27;see&#x27;)</li>
+<li>בְּאֵשׁ תְּשָׂרֵף vs תִּשְׂרוֹף — the nikkud shift reflects a binyan change (nif&#x27;al vs kal/qal &#x27;she shall be burned&#x27; vs &#x27;she will burn [something]&#x27;)</li>
+</ul></div>
+<div class="sources"><strong>Sources</strong>
+<span class="src">MJ (2024-06-30) msg#2245</span>
+<span class="src">MJ (2024-06-30) msg#2246</span>
+<span class="src">Avi Herzog (2024-06-30) msg#2247</span>
+<span class="src">Baruch (2024-05-15) msg#534</span>
+<span class="src">MG (2024-05-15) msg#538</span>
+</div>
+<div class="see-also"><strong>See also</strong>
+<a href="#" onclick="scrollToEntry('shva-syllable');return false">Is a shva na its own syllable (havara)?</a>
+<a href="#" onclick="scrollToEntry('chataf-as-shva-indicator');return false">Why is there sometimes a ḥataf (e.g. chataf patach) under a non-guttural letter where a shva &amp;#x27;should&amp;#x27; be?</a>
+<a href="#" onclick="scrollToEntry('meteg-indicates-shva-na');return false">Does a meteg (ga&amp;#x27;ya) indicate that the following shva is na?</a>
+</div>
+</div></div>
+<div class="entry" data-cat="shva" data-id="shva-syllable" data-q="is a shva na its own syllable (havara)?">
+<div class="entry-header" onclick="toggleEntry(this)">
+<span class="num">5</span>
+<span class="q">Is a shva na its own syllable (havara)?</span>
+<span class="toggle">\25BC</span>
+</div>
+<div class="entry-body">
+<div class="answer">No. A common misconception (taught to many) is that a shva na forms its own syllable. In fact a shva na begins the FOLLOWING syllable — the consonant with the shva attaches forward to the next consonant+vowel. So וַיִּירְאוּ is two syllables (וַיְ / יִירְאוּ → effectively the resh+shva is the onset of the &#x27;ראו&#x27; part), not three. A full syllable requires a vowel (תנועה); a shva is not a full-fledged vowel. That said, a shva na is sometimes &#x27;counted&#x27; as something for trop purposes — e.g. with a מתגא זָקֵף a shva counts as occupying a beat between mesharet and mafsik even though it is not itself a syllable, and the same applies to the mesharet of a pashta (if anything intervenes between mesharet and pashta it becomes a mahpach; a shva counts as &#x27;something&#x27;).</div>
+<div class="examples"><strong>Examples</strong><ul>
+<li>וַיִּירְאוּ — two syllables, not three</li>
+</ul></div>
+<div class="sources"><strong>Sources</strong>
+<span class="src">MJ (2024-06-30) msg#2246</span>
+<span class="src">(anon) (2024-06-30) msg#2256</span>
+<span class="src">Moish (2024-06-30) msg#2273</span>
+<span class="src">MG (2024-06-30) msg#2275</span>
+</div>
+<div class="see-also"><strong>See also</strong>
+<a href="#" onclick="scrollToEntry('shva-na-vs-nach');return false">What is the difference between shva na and shva nach, and can a shva ever change the meaning of a word?</a>
+</div>
+</div></div>
+<div class="entry" data-cat="shva" data-id="shva-after-vav-hachibur" data-q="when a vav hachibur is followed by a shva, is that shva na or nach — and what does the masorah say?">
+<div class="entry-header" onclick="toggleEntry(this)">
+<span class="num">6</span>
+<span class="q">When a vav hachibur is followed by a shva, is that shva na or nach — and what does the Masorah say?</span>
+<span class="toggle">\25BC</span>
+</div>
+<div class="entry-body">
+<div class="answer">There is a real divide in practice. The Masorah Gedolah of the Aleppo Codex (noted under וְשָׂבְתָה in Shoftim) gives explicit conditions for when the shva after a vav-hachibur-shuruk is na: (1) there is a ga&#x27;ya (meteg) under the vav, AND (2) the accent (ta&#x27;am) falls on the third letter of the word. This yields shva na in וְשָׂדֶה and וְשָׁמֵעַ but shva NACH in וְשָׁקָה־לִּי (where, despite some chumashim printing a chataf patach, the Aleppo reads it nach). Many who pronounce all shvas after a vav-shuruk as na have switched to the &#x27;nach team&#x27; on this basis. A recurring practical point: the masoretic note gives the conditions; the ga&#x27;ya is the visual cue.</div>
+<div class="examples"><strong>Examples</strong><ul>
+<li>וְשָׂדֶה — shva na (ga&#x27;ya + accent on 3rd letter)</li>
+<li>וְשָׁמֵעַ — shva na</li>
+<li>וְשָׁקָה־לִּי — shva nach in Aleppo (often misprinted with chataf)</li>
+</ul></div>
+<div class="sources"><strong>Sources</strong>
+<span class="src">Avi Herzog (2024-05-19) msg#671</span>
+<span class="src">Avi Herzog (2024-05-19) msg#673</span>
+<span class="src">MG (2024-05-19) msg#674</span>
+<span class="src">MG (2024-07-19) msg#2759</span>
+<span class="src">MG (2024-07-19) msg#2760</span>
+</div>
+<div class="see-also"><strong>See also</strong>
+<a href="#" onclick="scrollToEntry('chataf-as-shva-indicator');return false">Why is there sometimes a ḥataf (e.g. chataf patach) under a non-guttural letter where a shva &amp;#x27;should&amp;#x27; be?</a>
+<a href="#" onclick="scrollToEntry('meteg-indicates-shva-na');return false">Does a meteg (ga&amp;#x27;ya) indicate that the following shva is na?</a>
+<a href="#" onclick="scrollToEntry('gaya-meteg-terminology');return false">What is the difference between the terms ga&amp;#x27;ya, meteg, ma&amp;#x27;arich, and ma&amp;#x27;amid?</a>
+</div>
+</div></div>
+</div>
+<div class="category" data-cat="hataf">
+<h2>Ḥataf Vowels</h2>
+<div class="entry" data-cat="hataf" data-id="chataf-as-shva-indicator" data-q="why is there sometimes a ḥataf (e.g. chataf patach) under a non-guttural letter where a shva &amp;#x27;should&amp;#x27; be?">
+<div class="entry-header" onclick="toggleEntry(this)">
+<span class="num">7</span>
+<span class="q">Why is there sometimes a ḥataf (e.g. chataf patach) under a non-guttural letter where a shva &#x27;should&#x27; be?</span>
+<span class="toggle">\25BC</span>
+</div>
+<div class="entry-body">
+<div class="answer">On non-guttural letters, a ḥataf is not a &#x27;regular&#x27; reduced vowel — it is a device the Masoretes used to indicate that the shva there is NA (moving), particularly in places where a plain shva would be ambiguous (e.g. after a vav hachibur). So a chataf patach under a non-guttural often means &#x27;this is a shva na.&#x27; But not every chataf means that: some chataf-kamatz instances genuinely indicate a kamatz katan (KK) sound, and some chataf-kamatz are in the same shva-na-indicator category as chataf-patach. There are even rare cases where the chataf-kamatz symbol was used specifically to denote a kamatz katan. Because a meteg on a short vowel followed by a shva can be hard to distinguish from a ga&#x27;ya, many manuscripts use a chataf patach in place of the shva when it is na. (Koren/Simanim sometimes elongate the kamatz portion of a chataf to flag a KK, but that is a printer&#x27;s convention, not a masoretic one.)</div>
+<div class="examples"><strong>Examples</strong><ul>
+<li>וְשָׂדֶה printed with chataf → shva na indicator</li>
+<li>יְעַמְדּוּ (איש מצליח) with chataf-kamatz = kamatz katan sound</li>
+</ul></div>
+<div class="sources"><strong>Sources</strong>
+<span class="src">Avi Herzog (2024-05-19) msg#669</span>
+<span class="src">MG (2024-05-19) msg#670</span>
+<span class="src">MG (2024-05-20) msg#686</span>
+<span class="src">Ezra Arovas (2024-05-20) msg#690</span>
+<span class="src">MG (2024-05-20) msg#693</span>
+<span class="src">MG (2024-05-20) msg#694</span>
+<span class="src">MJ (2024-07-01) msg#2333</span>
+</div>
+<div class="see-also"><strong>See also</strong>
+<a href="#" onclick="scrollToEntry('shva-after-vav-hachibur');return false">When a vav hachibur is followed by a shva, is that shva na or nach — and what does the Masorah say?</a>
+<a href="#" onclick="scrollToEntry('kamatz-katan-vs-chataf');return false">Is a chataf kamatz always a kamatz katan (KK)? And how should a chataf that indicates neither shva-na nor KK be pronounced?</a>
+<a href="#" onclick="scrollToEntry('meteg-indicates-shva-na');return false">Does a meteg (ga&amp;#x27;ya) indicate that the following shva is na?</a>
+</div>
+</div></div>
+</div>
+<div class="category" data-cat="dagesh-mappik">
+<h2>Dagesh &amp; Mappik</h2>
+<div class="entry" data-cat="dagesh-mappik" data-id="dagesh-kal-never-changes-meaning" data-q="can a dagesh kal (in a beged-kefet letter) ever change the meaning of a word?">
+<div class="entry-header" onclick="toggleEntry(this)">
+<span class="num">8</span>
+<span class="q">Can a dagesh kal (in a beged-kefet letter) ever change the meaning of a word?</span>
+<span class="toggle">\25BC</span>
+</div>
+<div class="entry-body">
+<div class="answer">Intrinsically, NO. The two versions of a bgd-kft-p letter (e.g. בּ/ב, כּ/כ, תּ/ת) are the same letter; the choice of stop (with dagesh) vs. fricative (rafah) is conditioned purely by the phonetic environment (whether a vowel precedes). So a dagesh kal shift is not itself meaningful — it merely tracks whether the preceding syllable is open or closed. HOWEVER, because the phonetic environment that governs the dagesh is tied to the vowel/shva/dagesh structure, a place where the dagesh is &#x27;unexpected&#x27; is a SIGNAL that something else has changed (a shva turned na/nach, a short vs. long vowel, etc.) — and THAT underlying change may be meaningful. So the dagesh is a symptom, not the cause. Example: in תַּעֲשֶֹה vs תַּעֲשֶׂה the dagesh/lack thereof tracks a vowel difference that carries meaning.</div>
+<div class="sources"><strong>Sources</strong>
+<span class="src">Rabbi Zvi Freund (2024-05-05) msg#236</span>
+<span class="src">MJ (2024-05-05) msg#238</span>
+</div>
+<div class="see-also"><strong>See also</strong>
+<a href="#" onclick="scrollToEntry('shva-na-vs-nach');return false">What is the difference between shva na and shva nach, and can a shva ever change the meaning of a word?</a>
+<a href="#" onclick="scrollToEntry('dagesh-after-mafsik');return false">Why is there sometimes a dagesh in the first letter of a word after a pausal ta&amp;#x27;am (e.g. the lamed of אֶל־מֹשֶׁה לֵאמֹר, and לֹא before another word)?</a>
+</div>
+</div></div>
+<div class="entry" data-cat="dagesh-mappik" data-id="dagesh-after-mafsik" data-q="why is there sometimes a dagesh in the first letter of a word after a pausal ta&amp;#x27;am (e.g. the lamed of אֶל־מֹשֶׁה לֵאמֹר, and לֹא before another word)?">
+<div class="entry-header" onclick="toggleEntry(this)">
+<span class="num">9</span>
+<span class="q">Why is there sometimes a dagesh in the first letter of a word after a pausal ta&#x27;am (e.g. the lamed of אֶל־מֹשֶׁה לֵאמֹר, and לֹא before another word)?</span>
+<span class="toggle">\25BC</span>
+</div>
+<div class="entry-body">
+<div class="answer">After a pausal (mafsik) ta&#x27;am, the following word sometimes receives a dagesh in its first letter — this is a device to mark separation between words (מַפְרִיד בֵּין הַדְּבֵקִים). Yeivin notes this for cases like the lamed of לֵאמֹר after אֶל־מֹשֶׁה. These dageshim are read as dagesh CHAZAK, not kal — you generally do not find dagesh kal on non-bgd-kft-p letters. A classic case: תִּרְצַח has a dagesh in the taf in ta&#x27;am elyon (because לֹא is a tipcha/pausal there) but NOT in ta&#x27;am tachton (where לֹא flows conjunctively into the next word, so the bgd-kft-p dagesh drops, as it follows an א-ה-ו-י). An exceptional case is the dagesh of דְּחִיק appearing after a mafsik (e.g. the unique לֹא־לּוֹ pair), which seems designed to differentiate from a parallel לֹא־לוֹ elsewhere.</div>
+<div class="examples"><strong>Examples</strong><ul>
+<li>אֶל־מֹשֶׁה לֵאמֹר — dagesh in lamed marks separation</li>
+<li>לֹא תִּרְצַח (ta&#x27;am elyon) has dagesh; לֹא תִרְצַח (tachton) does not</li>
+<li>לֹא־לּוֹ (with dageish) vs לֹא־לוֹ</li>
+</ul></div>
+<div class="sources"><strong>Sources</strong>
+<span class="src">Dovid H (2024-05-27) msg#1318</span>
+<span class="src">MG (2024-05-27) msg#1321</span>
+<span class="src">MG (2024-05-27) msg#1323</span>
+<span class="src">Rabbi Rosenberg (2024-07-08) msg#2512</span>
+<span class="src">Avi (2024-07-08) msg#2513</span>
+<span class="src">Avi Herzog (2024-07-08) msg#2514</span>
+<span class="src">MG (2024-05-26) msg#1298</span>
+</div>
+<div class="see-also"><strong>See also</strong>
+<a href="#" onclick="scrollToEntry('dagesh-kal-never-changes-meaning');return false">Can a dagesh kal (in a beged-kefet letter) ever change the meaning of a word?</a>
+</div>
+</div></div>
+<div class="entry" data-cat="dagesh-mappik" data-id="dagesh-mapik-omitted-list" data-q="are there places where a mappik heh is expected but missing, and where can one find the lists?">
+<div class="entry-header" onclick="toggleEntry(this)">
+<span class="num">10</span>
+<span class="q">Are there places where a mappik heh is expected but missing, and where can one find the lists?</span>
+<span class="toggle">\25BC</span>
+</div>
+<div class="entry-body">
+<div class="answer">Yes — the Masorah lists places where a mappik is expected but does not appear (e.g. וְתֶחֱמַרְנָה בַּחֹמֶר in Shemos, where the vet has a meseg). Not all such places have an accent or meseg on the first letter, so they are not always visually flagged. The canonical reference for such lists is the אָכְלָה וְאָכְלָה, which Rashi calls the מְסֹרֶת הַגְּדוֹלָה (distinct from what we call the מָסוֹרָה גְּדוֹלָה) — the common/accessible edition is Frensdorff&#x27;s. C.D. Ginsburg&#x27;s המסורה is massive and comprehensive but harder to search.</div>
+<div class="examples"><strong>Examples</strong><ul>
+<li>וְתֶחֱמַרְנָה בַּחֹמֶר (Shemos) — meseg on the vet</li>
+</ul></div>
+<div class="sources"><strong>Sources</strong>
+<span class="src">Dovid H (2024-06-14) msg#1890</span>
+<span class="src">MG (2024-06-14) msg#1891</span>
+<span class="src">MG (2024-06-14) msg#1894</span>
+<span class="src">MG (2024-06-14) msg#1895</span>
+</div>
+<div class="see-also"><strong>See also</strong>
+<a href="#" onclick="scrollToEntry('mesora-reference-works');return false">Which seforim are used to look up Masorah lists (e.g. missing mappikim, exceptional readings)?</a>
+</div>
+</div></div>
+<div class="entry" data-cat="dagesh-mappik" data-id="mapik-heh-meaning-change" data-q="does a mapik heh change the meaning of a word?">
+<div class="entry-header" onclick="toggleEntry(this)">
+<span class="num">11</span>
+<span class="q">Does a mapik heh change the meaning of a word?</span>
+<span class="toggle">\25BC</span>
+</div>
+<div class="entry-body">
+<div class="answer">Yes, it absolutely can. A classic example: וַהְשְׁקָהּ (with mapik) means &#x27;he gave HER to drink&#x27; (e.g. the sotah), while וַהְשְׁקָה (without mapik) means &#x27;and he gave (someone) to drink.&#x27; The mapik ה (the dot in the heh) signals that the heh is a consonant (mater lectionis acting as a letter, closing the syllable), not a vowel-letter (indicating a long vowel). This is why omitting a mapik where required or adding one where absent can change the meaning, and why the Masorah keeps lists of exceptional cases.</div>
+<div class="examples"><strong>Examples</strong><ul>
+<li>וַהְשְׁקָהּ = he gave HER to drink vs וַהְשְׁקָה = he gave to drink</li>
+</ul></div>
+<div class="sources"><strong>Sources</strong>
+<span class="src">JackGlux (2024-06-16) msg#1907</span>
+<span class="src">Dror Maor (2024-06-16) msg#1910</span>
+<span class="src">Moish (2024-06-16) msg#1912</span>
+</div>
+<div class="see-also"><strong>See also</strong>
+<a href="#" onclick="scrollToEntry('dagesh-mapik-omitted-list');return false">Are there places where a mappik heh is expected but missing, and where can one find the lists?</a>
+</div>
+</div></div>
+</div>
+<div class="category" data-cat="gaya-meteg">
+<h2>Ga&#x27;ya / Meteg</h2>
+<div class="entry" data-cat="gaya-meteg" data-id="meteg-indicates-shva-na" data-q="does a meteg (ga&amp;#x27;ya) indicate that the following shva is na?">
+<div class="entry-header" onclick="toggleEntry(this)">
+<span class="num">12</span>
+<span class="q">Does a meteg (ga&#x27;ya) indicate that the following shva is na?</span>
+<span class="toggle">\25BC</span>
+</div>
+<div class="entry-body">
+<div class="answer">There are TWO distinct kinds of meteg, and conflating them is the source of much confusion: (1) A meteg on a short vowel (תנועה קטנה) that is followed by a shva can function as a &#x27;ga&#x27;ya&#x27; indicating the following shva is na. (2) A meteg on a CLOSED syllable (closed by shva nach, dagesh chazak, or end-of-word) is a different animal — its raison d&#x27;être is precisely that the syllable is closed; it lengthens the vowel for musical/metrical reasons and has nothing to do with making a shva na. Rabbi Freund&#x27;s point: if the syllable were opened (shva becoming na) the closed-syllable meteg would have no justification. So &#x27;meteg = following shva is na&#x27; is NOT a reliable general rule — it depends on word structure. Many who assume a meteg on a vav always creates a following shva na are overgeneralizing. A separate question: a meteg sitting directly on a letter that bears a shva (mostly in Tehillim/Mishlei/Iyov) signals that the shva itself should be slightly lengthened, for musical reasons.</div>
+<div class="sources"><strong>Sources</strong>
+<span class="src">Shmuel Rabin (2024-07-01) msg#2331</span>
+<span class="src">Rabbi Zvi Freund (2024-07-01) msg#2332</span>
+<span class="src">MJ (2024-07-01) msg#2333</span>
+<span class="src">Ezra Arovas (2024-07-19) msg#2757</span>
+<span class="src">MG (2024-07-19) msg#2760</span>
+<span class="src">Moish (2024-07-23) msg#2913</span>
+<span class="src">MJ (2024-07-23) msg#2914</span>
+</div>
+<div class="see-also"><strong>See also</strong>
+<a href="#" onclick="scrollToEntry('gaya-meteg-terminology');return false">What is the difference between the terms ga&amp;#x27;ya, meteg, ma&amp;#x27;arich, and ma&amp;#x27;amid?</a>
+<a href="#" onclick="scrollToEntry('shva-na-vs-nach');return false">What is the difference between shva na and shva nach, and can a shva ever change the meaning of a word?</a>
+<a href="#" onclick="scrollToEntry('shva-after-vav-hachibur');return false">When a vav hachibur is followed by a shva, is that shva na or nach — and what does the Masorah say?</a>
+</div>
+</div></div>
+<div class="entry" data-cat="gaya-meteg" data-id="gaya-meteg-terminology" data-q="what is the difference between the terms ga&amp;#x27;ya, meteg, ma&amp;#x27;arich, and ma&amp;#x27;amid?">
+<div class="entry-header" onclick="toggleEntry(this)">
+<span class="num">13</span>
+<span class="q">What is the difference between the terms ga&#x27;ya, meteg, ma&#x27;arich, and ma&#x27;amid?</span>
+<span class="toggle">\25BC</span>
+</div>
+<div class="entry-body">
+<div class="answer">These terms overlap heavily and are often used interchangeably — a point Minchat Shai himself illustrates, to the confusion of readers. R&#x27; Eliyahu Bachur (in Tuv Ta&#x27;am) states that מְתַג and מַאֲרִיךְ are interchangeable, and that it is a MISTAKE to use גַּעְיָה for anything other than the mark that accompanies a shva. However, that strict claim does not hold up historically: גַּעְיָה appears to be the earlier Masoretic term, while מְתַג (meseg) is a later one, and the Masoretes used גַּעְיָה broadly. The GRA does adopt the restricted usage (ga&#x27;ya = the shva-accompanying mark specifically). מַעֲמִיד is likewise used interchangeably with the others. A confounding factor: מַאֲרִיךְ is ALSO another name for the מֵרְכָא (mercha) trop note. Bottom line for readers: treat the terms as largely synonymous unless an author (like the GRA) explicitly restricts גַּעְיָה.</div>
+<div class="sources"><strong>Sources</strong>
+<span class="src">MJ (2024-06-09) msg#1569</span>
+<span class="src">MJ (2024-06-09) msg#1570</span>
+<span class="src">MJ (2024-06-09) msg#1571</span>
+<span class="src">MG (2024-06-09) msg#1573</span>
+</div>
+<div class="see-also"><strong>See also</strong>
+<a href="#" onclick="scrollToEntry('meteg-indicates-shva-na');return false">Does a meteg (ga&amp;#x27;ya) indicate that the following shva is na?</a>
+</div>
+</div></div>
+</div>
+<div class="category" data-cat="pronunciation">
+<h2>Letter Pronunciation (bgd-k-f-t-p, gutturals)</h2>
+<div class="entry" data-cat="pronunciation" data-id="cholam-oy-vs-oh" data-q="what is the history of the &amp;#x27;oy&amp;#x27; vs &amp;#x27;oh&amp;#x27; pronunciation of the cholam (e.g. ha-oy-lam vs ha-oh-lam)?">
+<div class="entry-header" onclick="toggleEntry(this)">
+<span class="num">14</span>
+<span class="q">What is the history of the &#x27;oy&#x27; vs &#x27;oh&#x27; pronunciation of the cholam (e.g. ha-OY-lam vs ha-OH-lam)?</span>
+<span class="toggle">\25BC</span>
+</div>
+<div class="entry-body">
+<div class="answer">The &#x27;oy&#x27; pronunciation of the cholam is not a modern invention — it predates the modern era by a very long time. Rashi at the end of Sefer Shoftim describes Jews relocating to the Rhine region after the (first) churban, which pushes an Ashkenazi &#x27;oy&#x27;-type tradition far back. From those who heard pre-war European talmidei chachamim (e.g. Rav Shmuel Berenbaum zt&quot;l, Rav Shraga Moshe Kalmanovitz zt&quot;l), not one was recorded as saying &#x27;oh.&#x27; We have no audio from the shtetl era, only the mesora heard from &#x27;amulige yidden&#x27; of the &#x27;alter heim.&#x27; The &#x27;oh&#x27; is a later/modernized development (with discussion of whether chasidic pronunciation shifts were intentional). A practical tension exists: saying &#x27;ha-oy-lam&#x27; feels natural to many but is sometimes flagged as &#x27;dangerous&#x27; in contexts like Shema, whereas in birkat hamazon at least the מַטְבַּע הַבְּרָכָה is rabbinic (though the first paragraph of birkat hamazon is considered d&#x27;oraita).</div>
+<div class="examples"><strong>Examples</strong><ul>
+<li>הָעוֹלָם — &#x27;ha-OY-lam&#x27; (long-standing Ashkenazi) vs &#x27;ha-OH-lam&#x27;</li>
+</ul></div>
+<div class="sources"><strong>Sources</strong>
+<span class="src">MJ (2024-05-13) msg#452</span>
+<span class="src">Dror Maor (2024-05-13) msg#454</span>
+<span class="src">Dror Maor (2024-05-13) msg#456</span>
+<span class="src">Dror Maor (2024-05-13) msg#458</span>
+<span class="src">Binyomin Abramson 89 (2024-05-26) msg#1056</span>
+<span class="src">MJ (2024-05-26) msg#1058</span>
+</div>
+</div></div>
+<div class="entry" data-cat="pronunciation" data-id="teimani-gimel" data-q="why do teimanim pronounce ג &amp;#x27;in reverse&amp;#x27; (soft/dageshed gimel), and is it only gimel?">
+<div class="entry-header" onclick="toggleEntry(this)">
+<span class="num">15</span>
+<span class="q">Why do Teimanim pronounce ג &#x27;in reverse&#x27; (soft/dageshed gimel), and is it only gimel?</span>
+<span class="toggle">\25BC</span>
+</div>
+<div class="entry-body">
+<div class="answer">The Teimani dageshed ג has been influenced by the corresponding Arabic letter (producing a &#x27;j&#x27;-type sound), while their rafah (undageshed) ג is actually CORRECT — a soft sound like a voiced כ (similar to the Israeli resh). So what is &#x27;commonly understood&#x27; as reversed is, on the rafah side, the authentic pronunciation. Some Teimani subgroups (Adanim) say a proper dageshed גּ; some Shamis say a segol for cholam. An authentic גימל בלשון הקודש is described as a guttural R-type sound from the same throat position as the &#x27;regular&#x27; gimel — there is no true J sound in לה״ק originally. (Refining: some say the cholam like their tzere, while their segol is like the &#x27;a&#x27; in &#x27;apple&#x27; — similar to a patach but not identical.)</div>
+<div class="examples"><strong>Examples</strong><ul>
+<li>Teimani rafah ג = soft (correct); dageshed ג influenced by Arabic</li>
+</ul></div>
+<div class="sources"><strong>Sources</strong>
+<span class="src">Avi Herzog (2024-05-20) msg#751</span>
+<span class="src">Avi Herzog (2024-05-20) msg#752</span>
+<span class="src">Dror Maor (2024-05-20) msg#753</span>
+<span class="src">Liran לירן (2024-05-20) msg#754</span>
+<span class="src">MJ (2024-05-20) msg#755</span>
+<span class="src">MJ (2024-05-20) msg#757</span>
+</div>
+<div class="see-also"><strong>See also</strong>
+<a href="#" onclick="scrollToEntry('cholam-oy-vs-oh');return false">What is the history of the &amp;#x27;oy&amp;#x27; vs &amp;#x27;oh&amp;#x27; pronunciation of the cholam (e.g. ha-OY-lam vs ha-OH-lam)?</a>
+</div>
+</div></div>
+</div>
+<div class="category" data-cat="grammar">
+<h2>Grammar &amp; Morphology</h2>
+<div class="entry" data-cat="grammar" data-id="infinitive-two-forms" data-q="why are there two seemingly different infinitive forms in tanach (e.g. זָכוֹר / שָׁמוֹר vs. זְכֹר / forms that take prefixes)?">
+<div class="entry-header" onclick="toggleEntry(this)">
+<span class="num">16</span>
+<span class="q">Why are there two seemingly different infinitive forms in Tanach (e.g. זָכוֹר / שָׁמוֹר vs. זְכֹר / forms that take prefixes)?</span>
+<span class="toggle">\25BC</span>
+</div>
+<div class="entry-body">
+<div class="answer">There are two versions of the infinitive: (1) One that NEVER changes its form and is typically used for emphasis / command, e.g. מוֹת יוּמָת, אָכוֹל תֹּאכְלוּ, זָכוֹר וְשָׁמוֹר. This form cannot take a vav prefix (it is frozen). (2) Another which connotes the general idea of the verb in a kind of noun form and CAN take prefixes and suffixes. As with much dikduk, the precise behavior is a machloket rishonim. A related reading question: בְּמִדְבַּר ט״ו:ל״ה where רָגוֹם seems used in place of the regular verb יִרְגְּמוּ.</div>
+<div class="examples"><strong>Examples</strong><ul>
+<li>מוֹת יוּמָת, אָכוֹל תֹּאכְלוּ — frozen emphatic infinitive</li>
+<li>זָכוֹר / שָׁמוֹר in the aseret hadibrot</li>
+</ul></div>
+<div class="sources"><strong>Sources</strong>
+<span class="src">MJ (2024-05-07) msg#300</span>
+<span class="src">Joseph Rosenbaum (2024-05-07) msg#301</span>
+<span class="src">MJ (2024-05-07) msg#302</span>
+<span class="src">Moish (2024-05-07) msg#303</span>
+</div>
+</div></div>
+<div class="entry" data-cat="grammar" data-id="yiddish-dikduk-rules" data-q="do yiddish names/words follow loshon hakodesh dikduk rules?">
+<div class="entry-header" onclick="toggleEntry(this)">
+<span class="num">17</span>
+<span class="q">Do Yiddish names/words follow Loshon haKodesh dikduk rules?</span>
+<span class="toggle">\25BC</span>
+</div>
+<div class="entry-body">
+<div class="answer">No — Yiddish does not follow Loshon haKodesh&#x27;s dikduk rules, not one bit. So trying to force Hebrew grammar onto Yiddish names (e.g. whether a Yiddish name is &#x27;properly&#x27; mil&#x27;eil or milra, or how many shvas it may have — a Yiddish word can appear with three shvas in a row) is misplaced. Examples: לֵב in לה״ק means &#x27;heart&#x27;; the Yiddish name לֲיְבּ (lion, cf. German Löwe / maharal Yehuda ben Betzalel — Yehuda Leib) is a different word. לִבְּן/leben the milk product is an Arabic word. The &#x27;oy&#x27; vs &#x27;oh&#x27; and the one-yud/two-yud questions likewise belong to Yiddish/German orthography, not Hebrew grammar.</div>
+<div class="examples"><strong>Examples</strong><ul>
+<li>A Yiddish word can be written with 3 shvas in a row</li>
+<li>לֵב (לה״ק, &#x27;heart&#x27;) vs לֲיְבּ (Yiddish, &#x27;lion&#x27;)</li>
+</ul></div>
+<div class="sources"><strong>Sources</strong>
+<span class="src">MJ (2024-05-02) msg#60</span>
+<span class="src">(anon) (2024-05-02) msg#65</span>
+<span class="src">(anon) (2024-05-02) msg#68</span>
+<span class="src">(anon) (2024-05-02) msg#87</span>
+<span class="src">(anon) (2024-05-02) msg#96</span>
+</div>
+<div class="see-also"><strong>See also</strong>
+<a href="#" onclick="scrollToEntry('mil&#x27;eil-vs-milra');return false">Is the name Rachel (רָחֵל) pronounced mil&amp;#x27;eil or milra, and does the Tanach form differ from common usage?</a>
+<a href="#" onclick="scrollToEntry('cholam-oy-vs-oh');return false">What is the history of the &amp;#x27;oy&amp;#x27; vs &amp;#x27;oh&amp;#x27; pronunciation of the cholam (e.g. ha-OY-lam vs ha-OH-lam)?</a>
+</div>
+</div></div>
+<div class="entry" data-cat="grammar" data-id="mispronounced-seforim-names" data-q="which commonly mispronounced seforim names should i watch out for?">
+<div class="entry-header" onclick="toggleEntry(this)">
+<span class="num">18</span>
+<span class="q">Which commonly mispronounced seforim names should I watch out for?</span>
+<span class="toggle">\25BC</span>
+</div>
+<div class="entry-body">
+<div class="answer">A recurring thread of corrections and amusement: סֵפֶר הַמִּקְנָה (not haMakneh); עָרֹךְ הַשֻּׁלְחָן (not Aruch, as the reish takes a kamatz); הַעְמֵק שְׁאֵלָה (not Shayla, the shin has a segol); שֹׁחֵר טוֹב (not Shochor — the shin has a chataf segol, from שׁחר); שִׁבְלֵי הַלֶּקֶט (not sh&#x27;vilei); שַׁעַר הַצִּיּוּן (not haTziyon — the yod has a dagesh). The underlying pattern: people read the word as if it were a familiar Hebrew word or analogize incorrectly.</div>
+<div class="examples"><strong>Examples</strong><ul>
+<li>סֵפֶר הַמִּקְנָה ← הַמַּקְנֶה (wrong)</li>
+<li>עָרֹךְ הַשֻּׁלְחָן ← עָרוּךְ (wrong)</li>
+<li>שֹׁחֵר טוֹב ← שׁוֹחוֹר (wrong)</li>
+</ul></div>
+<div class="sources"><strong>Sources</strong>
+<span class="src">Dror Maor (2024-05-25) msg#939</span>
+<span class="src">Moshe Klausner (2024-05-25) msg#940</span>
+<span class="src">Avi Herzog (2024-05-25) msg#942</span>
+<span class="src">Avi Herzog (2024-05-25) msg#945</span>
+<span class="src">Binyomin (Ben) Adler (2024-05-26) msg#1066</span>
+</div>
+</div></div>
+<div class="entry" data-cat="grammar" data-id="toldot-spelling-variations" data-q="why is the word תולדות spelled four different ways in sefer bereishis (תולדות, תולדת, תלדת, תלדות)?">
+<div class="entry-header" onclick="toggleEntry(this)">
+<span class="num">19</span>
+<span class="q">Why is the word תולדות spelled four different ways in Sefer Bereishis (תולדות, תולדת, תלדת, תלדות)?</span>
+<span class="toggle">\25BC</span>
+</div>
+<div class="entry-body">
+<div class="answer">This kind of spelling variation (חֲסֵר וְיָתֵר — &#x27;defective&#x27; vs &#x27;full&#x27; spelling) occurs very liberally throughout the Torah. תּוֹלְדֹת appears in Bereishis, תּוֹלֶדֶת in Noach, תֶּלֶדֶת in Chayei Sarah, תֶּלְדֹת in Vayishlach and Vayeshev. Similar variation: נְשִׂיאִים is spelled four different ways including two in a single pasuk; יַעֲקֹב has a vav in five of its occurrences. The Masorah lists all of these; they are generally not considered to change meaning but are part of the accepted text. For a sofer, these variations are critical (a new Sefer Torah must be used if a mistake in חֲסֵרוֹת וְיִתְרוֹת is found), but for ordinary readers they are curiosities rather than practical concerns.</div>
+<div class="examples"><strong>Examples</strong><ul>
+<li>תּוֹלְדֹת (Bereishis) vs תּוֹלֶדֶת (Noach) vs תֶּלֶדֶת (Chayei Sarah) vs תֶּלְדֹת (Vayishlach)</li>
+</ul></div>
+<div class="sources"><strong>Sources</strong>
+<span class="src">Yakov Bodner (2024-11-24) msg#5691</span>
+<span class="src">Yakov Bodner (2024-11-24) msg#5693</span>
+<span class="src">Sammy Noe (2024-11-24) msg#5694</span>
+<span class="src">Dror Maor (2024-11-24) msg#5695</span>
+<span class="src">Sammy Noe (2024-11-24) msg#5696</span>
+</div>
+</div></div>
+<div class="entry" data-cat="grammar" data-id="kach-vs-lkach" data-q="why is it קַח (kach) in some places and לְקַח (l&amp;#x27;kach) in others — aren&amp;#x27;t they both the imperative of לָקַח?">
+<div class="entry-header" onclick="toggleEntry(this)">
+<span class="num">20</span>
+<span class="q">Why is it קַח (kach) in some places and לְקַח (l&#x27;kach) in others — aren&#x27;t they both the imperative of לָקַח?</span>
+<span class="toggle">\25BC</span>
+</div>
+<div class="entry-body">
+<div class="answer">In the future tense where there are prefixes, the lamed falls out (e.g. קַחְתָּ). The command form (imperative) mimics the future form without the prefix; thus קַח. But since there is no prefix in the imperative, the lamed does not HAVE to fall out — thus לְקַח. The two forms coexist as standard variants of the same imperative. (Rashi in Tetzaveh discusses related shoresh questions.)</div>
+<div class="examples"><strong>Examples</strong><ul>
+<li>קַח (Bereishis 12:1) vs לְקַח (various)</li>
+</ul></div>
+<div class="sources"><strong>Sources</strong>
+<span class="src">Moish (2024-07-07) msg#2452</span>
+<span class="src">Rabbi Zvi Freund (2024-07-08) msg#2501</span>
+<span class="src">Dovid H (2024-07-08) msg#2502</span>
+</div>
+<div class="see-also"><strong>See also</strong>
+<a href="#" onclick="scrollToEntry('infinitive-two-forms');return false">Why are there two seemingly different infinitive forms in Tanach (e.g. זָכוֹר / שָׁמוֹר vs. זְכֹר / forms that take prefixes)?</a>
+</div>
+</div></div>
+</div>
+<div class="category" data-cat="trop">
+<h2>Trop / Ta&#x27;amei ha-Mikra</h2>
+<div class="entry" data-cat="trop" data-id="kadma-vs-pashta" data-q="how do you tell the difference between a kadma and a pashta (and between yetiv and mahpach)?">
+<div class="entry-header" onclick="toggleEntry(this)">
+<span class="num">21</span>
+<span class="q">How do you tell the difference between a kadma and a pashta (and between yetiv and mahpach)?</span>
+<span class="toggle">\25BC</span>
+</div>
+<div class="entry-body">
+<div class="answer">A pashta is ALWAYS a mafsik (pausal) note — as a musical note it has pausal properties even when part of a continuing phrase. A kadma is a mesharet/mechaber (conjunctive). The difference is NOT (as many mistakenly think) &#x27;kadma is before an azla.&#x27; Rather: a PASHTA is at the END of the word (over the final letter); a KADMA is over the ACCENTED (stressed) letter. When the accent IS the last letter, kadma sits over the middle of the letter while pashta extends from the very edge of the letter outward beyond the word. Similarly for yetiv vs mahpach (which look alike): it is not simply &#x27;before a pashta = mahpach.&#x27; Rather — yetiv is used before a single-syllable word, or before a two-syllable mil&#x27;eil word; mahpach otherwise. Some tikkunim print slightly different marks to distinguish these, but that is a modern innovation.</div>
+<div class="sources"><strong>Sources</strong>
+<span class="src">Zev Lefkowitz (2024-05-13) msg#429</span>
+<span class="src">Avi Herzog (2024-05-13) msg#431</span>
+<span class="src">Reuven Levitin (2024-05-13) msg#432</span>
+<span class="src">MJ (2024-05-13) msg#433</span>
+<span class="src">Reuven Levitin (2024-05-13) msg#434</span>
+<span class="src">Avi Herzog (2024-05-13) msg#435</span>
+</div>
+<div class="see-also"><strong>See also</strong>
+<a href="#" onclick="scrollToEntry('trop-conjunctive-vs-disjunctive');return false">Why are there &amp;#x27;different&amp;#x27; merkhas (or munachs) — are they genuinely different notes or just musical conventions?</a>
+</div>
+</div></div>
+<div class="entry" data-cat="trop" data-id="trop-conjunctive-vs-disjunctive" data-q="why are there &amp;#x27;different&amp;#x27; merkhas (or munachs) — are they genuinely different notes or just musical conventions?">
+<div class="entry-header" onclick="toggleEntry(this)">
+<span class="num">22</span>
+<span class="q">Why are there &#x27;different&#x27; merkhas (or munachs) — are they genuinely different notes or just musical conventions?</span>
+<span class="toggle">\25BC</span>
+</div>
+<div class="entry-body">
+<div class="answer">There are genuinely different munachs that serve different functions: מֻנַּח לְגַרְמֵיהְ (munach by itself) is a mafsik; the meshartim include מֻנַּח מונח אִלֵּי (before a zarka = munach zarka), munach before a segolta (= munach segolta), munach before an esnachta, etc. These are truly different notes serving different grammatical functions, so different melodies make sense. By contrast, the &#x27;different&#x27; merkhas are NOT structurally different notes — it is a community convention to vary the melody (e.g. the mercha before a tevir is really functioning like a darga that got shortened to a mercha because of the parameters; and מֵרְכָא תְּבִיר is an abridged דַרְגָא תְּבִיר). So: munachs vary by function; mercha variation is musical convention, not grammatical.</div>
+<div class="examples"><strong>Examples</strong><ul>
+<li>מֻנַּח לְגַרְמֵיהְ (mafsik) vs מֻנַּח זַרְקָא (conjunctive)</li>
+<li>מֵרְכָא תְּבִיר = abridged דַרְגָא תְּבִיר</li>
+</ul></div>
+<div class="sources"><strong>Sources</strong>
+<span class="src">(anon) (2024-06-02) msg#1468</span>
+<span class="src">Dovid H (2024-06-02) msg#1469</span>
+<span class="src">(anon) (2024-06-02) msg#1470</span>
+<span class="src">Dovid H (2024-06-02) msg#1471</span>
+<span class="src">Dovid H (2024-06-02) msg#1472</span>
+<span class="src">Dovid H (2024-06-02) msg#1473</span>
+</div>
+<div class="see-also"><strong>See also</strong>
+<a href="#" onclick="scrollToEntry('kadma-vs-pashta');return false">How do you tell the difference between a kadma and a pashta (and between yetiv and mahpach)?</a>
+</div>
+</div></div>
+<div class="entry" data-cat="trop" data-id="shva-counts-for-trop" data-q="does a shva count as a syllable/beat when determining trop placement (e.g. mesharet of pashta, or metiga zakeif)?">
+<div class="entry-header" onclick="toggleEntry(this)">
+<span class="num">23</span>
+<span class="q">Does a shva count as a syllable/beat when determining trop placement (e.g. mesharet of pashta, or metiga zakeif)?</span>
+<span class="toggle">\25BC</span>
+</div>
+<div class="entry-body">
+<div class="answer">A shva is not a full syllable, but it DOES count as &#x27;something&#x27; occupying a beat for trop purposes. With a מְתִיגָא זָקֵף, a shva counts as occupying a position (albeit not a syllable). The same applies to the mesharet of a pashta: if ANYTHING comes between the mesharet and the pashta, the note becomes a mahpach; if nothing intervenes, it stays a mercha — and a shva counts as &#x27;something&#x27; that intervenes. (E.g. הָיְתָה תֹהוּ — three &#x27;positions&#x27; even though the shva is not a syllable.) This is the same principle by which a shva na is &#x27;counted&#x27; even though it is not itself a havara.</div>
+<div class="examples"><strong>Examples</strong><ul>
+<li>מְתִיגָא זָקֵף counts the shva as a position</li>
+<li>pashta mesharet: shva = mahpach, nothing = mercha</li>
+</ul></div>
+<div class="sources"><strong>Sources</strong>
+<span class="src">Moish (2024-06-30) msg#2273</span>
+<span class="src">MG (2024-06-30) msg#2275</span>
+<span class="src">Moish (2024-06-30) msg#2276</span>
+<span class="src">MG (2024-06-30) msg#2277</span>
+</div>
+<div class="see-also"><strong>See also</strong>
+<a href="#" onclick="scrollToEntry('shva-syllable');return false">Is a shva na its own syllable (havara)?</a>
+<a href="#" onclick="scrollToEntry('trop-conjunctive-vs-disjunctive');return false">Why are there &amp;#x27;different&amp;#x27; merkhas (or munachs) — are they genuinely different notes or just musical conventions?</a>
+</div>
+</div></div>
+<div class="entry" data-cat="trop" data-id="pesik-vs-meseg-distinction" data-q="what is the difference between a pesik (פְּסִיק) and a meseg (מְסֵג)? do they mean different things?">
+<div class="entry-header" onclick="toggleEntry(this)">
+<span class="num">24</span>
+<span class="q">What is the difference between a pesik (פְּסִיק) and a meseg (מְסֵג)? Do they mean different things?</span>
+<span class="toggle">\25BC</span>
+</div>
+<div class="entry-body">
+<div class="answer">Yes. A מְסֵג (also called siluq vertical stroke) is the short vertical line placed to the LEFT of a syllable&#x27;s vowel mark — it serves as a secondary stress indicator or to lengthen the vowel on a closed syllable, and its function depends on the word structure (sometimes indicating shva na, sometimes just lengthening). A פְּסִיק is the longer vertical line placed between words (in the &#x27;gap&#x27; between the last letter of one word and the first letter of the next) — it indicates a full disjunctive pause between the two words. In אֱמֶת׳ (ta&#x27;amei emet), both terms appear: the vertical line between words (like the stroke in בָּרוּךְ יְהֹוָה׳) is a pesik, while מַהְפַּךְ לְגַרְמֵיהּ and אַזְלָא לְגַרְמֵיהּ are genuinely different notes that happen to look similar. A masoretic list exists distinguishing pesik and legarmei (the line attached to a ta&#x27;am note) throughout Tanach.</div>
+<div class="examples"><strong>Examples</strong><ul>
+<li>בָּרוּךְ יְהֹוָה׳ — pesik between words</li>
+<li>Legarmei: line attached to a trop note (munach legarmei, azla legarmei)</li>
+</ul></div>
+<div class="sources"><strong>Sources</strong>
+<span class="src">Yaacob (2024-06-09) msg#1560</span>
+<span class="src">MJ (2024-06-09) msg#1561</span>
+<span class="src">MJ (2024-06-09) msg#1564</span>
+<span class="src">Rabbi Zvi Freund (2024-12-31) msg#6577</span>
+<span class="src">MG (2024-12-31) msg#6578</span>
+<span class="src">MG (2024-12-31) msg#6579</span>
+<span class="src">MJ (2024-08-11) msg#3884</span>
+</div>
+<div class="see-also"><strong>See also</strong>
+<a href="#" onclick="scrollToEntry('gaya-meteg-terminology');return false">What is the difference between the terms ga&amp;#x27;ya, meteg, ma&amp;#x27;arich, and ma&amp;#x27;amid?</a>
+<a href="#" onclick="scrollToEntry('meteg-indicates-shva-na');return false">Does a meteg (ga&amp;#x27;ya) indicate that the following shva is na?</a>
+</div>
+</div></div>
+<div class="entry" data-cat="trop" data-id="trope-primary-musical-not-punctuation" data-q="is the primary function of trop (cantillation marks) punctuation, or is something else more fundamental?">
+<div class="entry-header" onclick="toggleEntry(this)">
+<span class="num">25</span>
+<span class="q">Is the primary function of trop (cantillation marks) punctuation, or is something else more fundamental?</span>
+<span class="toggle">\25BC</span>
+</div>
+<div class="entry-body">
+<div class="answer">Rav Breuer held that when you take a deeper dive into the trop, you can see clearly that punctuation is NOT the primary concern — syllabic and musical considerations are. A basic example: וַיֹּאמֶר מֹשֶׁה has a zarka (a disjunctive/mafsik note) between these two words, but there is no syntactic break between them. A segol always needs a zarka before it as a musical &#x27;lead-in,&#x27; so this zarka is musical only. People who try to force punctuation/syntax onto every trop mark make real mistakes — a little knowledge is dangerous. That said, the overall hierarchy (stronger mafsikim for larger syntactic breaks) does follow punctuation at the macro level; it is the micro level (especially the meshartim/conjunctives) where musical needs dominate.</div>
+<div class="examples"><strong>Examples</strong><ul>
+<li>וַיֹּאמֶר מֹשֶׁה — zarka is musical (lead-in to segol), not syntactic</li>
+</ul></div>
+<div class="sources"><strong>Sources</strong>
+<span class="src">MG (2024-12-03) msg#6025</span>
+<span class="src">MG (2024-12-03) msg#6028</span>
+<span class="src">MG (2024-12-03) msg#6031</span>
+<span class="src">~ (2024-12-03) msg#6032</span>
+<span class="src">MG (2024-12-03) msg#6033</span>
+</div>
+<div class="see-also"><strong>See also</strong>
+<a href="#" onclick="scrollToEntry('trop-conjunctive-vs-disjunctive');return false">Why are there &amp;#x27;different&amp;#x27; merkhas (or munachs) — are they genuinely different notes or just musical conventions?</a>
+<a href="#" onclick="scrollToEntry('shva-counts-for-trop');return false">Does a shva count as a syllable/beat when determining trop placement (e.g. mesharet of pashta, or metiga zakeif)?</a>
+</div>
+</div></div>
+<div class="entry" data-cat="trop" data-id="karnei-fara-not-double-telisha" data-q="is the קַרְנֵי פָארָה (a rare trop note) actually a telisha gedola on top of a telisha ketana, or is it its own symbol?">
+<div class="entry-header" onclick="toggleEntry(this)">
+<span class="num">26</span>
+<span class="q">Is the קַרְנֵי פָארָה (a rare trop note) actually a Telisha Gedola on top of a Telisha Ketana, or is it its own symbol?</span>
+<span class="toggle">\25BC</span>
+</div>
+<div class="entry-body">
+<div class="answer">It is its own separate trop note with its own name and its own musical function. The reason it LOOKS like a telisha gedola stacked on a telisha ketana is that printers (who needed to create a physical die for each symbol) apparently decided to combine the two shapes rather than produce a new die for a trop that occurs so rarely. There is some debate among practitioners about whether to sing it as TG+TK or as its own unique melodic phrase. Ben Asher&#x27;s list of trop names does have a distinct name for it. The Masoretes themselves did not divide geresh into &#x27;azla&#x27; and &#x27;geresh&#x27; — there was only one name with one symbol; &#x27;azla&#x27; is a much later term.</div>
+<div class="sources"><strong>Sources</strong>
+<span class="src">S.E. (2024-09-24) msg#4759</span>
+<span class="src">MJ (2024-09-24) msg#4761</span>
+<span class="src">חיים ישראל (2024-09-24) msg#4762</span>
+<span class="src">Ezra Arovas (2024-09-24) msg#4765</span>
+<span class="src">MG (2024-08-25) msg#4137</span>
+<span class="src">MG (2024-08-25) msg#4139</span>
+</div>
+<div class="see-also"><strong>See also</strong>
+<a href="#" onclick="scrollToEntry('pesik-vs-meseg-distinction');return false">What is the difference between a pesik (פְּסִיק) and a meseg (מְסֵג)? Do they mean different things?</a>
+</div>
+</div></div>
+<div class="entry" data-cat="trop" data-id="revii-vs-gershayim" data-q="is there a real distinction between a revi&amp;#x27;i (רְבִיעִי) and gershayim (גֵּרְשַׁיִם)? when do different tikkunim disagree?">
+<div class="entry-header" onclick="toggleEntry(this)">
+<span class="num">27</span>
+<span class="q">Is there a real distinction between a revi&#x27;i (רְבִיעִי) and gershayim (גֵּרְשַׁיִם)? When do different tikkunim disagree?</span>
+<span class="toggle">\25BC</span>
+</div>
+<div class="entry-body">
+<div class="answer">Yes — revi&#x27;i and gershayim are genuinely different notes with different grammatical functions, though they look similar (gershayim looks like a double-geresh: two short strokes). A revi&#x27;i is a מַפְסִיק (disjunctive); gershayim (also known as רְבִיעִי קָטָן) serves a conjunctive function. Different tikkunim sometimes show different notes for the same word — this is usually a matter of different גִּרְסָאוֹת (textual versions) rather than a true מַחֲלֹקֶת. Better manuscripts and editions tend to converge on the correct reading. An example: וַאֲנִי on וַאֲנִי הִנְנִי מֵבִיא — some tikkunim show gershayim, but the better mss have revia. Note: the munach legarmei and gershayim look almost identical in some printings, which adds confusion.</div>
+<div class="examples"><strong>Examples</strong><ul>
+<li>וַאֲנִי (Vayeitzei) — better mss have revia, not gershayim</li>
+</ul></div>
+<div class="sources"><strong>Sources</strong>
+<span class="src">Ezra Arovas (2024-05-24) msg#927</span>
+<span class="src">MG (2024-05-24) msg#928</span>
+<span class="src">Yoir (2024-05-24) msg#930</span>
+<span class="src">Abes (2025-03-11) msg#7819</span>
+</div>
+<div class="see-also"><strong>See also</strong>
+<a href="#" onclick="scrollToEntry('girsa-vs-machloket');return false">When different chumashim/tikkunim show different nikkud or trop, is that a &amp;#x27;machloket&amp;#x27; (dispute)?</a>
+<a href="#" onclick="scrollToEntry('kadma-vs-pashta');return false">How do you tell the difference between a kadma and a pashta (and between yetiv and mahpach)?</a>
+</div>
+</div></div>
+<div class="entry" data-cat="trop" data-id="chabad-pazer-as-mercha-kefula" data-q="why do some chabad ba&amp;#x27;alei koreh sing the pazer in the aseres hadibros as a mercha kefula (double mercha)?">
+<div class="entry-header" onclick="toggleEntry(this)">
+<span class="num">28</span>
+<span class="q">Why do some Chabad ba&#x27;alei koreh sing the pazer in the Aseres HaDibros as a mercha kefula (double mercha)?</span>
+<span class="toggle">\25BC</span>
+</div>
+<div class="entry-body">
+<div class="answer">The source for this practice is Rav Mordechai Schusterman, who often read in 770 for the Rebbe. Recordings of him doing entire parshios exist online. It is not clear whether this was intended only for the Aseres HaDibros or was his general practice for all pazer notes, nor whether the Rebbe explicitly instructed him to do so. Outside of Chabad, the pazer is universally sung with its own distinctive melody.</div>
+<div class="sources"><strong>Sources</strong>
+<span class="src">YYC (2024-06-04) msg#1507</span>
+<span class="src">MG (2024-06-04) msg#1509</span>
+<span class="src">MJ (2024-06-04) msg#1510</span>
+<span class="src">MG (2024-06-04) msg#1514</span>
+</div>
+<div class="see-also"><strong>See also</strong>
+<a href="#" onclick="scrollToEntry('karnei-fara-not-double-telisha');return false">Is the קַרְנֵי פָארָה (a rare trop note) actually a Telisha Gedola on top of a Telisha Ketana, or is it its own symbol?</a>
+</div>
+</div></div>
+<div class="entry" data-cat="trop" data-id="zarka-not-followed-by-segol" data-q="can a zarka appear without being followed by a segol?">
+<div class="entry-header" onclick="toggleEntry(this)">
+<span class="num">29</span>
+<span class="q">Can a zarka appear without being followed by a segol?</span>
+<span class="toggle">\25BC</span>
+</div>
+<div class="entry-body">
+<div class="answer">Yes — but it is extremely rare. Outside of אֱמֶת (Tehillim, Iyov, Mishlei), Rabbi Zvi Freund posed a riddle: where in Tanach does a zarka appear without being followed by a segol? Some editions add a segol by mistake. The answer involves a pasuk where the word ending with zarka is followed by a sof pasuk directly. In אֱמֶת, there are also unusual trop patterns — for instance, a pasuk in Nevi&#x27;im where two zarkas appear in a row (which would not happen in Torah trop). These exceptional cases demonstrate that the trop system in אֱמֶת operates by somewhat different rules than the Torah/Nevi&#x27;im system.</div>
+<div class="examples"><strong>Examples</strong><ul>
+<li>Yeshaya 45:1 — zarka not followed by segol (some editions add it by mistake)</li>
+</ul></div>
+<div class="sources"><strong>Sources</strong>
+<span class="src">Rabbi Zvi Freund (2024-09-09) msg#4509</span>
+<span class="src">Dovy Pollack (2024-09-09) msg#4510</span>
+<span class="src">Rabbi Zvi Freund (2024-09-09) msg#4512</span>
+<span class="src">Rabbi Zvi Freund (2024-09-09) msg#4514</span>
+<span class="src">MG (2024-09-09) msg#4515</span>
+</div>
+<div class="see-also"><strong>See also</strong>
+<a href="#" onclick="scrollToEntry('pesik-vs-meseg-distinction');return false">What is the difference between a pesik (פְּסִיק) and a meseg (מְסֵג)? Do they mean different things?</a>
+<a href="#" onclick="scrollToEntry('trope-primary-musical-not-punctuation');return false">Is the primary function of trop (cantillation marks) punctuation, or is something else more fundamental?</a>
+</div>
+</div></div>
+</div>
+<div class="category" data-cat="taamei-emet">
+<h2>Ta&#x27;amei Emet (Psalms/Job/Proverbs)</h2>
+<div class="entry" data-cat="taamei-emet" data-id="eicha-tune-etnachta-vs-sof-pasuk" data-q="when leining eicha (or the eicha tune), should the etnachta and sof pasuk be sung differently, and does anyone differentiate the tipcha before etnachta from the tipcha before sof pasuk?">
+<div class="entry-header" onclick="toggleEntry(this)">
+<span class="num">30</span>
+<span class="q">When leining Eicha (or the Eicha tune), should the etnachta and sof pasuk be sung differently, and does anyone differentiate the tipcha before etnachta from the tipcha before sof pasuk?</span>
+<span class="toggle">\25BC</span>
+</div>
+<div class="entry-body">
+<div class="answer">Properly, the etnachta and sof pasuk in the Eicha tune SHOULD be differentiated — yet almost everyone sings them identically, which &#x27;can&#x27;t really be right&#x27; musically/grammatically. A minority do differentiate. More attainable: the TIPCHA preceding an etnachta can be distinguished from the tipcha before a sof-pasuk. (This reflects a broader point — the Eicha/ta&#x27;amei emet system encodes distinctions our simplified contemporary tunes collapse.) Related minhag question: in the Megillat Esther reading we lein sad pesukim in the Eicha tune, yet in Eicha itself we do not switch any &#x27;happy&#x27; pesukim (e.g. חַסְדֵי ה׳ כִּי לֹא תָמְנוּ) to a regular tune. Al pi drush: our simcha is incomplete without full השראת השכינה (hence &#x27;tears of joy&#x27;), whereas our sadness is &#x27;maxed out&#x27; — so the Eicha tune pervades.</div>
+<div class="examples"><strong>Examples</strong><ul>
+<li>Eicha etnachta vs sof pasuk should differ; tipcha-before-etnachta vs tipcha-before-sof-pasuk can differ</li>
+</ul></div>
+<div class="sources"><strong>Sources</strong>
+<span class="src">Binyomin Abramson 89 (2024-08-11) msg#3763</span>
+<span class="src">Yoir (2024-08-11) msg#3764</span>
+<span class="src">MJ (2024-08-11) msg#3765</span>
+<span class="src">(anon) (2024-08-11) msg#3766</span>
+<span class="src">. (2024-08-11) msg#3767</span>
+</div>
+<div class="see-also"><strong>See also</strong>
+<a href="#" onclick="scrollToEntry('haftarah-tunes-shabbos-chazon');return false">How is the haftarah of Shabbos Chazon / Tisha b&amp;#x27;Av leined — from which pasuk does the Eicha tune start and where do you switch back?</a>
+</div>
+</div></div>
+<div class="entry" data-cat="taamei-emet" data-id="ketuvim-trop-systems" data-q="which trop system is used for each sefer in ketuvim, and is there a basis for differentiating?">
+<div class="entry-header" onclick="toggleEntry(this)">
+<span class="num">31</span>
+<span class="q">Which trop system is used for each sefer in Ketuvim, and is there a basis for differentiating?</span>
+<span class="toggle">\25BC</span>
+</div>
+<div class="entry-body">
+<div class="answer">The ספר חסידים (siman 38) states explicitly that the tunes are fixed by halacha: &#x27;do not move your fellow&#x27;s boundary which the early ones set&#x27; — meaning do not say the Torah tune for Nevi&#x27;im or Ketuvim, or vice versa. The three major trop families in Ketuvim are: (1) תַּעֲמֵי אֶמֶת — used for Tehillim, Mishlei, and Iyov (but only from Chapter 3 onward; the first 2 chapters of Iyov use regular Torah trop); (2) Shir HaShirim / Rus / Kohelet trop (a unique system shared by these three megillot); (3) Esther trop; (4) Eicha trop. Other books: Daniel, Ezra, Nechemya, and Divrei HaYamim are commonly read with haftarah (Nevi&#x27;im) trop, though some argue they should use the Shir/Rus/Kohelet system. The first two chapters of Iyov are an exception — they appear in prose style with regular trop, switching to ta&#x27;amei emet only from Chapter 3.</div>
+<div class="examples"><strong>Examples</strong><ul>
+<li>Iyov chapters 1-2: regular Torah trop</li>
+<li>Iyov chapter 3 onward: ta&#x27;amei emet</li>
+<li>Daniel / Ezra / Nechemya / Divrei HaYamim: typically haftarah trop</li>
+</ul></div>
+<div class="sources"><strong>Sources</strong>
+<span class="src">. (2024-08-11) msg#3873</span>
+<span class="src">MG (2024-08-11) msg#3875</span>
+<span class="src">Aharon Gaffen (2024-08-11) msg#3876</span>
+<span class="src">Ezra Arovas (2024-08-11) msg#3877</span>
+<span class="src">. (2024-08-11) msg#3874</span>
+<span class="src">. (2024-08-11) msg#3883</span>
+</div>
+<div class="see-also"><strong>See also</strong>
+<a href="#" onclick="scrollToEntry('eicha-tune-etnachta-vs-sof-pasuk');return false">When leining Eicha (or the Eicha tune), should the etnachta and sof pasuk be sung differently, and does anyone differentiate the tipcha before etnachta from the tipcha before sof pasuk?</a>
+<a href="#" onclick="scrollToEntry('haftarah-tunes-shabbos-chazon');return false">How is the haftarah of Shabbos Chazon / Tisha b&amp;#x27;Av leined — from which pasuk does the Eicha tune start and where do you switch back?</a>
+</div>
+</div></div>
+<div class="entry" data-cat="taamei-emet" data-id="megillah-trop-differentiations" data-q="should the megillah trop differentiate between etnachta and sof pasuk, or between various munach types?">
+<div class="entry-header" onclick="toggleEntry(this)">
+<span class="num">32</span>
+<span class="q">Should the megillah trop differentiate between etnachta and sof pasuk, or between various munach types?</span>
+<span class="toggle">\25BC</span>
+</div>
+<div class="entry-body">
+<div class="answer">Several trop distinctions are &#x27;collapsed&#x27; in the commonly sung megillah tune: (1) Etnachta and sof pasuk are sung identically by most Ashkenazim (Yekkes are an exception — they do differentiate). (2) The munach legarmei usually ends up sounding the same as either a tevir or a telisha ketana. (3) Telisha ketana and telisha gedola are not consistently differentiated in megillah trop — seasoned ba&#x27;alei koreh &#x27;shrug&#x27; when asked about this. (4) Similarly, in Eicha trop, the telisha ketana presents a challenge: the Mishna Berura says each &#x27;eicha&#x27; is louder than the one before, which is harder to achieve on a rising note like telisha ketana. The munach before segol in Eicha also has its own distinctive shape (goes up on one note and comes back down on the next).</div>
+<div class="sources"><strong>Sources</strong>
+<span class="src">Zev Lefkowitz (2025-03-11) msg#7789</span>
+<span class="src">MJ (2025-03-11) msg#7790</span>
+<span class="src">DL (2025-03-11) msg#7793</span>
+<span class="src">Sammy Noe (2025-03-11) msg#7794</span>
+<span class="src">MJ (2025-03-11) msg#7795</span>
+<span class="src">Dovid H (2024-08-11) msg#3842</span>
+<span class="src">Rabbi Zvi Freund (2024-08-11) msg#3839</span>
+</div>
+<div class="see-also"><strong>See also</strong>
+<a href="#" onclick="scrollToEntry('eicha-tune-etnachta-vs-sof-pasuk');return false">When leining Eicha (or the Eicha tune), should the etnachta and sof pasuk be sung differently, and does anyone differentiate the tipcha before etnachta from the tipcha before sof pasuk?</a>
+<a href="#" onclick="scrollToEntry('karnei-fara-not-double-telisha');return false">Is the קַרְנֵי פָארָה (a rare trop note) actually a Telisha Gedola on top of a Telisha Ketana, or is it its own symbol?</a>
+</div>
+</div></div>
+</div>
+<div class="category" data-cat="haftarah">
+<h2>Haftarah &amp; Minhagim</h2>
+<div class="entry" data-cat="haftarah" data-id="haftarah-tunes-shabbos-chazon" data-q="how is the haftarah of shabbos chazon / tisha b&amp;#x27;av leined — from which pasuk does the eicha tune start and where do you switch back?">
+<div class="entry-header" onclick="toggleEntry(this)">
+<span class="num">33</span>
+<span class="q">How is the haftarah of Shabbos Chazon / Tisha b&#x27;Av leined — from which pasuk does the Eicha tune start and where do you switch back?</span>
+<span class="toggle">\25BC</span>
+</div>
+<div class="entry-body">
+<div class="answer">Minhagim vary between (and within) the US and Israel. Israel (litvish minhag): start חָזוֹן with the regular tune, switch to the Eicha tune only from the second pasuk, and switch back to regular in the middle at רַחֲצוּ הִזַּכּוּ. US (Ashkenazi): commonly read from the 2nd pasuk on for Shabbos Chazon. Litvishe oilam in the US has varying minhagim on the first pasuk, but many switch back to the regular tune for the middle 4 pesukim beginning רַחֲצוּ הִזַּכּוּ, then back to Eicha for וְאִם־תְּמָאֲנוּ, then back to regular for the last 4 pesukim. (The exact switching points differ by community; some do only 2 middle pesukim at לְכוּ נָא וְנוֹכָחָה and the last 2.)</div>
+<div class="examples"><strong>Examples</strong><ul>
+<li>Shabbos Chazon: switch to Eicha from 2nd pasuk; back to regular at רַחֲצוּ הִזַּכּּוּ</li>
+</ul></div>
+<div class="sources"><strong>Sources</strong>
+<span class="src">Moshe Grunfeld (2024-06-20) msg#1982</span>
+<span class="src">MJ (2024-06-20) msg#1984</span>
+<span class="src">Moshe Grunfeld (2024-06-20) msg#1985</span>
+<span class="src">Reuven Levitin (2024-06-20) msg#1986</span>
+<span class="src">MG (2024-06-20) msg#1988</span>
+</div>
+<div class="see-also"><strong>See also</strong>
+<a href="#" onclick="scrollToEntry('eicha-tune-etnachta-vs-sof-pasuk');return false">When leining Eicha (or the Eicha tune), should the etnachta and sof pasuk be sung differently, and does anyone differentiate the tipcha before etnachta from the tipcha before sof pasuk?</a>
+</div>
+</div></div>
+<div class="entry" data-cat="haftarah" data-id="haftarah-hashayla-hey" data-q="in the tisha b&amp;#x27;av haftarah, הֶהָ&amp;#x27; אֵין בְּצִיּוֹן — is the leading heh pronounced (hey hashayla)?">
+<div class="entry-header" onclick="toggleEntry(this)">
+<span class="num">34</span>
+<span class="q">In the Tisha b&#x27;Av haftarah, הֶהָ&#x27; אֵין בְּצִיּוֹן — is the leading heh pronounced (hey hashayla)?</span>
+<span class="toggle">\25BC</span>
+</div>
+<div class="entry-body">
+<div class="answer">This is an exception to the usual rule precisely because it is a hey hashayla (a heh of inquiry). The Minchat Shai addresses it, and confirms it is an exception. (A recurring pattern: when a leading letter is exceptional, Minchat Shai is often the source that flags it.)</div>
+<div class="examples"><strong>Examples</strong><ul>
+<li>הֶהָ&#x27; אֵין בְּצִיּוֹן — hey hashayla, exception per Minchat Shai</li>
+</ul></div>
+<div class="sources"><strong>Sources</strong>
+<span class="src">Yechiel Pisem (2024-07-29) msg#3257</span>
+<span class="src">Binyomin Abramson 89 (2024-07-29) msg#3260</span>
+<span class="src">Rabbi Zvi Freund (2024-07-29) msg#3263</span>
+</div>
+<div class="see-also"><strong>See also</strong>
+<a href="#" onclick="scrollToEntry('mesora-reference-works');return false">Which seforim are used to look up Masorah lists (e.g. missing mappikim, exceptional readings)?</a>
+</div>
+</div></div>
+<div class="entry" data-cat="haftarah" data-id="megillah-rus-bracha-klaf" data-q="when leining megillat rus from a klaf, what bracha do you make?">
+<div class="entry-header" onclick="toggleEntry(this)">
+<span class="num">35</span>
+<span class="q">When leining Megillat Rus from a klaf, what bracha do you make?</span>
+<span class="toggle">\25BC</span>
+</div>
+<div class="entry-body">
+<div class="answer">The group was polled on this with three options: עַל מִקְרָא מְגִלָּה only; עַל מִקְרָא מְגִלָּה and שֶׁהֶחֱיָנוּ; or none. The poll results showed &#x27;none&#x27; as the plurality (6 votes), שֶׁהֶחֱיָנוּ added got 4, and just עַל מִקְרָא מְגִלָּה got 2. There is a drush/source that applies to Megillat Rus specifically; the question of whether to make a bracha at all on Rus and Shir HaShirim (when read from a klaf) is subject to discussion.</div>
+<div class="sources"><strong>Sources</strong>
+<span class="src">Simcha Simon (2024-06-14) msg#1874</span>
+<span class="src">MJ (2024-06-14) msg#1875</span>
+<span class="src">MG (2024-06-14) msg#1876</span>
+</div>
+</div></div>
+<div class="entry" data-cat="haftarah" data-id="special-tunes-shira-nesiim-masaot" data-q="which parts of leining get special tunes (e.g. az yashir, nesi&amp;#x27;im, masaot), and what is the basis?">
+<div class="entry-header" onclick="toggleEntry(this)">
+<span class="num">36</span>
+<span class="q">Which parts of leining get special tunes (e.g. Az Yashir, Nesi&#x27;im, Masaot), and what is the basis?</span>
+<span class="toggle">\25BC</span>
+</div>
+<div class="entry-body">
+<div class="answer">Several passages have special niggunim that are well-established but not universally observed: (1) אַז יָשִׁיר — many pesukim are sung with a special tune; one minhag is that all pesukim containing Hashem&#x27;s name get the special niggun. (2) נְשִׂיאִים — a special tune for the tribal princes&#x27; offerings in Bamidbar 7; about 50% of US shuls do this. (3) מַסְעוֹת — the Israelites&#x27; travel stations in Bamidbar 33; more widely done. (4) עֲשֶׂרֶת הַדִּבְּרוֹת — some communities (notably British) sing the end of each dibra with an Az Yashir-like tune; many US shuls do not. (5) יְהַלֶּלוּךָ — ends the first perek of Tehillim with a special tune. These minhagim vary significantly between and within communities. Notably, &#x27;the Prushim in Eretz Yisrael&#x27; are said to skip several of these.</div>
+<div class="examples"><strong>Examples</strong><ul>
+<li>Az Yashir: special tune for pesukim with Shem Hashem</li>
+<li>Nesi&#x27;im: special tune ~50% in US</li>
+<li>Masaot: more widely practiced</li>
+</ul></div>
+<div class="sources"><strong>Sources</strong>
+<span class="src">Yoir (2024-06-20) msg#2027</span>
+<span class="src">MG (2024-06-20) msg#2028</span>
+<span class="src">Moish (2024-06-20) msg#2030</span>
+<span class="src">Yoir (2024-06-20) msg#2032</span>
+<span class="src">MJ (2024-06-20) msg#2033</span>
+<span class="src">MG (2024-06-20) msg#2034</span>
+<span class="src">J (2025-04-18) msg#8277</span>
+<span class="src">Mordechai (2025-04-18) msg#8278</span>
+<span class="src">Gedaliah Levin (2025-03-05) msg#7609</span>
+<span class="src">MG (2025-03-05) msg#7610</span>
+</div>
+<div class="see-also"><strong>See also</strong>
+<a href="#" onclick="scrollToEntry('ketuvim-trop-systems');return false">Which trop system is used for each sefer in Ketuvim, and is there a basis for differentiating?</a>
+</div>
+</div></div>
+</div>
+<div class="category" data-cat="mesora">
+<h2>Mesora &amp; Sefer-Torah Fixing</h2>
+<div class="entry" data-cat="mesora" data-id="mesora-reference-works" data-q="which seforim are used to look up masorah lists (e.g. missing mappikim, exceptional readings)?">
+<div class="entry-header" onclick="toggleEntry(this)">
+<span class="num">37</span>
+<span class="q">Which seforim are used to look up Masorah lists (e.g. missing mappikim, exceptional readings)?</span>
+<span class="toggle">\25BC</span>
+</div>
+<div class="entry-body">
+<div class="answer">Several layers: (1) אָכְלָה וְאָכְלָה — which Rashi calls the מְסֹרֶת הַגְּדוֹלָה (note: a different work from what we call the מָסוֹרָה גְּדוֹלָה). The common accessible edition is Frensdorff&#x27;s. (2) C.D. Ginsburg&#x27;s המסורה — massive and comprehensive, but not always easy to find the specific item. (3) The Aleppo Codex&#x27;s own Masorah Gedolah (parsha-specific marginal notes, e.g. the conditions for shva na under וְשָׂבְתָה in Shoftim). Note that אָכְלָה וְאָכְלָה lists only UNIQUE words missing a feature (so a common word like לָהּ would not appear in its mappik-less list).</div>
+<div class="sources"><strong>Sources</strong>
+<span class="src">MG (2024-06-14) msg#1893</span>
+<span class="src">MG (2024-06-14) msg#1894</span>
+<span class="src">MG (2024-06-14) msg#1895</span>
+<span class="src">MG (2024-05-20) msg#779</span>
+<span class="src">MG (2024-05-19) msg#674</span>
+</div>
+<div class="see-also"><strong>See also</strong>
+<a href="#" onclick="scrollToEntry('dagesh-mapik-omitted-list');return false">Are there places where a mappik heh is expected but missing, and where can one find the lists?</a>
+</div>
+</div></div>
+<div class="entry" data-cat="mesora" data-id="girsa-vs-machloket" data-q="when different chumashim/tikkunim show different nikkud or trop, is that a &amp;#x27;machloket&amp;#x27; (dispute)?">
+<div class="entry-header" onclick="toggleEntry(this)">
+<span class="num">38</span>
+<span class="q">When different chumashim/tikkunim show different nikkud or trop, is that a &#x27;machloket&#x27; (dispute)?</span>
+<span class="toggle">\25BC</span>
+</div>
+<div class="entry-body">
+<div class="answer">Usually it is better described as different GIRSA&#x27;OT (textual versions) rather than a &#x27;machloket.&#x27; Better manuscripts and editions tend to converge on a reading (e.g. a revia on וְאַנִּי in Vayeitzei appears in the superior mss/editions, where a weaker tikkun might show gershayim). The Masorah sometimes explicitly gives the sofer/editor OPTIONS (e.g. לֻקְחָה may be written with a shva or as chataf kamatz — there are manuscripts with just a shva that Minchat Shai did not have). Crucially, such variations often do NOT change pronunciation (e.g. shva vs chataf-kamatz on לֻקְחָה sounds the same); they reflect scribal/masoretic notation choices. So &#x27;why does my tikkun differ?&#x27; is usually answered by &#x27;different girsa/edition,&#x27; and the question becomes which has the stronger manuscript basis.</div>
+<div class="examples"><strong>Examples</strong><ul>
+<li>לֻקְחָה — shva or chataf-kamatz (sounds identical; a masoretic-notation option)</li>
+<li>revia vs gershayim on וְאַנִּי — better mss have revia</li>
+</ul></div>
+<div class="sources"><strong>Sources</strong>
+<span class="src">Ezra Arovas (2024-05-24) msg#927</span>
+<span class="src">MG (2024-05-24) msg#928</span>
+<span class="src">Dror Maor (2024-05-20) msg#775</span>
+<span class="src">MG (2024-05-20) msg#779</span>
+<span class="src">Dror Maor (2024-05-20) msg#781</span>
+</div>
+<div class="see-also"><strong>See also</strong>
+<a href="#" onclick="scrollToEntry('kamatz-katan-lisvov');return false">Should it be לִסְבֹב or לִסְבֹּב (lisvov / lisbov)? Why is there a rafeh (no dagesh)?</a>
+<a href="#" onclick="scrollToEntry('mesora-reference-works');return false">Which seforim are used to look up Masorah lists (e.g. missing mappikim, exceptional readings)?</a>
+</div>
+</div></div>
+<div class="entry" data-cat="mesora" data-id="baalei-mesorah-who" data-q="who are the ba&amp;#x27;alei mesora (masoretes), and what exactly did they do?">
+<div class="entry-header" onclick="toggleEntry(this)">
+<span class="num">39</span>
+<span class="q">Who are the ba&#x27;alei mesora (Masoretes), and what exactly did they do?</span>
+<span class="toggle">\25BC</span>
+</div>
+<div class="entry-body">
+<div class="answer">The term בַּעֲלֵי הַמָּסוֹרָה covers a range of scholars over approximately 300 years (c. 6th–9th centuries CE), most of whose identities are no longer known. They collectively developed the written notation system for vowels (nikud) and cantillation marks (trop), created lists and notes of how many times certain words or patterns appear in Tanach, and standardized the text. The two most prominent families are Ben Asher (BA) and Ben Naftali (BN), whose readings sometimes diverge. The Aleppo Codex (Keter Aram Tzova) is the most important surviving manuscript of the Ben Asher tradition; Yeivin&#x27;s work documents the differences between BA and BN. The Leningrad Codex (the base text for most modern editions) is also Ben Asher. Minchat Shai consulted multiple codices in reaching his conclusions, and Rav Breuer&#x27;s Chorev Tanach is a synthetic edition attempting to reconstruct the BA text, with his own methodological choices (e.g. removing all chataf patach under non-gutturals and replacing with shva).</div>
+<div class="examples"><strong>Examples</strong><ul>
+<li>Ben Asher vs Ben Naftali divergences (e.g. כִּי־מִי נַח זֹאת לִי in the haftara of כִּי תָצֵא)</li>
+</ul></div>
+<div class="sources"><strong>Sources</strong>
+<span class="src">MJ (2024-07-09) msg#2585</span>
+<span class="src">Dror Maor (2024-07-09) msg#2545</span>
+<span class="src">MG (2024-07-09) msg#2550</span>
+<span class="src">MJ (2024-07-09) msg#2552</span>
+<span class="src">MG (2024-07-09) msg#2554</span>
+<span class="src">Moish (2024-08-18) msg#4059</span>
+<span class="src">MJ (2024-08-18) msg#4060</span>
+</div>
+<div class="see-also"><strong>See also</strong>
+<a href="#" onclick="scrollToEntry('mesora-reference-works');return false">Which seforim are used to look up Masorah lists (e.g. missing mappikim, exceptional readings)?</a>
+<a href="#" onclick="scrollToEntry('girsa-vs-machloket');return false">When different chumashim/tikkunim show different nikkud or trop, is that a &amp;#x27;machloket&amp;#x27; (dispute)?</a>
+</div>
+</div></div>
+<div class="entry" data-cat="mesora" data-id="aleppo-codex-what-survives" data-q="what parts of the aleppo codex survive, and what is the leningrad codex?">
+<div class="entry-header" onclick="toggleEntry(this)">
+<span class="num">40</span>
+<span class="q">What parts of the Aleppo Codex survive, and what is the Leningrad Codex?</span>
+<span class="toggle">\25BC</span>
+</div>
+<div class="entry-body">
+<div class="answer">The Aleppo Codex (כֶּתֶר אֲרָם צוֹבָא) was the oldest and most authoritative Masoretic manuscript of the Tanach. A riot in 1947 destroyed or lost approximately one-third of it, including nearly all of the Torah (only the last few chapters survive), most of Writings, and parts of the Prophets. What remains is still invaluable, especially for Nevi&#x27;im. The Leningrad Codex (dated 1008 CE) is the oldest complete manuscript of the entire Tanach, and serves as the base text for the Biblia Hebraica Stuttgartensia and most modern printed editions. For books where the Aleppo Codex survives, it is considered superior; where it does not, the Leningrad is the best available.</div>
+<div class="sources"><strong>Sources</strong>
+<span class="src">MJ (2024-07-09) msg#2552</span>
+<span class="src">MG (2024-05-28) msg#1346</span>
+</div>
+<div class="see-also"><strong>See also</strong>
+<a href="#" onclick="scrollToEntry('baalei-mesorah-who');return false">Who are the ba&amp;#x27;alei mesora (Masoretes), and what exactly did they do?</a>
+<a href="#" onclick="scrollToEntry('mesora-reference-works');return false">Which seforim are used to look up Masorah lists (e.g. missing mappikim, exceptional readings)?</a>
+</div>
+</div></div>
+<div class="entry" data-cat="mesora" data-id="correcting-rav-in-leining" data-q="if a rav or rosh yeshiva makes a mistake in leining (or haftarah), should you correct them?">
+<div class="entry-header" onclick="toggleEntry(this)">
+<span class="num">41</span>
+<span class="q">If a rav or rosh yeshiva makes a mistake in leining (or haftarah), should you correct them?</span>
+<span class="toggle">\25BC</span>
+</div>
+<div class="entry-body">
+<div class="answer">A real dilemma discussed in the group. Logically one should correct, but doing so publicly can lessen people&#x27;s respect for the Rav. The prevailing sentiment leans toward שֵׁב וְאַל תַּעֲשֶׂה (sit and do not act), i.e. not correcting, because embarrassing a Rav publicly may be worse than the mistake itself. There is a general observation that not every rosh yeshiva knows all the fine details of dikduk and te&#x27;amim, and one also cannot always distinguish what is correct לִכְתַּחִלָּה from what someone may have considered not worth protesting בִּדְעָבַד.</div>
+<div class="sources"><strong>Sources</strong>
+<span class="src">Moshe Klausner (2024-06-14) msg#1860</span>
+<span class="src">Simcha Simon (2024-06-14) msg#1861</span>
+<span class="src">Moshe Klausner (2024-06-14) msg#1862</span>
+<span class="src">MJ (2024-06-14) msg#1854</span>
+</div>
+<div class="see-also"><strong>See also</strong>
+<a href="#" onclick="scrollToEntry('girsa-vs-machloket');return false">When different chumashim/tikkunim show different nikkud or trop, is that a &amp;#x27;machloket&amp;#x27; (dispute)?</a>
+</div>
+</div></div>
+<div class="entry" data-cat="mesora" data-id="eicha-layout-windows" data-q="why does eicha have a unique layout with each pasuk on its own line (the &amp;#x27;windows&amp;#x27; format)?">
+<div class="entry-header" onclick="toggleEntry(this)">
+<span class="num">42</span>
+<span class="q">Why does Eicha have a unique layout with each pasuk on its own line (the &#x27;windows&#x27; format)?</span>
+<span class="toggle">\25BC</span>
+</div>
+<div class="entry-body">
+<div class="answer">The Sofrim call this minhag of writing the first four chapters of Eicha with a פַּרְשָׁה סְתוּמָה (closed paragraph break) between each pasuk &#x27;חֲלוֹנוֹת חֲלוֹנוֹת&#x27; (windows). This is how the manuscripts have it as well. We do not have the Aleppo Codex for Eicha, but the Leningrad Codex does have it — with Chapter 3 written with a stuma between each pasuk (the &#x27;windows&#x27;), matching the acrostic structure. Chapter 5 is not written this way. The Tikkun Simanim reproduces this layout, which can surprise people who have only seen Eicha written like a regular megillah. Sofrim can produce a klaf in this format on request, though it is more expensive.</div>
+<div class="sources"><strong>Sources</strong>
+<span class="src">Yona Kesler (2024-05-28) msg#1345</span>
+<span class="src">MG (2024-05-28) msg#1346</span>
+<span class="src">Dovy Pollack (2024-05-28) msg#1347</span>
+<span class="src">MG (2024-05-28) msg#1348</span>
+</div>
+<div class="see-also"><strong>See also</strong>
+<a href="#" onclick="scrollToEntry('eicha-tune-etnachta-vs-sof-pasuk');return false">When leining Eicha (or the Eicha tune), should the etnachta and sof pasuk be sung differently, and does anyone differentiate the tipcha before etnachta from the tipcha before sof pasuk?</a>
+</div>
+</div></div>
+<div class="entry" data-cat="mesora" data-id="mesorah-vs-dialect" data-q="does the &amp;#x27;mesora&amp;#x27; include pronunciation (e.g. ashkenazi vs israeli vs sephardi), or is that just dialect and accent?">
+<div class="entry-header" onclick="toggleEntry(this)">
+<span class="num">43</span>
+<span class="q">Does the &#x27;mesora&#x27; include pronunciation (e.g. Ashkenazi vs Israeli vs Sephardi), or is that just dialect and accent?</span>
+<span class="toggle">\25BC</span>
+</div>
+<div class="entry-body">
+<div class="answer">A recurring philosophical debate. One position: every community historically spoke Hebrew with the accent of its host country (German Jews with a German accent, Spanish with Spanish, Arabic with Arabic, etc.) — that is simply the way of language, and one community&#x27;s accent is not more &#x27;mesora&#x27; than another&#x27;s. The counter-position: there ARE authentic traditions of pronunciation (e.g. distinguishing ח/כ, ע/ג, ת/ס, or the Ashkenazi &#x27;oy&#x27; cholam) that are part of the mesora and should be preserved. The group generally acknowledges that modern Israeli Hebrew was deliberately constructed by non-religious people who tried to uproot traditional pronunciation, which complicates its claim to &#x27;authenticity.&#x27; That said, Israeli pronunciation is the dominant living tradition and must be respected in practice. The practical conclusion for most: be consistent in whatever tradition you follow, and do not try to &#x27;correct&#x27; someone else&#x27;s mesora.</div>
+<div class="sources"><strong>Sources</strong>
+<span class="src">Dror Maor (2024-05-13) msg#479</span>
+<span class="src">Binyomin (Ben) Adler (2024-05-13) msg#481</span>
+<span class="src">R Abraham (2024-05-13) msg#509</span>
+<span class="src">R Abraham (2024-05-13) msg#510</span>
+<span class="src">MJ (2024-05-13) msg#463</span>
+<span class="src">~ (2024-05-13) msg#466</span>
+</div>
+<div class="see-also"><strong>See also</strong>
+<a href="#" onclick="scrollToEntry('cholam-oy-vs-oh');return false">What is the history of the &amp;#x27;oy&amp;#x27; vs &amp;#x27;oh&amp;#x27; pronunciation of the cholam (e.g. ha-OY-lam vs ha-OH-lam)?</a>
+<a href="#" onclick="scrollToEntry('teimani-gimel');return false">Why do Teimanim pronounce ג &amp;#x27;in reverse&amp;#x27; (soft/dageshed gimel), and is it only gimel?</a>
+</div>
+</div></div>
+<div class="entry" data-cat="mesora" data-id="torat-hakore-approach" data-q="what is the תּוֹרַת הַקּוֹרֵא (torat hakore) approach to pronunciation, and how does it differ from traditional mesora?">
+<div class="entry-header" onclick="toggleEntry(this)">
+<span class="num">44</span>
+<span class="q">What is the תּוֹרַת הַקּוֹרֵא (Torat HaKore) approach to pronunciation, and how does it differ from traditional mesora?</span>
+<span class="toggle">\25BC</span>
+</div>
+<div class="entry-body">
+<div class="answer">The תּוֹרַת הַקּוֹרֵא organization advocates for pronunciation changes where the meaning would change if you keep to the &#x27;incorrect&#x27; traditional version — e.g. differentiating ח and כ when the meaning of a word depends on it. Its approach is based on the idea that correct meaning is paramount. However, the group generally reacted skeptically: &#x27;חֲדָשִׁים מִקָּרוֹב בָּאוּ&#x27; (new things are close to coming) — creating a new mesora based on what &#x27;we think is right&#x27; is seen as problematic. Traditionalists would say that the living mesora received from previous generations, even if it has evolved, carries weight that a newly constructed pronunciation cannot match.</div>
+<div class="sources"><strong>Sources</strong>
+<span class="src">Dror Maor (2024-11-14) msg#5439</span>
+<span class="src">Moish (2024-11-14) msg#5440</span>
+<span class="src">Dror Maor (2024-11-14) msg#5441</span>
+<span class="src">Dror Maor (2024-11-14) msg#5443</span>
+<span class="src">Dror Maor (2024-11-14) msg#5444</span>
+</div>
+<div class="see-also"><strong>See also</strong>
+<a href="#" onclick="scrollToEntry('mesorah-vs-dialect');return false">Does the &amp;#x27;mesora&amp;#x27; include pronunciation (e.g. Ashkenazi vs Israeli vs Sephardi), or is that just dialect and accent?</a>
+<a href="#" onclick="scrollToEntry('bediavad-pronunciation-acceptance');return false">If someone tries to differentiate between letters (e.g. ח/כ) authentically but sometimes slips, is that worse than never making any distinction at all (bedi&amp;#x27;avad)?</a>
+</div>
+</div></div>
+<div class="entry" data-cat="mesora" data-id="tikkun-simanim-vs-chorev-vs-artscroll" data-q="which tikkun/chumash edition is considered most accurate, and how do they differ?">
+<div class="entry-header" onclick="toggleEntry(this)">
+<span class="num">45</span>
+<span class="q">Which tikkun/chumash edition is considered most accurate, and how do they differ?</span>
+<span class="toggle">\25BC</span>
+</div>
+<div class="entry-body">
+<div class="answer">Several editions are commonly discussed: (1) תִּקּוּן סִימָנִים (Simanim) — the most widely used tikkun among serious ba&#x27;alei koreh; newer versions sometimes have minor updates. (2) תּוֹרַת חַיִּים / חוֹרֶב (Rav Breuer) — a synthetic reconstruction of the Ben Asher text. Notable methodological choices: all chataf patach under non-gutturals replaced with shva; changes to some גַּעְיוֹת הָרְשׁוּת; overall considered very accurate but represents Breuer&#x27;s editorial judgment in some places. (3) אִישׁ מַצְלִיחַ — generally reliable but differs from Simanim in some readings (e.g. sometimes has a pesik where Simanim has meseg). (4) Artscroll / Koren — widely used but considered less precise than Simanim or Chorev in nikud and trop. Koren is generally considered slightly better than Artscroll. For pure manuscript fidelity, Breuer&#x27;s Chorev and the original Aleppo Codex photos (what survives) are the gold standard. The Berditchev Tikkun was endorsed by the GRA but does not conform in many places to the Aleppo Codex.</div>
+<div class="sources"><strong>Sources</strong>
+<span class="src">Moish (2024-08-14) msg#4001</span>
+<span class="src">Ezra Arovas (2024-08-14) msg#4002</span>
+<span class="src">Moish (2024-08-14) msg#4007</span>
+<span class="src">MG (2024-05-19) msg#675</span>
+<span class="src">MG (2024-05-20) msg#682</span>
+<span class="src">Yaacob (2024-06-09) msg#1560</span>
+<span class="src">Sammy Noe (2025-02-27) msg#7516</span>
+<span class="src">Ezra Arovas (2025-02-27) msg#7517</span>
+<span class="src">MG (2025-02-27) msg#7536</span>
+<span class="src">MG (2025-04-18) msg#8281</span>
+</div>
+<div class="see-also"><strong>See also</strong>
+<a href="#" onclick="scrollToEntry('baalei-mesorah-who');return false">Who are the ba&amp;#x27;alei mesora (Masoretes), and what exactly did they do?</a>
+<a href="#" onclick="scrollToEntry('aleppo-codex-what-survives');return false">What parts of the Aleppo Codex survive, and what is the Leningrad Codex?</a>
+<a href="#" onclick="scrollToEntry('girsa-vs-machloket');return false">When different chumashim/tikkunim show different nikkud or trop, is that a &amp;#x27;machloket&amp;#x27; (dispute)?</a>
+</div>
+</div></div>
+</div>
+<div class="category" data-cat="names">
+<h2>Names &amp; Lishonot</h2>
+<div class="entry" data-cat="names" data-id="nasog-achor" data-q="what is nasog achor (נסוג אחור), and when a word &amp;#x27;retreats&amp;#x27; its accent, why does it sometimes happen even when the next word looks milra?">
+<div class="entry-header" onclick="toggleEntry(this)">
+<span class="num">46</span>
+<span class="q">What is nasog achor (נסוג אחור), and when a word &#x27;retreats&#x27; its accent, why does it sometimes happen even when the next word looks milra?</span>
+<span class="toggle">\25BC</span>
+</div>
+<div class="entry-body">
+<div class="answer">Nasog achor is the rule that when a mil&#x27;eil word is followed by a milra (or one-syllable) word, the accent of the first word &#x27;retreats&#x27; to an earlier syllable so the two stresses don&#x27;t collide. A subtlety: a word can BE milra for nasog-achor purposes even if it begins with a shva na (i.e. it is a single syllable word, or effectively one). So אִם לִמְקָרָא וְלִמְסֹרֶת — &#x27;how can it be nasog achor if the next word is not mil&#x27;eil?&#x27; — it IS mil&#x27;eil (really a single-syllable word) even though it starts with a shva na; there are many nasog achor cases of this sort. Nasog achor rarely occurs with קַדְמָא וְאַזְלָא — something about how the tunes of those ta&#x27;amim make the words bind together. If we knew the exact original tunes we would likely understand why perfectly.</div>
+<div class="examples"><strong>Examples</strong><ul>
+<li>נסוג אחור rarely occurs with קַדְמָא וְאַזְלָא</li>
+</ul></div>
+<div class="sources"><strong>Sources</strong>
+<span class="src">Σliezer Bulka (2024-05-12) msg#403</span>
+<span class="src">MJ (2024-05-12) msg#404</span>
+<span class="src">Ezra Arovas (2024-05-24) msg#905</span>
+<span class="src">Ezra Arovas (2024-05-24) msg#906</span>
+<span class="src">MJ (2024-05-24) msg#908</span>
+</div>
+<div class="see-also"><strong>See also</strong>
+<a href="#" onclick="scrollToEntry('mil&#x27;eil-vs-milra');return false">Is the name Rachel (רָחֵל) pronounced mil&amp;#x27;eil or milra, and does the Tanach form differ from common usage?</a>
+</div>
+</div></div>
+<div class="entry" data-cat="names" data-id="mil&#x27;eil-vs-milra" data-q="is the name rachel (רָחֵל) pronounced mil&amp;#x27;eil or milra, and does the tanach form differ from common usage?">
+<div class="entry-header" onclick="toggleEntry(this)">
+<span class="num">47</span>
+<span class="q">Is the name Rachel (רָחֵל) pronounced mil&#x27;eil or milra, and does the Tanach form differ from common usage?</span>
+<span class="toggle">\25BC</span>
+</div>
+<div class="entry-body">
+<div class="answer">Most people name their daughter רָחֵל mil&#x27;eil, but the name as it appears in the Torah is milra (רָחֵל with final stress). This is one of several cases where the common/colloquial pronunciation of a name differs from its Tanach form. Note this is about PERSON names; the same spelling can carry different stress. (Related recurring group discussions: לֵב/לֲיְבּ — Yiddish names follow Yiddish, not loshon haKodesh, dikduk; מִיכַל the boy&#x27;s name has a shva under the chaf while מִיכָל the girl&#x27;s name does not, and they are genuinely two different names.)</div>
+<div class="examples"><strong>Examples</strong><ul>
+<li>רָחֵל — Torah form is milra; common usage is mil&#x27;eil</li>
+</ul></div>
+<div class="sources"><strong>Sources</strong>
+<span class="src">(anon) (2024-05-02) msg#92</span>
+<span class="src">(anon) (2024-05-02) msg#50</span>
+</div>
+<div class="see-also"><strong>See also</strong>
+<a href="#" onclick="scrollToEntry('nasog-achor');return false">What is nasog achor (נסוג אחור), and when a word &amp;#x27;retreats&amp;#x27; its accent, why does it sometimes happen even when the next word looks milra?</a>
+</div>
+</div></div>
+</div>
+<div class="category" data-cat="tefilla">
+<h2>Tefilla (Nusach &amp; Teamim in Davening)</h2>
+<div class="entry" data-cat="tefilla" data-id="kaddish-after-leining-why" data-q="why is there a chatzi kaddish after shabbos/weekday leining, and why is there no kaddish after leining at mincha?">
+<div class="entry-header" onclick="toggleEntry(this)">
+<span class="num">48</span>
+<span class="q">Why is there a chatzi kaddish after Shabbos/weekday leining, and why is there NO kaddish after leining at Mincha?</span>
+<span class="toggle">\25BC</span>
+</div>
+<div class="entry-body">
+<div class="answer">The חֲצִי קַדִּישׁ serves as a מַפְסִיק (separator) between major sections of davening (the Abudarham appears to be the first source for this explanation). After Shabbos leining, the kaddish separates the kri&#x27;ah from the rest of the service. At Mincha, however, the kri&#x27;ah is followed almost immediately by חֲצִי קַדִּישׁ before שְׁמוֹנֶה עֶשְׂרֵה, so saying another kaddish right after the kri&#x27;ah would be redundant. On Shabbos, Chabad does not even say Hodu Al Eretz and LeDavid Mizmor before Musaf, so the Musaf kaddish follows directly after the kri&#x27;ah without an intervening one. This is why someone who tries to say kaddish after shlishi on Chol HaMoed (before mincha) is quickly stopped — there is no need for it.</div>
+<div class="examples"><strong>Examples</strong><ul>
+<li>Shabbos: kaddish after leining ✓</li>
+<li>Mincha: no kaddish after leining (redundant before shmoneh esreh)</li>
+<li>Chol HaMoed shlishi: no kaddish either</li>
+</ul></div>
+<div class="sources"><strong>Sources</strong>
+<span class="src">DL (2024-07-24) msg#3014</span>
+<span class="src">Dror Maor (2024-07-24) msg#3015</span>
+<span class="src">Dror Maor (2024-07-24) msg#3018</span>
+<span class="src">Avi Herzog (2024-07-24) msg#3020</span>
+</div>
+</div></div>
+<div class="entry" data-cat="tefilla" data-id="tisha-bav-kaddish-before-haftarah" data-q="on tisha b&amp;#x27;av morning, why is kaddish said before the haftarah instead of after?">
+<div class="entry-header" onclick="toggleEntry(this)">
+<span class="num">49</span>
+<span class="q">On Tisha b&#x27;Av morning, why is kaddish said BEFORE the haftarah instead of after?</span>
+<span class="toggle">\25BC</span>
+</div>
+<div class="entry-body">
+<div class="answer">This is a longstanding puzzle. Normally, whenever the acharon (last oleh) reads the haftarah, the kaddish comes after the haftarah. Tisha b&#x27;Av is the exception where kaddish precedes it. One explanation: שְׁלִישִׁי is also מַפְטִיר by שַׁחֲרִית on Tisha b&#x27;Av, which may affect the ordering. The order on Tisha b&#x27;Av night is: kaddish after leining, then Aleinu. During the day, some communities (including Sefardim in some versions) may say kaddish after the first keri&#x27;ah as well, though this varies.</div>
+<div class="sources"><strong>Sources</strong>
+<span class="src">Rabbi Zvi Freund (2024-07-24) msg#3034</span>
+<span class="src">Rabbi Zvi Freund (2024-07-24) msg#3035</span>
+<span class="src">Rabbi Zvi Freund (2024-07-24) msg#3036</span>
+<span class="src">אקדמות מילין (2024-07-25) msg#3041</span>
+<span class="src">Rabbi Zvi Freund (2024-07-25) msg#3044</span>
+</div>
+<div class="see-also"><strong>See also</strong>
+<a href="#" onclick="scrollToEntry('haftarah-tunes-shabbos-chazon');return false">How is the haftarah of Shabbos Chazon / Tisha b&amp;#x27;Av leined — from which pasuk does the Eicha tune start and where do you switch back?</a>
+</div>
+</div></div>
+<div class="entry" data-cat="tefilla" data-id="siddur-mikra-megilla-brachos-trop" data-q="when reciting the brachos before/after reading a megillah or other sefer, do you use the trop of what you are about to read?">
+<div class="entry-header" onclick="toggleEntry(this)">
+<span class="num">50</span>
+<span class="q">When reciting the brachos before/after reading a megillah or other sefer, do you use the trop of what you are about to read?</span>
+<span class="toggle">\25BC</span>
+</div>
+<div class="entry-body">
+<div class="answer">Some people do: they cantillate the brachos in the tune of the leining that follows (e.g. the bracha before leining Koheles in Koheles trop). However, this is not universal. When reciting a bracha before a haftarah, many do use the haftarah trop melody. The bracha itself has a standard trop pattern: pashta-munach-zakef / tipcha-munach-etnachta / mahapach-pashta-zakef / tipcha-mercha-sof pasuk. On the Yomim Noraim, some olim cantillate the brachos in the same tune as the leining. In Chutz La&#x27;Aretz, some do not make the bracha at all before leining Koheles outside of Purim — a matter of minhag.</div>
+<div class="sources"><strong>Sources</strong>
+<span class="src">Aharon Gaffen (2024-12-18) msg#6306</span>
+<span class="src">MJ (2024-12-18) msg#6307</span>
+<span class="src">Dror Maor (2024-12-18) msg#6308</span>
+<span class="src">Donny Rose (2024-12-18) msg#6309</span>
+<span class="src">Allen Schreier (2024-12-18) msg#6311</span>
+</div>
+</div></div>
+<div class="entry" data-cat="tefilla" data-id="ab-harachaman-vowel-meaning" data-q="in the bracha אָב הָרַחֲמָן / אַב הָרַחֲמִים, should אָב have a kamatz or a patach?">
+<div class="entry-header" onclick="toggleEntry(this)">
+<span class="num">51</span>
+<span class="q">In the bracha אָב הָרַחֲמָן / אַב הָרַחֲמִים, should אָב have a kamatz or a patach?</span>
+<span class="toggle">\25BC</span>
+</div>
+<div class="entry-body">
+<div class="answer">Both occur in different siddurim because the phrases mean different things: (1) אָב הָרַחֲמָן (with kamatz) — &#x27;Father who is merciful&#x27; / &#x27;Father, the merciful One&#x27; — the kamatz indicates אָב is a noun in apposition (vocative), not a construct. This is used in אָבִינוּ אָב הָרַחֲמָן. (2) אַב הָרַחֲמִים (with patach) — &#x27;Father OF mercy&#x27; — the patach makes it a סְמִיכוּת (construct state), meaning &#x27;Father of mercies.&#x27; Artscroll uses the patach form for אַב הָרַחֲמִים הִטִיבָה בִרְצוֹנְךָ; Chabad uses kamatz. The vowel choice is not a trivial variant — it genuinely changes the grammatical relationship between the words.</div>
+<div class="examples"><strong>Examples</strong><ul>
+<li>אָב הָרַחֲמָן = vocative (&#x27;Father, the merciful One&#x27;)</li>
+<li>אַב הָרַחֲמִים = construct (&#x27;Father of mercy&#x27;)</li>
+</ul></div>
+<div class="sources"><strong>Sources</strong>
+<span class="src">Ezra Arovas (2024-10-06) msg#4883</span>
+<span class="src">Ezra Arovas (2024-10-06) msg#4886</span>
+<span class="src">Avi Herzog (2024-10-06) msg#4887</span>
+<span class="src">Avi Herzog (2024-10-06) msg#4888</span>
+</div>
+<div class="see-also"><strong>See also</strong>
+<a href="#" onclick="scrollToEntry('vowel-mistake-meaning-change');return false">If a ba&amp;#x27;al koreh reads the wrong vowel (e.g. a sheva instead of a patach), does that change the meaning?</a>
+</div>
+</div></div>
+</div>
+<div class="category" data-cat="sources">
+<h2>Sources, Sefaria &amp; Gilyonot</h2>
+<div class="entry" data-cat="sources" data-id="targum-onkelos-editions" data-q="which edition of targum onkelos is considered best / most accurate?">
+<div class="entry-header" onclick="toggleEntry(this)">
+<span class="num">52</span>
+<span class="q">Which edition of Targum Onkelos is considered best / most accurate?</span>
+<span class="toggle">\25BC</span>
+</div>
+<div class="entry-body">
+<div class="answer">The תּוֹרַת חַיִּים edition is generally considered the best — it is based on good manuscripts. One important distinction: in Targum, the prefix דַּ (the Aramaic equivalent of the Hebrew relative אֲשֶׁר) is always a SEPARATE word when vocalized as דִּי (with a chirik), and a PREFIX (attached to the following word) when vocalized otherwise. The correct vocalization follows the same rules as Hebrew prefixes: ordinarily sheva, chirik before a shva nach, longer vowel before a guttural, etc. The older text of Targum Yonasan on the Chumash actually post-dates the Gemara, despite the attribution to Yonasan ben Uziel (who only wrote a Targum on Nevi&#x27;im).</div>
+<div class="sources"><strong>Sources</strong>
+<span class="src">MJ (2024-06-02) msg#1428</span>
+<span class="src">Yoir (2024-06-02) msg#1429</span>
+<span class="src">MJ (2024-06-02) msg#1430</span>
+<span class="src">Yisroel Gradman (2026-03-19) msg#18187</span>
+<span class="src">Mordechai Kornbluth (2026-03-19) msg#18189</span>
+<span class="src">MG (2026-03-19) msg#18190</span>
+</div>
+<div class="see-also"><strong>See also</strong>
+<a href="#" onclick="scrollToEntry('baalei-mesorah-who');return false">Who are the ba&amp;#x27;alei mesora (Masoretes), and what exactly did they do?</a>
+</div>
+</div></div>
+<div class="entry" data-cat="sources" data-id="shnayim-mikra-echad-targum" data-q="what exactly is the mitzvah of שְׁנַיִם מִקְרָא וְאֶחָד תַּרְגּוּם, and how should one fulfill it?">
+<div class="entry-header" onclick="toggleEntry(this)">
+<span class="num">53</span>
+<span class="q">What exactly is the mitzvah of שְׁנַיִם מִקְרָא וְאֶחָד תַּרְגּוּם, and how should one fulfill it?</span>
+<span class="toggle">\25BC</span>
+</div>
+<div class="entry-body">
+<div class="answer">The mitzvah is to read the weekly parsha twice and the Targum (Onkelos) once. If one just reads the pesukim twice and rushes through the Targum, they are technically יוֹצֵא, but for Rashi one must actually understand what Rashi is saying — it cannot just be &#x27;davened through&#x27; like a speed-reading ritual. A practical tip: if you learned the parsha with Rashi a few days prior (e.g. in a chabura), the weekly review goes much more quickly. The mitzvah applies to each parsha in its week; on weeks with combined parshiyos, both are read.</div>
+<div class="sources"><strong>Sources</strong>
+<span class="src">Dror Maor (2024-10-21) msg#5090</span>
+<span class="src">Yoir (2024-10-21) msg#5091</span>
+</div>
+<div class="see-also"><strong>See also</strong>
+<a href="#" onclick="scrollToEntry('targum-onkelos-editions');return false">Which edition of Targum Onkelos is considered best / most accurate?</a>
+</div>
+</div></div>
+<div class="entry" data-cat="sources" data-id="learning-trop-resources" data-q="what are good resources for learning trop / ta&amp;#x27;amei ha-mikra?">
+<div class="entry-header" onclick="toggleEntry(this)">
+<span class="num">54</span>
+<span class="q">What are good resources for learning trop / ta&#x27;amei ha-mikra?</span>
+<span class="toggle">\25BC</span>
+</div>
+<div class="entry-body">
+<div class="answer">For beginners who want to learn trop: טוֹב טַעַם (published by Simanim) comes with a CD/audio. VirtualCantor.com has audio recordings of many parshiyos in different tunes. YouTube has various teachers. The mgketer program (no longer available for sale, but downloadable with effort) can display trop analysis per word. For understanding trop grammar (not just the melodies): Rav Breuer&#x27;s פִּסּוּק טְעָמִים שֶׁבְּמִקְרָא is the major modern work. For ta&#x27;amei emet specifically: MG recommends several works (specific titles not recalled in the thread). A tip from a seasoned BK: record yourself leining from the chumash, then play it back while leining from the tikkun — it prevents errors from getting stuck in your head.</div>
+<div class="sources"><strong>Sources</strong>
+<span class="src">( ｀Д´)/ (2024-07-07) msg#2408</span>
+<span class="src">Yoir (2024-07-07) msg#2413</span>
+<span class="src">MJ (2025-06-17) msg#9202</span>
+<span class="src">Avi Block (2025-11-06) msg#12889</span>
+<span class="src">MJ (2025-11-06) msg#12890</span>
+<span class="src">MJ (2024-12-03) msg#6038</span>
+</div>
+<div class="see-also"><strong>See also</strong>
+<a href="#" onclick="scrollToEntry('targum-onkelos-editions');return false">Which edition of Targum Onkelos is considered best / most accurate?</a>
+</div>
+</div></div>
+</div>
+<div class="category" data-cat="practical">
+<h2>Practical Ba&#x27;alei K&#x27;riah</h2>
+<div class="entry" data-cat="practical" data-id="chiyuv-vs-baal-tefilla-tircha" data-q="should someone who can&amp;#x27;t carry a tune (or who is slow) be allowed to daven at the amud for a yahrzeit, or is it tircha d&amp;#x27;tzibura?">
+<div class="entry-header" onclick="toggleEntry(this)">
+<span class="num">55</span>
+<span class="q">Should someone who can&#x27;t carry a tune (or who is slow) be allowed to daven at the amud for a yahrzeit, or is it tircha d&#x27;tzibura?</span>
+<span class="toggle">\25BC</span>
+</div>
+<div class="entry-body">
+<div class="answer">This is a perennial debate in the group, with several positions: (1) The Gemara&#x27;s bar on a categorically unqualified person (one who mixes up letters / can&#x27;t pronounce Hebrew) clearly applies; beyond that there is room for judgment. (2) Tircha d&#x27;tzibura (delaying/bothering the congregation) IS a well-established halachic concept — someone markedly slower than the norm should be told, and if unable to speed up may be prevented from davening. (3) Against that, many people find davening on a yahrzeit deeply meaningful, and most who genuinely can&#x27;t hold a tune are aware of it and do not WANT to daven but feel duty-bound for the עילוי נשמה; good middos would have the tzibbur be mevater on its enjoyment for the one day. (4) A middle position: enact a shul rule (seen in some kehillos, e.g. Hager&#x27;s) that only the regular Shabbos ba&#x27;alei tefilla may daven on a yahrzeit. (5) Mussaf and Kabbolas Shabbos are less of a chiyuv and arguably fine for anyone, being short חזרת הש״ץ; if one is makpid even there, where to draw the line? (6) Some personally decline: e.g. one member with yahrzeit on Yom Tov will not daven der Amud because he can&#x27;t sing well, to avoid סניגור נעשה קטיגור and tircha — he recites only kaddish after Aleinu. Practical note: a Rov who forbade a ba&#x27;al teshuva from davening (as not מרוצה לקהל due to weak reading) did so discreetly to avoid embarrassment. (Also: a person is never &#x27;a chiyuv&#x27;; a person HAS a chiyuv — common phrasing notwithstanding.)</div>
+<div class="sources"><strong>Sources</strong>
+<span class="src">Avi Herzog (2024-05-08) msg#337</span>
+<span class="src">MJ (2024-05-08) msg#338</span>
+<span class="src">Dror Maor (2024-05-08) msg#344</span>
+<span class="src">Dror Maor (2024-05-08) msg#345</span>
+<span class="src">R Abraham (2024-05-08) msg#347</span>
+<span class="src">R Abraham (2024-05-08) msg#351</span>
+<span class="src">MJ (2024-05-08) msg#353</span>
+<span class="src">MJ (2024-05-08) msg#357</span>
+<span class="src">R Abraham (2024-05-08) msg#358</span>
+<span class="src">Dror Maor (2024-05-08) msg#359</span>
+<span class="src">MJ (2024-05-08) msg#361</span>
+</div>
+<div class="see-also"><strong>See also</strong>
+<a href="#" onclick="scrollToEntry('bediavad-pronunciation-acceptance');return false">If someone tries to differentiate between letters (e.g. ח/כ) authentically but sometimes slips, is that worse than never making any distinction at all (bedi&amp;#x27;avad)?</a>
+<a href="#" onclick="scrollToEntry('showing-oleh-the-place');return false">Do we need to show the oleh where the aliyah starts (and ends)?</a>
+</div>
+</div></div>
+<div class="entry" data-cat="practical" data-id="bediavad-pronunciation-acceptance" data-q="if someone tries to differentiate between letters (e.g. ח/כ) authentically but sometimes slips, is that worse than never making any distinction at all (bedi&amp;#x27;avad)?">
+<div class="entry-header" onclick="toggleEntry(this)">
+<span class="num">56</span>
+<span class="q">If someone tries to differentiate between letters (e.g. ח/כ) authentically but sometimes slips, is that worse than never making any distinction at all (bedi&#x27;avad)?</span>
+<span class="toggle">\25BC</span>
+</div>
+<div class="entry-body">
+<div class="answer">The prevailing view: if you don&#x27;t think you can be consistent, it is better to read ח like a כ in general than to attempt a distinction you can&#x27;t maintain. If you are confident you can consistently differentiate, that is a different story. The underlying logic: an inconsistent distinction can sound like a mistake (as if you mispronounced), whereas a consistent non-distinction is simply the accepted bedi&#x27;avad practice most communities accept. Related: there is concern (intuitive, with support from poskim on being מאריך too much in the ח of אחד vs the ד — מקלקל התבה) that taking a breath mid-word to draw out a sound (e.g. shaking lulav while elongating נא־ in אנא ה&#x27; הושיעה נא) may be a hefsek that splits the word.</div>
+<div class="examples"><strong>Examples</strong><ul>
+<li>Differentiating ח/כ — better consistent-undifferentiated than inconsistent</li>
+</ul></div>
+<div class="sources"><strong>Sources</strong>
+<span class="src">R Abraham (2024-05-08) msg#398</span>
+<span class="src">Moshe Klausner (2024-05-08) msg#399</span>
+<span class="src">Baruch (2024-05-23) msg#875</span>
+<span class="src">Baruch (2024-05-23) msg#876</span>
+<span class="src">MJ (2024-05-23) msg#878</span>
+</div>
+<div class="see-also"><strong>See also</strong>
+<a href="#" onclick="scrollToEntry('chiyuv-vs-baal-tefilla-tircha');return false">Should someone who can&amp;#x27;t carry a tune (or who is slow) be allowed to daven at the amud for a yahrzeit, or is it tircha d&amp;#x27;tzibura?</a>
+</div>
+</div></div>
+<div class="entry" data-cat="practical" data-id="showing-oleh-the-place" data-q="do we need to show the oleh where the aliyah starts (and ends)?">
+<div class="entry-header" onclick="toggleEntry(this)">
+<span class="num">57</span>
+<span class="q">Do we need to show the oleh where the aliyah starts (and ends)?</span>
+<span class="toggle">\25BC</span>
+</div>
+<div class="entry-body">
+<div class="answer">Showing the oleh where the aliyah starts is rooted in the chiyuv to know what one is making a bracha on — so even though most kohanim can find Bereishis, we point to the place. This applies to perhaps half a dozen places in the Torah (notably the start of each sefer). Showing where the aliyah ENDS is a separate minhag kept by Chabad and other chasidic communities (some ask where the aliyah ends before saying ברכו); it is understood as helping the oleh prepare, not as a strict requirement.</div>
+<div class="sources"><strong>Sources</strong>
+<span class="src">MG (2025-03-14) msg#4188</span>
+<span class="src">Yoir (2025-03-14) msg#4189</span>
+<span class="src">MG (2025-03-14) msg#4190</span>
+</div>
+<div class="see-also"><strong>See also</strong>
+<a href="#" onclick="scrollToEntry('chiyuv-vs-baal-tefilla-tircha');return false">Should someone who can&amp;#x27;t carry a tune (or who is slow) be allowed to daven at the amud for a yahrzeit, or is it tircha d&amp;#x27;tzibura?</a>
+</div>
+</div></div>
+<div class="entry" data-cat="practical" data-id="tochacha-aliya-baal-koreh" data-q="who takes the aliyah of the tochacha (admonition), and why is the ba&amp;#x27;al koreh often called up without being formally &amp;#x27;called&amp;#x27;?">
+<div class="entry-header" onclick="toggleEntry(this)">
+<span class="num">58</span>
+<span class="q">Who takes the aliyah of the tochacha (admonition), and why is the ba&#x27;al koreh often called up without being formally &#x27;called&#x27;?</span>
+<span class="toggle">\25BC</span>
+</div>
+<div class="entry-body">
+<div class="answer">The minhag that the ba&#x27;al koreh takes the tochacha without being formally called up is so that it not appear that the congregation is singling out / &#x27;talking to&#x27; anyone in particular. The Mishna Berura adds: in כי תבוא, if the ba&#x27;al koreh is a kohen, one should make seven aliyos before the tochacha and call the ba&#x27;al koreh for אחרון. Many have the minhag that the ba&#x27;al koreh is oleh without being called up at all. Note: this only works if the BK is eligible for that aliyah (e.g. if he were a Levi, it couldn&#x27;t work for a kohen&#x27;s aliyah). Some (e.g. the Rav, Rav Soloveitchik) were makpid to receive the tochacha because of its importance.</div>
+<div class="examples"><strong>Examples</strong><ul>
+<li>כי תבוא — if BK is kohen, make 7 aliyos before tochacha, BK takes אחרון</li>
+</ul></div>
+<div class="sources"><strong>Sources</strong>
+<span class="src">MJ (2024-05-24) msg#907</span>
+<span class="src">YYC (2024-05-26) msg#1200</span>
+<span class="src">Dovid H (2024-05-27) msg#1311</span>
+<span class="src">Joseph Rosenbaum (2024-05-27) msg#1312</span>
+<span class="src">Avi Herzog (2024-05-27) msg#1314</span>
+</div>
+<div class="see-also"><strong>See also</strong>
+<a href="#" onclick="scrollToEntry('showing-oleh-the-place');return false">Do we need to show the oleh where the aliyah starts (and ends)?</a>
+</div>
+</div></div>
+<div class="entry" data-cat="practical" data-id="double-parsha-combining-aliyos" data-q="in a double parsha (e.g. behar-bechukosai), which aliyah do you combine the parshiyos at, when the usual revi&amp;#x27;i won&amp;#x27;t work?">
+<div class="entry-header" onclick="toggleEntry(this)">
+<span class="num">59</span>
+<span class="q">In a double parsha (e.g. Behar-Bechukosai), which aliyah do you combine the parshiyos at, when the usual revi&#x27;i won&#x27;t work?</span>
+<span class="toggle">\25BC</span>
+</div>
+<div class="entry-body">
+<div class="answer">Normally there is a preference to combine at revi&#x27;i. But in a double parsha where you would end up ending the 7th aliyah too early (e.g. Bechukosai is short, so combining at revi&#x27;i would land you at the 6th pasuk of Bechukosai for the end of 7), the Biur Halacha says explicitly that you combine at shishi instead. General principle: the revi&#x27;i preference yields when it is structurally impossible. (Guest ba&#x27;alei koreh have reported variants: e.g. when Bechukosai was alone and aliyos needed readjustment, one shul combined the first two aliyos for the kohen, the BK took tochacha as Levi, and revi&#x27;i was split into two.)</div>
+<div class="examples"><strong>Examples</strong><ul>
+<li>Behar-Bechukosai: combine at shishi, not revi&#x27;i</li>
+</ul></div>
+<div class="sources"><strong>Sources</strong>
+<span class="src">Aharon Gaffen (2024-05-08) msg#386</span>
+<span class="src">Josh (2024-05-08) msg#387</span>
+<span class="src">Aharon Gaffen (2024-05-08) msg#378</span>
+</div>
+</div></div>
+<div class="entry" data-cat="practical" data-id="breath-midword-hefsek" data-q="does taking a breath in the middle of a word constitute a hefsek (interruption) that disqualifies it?">
+<div class="entry-header" onclick="toggleEntry(this)">
+<span class="num">60</span>
+<span class="q">Does taking a breath in the middle of a word constitute a hefsek (interruption) that disqualifies it?</span>
+<span class="toggle">\25BC</span>
+</div>
+<div class="entry-body">
+<div class="answer">The consensus leans toward yes — it splits the word in two, which is problematic. The common example is someone shaking the lulav while singing אַנָּא ה׳ הוֹשִׁיעַה נָּא and drawing out the נָּא to get two directions of the lulav, thereby taking a breath mid-word. A source brought: poskim who say that being מְאָרִיךְ too much in the ח of אֶחָד instead of in the ד is a problem because it is מְקַלְקֵל הַתֵּבָה (distorts the word). By analogy, breathing mid-word should be a hefsek. One caveat: some argue this may fall under the category of קְרָא וְלֹא דַקְדֵּק (read but was not precise) rather than being מְעַכֵּב (invalidating).</div>
+<div class="examples"><strong>Examples</strong><ul>
+<li>אַנָּא ה׳ הוֹשִׁיעַה נָּא — drawing out נָּא while shaking lulav</li>
+</ul></div>
+<div class="sources"><strong>Sources</strong>
+<span class="src">Baruch (2024-05-23) msg#875</span>
+<span class="src">Baruch (2024-05-23) msg#876</span>
+<span class="src">MB (2024-05-23) msg#877</span>
+<span class="src">MJ (2024-05-23) msg#878</span>
+<span class="src">Moish (2024-05-23) msg#879</span>
+<span class="src">Baruch (2024-05-23) msg#880</span>
+</div>
+<div class="see-also"><strong>See also</strong>
+<a href="#" onclick="scrollToEntry('bediavad-pronunciation-acceptance');return false">If someone tries to differentiate between letters (e.g. ח/כ) authentically but sometimes slips, is that worse than never making any distinction at all (bedi&amp;#x27;avad)?</a>
+</div>
+</div></div>
+<div class="entry" data-cat="practical" data-id="mapik-heh-in-kaddish" data-q="should the mapik heh be pronounced in kaddish, or is it dropped in aramaic?">
+<div class="entry-header" onclick="toggleEntry(this)">
+<span class="num">61</span>
+<span class="q">Should the mapik heh be pronounced in Kaddish, or is it dropped in Aramaic?</span>
+<span class="toggle">\25BC</span>
+</div>
+<div class="entry-body">
+<div class="answer">Some people do not pronounce the mapik ה in kaddish (e.g. יִתְהַלַּל without the mapik on the ל, or omitting it elsewhere), claiming that in Aramaic the mapik is not pronounced. However, the prevailing view in the group is that this is not an official minhag or mesorah — there is no documented tradition to drop the mapik in Aramaic specifically. One should simply pronounce it correctly. That said, there is also concern about an overly &#x27;performed&#x27; pronunciation — articulating the mapik with exaggerated emphasis (&#x27;like I&#x27;ll show em&#x27;) is inappropriate. The right approach is quiet consistency.</div>
+<div class="sources"><strong>Sources</strong>
+<span class="src">MJ (2024-08-28) msg#4307</span>
+<span class="src">Moish (2024-08-28) msg#4308</span>
+<span class="src">MJ (2024-08-28) msg#4309</span>
+<span class="src">MB (2024-08-28) msg#4310</span>
+<span class="src">MJ (2024-08-28) msg#4311</span>
+<span class="src">Σliezer Bulka (2024-08-28) msg#4312</span>
+</div>
+<div class="see-also"><strong>See also</strong>
+<a href="#" onclick="scrollToEntry('mapik-heh-meaning-change');return false">Does a mapik heh change the meaning of a word?</a>
+<a href="#" onclick="scrollToEntry('dagesh-mapik-omitted-list');return false">Are there places where a mappik heh is expected but missing, and where can one find the lists?</a>
+</div>
+</div></div>
+</div>
+<div class="glossary"><h2>Glossary</h2>
+<div class="glossary-term"><div class="term">Shva Na</div><div class="def">A &#x27;moving&#x27; shva that begins the following syllable (e.g., מְ at the start of מְלַאכְךָ). It is read together with the next letter and its vowel.</div></div>
+<div class="glossary-term"><div class="term">Shva Nach</div><div class="def">A &#x27;resting&#x27; shva that closes the preceding syllable and is not pronounced as a separate syllable.</div></div>
+<div class="glossary-term"><div class="term">Dagesh Kal (Dagesh Lene)</div><div class="def">A dot inside בגדכפת letters indicating a plosive (stop) pronunciation, as opposed to fricative. Occurs at the beginning of a syllable after a closed syllable or at the start of a word.</div></div>
+<div class="glossary-term"><div class="term">Dagesh Chazak (Dagesh Forte)</div><div class="def">A dot inside any letter (except gutturals) indicating gemination (doubling) of the consonant. Often corrects a vowel issue or marks a missing letter.</div></div>
+<div class="glossary-term"><div class="term">Mappik</div><div class="def">A dot inside the letter ה at the end of a word, indicating that the ה is consonantal (not a vowel letter).</div></div>
+<div class="glossary-term"><div class="term">Meteg / Ga&#x27;ya</div><div class="def">A vertical line under a letter (to the left of the vowel), serving as a secondary stress marker. Also indicates that a following shva is na (moving), or that a vowel is long (e.g., kamatz gadol vs. kamatz katan).</div></div>
+<div class="glossary-term"><div class="term">Ga&#x27;ya</div><div class="def">Alternative name for Meteg; also refers to a short vertical line drawn under a letter to indicate secondary stress or vowel length.</div></div>
+<div class="glossary-term"><div class="term">Trop / Ta&#x27;amei ha-Mikra</div><div class="def">Cantillation marks that indicate the melody and syntactic structure of the biblical text. Each trop symbol has a specific musical motif and grammatical function.</div></div>
+<div class="glossary-term"><div class="term">Ta&#x27;amei Emet</div><div class="def">The special cantillation system used for the books of Psalms (Tehillim), Proverbs (Mishlei), and Job (Iyov), distinct from the standard trope system.</div></div>
+<div class="glossary-term"><div class="term">Etnachta</div><div class="def">The main pause (caesura) in a verse, analogous to a semicolon or period. It divides the verse into two halves.</div></div>
+<div class="glossary-term"><div class="term">Sof Passuk / Silluq</div><div class="def">The final cantillation mark at the end of a verse, always accompanied by a silluq on the last word.</div></div>
+<div class="glossary-term"><div class="term">Munach</div><div class="def">A conjunctive trop mark that connects to the following word (typically with a disjunctive like etnachta or revii). Also known as &#x27;shofar munach&#x27; for the High Holiday notes.</div></div>
+<div class="glossary-term"><div class="term">Pashta</div><div class="def">A disjunctive trop mark that often appears on the penultimate or last word before a zakef katon, indicating a minor pause.</div></div>
+<div class="glossary-term"><div class="term">Segol / Segolta</div><div class="def">Disjunctive trop marks. Segolta is used for a stronger division within a verse, appearing above the word with a dot at the top and a dot at the bottom.</div></div>
+<div class="glossary-term"><div class="term">Chataf / Hataf</div><div class="def">A composite sheva (chataf patach, chataf segol, chataf kamatz) indicating an extra-short vowel. Always appears under guttural letters (א, ה, ח, ע, ר) where a simple shva cannot be pronounced.</div></div>
+<div class="glossary-term"><div class="term">Patach Ganuv (G&#x27;nuvah)</div><div class="def">A patach vowel inserted under a guttural letter (ח or ע) at the end of a word, pronounced before the guttural even though written under it. Example: שָׁמַע — the patach is under the ayin but pronounced before it.</div></div>
+<div class="glossary-term"><div class="term">Nikkud / Nikud</div><div class="def">The system of vowel markings (dots and dashes) placed under, above, or inside letters to indicate the vowel sounds in Biblical Hebrew.</div></div>
+<div class="glossary-term"><div class="term">Binyan (Pl. Binyanim)</div><div class="def">A verb conjugation pattern (building) in Hebrew. Common binyanim include Pa&#x27;al (Kal), Nif&#x27;al, Pi&#x27;el, Pu&#x27;al, Hif&#x27;il, Huf&#x27;al, and Hitpa&#x27;el. Each changes the meaning and vowels of the root.</div></div>
+<div class="glossary-term"><div class="term">Mesora / Masorah</div><div class="def">The tradition of the biblical text&#x27;s precise spelling, pronunciation, cantillation, and letter count, transmitted from generation to generation. Also refers to the Masoretic notes in the margins of a Sefer Torah.</div></div>
+<div class="glossary-term"><div class="term">Sefer Torah</div><div class="def">A Torah scroll handwritten on parchment by a qualified sofer, containing the Five Books of Moses. Must meet precise halachic requirements for kri&#x27;ah (public reading).</div></div>
+<div class="glossary-term"><div class="term">Minhag (Pl. Minhagim)</div><div class="def">Custom or tradition, especially regarding pronunciation, trop, and nusach in different communities (Ashkenazi, Sephardi, Yemenite, etc.).</div></div>
+<div class="glossary-term"><div class="term">Kri&#x27;ah / Kriyah</div><div class="def">The act of reading the Torah publicly, following precise rules of pronunciation, trop, and nikkud.</div></div>
+<div class="glossary-term"><div class="term">Lishonot / Lishonos</div><div class="def">Dialectal or orthographic variants in the biblical text, such as מלא (plene) vs. חסר (defective) spellings.</div></div>
+<div class="glossary-term"><div class="term">Kri / Ketiv</div><div class="def">The marginal Masoretic note indicating a word is read (kri) differently than it is written (ketiv). The ketiv is what appears in the text; the kri is what is recited.</div></div>
+<div class="glossary-term"><div class="term">Pesik / Psik</div><div class="def">A vertical line (|) between two words in a verse, indicating a slight pause or separation, stronger than a regular word break but weaker than an etnachta.</div></div>
+<div class="glossary-term"><div class="term">Ma&#x27;arich</div><div class="def">A term describing a lengthened or drawn-out pronunciation, often marked by a meteg or ga&#x27;ya under the lengthened vowel.</div></div>
+<div class="glossary-term"><div class="term">Nusach</div><div class="def">The specific musical mode or liturgical tradition used in prayer (e.g., nusach Ashkenaz, nusach Sefard, nusach Edot ha-Mizrach).</div></div>
+<div class="glossary-term"><div class="term">Ba&#x27;al K&#x27;riah</div><div class="def">The person who reads from the Torah during public prayer services (also ba&#x27;al korei). Requires expertise in nikkud, trop, and reading fluency.</div></div>
+</div>
+</div>
+<footer>
+  Generated from the Ba'alei K'riah Cave WhatsApp group &middot; Oct 2021 - Jun 2026
+</footer>
+
+<script>
+function toggleEntry(el) {
+  el.parentElement.classList.toggle('open');
+}
+function scrollToEntry(id) {
+  const el = document.querySelector('.entry[data-id="'+id+'"]');
+  if (el) {
+    el.classList.add('open');
+    el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+}
+function filterEntries() {
+  const q = document.getElementById('search').value.toLowerCase();
+  const cat = document.getElementById('catFilter').value;
+  const entries = document.querySelectorAll('.entry');
+  const categories = document.querySelectorAll('.category');
+  let visible = 0;
+  entries.forEach(function(e) {
+    const matchCat = !cat || e.dataset.cat === cat;
+    const matchQ = !q || e.dataset.q.indexOf(q) !== -1;
+    const show = matchCat && matchQ;
+    e.style.display = show ? '' : 'none';
+    if (show) visible++;
+  });
+  categories.forEach(function(c) {
+    const hasVisible = Array.from(c.querySelectorAll('.entry')).some(function(e) { return e.style.display !== 'none'; });
+    c.style.display = hasVisible ? '' : 'none';
+  });
+  document.getElementById('count').textContent = visible + ' / ' + entries.length;
+}
+</script>
+</body>
+</html>
