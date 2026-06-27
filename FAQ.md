@@ -80,7 +80,7 @@ A kamatz katan (short 'o' sound, like 'hope') occurs in a CLOSED UNACCENTED syll
 **The example of כְּקָרְבְּכֶם (like your offerings, Devarim 12:6):**
 - First kamatz (under kuf of כְּקָרְבְּכֶם) — in an OPEN syllable (קָ) → GADOL
 - Second kamatz (under reish of רְבְּ) — in a CLOSED UNACCENTED syllable (ב is the next letter, with shva nach?) → KATAN
-- Actually, the reish has a kamatz and the syllable is קָר (closed by the reish, but the reish begins the next syllable with a shva...) — wait, let me be more precise
+
 
 **More precise method:**
 - A kamatz is KATAN when:
@@ -883,7 +883,6 @@ Guttural letters (אהחער) CANNOT take a shva na (a moving shva that opens a 
 - Instead of a plain shva, the guttural gets a chataf patach, chataf segol, or chataf kamatz
 - The chataf indicates: 'this shva is moving (na), read it with the next syllable'
 - This is the most common solution
-- MG: 'You can't have a shva na under a guttural. So this can't be na, ever.'
 
 **Option 2: The shva remains as a plain shva but is NACH**
 - The guttural gets a plain shva that closes the previous syllable (shva nach)
@@ -893,7 +892,6 @@ Guttural letters (אהחער) CANNOT take a shva na (a moving shva that opens a 
 **The practical application:**
 - When you see a chataf under a guttural, you know it's shva NA — read it with the next syllable
 - When you see a plain shva under a guttural (without a chataf symbol), it's shva NACH — close the preceding syllable
-- Gedaliah Levin noted: 'I believe there are (rare) exceptions to this' — MG responded: 'Unless you're talking about a chataf-patach which is effectively a shva na, there are not'
 
 **For ba'alei k'riah:**
 - A chataf under a guttural is always shva na (read with next syllable)
@@ -906,11 +904,6 @@ Guttural letters (אהחער) CANNOT take a shva na (a moving shva that opens a 
 - נֶחְמָד — ches has plain shva nach (closes syllable: nech-mad)
 - טָהֳרָה — hei has chataf kamatz = shva na (to-ha-rah)
 - MG: 'You can't have a shva na under a guttural — ever'
-
-**Sources:**
-
-- ~ MG #msg6929
-- ~ Yechiel Pisem #msg6934
 
 **See also:**
 
@@ -1239,9 +1232,9 @@ However, there are many exceptions to this rule (as with most dikduk rules). It'
 - ~ Dovid H #msg4391
 - Rabbi Zvi Freund #msg4394
 
-### 38. In וְשַׂמְתִּי כַדְכֹד (Yeshayahu 54:12), why does the kaf of כדכוד retain its dagesh despite being preceded by a vav shuruk (which usually makes a בגדכפת letter rafeh)?
+### 38. In וְשַׂמְתִּי כַדְכֹד (Yeshayahu 54:12), why does the kaf of כדכוד retain its dagesh despite being preceded by a chirik-yud (which usually makes a בגדכפת letter rafeh)?
 
-The word כַדְכֹד (kadchod, 'ruby'/'beryl') is a well-known Masoretic exception. The rule says that a בגדכפת letter at the beginning of a word loses its dagesh kal when preceded by a word ending in אהוי (vowel letters). Here, the first word כַדְכֹד is preceded by 'שַׂמְתִּי' (samti) which ends in a chirik-yud (a vowel letter) — so the kaf should be rafeh (no dagesh).
+The word כַדְכֹד (kadchod, 'ruby'/'beryl') is a well-known Masoretic exception. The rule says that a בגדכפת letter at the beginning of a word loses its dagesh kal when preceded by a word ending in אהוי (vowel letters). Here, the preceding word is 'שַׂמְתִּי' (samti) which ends in a chirik-yud (a vowel letter) — so the kaf should be rafeh (no dagesh).
 
 But the Masorah lists this as an EXCEPTION. The kaf retains its dagesh despite the rule.
 
@@ -1824,7 +1817,7 @@ Key rules:
 - The patach is pronounced as the vowel of the PREVIOUS consonant, and the guttural gets only a very brief release
 - Some traditions barely pronounce the guttural at all after the patach
 
-In contrast, a mappik hei at the end of a word (like in אלוה) requires a distinct 'h' sound, which is fundamentally different from patach ganuv where the guttural gets minimal or no release.
+In contrast, a mappik hei at the end of a word (like in אלוה) follows the same principle as patach ganuv — the preceding vowel is pronounced before the hei — though some traditions give the hei a more distinct release.
 
 The same concept exists for other vowels — e.g., a kamatz under a final guttural is also 'stolen' (e.g., שָלַח, read as 'sha-LACH' with the kamatz pronounced before the chet). But the term 'patach ganuv' is specifically used for the patach case because it creates the most noticeable pronunciation difference.
 
@@ -1999,11 +1992,6 @@ When in doubt, consult the established nikkud (Keter, Breuer, or a reliable tikk
 - וַיִּבְלַע (Shemot 7:12) — kal: 'it swallowed' vs potential hif'il: 'it caused to swallow'
 - Same ambiguity with וַיִּשְׁבְּ/וַיִּשְׁבְּ and other verbs with prefix chirik/patach ambiguity
 
-**Sources:**
-
-- ~ Avi #msg7085
-- ~ Moish #msg7086
-
 **See also:**
 
 - [Can reading a shva as na vs nach (or changing a binyan) change the meaning of a word in kri'ah?](#shva-binyan-meaning)
@@ -2096,12 +2084,6 @@ These patterns have no convincing single explanation — they are just how the l
 
 - יום אחד (Bereishis 1:5) vs 'first day' — 'echad' emphasizes unity, not sequence
 - אחד עשר יום (Devarim 1:2-3) — 'eleven days', with the unit before the ten
-
-**Sources:**
-
-- ~ MJ #msg215
-- ~ R Abraham #msg216
-- ~ R Abraham #msg217
 
 ### 63. Why are there two seemingly different infinitive forms in Tanach (e.g. זָכוֹר / שָׁמוֹר vs. זְכֹר / forms that take prefixes)?
 
@@ -2785,19 +2767,17 @@ Ba'alei k'riah should be aware that some pazer notations in common chumashim may
 
 ### 87. Is there a perek (chapter) in Tanach that has no etnachta? Which one and why is this significant?
 
-Yes — Perek 115 in Tehillim has no etnachta, which is extremely unusual for a chapter of any length in Tanach. The etnachta is the second-strongest disjunctive trop mark (after sof passuk), and almost every pasuk contains one.
+Yes — Perek 5 in Eicha (Lamentations) has no etnachta, which is extremely unusual for a chapter of any length in Tanach. The etnachta is the second-strongest disjunctive trop mark (after sof passuk), and almost every pasuk contains one.
 
-**The answer**: Tehillim 115 (the 'Not to us, Hashem, not to us' perek — ה, לא לנו). The entire chapter consists of very short pesukim that are each essentially one phrase, so there's no need for a major pause within them.
+**The answer**: Eicha 5 (the 'Remember, Hashem' perek — זְכֹר ה' מֶה־הָיָה לָנוּ). The entire chapter consists of very short pesukim that are each essentially one phrase, so there is no need for a major pause within them. Eicha 5 is also unique among the five chapters for not being an acrostic.
 
 **Why it matters:**
 - This is often used as a trivia question to stump even seasoned ba'alei k'riah
 - It illustrates that trop is not arbitrary — it reflects the poetic structure of the text
-- In Tehillim (Ta'amei Emet system), the trop patterns are different from the 21 books, but the absence of etnachta is still notable
 
 **Other perakim with unusual trop:**
 - Some perakim have no sof passuk (extremely rare)
 - Some have unusual sequences of trop marks
-- The group noted that this perek appears twice, perhaps referring to a specific structure
 
 For ba'alei k'riah learning trop: knowing which pesukim/chapters have unusual trop patterns helps in preparation and avoids surprises at the amud.
 
@@ -2916,11 +2896,6 @@ For a ba'al k'riah, the shalshelet requires special preparation because of its u
 
 - וַיִּתְמַהְמָהּ (Bereishis 19:16) — Lot hesitating, the most famous shalshelet
 - וַיְמָאֵן (Bereishis 39:8) — Joseph refusing Potiphar's wife
-
-**Sources:**
-
-- ~ Dovid H #msg3233
-- ~ Dovid H #msg3234
 
 **See also:**
 
@@ -3484,13 +3459,6 @@ Understanding the oleh v'yored is important for ba'alei k'riah who leyne Megilla
 - קטנתי (Bereishis 32:11) — azla geresh vs revii in different editions
 - Different traditions for the oleh v'yored's musical motif (minor vs major third)
 
-**Sources:**
-
-- ~ Reuben #msg18375
-- ~ Perry Shapira #msg18376
-- Binyomin Abramson 89 #msg18387
-- ~ Moshe Klausner #msg2082
-
 **See also:**
 
 - [What is the taamei emet system and how does it differ from standard Torah trope? Where can I learn more?](#taamei-emet-overview)
@@ -3657,10 +3625,8 @@ The brachos recited before and after the haftarah are chanted with a distinctive
 
 Specifically:
 - The main bracha formula (ברוך אתה ה' א-להינו מלך העולם...) follows the trop of the passuk in Divrei HaYamim I 29:10 — the blessing of David Hamelech: 'וַיְבָרֶךְ דָּוִיד אֶת ה' לְעֵינֵי כָּל הַקָּהָל...'
-- The trop for these brachos is derived from the trop of that source passuk, which uses taamei emet (since Divrei HaYamim is in Ketuvim)
+- The trop for these brachos is derived from the trop of that source passuk. Divrei HaYamim is in Ketuvim but uses the standard STaM trop system (the same system used for Torah and Nevi'im), not Taamei Emet (which is exclusive to Tehillim, Mishlei, and Iyov).
 - Different siddurim and manuscript traditions show variations: some have kadma-mahpach-pashta-pashta, others have kadma-azla-revi'a-pashta (based on Rav Breuer's analysis)
-
-Because the source passuk is from Ketuvim, the trop used for the haftarah brachos follows the taamei emet system (or a simplified version of it), which is why it sounds different from both Torah and haftarah (Neviim) trop.
 
 Rav Breuer discusses this in his sefer on trop (Ta'amei HaMikra), and his analysis sometimes differs from what appears in standard siddurim. Ba'alei tefilla who want to be precise can consult his work for the most manuscript-supported version.
 
@@ -3874,7 +3840,7 @@ A real dilemma discussed in the group. Logically one should correct, but doing s
 
 ### 124. Why does Eicha have a unique layout with each pasuk on its own line (the 'windows' format)?
 
-The Sofrim call this minhag of writing the first four chapters of Eicha with a פַּרְשָׁה סְתוּמָה (closed paragraph break) between each pasuk 'חֲלוֹנוֹת חֲלוֹנוֹת' (windows). This is how the manuscripts have it as well. We do not have the Aleppo Codex for Eicha, but the Leningrad Codex does have it — with Chapter 3 written with a stuma between each pasuk (the 'windows'), matching the acrostic structure. Chapter 5 is not written this way. The Tikkun Simanim reproduces this layout, which can surprise people who have only seen Eicha written like a regular megillah. Sofrim can produce a klaf in this format on request, though it is more expensive.
+The Sofrim call this minhag of writing the first four chapters of Eicha with a פַּרְשָׁה סְתוּמָה (closed paragraph break) between each pasuk 'חֲלוֹנוֹת חֲלוֹנוֹת' (windows). This is how the manuscripts have it as well. We do not have the Aleppo Codex for Eicha, but the Leningrad Codex does have it — with Chapter 3 written with a stuma between each triple (not each individual pasuk), matching the triple-acrostic structure. Chapter 5 is not written this way. The Tikkun Simanim reproduces this layout, which can surprise people who have only seen Eicha written like a regular megillah. Sofrim can produce a klaf in this format on request, though it is more expensive.
 
 **Sources:**
 
@@ -4081,7 +4047,6 @@ There is a discussion about whether saying 'Adoshem' (a portmanteau of Ad-nai + 
 - 'Adoshem' is very common but has some halachic opposition
 - When learning or quoting pesukim outside of davening, say 'Hashem' (or 'Adonai' if you hold it's fine) — but be consistent with your practice
 - The safest approach: use 'Hashem' alone, avoiding the compound form entirely
-- MJ confirmed: 'When you quote a pasuk, please cite the site where it's cited' (meaning, just say the pasuk in context rather than focusing on the name issue)
 
 **Examples:**
 
@@ -4089,11 +4054,6 @@ There is a discussion about whether saying 'Adoshem' (a portmanteau of Ad-nai + 
 - Mishna Berura: no mention of this issue (silence = agreement?)
 - Common practice: 'Adoshem' widely used despite Kitzur's objection
 - MJ: 'When you quote a pasuk, please cite the site where it's cited'
-
-**Sources:**
-
-- ~ Dror Maor #msg4802
-- Binyomin (Ben) Adler #msg4805
 
 ### 133. Why is בְּאֵר שֶׁבַע sometimes written as שָׁבַע (shava) with a kamatz and sometimes as שֶׁבַע (sheva) with a segol? What does Seforno say about it?
 
@@ -4158,10 +4118,10 @@ Most people name their daughter רָחֵל mil'eil, but the name as it appears i
 
 ### 135. Why is the name Mordechai (מרדכי) sometimes pronounced with a chirik under the כ (Mordechi) and sometimes with a kamatz (Mordechai)? Does the nikkud change depending on the context?
 
-The name מרדכי (Mordechai) appears in Tanach with a kamatz under the chaf: מָרְדֳּכַי. However, in other contexts (like the sefer 'Mordechai' or the hagahos Mordechai), it sometimes appears with a chirik under the chaf: מָרְדְּכִי.
+The name מרדכי (Mordechai) appears in Tanach with a chataf kamatz under the dalet and a chirik under the chaf: מָרְדֳּכַי (Mor-de-chai). However, in other contexts (like the sefer 'Mordechai' or the hagahos Mordechai), it sometimes appears with a plain shva under the dalet and a chirik under the chaf: מָרְדְּכִי (Mor-de-chi).
 
 **The Tanach pronunciation:**
-- In Megillas Esther, the name is always מָרְדֳּכַי with a kamatz under the chaf — 'Mordechai'
+- In Megillas Esther, the name is always מָרְדֳּכַי with a chataf kamatz under the dalet — 'Mordechai'
 - This is the standard Masoretic vocalization
 
 **In sefer names and other contexts:**
@@ -4176,15 +4136,15 @@ The name מרדכי (Mordechai) appears in Tanach with a kamatz under the chaf: 
 - Rather, it reflects different naming traditions — the sefer name may have developed its own pronunciation over time
 
 **Is there a rule?**
-- In Tanach, the name is Mordechai (kamatz) — follow the nikkud in Esther
+- In Tanach, the name is Mordechai (chataf kamatz under dalet, chirik under chaf) — follow the nikkud in Esther
 - In rabbinic literature (Mordechai the sefer), the chirik pronunciation is also accepted
 - The chirik pronunciation may reflect Ashkenazi influence or a separate diminutive form
 - The two pronunciations don't reflect different meanings — they're the same name in different contexts
 
 **For ba'alei k'riah:**
-- When reading Megillas Esther, always say Mordechai (kamatz under chaf) — that's what's written in the klaf
+- When reading Megillas Esther, always say Mordechai (chataf kamatz under dalet, chirik under chaf) — that's what's written in the klaf
 - When referring to the sefer 'Mordechai', both pronunciations are heard, with 'Mordechi' being common among yeshivish speakers
-- The kamatz form is the original Masoretic vocalization
+- The chataf kamatz form is the original Masoretic vocalization
 
 **Examples:**
 
@@ -4383,11 +4343,6 @@ For ba'alei k'riah, Kol Nidrei is interesting because:
 - Kol Nidrei tune — one of the most recognizable nuscha'os in the Jewish year
 - Declares vows null 'from this Yom Kippur to the next' — debate about future vs past
 - Recited 3 times to fulfill beis din requirement
-
-**Sources:**
-
-- ~ Dror Maor #msg352
-- ~ MJ #msg353
 
 ### 143. What is the rarest Shemoneh Esrei? What is the rarest aliyah in the Torah reading cycle?
 
@@ -4862,11 +4817,6 @@ Contrary to modern perception, Maftir is technically not the most distinguished 
 Some Sephardi/Eretz Yisrael minhagim: boy gets an aliyah during the main seven
 - Maftir was created so someone could read from the Navi scroll — it's a separate 'bonus' aliyah, not one of the required seven
 
-**Sources:**
-
-- ~ Gedaliah Levin #msg15152
-- ~ Rabbi Stanley Coten #msg15153
-
 ### 160. If someone tries to differentiate between letters (e.g. ח/כ) authentically but sometimes slips, is that worse than never making any distinction at all (bedi'avad)?
 
 The prevailing view: if you don't think you can be consistent, it is better to read ח like a כ in general than to attempt a distinction you can't maintain. If you are confident you can consistently differentiate, that is a different story. The underlying logic: an inconsistent distinction can sound like a mistake (as if you mispronounced), whereas a consistent non-distinction is simply the accepted bedi'avad practice most communities accept. Related: there is concern (intuitive, with support from poskim on being מאריך too much in the ח of אחד vs the ד — מקלקל התבה) that taking a breath mid-word to draw out a sound (e.g. shaking lulav while elongating נא־ in אנא ה' הושיעה נא) may be a hefsek that splits the word.
@@ -5245,4 +5195,4 @@ Yes — ורצה (vartzah, 'and He desired') should be pronounced mil'eil (VAR-t
 
 - Total entries: 171
 - Categories: 15
-- Messages referenced: 642
+- Messages referenced: 630
