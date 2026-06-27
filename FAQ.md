@@ -239,7 +239,7 @@ In Shemos 12:48, the word 'haPOSach' (הַפֹּסַח) has a kamatz (cholam in 
 
 Pausal forms are vowel changes that occur at major pauses in a verse — typically at an etnachta or sof passuk, and occasionally at a zakef. When a word appears at one of these pausal positions, its vowels may shift: a patach may become a kamatz, a segol may replace a tzeirei, etc. These are called pausal forms.
 
-Crucially, pausal forms do NOT change the meaning of a word. They are purely phonetic/positional. For example:
+Pausal forms do NOT change the meaning of a word. They are purely phonetic/positional. For example:
 - חלילה לָךְ (with kamatz under the lamed) vs חלילה לְךָ (with shva) — the difference is pausal vs non-pausal position, not a change in meaning
 - אִתָּךְ vs אִתְּךָ — the pausal form (with kamatz) is required at a pause even if it 'sounds' feminine
 - מצרים (Mitzrayim) vs מצרום (Mitzrum) — the pausal form is pronounced with a different final vowel but means the same
@@ -561,7 +561,7 @@ There is a real divide in practice. The Masorah Gedolah of the Aleppo Codex (not
 
 ### 17. What is the difference between shva na and shva nach, and can a shva ever change the meaning of a word?
 
-A shva na (also called shva na', 'moving') begins the following syllable — it is read together with the next letter and its vowel as a single syllable (e.g. מְלַאכְךָ, the mem+shva starts the first syllable). A shva nach ('resting') closes the preceding syllable and is not itself a syllable. Crucially, a shva na is NOT an independent syllable of its own; it merely begins the next one, so a word like וַיִּירְאוּ is two syllables, not three. A change in shva type is technically never the root cause of a meaning change — it is always a consequence of some more fundamental change (a long vs. short vowel, or the presence/lack of a dagesh) that carries the meaning. For example יִרְאוּ vs יִירְאוּ, or יִדְמוּ vs יִדְּמוּ: it is the vowel length / dagesh that differs, and the shva shift follows from that. This is why determining shva na/nach matters for kri'ah: getting it wrong usually signals you have misread the underlying vowel or dagesh.
+A shva na (also called shva na', 'moving') begins the following syllable — it is read together with the next letter and its vowel as a single syllable (e.g. מְלַאכְךָ, the mem+shva starts the first syllable). A shva nach ('resting') closes the preceding syllable and is not itself a syllable. A shva na is NOT an independent syllable of its own; it merely begins the next one, so a word like וַיִּירְאוּ is two syllables, not three. A change in shva type is technically never the root cause of a meaning change — it is always a consequence of some more fundamental change (a long vs. short vowel, or the presence/lack of a dagesh) that carries the meaning. For example יִרְאוּ vs יִירְאוּ, or יִדְמוּ vs יִדְּמוּ: it is the vowel length / dagesh that differs, and the shva shift follows from that. This is why determining shva na/nach matters for kri'ah: getting it wrong usually signals you have misread the underlying vowel or dagesh.
 
 **Examples:**
 
@@ -875,43 +875,7 @@ Certain short words beginning with a vav shuruk (וּ) followed by a shva na are
 - [The Gra (Gaon of Vilna) said that a chataf vowel which appears under a non-guttural letter should be ignored. Where did he write this, and what does it mean in practice?](#chataf-non-guttural-gra)
 - [Why is there sometimes a ḥataf (e.g. chataf patach) under a non-guttural letter where a shva 'should' be?](#chataf-as-shva-indicator)
 
-### 26. Why can't a guttural letter (אהחער) take a shva na? What happens when a shva na would be grammatically required under a guttural?
-
-Guttural letters (אהחער) CANNOT take a shva na (a moving shva that opens a syllable). When the rules of Hebrew grammar would require a shva na under a guttural, one of two things happens:
-
-**Option 1: A chataf vowel replaces the shva na**
-- Instead of a plain shva, the guttural gets a chataf patach, chataf segol, or chataf kamatz
-- The chataf indicates: 'this shva is moving (na), read it with the next syllable'
-- This is the most common solution
-
-**Option 2: The shva remains as a plain shva but is NACH**
-- The guttural gets a plain shva that closes the previous syllable (shva nach)
-- This happens when the syllable structure requires the guttural to close the preceding syllable
-- The 'mevatlim' (neutralizers) that enable this include: a preceding patach/chirik/kamatz, or a following doubled letter
-
-**The practical application:**
-- When you see a chataf under a guttural, you know it's shva NA — read it with the next syllable
-- When you see a plain shva under a guttural (without a chataf symbol), it's shva NACH — close the preceding syllable
-
-**For ba'alei k'riah:**
-- A chataf under a guttural is always shva na (read with next syllable)
-- A plain shva under a guttural is always shva nach (close the syllable)
-- This is a reliable rule that helps determine syllable breaks for guttural letters
-
-**Examples:**
-
-- יַעֲמִיד — ayin has chataf patach = shva na (ya-a-mid)
-- נֶחְמָד — ches has plain shva nach (closes syllable: nech-mad)
-- טָהֳרָה — hei has chataf kamatz = shva na (to-ha-rah)
-- MG: 'You can't have a shva na under a guttural — ever'
-
-**See also:**
-
-- [Why is there sometimes a ḥataf (e.g. chataf patach) under a non-guttural letter where a shva 'should' be?](#chataf-as-shva-indicator)
-- [If a guttural (אהחער) can accept a shva nach, why does it sometimes get a chataf vowel instead? When is a chataf used vs a plain shva?](#guttural-shva-nach-vs-chataf)
-- [Can a chataf appear on non-guttural letters, and how should it be pronounced?](#hataf-on-non-guttural)
-
-### 27. If a guttural (אהחער) can accept a shva nach, why does it sometimes get a chataf vowel instead? When is a chataf used vs a plain shva?
+### 26. If a guttural (אהחער) can accept a shva nach, why does it sometimes get a chataf vowel instead? When is a chataf used vs a plain shva?
 
 The distinction is simple: a guttural gets a **chataf** when the shva is **na** (moving), and it keeps a plain **shva nach** when the shva is **nach** (resting).
 
@@ -954,7 +918,7 @@ The distinction is simple: a guttural gets a **chataf** when the shva is **na** 
 - [When a guttural takes a chataf instead of a shva nach, what determines which chataf vowel it gets? Why does טהרה (purity) have a chataf kamatz but טהרה (becomes pure) has a chataf patach?](#chataf-mirrors-preceding-vowel)
 - [Can a chataf appear on non-guttural letters, and how should it be pronounced?](#hataf-on-non-guttural)
 
-### 28. Can a chataf appear on non-guttural letters, and how should it be pronounced?
+### 27. Can a chataf appear on non-guttural letters, and how should it be pronounced?
 
 Technically, chataf vowels (chataf patach, chataf segol, chataf kamatz) belong under guttural letters (אהחער) because gutturals cannot take a plain shva. However, chataf marks do appear on non-guttural letters in certain situations — most commonly as shva-na indicators (e.g., the chataf patach under ז in וזהב or under ש in וּֽשֲׁמָ֔ע). In these cases, the chataf is a diacritic signaling that the shva is na, not a separate vowel to be pronounced.
 
@@ -977,7 +941,7 @@ A well-known borderline case is מרדכי (Mordechai): is it מָרְדְּכַ
 
 - [Why is there sometimes a ḥataf (e.g. chataf patach) under a non-guttural letter where a shva 'should' be?](#chataf-as-shva-indicator)
 
-### 29. What did the Minchas Shai mean when he said 'nahagu likrosam b'CP' about certain words? Does he view chataf as equivalent to shva na?
+### 28. What did the Minchas Shai mean when he said 'nahagu likrosam b'CP' about certain words? Does he view chataf as equivalent to shva na?
 
 The Minchas Shai (one of the classic Masoretic commentators) uses the phrase 'nahagu likrosam b'CP' (נהגו לקרותם בחטף פתח) — 'they are accustomed to read them with a chataf patach' — for certain words. This has generated discussion about what exactly he meant.
 
@@ -1023,6 +987,49 @@ The Minchas Shai (one of the classic Masoretic commentators) uses the phrase 'na
 - [Can a chataf appear on non-guttural letters, and how should it be pronounced?](#hataf-on-non-guttural)
 - [The Gra (Gaon of Vilna) said that a chataf vowel which appears under a non-guttural letter should be ignored. Where did he write this, and what does it mean in practice?](#chataf-non-guttural-gra)
 - [What is the difference between shva na and shva nach, and can a shva ever change the meaning of a word?](#shva-na-vs-nach)
+
+### 29. Why can't a guttural letter (אהחער) take a shva na? What happens when a shva na would be grammatically required under a guttural?
+
+Guttural letters (אהחער) CANNOT take a shva na (a moving shva that opens a syllable). When the rules of Hebrew grammar would require a shva na under a guttural, one of two things happens:
+
+**Option 1: A chataf vowel replaces the shva na**
+- Instead of a plain shva, the guttural gets a chataf patach, chataf segol, or chataf kamatz
+- The chataf indicates: 'this shva is moving (na), read it with the next syllable'
+- This is the most common solution
+- MG: 'You can't have a shva na under a guttural. So this can't be na, ever.'
+
+**Option 2: The shva remains as a plain shva but is NACH**
+- The guttural gets a plain shva that closes the previous syllable (shva nach)
+- This happens when the syllable structure requires the guttural to close the preceding syllable
+- The 'mevatlim' (neutralizers) that enable this include: a preceding patach/chirik/kamatz, or a following doubled letter
+
+**The practical application:**
+- When you see a chataf under a guttural, you know it's shva NA — read it with the next syllable
+- When you see a plain shva under a guttural (without a chataf symbol), it's shva NACH — close the preceding syllable
+- Gedaliah Levin noted: 'I believe there are (rare) exceptions to this' — MG responded: 'Unless you're talking about a chataf-patach which is effectively a shva na, there are not'
+
+**For ba'alei k'riah:**
+- A chataf under a guttural is always shva na (read with next syllable)
+- A plain shva under a guttural is always shva nach (close the syllable)
+- This is a reliable rule that helps determine syllable breaks for guttural letters
+
+**Examples:**
+
+- יַעֲמִיד — ayin has chataf patach = shva na (ya-a-mid)
+- נֶחְמָד — ches has plain shva nach (closes syllable: nech-mad)
+- טָהֳרָה — hei has chataf kamatz = shva na (to-ha-rah)
+- MG: 'You can't have a shva na under a guttural — ever'
+
+**Sources:**
+
+- MG #msg6929
+- Gedaliah Levin #msg6934
+
+**See also:**
+
+- [Why is there sometimes a ḥataf (e.g. chataf patach) under a non-guttural letter where a shva 'should' be?](#chataf-as-shva-indicator)
+- [If a guttural (אהחער) can accept a shva nach, why does it sometimes get a chataf vowel instead? When is a chataf used vs a plain shva?](#guttural-shva-nach-vs-chataf)
+- [Can a chataf appear on non-guttural letters, and how should it be pronounced?](#hataf-on-non-guttural)
 
 ---
 
@@ -1217,7 +1224,7 @@ This comes from a misunderstanding of a subtle rule: when a tnuah ketanah (short
 - שָׁמַיִם (shamayim) is mil'eil — the first syllable has a kamatz (long vowel), so it doesn't need to be accented
 - But if the first syllable had a short vowel without a dagesh or shva nach following, it would need to be accented
 
-However, there are many exceptions to this rule (as with most dikduk rules). It's not that a dagesh 'forces' milra — rather, the presence of a dagesh can mean the syllable can remain unstressed even with a short vowel. This is a nuanced point about syllable weight, not a simple rule.
+However, there are many exceptions to this rule (as with most dikduk rules). It's not that a dagesh 'forces' milra — rather, the presence of a dagesh can mean the syllable can remain unstressed even with a short vowel. This relates to syllable weight, not a simple rule.
 
 **Examples:**
 
@@ -1970,33 +1977,7 @@ The Teimani dageshed ג has been influenced by the corresponding Arabic letter (
 
 ## Grammar & Morphology
 
-### 59. In Shemot 7:12, does וַיִּבְלַע (vayivla) mean 'it swallowed' (kal) or 'it caused to swallow' (hif'il)? Does changing the binyan change the meaning?
-
-The word וַיִּבְלַע (Shemot 7:12, the staff of Aharon swallowing the staffs of the magicians) has a binyan ambiguity. The form could be:
-
-- Kal (pa'al): וַיִּבְלַע = 'it swallowed'
-- Hif'il: וַיַּבְלַע = 'it caused to swallow' (but written with a chirik under the yud in some manuscripts)
-
-There is also a potential pi'el form (וַיְבַלַע), which would be a different binyan entirely with a different meaning.
-
-This is a classic example of how a small vowel difference (chirik vs patach under the prefix) can change the binyan and potentially the meaning:
-- Kal: simple active ('it swallowed') — and it's talking about the staff
-- Hif'il: causative ('it made [something] swallow') — would shift the subject
-
-As with the תשרוף vs תשרף example from Parshas Balak, ba'alei k'riah need to be aware of these binyan distinctions. The correct reading follows the Masoretic tradition as reflected in the established nikkud — ba'alei k'riah should not change the vowel based on their own grammatical analysis.
-
-When in doubt, consult the established nikkud (Keter, Breuer, or a reliable tikkun), not one's own understanding of grammar.
-
-**Examples:**
-
-- וַיִּבְלַע (Shemot 7:12) — kal: 'it swallowed' vs potential hif'il: 'it caused to swallow'
-- Same ambiguity with וַיִּשְׁבְּ/וַיִּשְׁבְּ and other verbs with prefix chirik/patach ambiguity
-
-**See also:**
-
-- [Can reading a shva as na vs nach (or changing a binyan) change the meaning of a word in kri'ah?](#shva-binyan-meaning)
-
-### 60. Why does the dalet in לבדכם (l'vadchem) have a dagesh? And what is the general rule for dageshim representing dropped root letters?
+### 59. Why does the dalet in לבדכם (l'vadchem) have a dagesh? And what is the general rule for dageshim representing dropped root letters?
 
 The dagesh in the dalet of לְבַדְּכֶם (and similar words) represents a dropped letter from the original root. The word comes from the root בדד (meaning 'alone/separate'). In the singular form, one of the dalets drops (לְבַד = singular), but when a suffix is added, the dagesh chazak appears in the remaining dalet to represent the missing second root letter.
 
@@ -2026,7 +2007,7 @@ For ba'alei k'riah: recognizing this pattern helps predict when unexpected dages
 - ~ MJ #msg4754
 - ~ ~ #msg4755
 
-### 61. Does the kamatz in the word דָּת (dat, 'religion/law') change to a patach when it's in construct form (smichut), like in כְּדַת מֹשֶׁה וְיִשְׂרָאֵל?
+### 60. Does the kamatz in the word דָּת (dat, 'religion/law') change to a patach when it's in construct form (smichut), like in כְּדַת מֹשֶׁה וְיִשְׂרָאֵל?
 
 There is a debate among grammarians about whether the kamatz in דָּת changes to a patach in smichut.
 
@@ -2068,24 +2049,7 @@ There is a debate among grammarians about whether the kamatz in דָּת changes
 - [What are pausal forms and why do they sometimes seem to 'override' the plain meaning?](#pausal-forms)
 - [Is a chataf kamatz always a kamatz katan (KK)? And how should a chataf that indicates neither shva-na nor KK be pronounced?](#kamatz-katan-vs-chataf)
 
-### 62. Why is 'day one' יום אחד and not יום ראשון? And why is the word order different for other numbers (אחד עשר vs עשרה)?
-
-There are several interesting grammatical patterns in how the Torah counts:
-
-1. 'יום אחד' vs 'יום ראשון': The Torah uses 'yom echad' (day one) for the first day of creation rather than 'yom rishon' (first day). This is because 'one' (echad) emphasizes unity/uniqueness, while 'first' (rishon) implies a sequence.
-
-2. 'אחד עשר יום' (eleven days) vs 'עשרים יום' (twenty days): Numbers 11-19 place the smaller number first (echad asar = 'one ten'), while 20+ use the standard construct order. This is a quirk of Semitic numeral syntax.
-
-3. The word order 'יום אחד' (noun then number) vs 'אחד עשר יום' (one-ten-day): In 'achad asar yom', the 'one' precedes 'ten' because it's the units digit modifying the tens. This is consistent across all Hebrew numbers 11-19.
-
-These patterns have no convincing single explanation — they are just how the language works, and both forms ('achad asar' and 'echad asar') are found in Tanach, sometimes in consecutive pesukim.
-
-**Examples:**
-
-- יום אחד (Bereishis 1:5) vs 'first day' — 'echad' emphasizes unity, not sequence
-- אחד עשר יום (Devarim 1:2-3) — 'eleven days', with the unit before the ten
-
-### 63. Why are there two seemingly different infinitive forms in Tanach (e.g. זָכוֹר / שָׁמוֹר vs. זְכֹר / forms that take prefixes)?
+### 61. Why are there two seemingly different infinitive forms in Tanach (e.g. זָכוֹר / שָׁמוֹר vs. זְכֹר / forms that take prefixes)?
 
 There are two versions of the infinitive: (1) One that NEVER changes its form and is typically used for emphasis / command, e.g. מוֹת יוּמָת, אָכוֹל תֹּאכְלוּ, זָכוֹר וְשָׁמוֹר. This form cannot take a vav prefix (it is frozen). (2) Another which connotes the general idea of the verb in a kind of noun form and CAN take prefixes and suffixes. As with much dikduk, the precise behavior is a machloket rishonim. A related reading question: בְּמִדְבַּר ט״ו:ל״ה where רָגוֹם seems used in place of the regular verb יִרְגְּמוּ.
 
@@ -2101,7 +2065,7 @@ There are two versions of the infinitive: (1) One that NEVER changes its form an
 - ~ MJ #msg302
 - ~ Moish #msg303
 
-### 64. Why is it קַח (kach) in some places and לְקַח (l'kach) in others — aren't they both the imperative of לָקַח?
+### 62. Why is it קַח (kach) in some places and לְקַח (l'kach) in others — aren't they both the imperative of לָקַח?
 
 In the future tense where there are prefixes, the lamed falls out (e.g. קַחְתָּ). The command form (imperative) mimics the future form without the prefix; thus קַח. But since there is no prefix in the imperative, the lamed does not HAVE to fall out — thus לְקַח. The two forms coexist as standard variants of the same imperative. (Rashi in Tetzaveh discusses related shoresh questions.)
 
@@ -2119,7 +2083,7 @@ In the future tense where there are prefixes, the lamed falls out (e.g. קַחְ
 
 - [Why are there two seemingly different infinitive forms in Tanach (e.g. זָכוֹר / שָׁמוֹר vs. זְכֹר / forms that take prefixes)?](#infinitive-two-forms)
 
-### 65. Which commonly mispronounced seforim names should I watch out for?
+### 63. Which commonly mispronounced seforim names should I watch out for?
 
 A recurring thread of corrections and amusement: סֵפֶר הַמִּקְנָה (not haMakneh); עָרֹךְ הַשֻּׁלְחָן (not Aruch, as the reish takes a kamatz); הַעְמֵק שְׁאֵלָה (not Shayla, the shin has a segol); שֹׁחֵר טוֹב (not Shochor — the shin has a chataf segol, from שׁחר); שִׁבְלֵי הַלֶּקֶט (not sh'vilei); שַׁעַר הַצִּיּוּן (not haTziyon — the yod has a dagesh). The underlying pattern: people read the word as if it were a familiar Hebrew word or analogize incorrectly.
 
@@ -2137,7 +2101,7 @@ A recurring thread of corrections and amusement: סֵפֶר הַמִּקְנָה
 - ~ Avi Herzog #msg945
 - Binyomin (Ben) Adler #msg1066
 
-### 66. Why is מִזְבֵּחַ sometimes with a tzeire (mizbei'ach) and sometimes with a patach (mizbach)? Does the difference relate to construct vs absolute state?
+### 64. Why is מִזְבֵּחַ sometimes with a tzeire (mizbei'ach) and sometimes with a patach (mizbach)? Does the difference relate to construct vs absolute state?
 
 Yes — the vocalization of מִזְבֵּחַ (altar) changes based on whether it's in the absolute or construct state:
 
@@ -2176,7 +2140,7 @@ Yes — the vocalization of מִזְבֵּחַ (altar) changes based on whether 
 
 - [Why do some segolate nouns shift vowels (she mesh → Shamash, kesef → kasef) while others don't (teven stays teven)?](#segolate-nouns)
 
-### 67. Is there poetic meter in the Torah's prose sections, or only in the shiros (poems) like Haazinu and Shirat HaYam?
+### 65. Is there poetic meter in the Torah's prose sections, or only in the shiros (poems) like Haazinu and Shirat HaYam?
 
 The Torah contains both prose and poetry. The clear poetic sections are Shira (Shirat HaYam in Beshalach, Haazinu, and some other passages). These are distinguished by their special layout in a Sefer Torah (ariel layout) and by their use of parallel structures, rhythmic patterns, and poetic devices.
 
@@ -2204,7 +2168,7 @@ What is clear:
 - ~ Elliot Pisem #msg12540
 - ~ Sammy Noe #msg12548
 
-### 68. Why do some segolate nouns shift vowels (she mesh → Shamash, kesef → kasef) while others don't (teven stays teven)?
+### 66. Why do some segolate nouns shift vowels (she mesh → Shamash, kesef → kasef) while others don't (teven stays teven)?
 
 Segolate nouns are a class of Hebrew nouns that originally had two syllables with a segol in the final syllable. When they take possessive suffixes or are in construct form, the vowels typically shift: the first vowel becomes a kamatz or patach, and the second segol drops.
 
@@ -2236,7 +2200,7 @@ For ba'alei k'riah, this matters because:
 
 - [What are pausal forms and why do they sometimes seem to 'override' the plain meaning?](#pausal-forms)
 
-### 69. Can reading a shva as na vs nach (or changing a binyan) change the meaning of a word in kri'ah?
+### 67. Can reading a shva as na vs nach (or changing a binyan) change the meaning of a word in kri'ah?
 
 Yes — and this is a critical issue for ba'alei k'riah. A classic example is באש תשרף: reading תִּשְׂרוֹף (chirik under the tav) = 'you shall burn' (kal/pa'al), vs תְּשָׂרֵף (shva na under the tav) = 'she shall be burned' (pi'el) or possibly 'she shall burn [something]'. The nif'al form also exists. These are different binyanim with different meanings, so getting the vowel wrong can change whether Hashem commands 'you shall burn' or describes 'it shall be burned'.
 
@@ -2262,7 +2226,7 @@ Another important case: the word המטהר at the beginning of Parshas Metzora 
 - [Can reading a shva as na vs nach (or changing a binyan) change the meaning of a word in kri'ah?](#shva-binyan-meaning)
 - [What is the difference between shva na and shva nach, and can a shva ever change the meaning of a word?](#shva-na-vs-nach)
 
-### 70. Why is the word תולדות spelled four different ways in Sefer Bereishis (תולדות, תולדת, תלדת, תלדות)?
+### 68. Why is the word תולדות spelled four different ways in Sefer Bereishis (תולדות, תולדת, תלדת, תלדות)?
 
 This kind of spelling variation (חֲסֵר וְיָתֵר — 'defective' vs 'full' spelling) occurs very liberally throughout the Torah. תּוֹלְדֹת appears in Bereishis, תּוֹלֶדֶת in Noach, תֶּלֶדֶת in Chayei Sarah, תֶּלְדֹת in Vayishlach and Vayeshev. Similar variation: נְשִׂיאִים is spelled four different ways including two in a single pasuk; יַעֲקֹב has a vav in five of its occurrences. The Masorah lists all of these; they are generally not considered to change meaning but are part of the accepted text. For a sofer, these variations are critical (a new Sefer Torah must be used if a mistake in חֲסֵרוֹת וְיִתְרוֹת is found), but for ordinary readers they are curiosities rather than practical concerns.
 
@@ -2278,7 +2242,7 @@ This kind of spelling variation (חֲסֵר וְיָתֵר — 'defective' vs 'f
 - ~ Dror Maor #msg5695
 - ~ Sammy Noe #msg5696
 
-### 71. Why is the word for 'they amassed' in Bamidbar 31:7 (וַיִּצְבְּאוּ) different from the word for 'they piled up' in Shemos 8:10 (וַיִּצְבְּרוּ)? Are they the same root?
+### 69. Why is the word for 'they amassed' in Bamidbar 31:7 (וַיִּצְבְּאוּ) different from the word for 'they piled up' in Shemos 8:10 (וַיִּצְבְּרוּ)? Are they the same root?
 
 No, they are two different roots with different meanings:
 
@@ -2321,7 +2285,7 @@ No, they are two different roots with different meanings:
 - ~ Bill #msg9771
 - ~ Dovid H #msg9774
 
-### 72. Do Yiddish names/words follow Loshon haKodesh dikduk rules?
+### 70. Do Yiddish names/words follow Loshon haKodesh dikduk rules?
 
 No — Yiddish does not follow Loshon haKodesh's dikduk rules, not one bit. So trying to force Hebrew grammar onto Yiddish names (e.g. whether a Yiddish name is 'properly' mil'eil or milra, or how many shvas it may have — a Yiddish word can appear with three shvas in a row) is misplaced. Examples: לֵב in לה״ק means 'heart'; the Yiddish name לֲיְבּ (lion, cf. German Löwe / maharal Yehuda ben Betzalel — Yehuda Leib) is a different word. לִבְּן/leben the milk product is an Arabic word. The 'oy' vs 'oh' and the one-yud/two-yud questions likewise belong to Yiddish/German orthography, not Hebrew grammar.
 
@@ -2342,6 +2306,60 @@ No — Yiddish does not follow Loshon haKodesh's dikduk rules, not one bit. So t
 
 - [Is the name Rachel (רָחֵל) pronounced mil'eil or milra, and does the Tanach form differ from common usage?](#mil'eil-vs-milra)
 - [What is the history of the 'oy' vs 'oh' pronunciation of the cholam (e.g. ha-OY-lam vs ha-OH-lam)?](#cholam-oy-vs-oh)
+
+### 71. Why is 'day one' יום אחד and not יום ראשון? And why is the word order different for other numbers (אחד עשר vs עשרה)?
+
+There are several interesting grammatical patterns in how the Torah counts:
+
+1. 'יום אחד' vs 'יום ראשון': The Torah uses 'yom echad' (day one) for the first day of creation rather than 'yom rishon' (first day). This is because 'one' (echad) emphasizes unity/uniqueness, while 'first' (rishon) implies a sequence.
+
+2. 'אחד עשר יום' (eleven days) vs 'עשרים יום' (twenty days): Numbers 11-19 place the smaller number first (echad asar = 'one ten'), while 20+ use the standard construct order. This is a quirk of Semitic numeral syntax.
+
+3. The word order 'יום אחד' (noun then number) vs 'אחד עשר יום' (one-ten-day): In 'achad asar yom', the 'one' precedes 'ten' because it's the units digit modifying the tens. This is consistent across all Hebrew numbers 11-19.
+
+These patterns have no convincing single explanation — they are just how the language works, and both forms ('achad asar' and 'echad asar') are found in Tanach, sometimes in consecutive pesukim.
+
+**Examples:**
+
+- יום אחד (Bereishis 1:5) vs 'first day' — 'echad' emphasizes unity, not sequence
+- אחד עשר יום (Devarim 1:2-3) — 'eleven days', with the unit before the ten
+
+**Sources:**
+
+- MJ (2024-05-05) #msg215
+- Avi Herzog (2024-05-05) #msg216
+- MJ (2024-05-05) #msg217
+
+### 72. In Shemot 7:12, does וַיִּבְלַע (vayivla) mean 'it swallowed' (kal) or 'it caused to swallow' (hif'il)? Does changing the binyan change the meaning?
+
+The word וַיִּבְלַע (Shemot 7:12, the staff of Aharon swallowing the staffs of the magicians) has a binyan ambiguity. The form could be:
+
+- Kal (pa'al): וַיִּבְלַע = 'it swallowed'
+- Hif'il: וַיַּבְלַע = 'it caused to swallow' (but written with a chirik under the yud in some manuscripts)
+
+There is also a potential pi'el form (וַיְבַלַע), which would be a different binyan entirely with a different meaning.
+
+This is a classic example of how a small vowel difference (chirik vs patach under the prefix) can change the binyan and potentially the meaning:
+- Kal: simple active ('it swallowed') — and it's talking about the staff
+- Hif'il: causative ('it made [something] swallow') — would shift the subject
+
+As with the תשרוף vs תשרף example from Parshas Balak, ba'alei k'riah need to be aware of these binyan distinctions. The correct reading follows the Masoretic tradition as reflected in the established nikkud — ba'alei k'riah should not change the vowel based on their own grammatical analysis.
+
+When in doubt, consult the established nikkud (Keter, Breuer, or a reliable tikkun), not one's own understanding of grammar.
+
+**Examples:**
+
+- וַיִּבְלַע (Shemot 7:12) — kal: 'it swallowed' vs potential hif'il: 'it caused to swallow'
+- Same ambiguity with וַיִּשְׁבְּ/וַיִּשְׁבְּ and other verbs with prefix chirik/patach ambiguity
+
+**Sources:**
+
+- MG (2025-01-26) #msg7085
+- MJ (2025-01-26) #msg7086
+
+**See also:**
+
+- [Can reading a shva as na vs nach (or changing a binyan) change the meaning of a word in kri'ah?](#shva-binyan-meaning)
 
 ---
 
@@ -2878,30 +2896,7 @@ Yes — revi'i and gershayim are genuinely different notes with different gramma
 - [When different chumashim/tikkunim show different nikkud or trop, is that a 'machloket' (dispute)?](#girsa-vs-machloket)
 - [How do you tell the difference between a kadma and a pashta (and between yetiv and mahpach)?](#kadma-vs-pashta)
 
-### 91. What is the shalshelet (שלשלת) trop mark and where does it appear?
-
-The shalshelet (meaning 'chain') is one of the rarest and most distinctive trop marks in the Torah. It appears as a wavy, zigzag line above a word and has a unique musical motif — a long, undulating melody that suggests hesitation or dramatic tension.
-
-There are only a few occurrences of the shalshelet in the entire Torah:
-- Bereishis 19:16 — 'וַיִּתְמַהְמָהּ' (Vayitmahmah — 'and he lingered'), describing Lot hesitating before leaving Sodom
-- Bereishis 24:12 — 'וַיֹּאמֶר' (Vayomer — 'and he said'), Eliezer's prayer
-- Bereishis 39:8 — 'וַיְמָאֵן' (Vayema'en — 'and he refused'), Joseph refusing Potiphar's wife
-- Vayikra 8:23 — 'וַיִּשְׁחָט' (Vayishchat — 'and he slaughtered'), the inauguration of the Mishkan
-
-Musically, the shalshelet is essentially a chain of three or four repeated notes that rise and fall, reflecting the dramatic weight of the moment. It is related to the pazer trop but distinct in its musical execution and rarity.
-
-For a ba'al k'riah, the shalshelet requires special preparation because of its unusual musical demands. In some traditions, it is essentially a long pazer with an extended cadence.
-
-**Examples:**
-
-- וַיִּתְמַהְמָהּ (Bereishis 19:16) — Lot hesitating, the most famous shalshelet
-- וַיְמָאֵן (Bereishis 39:8) — Joseph refusing Potiphar's wife
-
-**See also:**
-
-- [What is the pazer (פזר) trop mark and how is it related to the telisha?](#pazer-trop)
-
-### 92. Does a word with a shalshelet (שלשלת) take a pausal form, like it does with other major mafsikim (etnachta, segol, zakef)?
+### 91. Does a word with a shalshelet (שלשלת) take a pausal form, like it does with other major mafsikim (etnachta, segol, zakef)?
 
 Yes — the shalshelet is considered equivalent to a segol for the purpose of pausal forms. A word with a shalshelet CAN take a pausal form, just as it would at a segol, etnachta, or zakef.
 
@@ -2935,7 +2930,7 @@ Yes — the shalshelet is considered equivalent to a segol for the purpose of pa
 - [What are pausal forms and why do they sometimes seem to 'override' the plain meaning?](#pausal-forms)
 - [Is there an accepted hierarchy of trop marks by their disjunctive strength? How are the levels of mafsikim ranked?](#trop-hierarchy-mafsikim)
 
-### 93. Does a shva count as a syllable/beat when determining trop placement (e.g. mesharet of pashta, or metiga zakeif)?
+### 92. Does a shva count as a syllable/beat when determining trop placement (e.g. mesharet of pashta, or metiga zakeif)?
 
 A shva is not a full syllable, but it DOES count as 'something' occupying a beat for trop purposes. With a מְתִיגָא זָקֵף, a shva counts as occupying a position (albeit not a syllable). The same applies to the mesharet of a pashta: if ANYTHING comes between the mesharet and the pashta, the note becomes a mahpach; if nothing intervenes, it stays a mercha — and a shva counts as 'something' that intervenes. (E.g. הָיְתָה תֹהוּ — three 'positions' even though the shva is not a syllable.) This is the same principle by which a shva na is 'counted' even though it is not itself a havara.
 
@@ -2956,7 +2951,7 @@ A shva is not a full syllable, but it DOES count as 'something' occupying a beat
 - [Is a shva na its own syllable (havara)?](#shva-syllable)
 - [Why are there 'different' merkhas (or munachs) — are they genuinely different notes or just musical conventions?](#trop-conjunctive-vs-disjunctive)
 
-### 94. Why does לא תרצח have a dagesh in the tav under taam elyon but not under taam tachton?
+### 93. Why does לא תרצח have a dagesh in the tav under taam elyon but not under taam tachton?
 
 The short answer is that the dagesh kal in בגדכפת letters only drops when the preceding word ends with a vowel AND is connected with a conjunctive (meshares) trop. Under taam tachton, the word לא flows directly into תרצח with a conjunctive connection, so the tav loses its dagesh (pronounced 'tirtzach' with a fricative th/ת רפויה if following certain letters).
 
@@ -2980,7 +2975,7 @@ This illustrates a broader principle: the dagesh kal (lene) after a word ending 
 - [What is taam elyon vs taam tachton for the Ten Commandments, and which tradition should a ba'al k'riah follow?](#taam-elyon-tachton)
 - [Why is there sometimes a dagesh in the first letter of a word after a pausal ta'am (e.g. the lamed of אֶל־מֹשֶׁה לֵאמֹר, and לֹא before another word)?](#dagesh-after-mafsik)
 
-### 95. What is taam elyon vs taam tachton for the Ten Commandments, and which tradition should a ba'al k'riah follow?
+### 94. What is taam elyon vs taam tachton for the Ten Commandments, and which tradition should a ba'al k'riah follow?
 
 The Ten Commandments (Aseres Hadibros) can be leined with two different trop systems:
 
@@ -3014,7 +3009,7 @@ The most common practice in Ashkenazi shuls is taam elyon starting with a pashta
 
 - [How do you distinguish between similar-looking trop marks like pashta vs kadma, and yesiv vs mahpach?](#distinguishing-trop-marks)
 
-### 96. What is the taamei kaf-samech system and how does it differ from taamei emet? How do munach-zakef and mercha-tipcha alternate?
+### 95. What is the taamei kaf-samech system and how does it differ from taamei emet? How do munach-zakef and mercha-tipcha alternate?
 
 The standard trop system used for Torah, Neviim, and most of Ketuvim (excluding Emet) is called Taamei Kaf-Samech (an acronym for the books it covers: Ketuvim aside from Emet). It operates on a strict hierarchical principle where disjunctives (mafsikim) of different ranks divide the verse like a tree structure.
 
@@ -3055,7 +3050,7 @@ Rav Breuer's sefer 'Ta'amei HaMikra' (published by Chorev) is the definitive mod
 - [What is mercha kefulah (double mercha) and how does the tipcha-mercha-sof pasuk pattern work?](#mercha-kefulah)
 - [What is the difference between zakef gadol and zakef katon? When is zakef used?](#zakef-gadol-katon)
 
-### 97. How do you distinguish telisha ketana from telisha gedolah in Megillah trop? Are they the same as in Torah trop?
+### 96. How do you distinguish telisha ketana from telisha gedolah in Megillah trop? Are they the same as in Torah trop?
 
 Telisha ketana (small telisha) and telisha gedolah (large telisha) are a pair of trop marks — one conjunctive and one disjunctive — that appear in both Torah and Megillah trop. However, their musical execution differs:
 
@@ -3091,7 +3086,7 @@ Telisha gedolah: dot on the left, disjunctive, goes down
 
 - [What is the pazer (פזר) trop mark and how is it related to the telisha?](#pazer-trop)
 
-### 98. What is the tevir complex / tevirus? Which conjunctive trop marks serve tevir?
+### 97. What is the tevir complex / tevirus? Which conjunctive trop marks serve tevir?
 
 Tevir is a disjunctive trop mark at the 'vice-king' (mishneh) rank. In the trop hierarchy:
 
@@ -3133,7 +3128,7 @@ Tevir can also serve as the 'servant' (mesharet) of stronger disjunctives in spe
 - [When does a word before pashta get a mahpach vs a mercha? Does a shva na count as a 'separator'?](#trop-parsing-mahpach-mercha)
 - [Why is there sometimes a dagesh in the first letter of a word after a pausal ta'am (e.g. the lamed of אֶל־מֹשֶׁה לֵאמֹר, and לֹא before another word)?](#dagesh-after-mafsik)
 
-### 99. Why are there 'different' merkhas (or munachs) — are they genuinely different notes or just musical conventions?
+### 98. Why are there 'different' merkhas (or munachs) — are they genuinely different notes or just musical conventions?
 
 There are genuinely different munachs that serve different functions: מֻנַּח לְגַרְמֵיהְ (munach by itself) is a mafsik; the meshartim include מֻנַּח מונח אִלֵּי (before a zarka = munach zarka), munach before a segolta (= munach segolta), munach before an esnachta, etc. These are truly different notes serving different grammatical functions, so different melodies make sense. By contrast, the 'different' merkhas are NOT structurally different notes — it is a community convention to vary the melody (e.g. the mercha before a tevir is really functioning like a darga that got shortened to a mercha because of the parameters; and מֵרְכָא תְּבִיר is an abridged דַרְגָא תְּבִיר). So: munachs vary by function; mercha variation is musical convention, not grammatical.
 
@@ -3155,7 +3150,7 @@ There are genuinely different munachs that serve different functions: מֻנַּ
 
 - [How do you tell the difference between a kadma and a pashta (and between yetiv and mahpach)?](#kadma-vs-pashta)
 
-### 100. Is there an accepted hierarchy of trop marks by their disjunctive strength? How are the levels of mafsikim ranked?
+### 99. Is there an accepted hierarchy of trop marks by their disjunctive strength? How are the levels of mafsikim ranked?
 
 Yes, the ta'amei hamikra are organized into a hierarchy of disjunctive 'levels' (sometimes called 'emperors' by the group, or the kabbalistic 'kings' metaphor — קיסר, מלך, משנה, שליש). The commonly accepted ranking from strongest to weakest disjunctive:
 
@@ -3204,7 +3199,7 @@ For practical purposes:
 - [What is the shalshelet (שלשלת) trop mark and where does it appear?](#shalshelet)
 - [Why do some editions show a revii on certain words (like קטנתי) where others show azla geresh or other trop?](#revii-trop-debates)
 
-### 101. When does a word before pashta get a mahpach vs a mercha? Does a shva na count as a 'separator'?
+### 100. When does a word before pashta get a mahpach vs a mercha? Does a shva na count as a 'separator'?
 
 The rule for the meshares (conjunctive trop) before a pashta is: if anything comes between the meshares and the pashta, it gets a mahpach; if nothing comes between, it gets a mercha. The key question is: what counts as 'anything'?
 
@@ -3240,7 +3235,7 @@ These rules reflect how the Masoretes understood syllable boundaries and the rel
 
 - [How do you distinguish between similar-looking trop marks like pashta vs kadma, and yesiv vs mahpach?](#distinguishing-trop-marks)
 
-### 102. Is the primary function of trop (cantillation marks) punctuation, or is something else more fundamental?
+### 101. Is the primary function of trop (cantillation marks) punctuation, or is something else more fundamental?
 
 Rav Breuer held that when you take a deeper dive into the trop, you can see clearly that punctuation is NOT the primary concern — syllabic and musical considerations are. A basic example: וַיֹּאמֶר מֹשֶׁה has a zarka (a disjunctive/mafsik note) between these two words, but there is no syntactic break between them. A segol always needs a zarka before it as a musical 'lead-in,' so this zarka is musical only. People who try to force punctuation/syntax onto every trop mark make real mistakes — a little knowledge is dangerous. That said, the overall hierarchy (stronger mafsikim for larger syntactic breaks) does follow punctuation at the macro level; it is the micro level (especially the meshartim/conjunctives) where musical needs dominate.
 
@@ -3261,7 +3256,7 @@ Rav Breuer held that when you take a deeper dive into the trop, you can see clea
 - [Why are there 'different' merkhas (or munachs) — are they genuinely different notes or just musical conventions?](#trop-conjunctive-vs-disjunctive)
 - [Does a shva count as a syllable/beat when determining trop placement (e.g. mesharet of pashta, or metiga zakeif)?](#shva-counts-for-trop)
 
-### 103. What is the difference between zakef gadol and zakef katon? When is zakef used?
+### 102. What is the difference between zakef gadol and zakef katon? When is zakef used?
 
 Zakef is a medium-strength disjunctive trop mark. It comes in two varieties:
 
@@ -3297,7 +3292,7 @@ Ba'alei k'riah should be careful to distinguish zakef gadol from zakef katon bot
 
 - [When does a word before pashta get a mahpach vs a mercha? Does a shva na count as a 'separator'?](#trop-parsing-mahpach-mercha)
 
-### 104. Can a zarka appear without being followed by a segol?
+### 103. Can a zarka appear without being followed by a segol?
 
 Yes — but it is extremely rare. Outside of אֱמֶת (Tehillim, Iyov, Mishlei), Rabbi Zvi Freund posed a riddle: where in Tanach does a zarka appear without being followed by a segol? Some editions add a segol by mistake. The answer involves a pasuk where the word ending with zarka is followed by a sof pasuk directly. In אֱמֶת, there are also unusual trop patterns — for instance, a pasuk in Nevi'im where two zarkas appear in a row (which would not happen in Torah trop). These exceptional cases demonstrate that the trop system in אֱמֶת operates by somewhat different rules than the Torah/Nevi'im system.
 
@@ -3317,6 +3312,34 @@ Yes — but it is extremely rare. Outside of אֱמֶת (Tehillim, Iyov, Mishlei
 
 - [What is the difference between a pesik (פְּסִיק) and a meteg (מֶתֶג)? Do they mean different things?](#pesik-vs-meseg-distinction)
 - [Is the primary function of trop (cantillation marks) punctuation, or is something else more fundamental?](#trope-primary-musical-not-punctuation)
+
+### 104. What is the shalshelet (שלשלת) trop mark and where does it appear?
+
+The shalshelet (meaning 'chain') is one of the rarest and most distinctive trop marks in the Torah. It appears as a wavy, zigzag line above a word and has a unique musical motif — a long, undulating melody that suggests hesitation or dramatic tension.
+
+There are only a few occurrences of the shalshelet in the entire Torah:
+- Bereishis 19:16 — 'וַיִּתְמַהְמָהּ' (Vayitmahmah — 'and he lingered'), describing Lot hesitating before leaving Sodom
+- Bereishis 24:12 — 'וַיֹּאמֶר' (Vayomer — 'and he said'), Eliezer's prayer
+- Bereishis 39:8 — 'וַיְמָאֵן' (Vayema'en — 'and he refused'), Joseph refusing Potiphar's wife
+- Vayikra 8:23 — 'וַיִּשְׁחָט' (Vayishchat — 'and he slaughtered'), the inauguration of the Mishkan
+
+Musically, the shalshelet is essentially a chain of three or four repeated notes that rise and fall, reflecting the dramatic weight of the moment. It is related to the pazer trop but distinct in its musical execution and rarity.
+
+For a ba'al k'riah, the shalshelet requires special preparation because of its unusual musical demands. In some traditions, it is essentially a long pazer with an extended cadence.
+
+**Examples:**
+
+- וַיִּתְמַהְמָהּ (Bereishis 19:16) — Lot hesitating, the most famous shalshelet
+- וַיְמָאֵן (Bereishis 39:8) — Joseph refusing Potiphar's wife
+
+**Sources:**
+
+- MJ (2024-09-02) #msg3233
+- MJ (2024-09-02) #msg3234
+
+**See also:**
+
+- [What is the pazer (פזר) trop mark and how is it related to the telisha?](#pazer-trop)
 
 ---
 
@@ -3438,33 +3461,7 @@ A mesiga zakef (also spelled mesigah zakef) is a special variety of zakef katon 
 - [What is the difference between zakef gadol and zakef katon? When is zakef used?](#zakef-gadol-katon)
 - [How do you distinguish between similar-looking trop marks like pashta vs kadma, and yesiv vs mahpach?](#distinguishing-trop-marks)
 
-### 109. What is the oleh v'yored (עולה ויורד) in taamei emet, and how is it different from regular mercha?
-
-The oleh v'yored (also called oleh we-yored, 'going up and going down') is a distinctive trop mark in the Taamei Emet system (Psalms, Proverbs, Job). It consists of two small marks: one above the word (oleh) and one below (yored). It functions as a conjunctive-disjunctive pair within the Emet system, serving a role similar to mercha in the standard system but with key differences.
-
-The oleh v'yored appears in specific structural positions:
-- It often precedes a sof passuk, analogous to how mercha precedes sof passuk in Torah trop
-- However, its musical motif is distinct: it has a 'rising and falling' pattern that gives it its name
-- In some editions (like Breuer), an azla geresh may replace the oleh v'yored in certain positions
-
-Different manuscript traditions show different nuschaot:
-- Heidenheim and Koren sometimes differ from Breuer on whether a word gets an oleh v'yored or a different trop mark
-- The word 'קטנתי' in Vayishlach (Bereishis 32:11) is sometimes marked with azla geresh and sometimes with revii, depending on the edition
-
-Understanding the oleh v'yored is important for ba'alei k'riah who leyne Megillas Rus (which uses a modified trop system) or who want to read Tehillim properly with taamei emet.
-
-**Examples:**
-
-- Oleh v'yored before sof pasuk in Tehillim — analogous to mercha in standard trop but musically distinct
-- קטנתי (Bereishis 32:11) — azla geresh vs revii in different editions
-- Different traditions for the oleh v'yored's musical motif (minor vs major third)
-
-**See also:**
-
-- [What is the taamei emet system and how does it differ from standard Torah trope? Where can I learn more?](#taamei-emet-overview)
-- [What is mercha kefulah (double mercha) and how does the tipcha-mercha-sof pasuk pattern work?](#mercha-kefulah)
-
-### 110. What is the taamei emet system and how does it differ from standard Torah trope? Where can I learn more?
+### 109. What is the taamei emet system and how does it differ from standard Torah trope? Where can I learn more?
 
 Taamei Emet — the cantillation system for the books of Emet (Psalms/Tehillim, Proverbs/Mishlei, and Job/Iyov) — is fundamentally different from the standard trope system used for Torah, Neviim, and the other Ketuvim.
 
@@ -3496,7 +3493,7 @@ For learning:
 - [What is the correct punctuation/commas in Birkas Kohanim as recited in davening — specifically the 'meshuleshet' issue?](#birkas-kohanim-punctuation)
 - [What is the oleh v'yored (עולה ויורד) in taamei emet, and how is it different from regular mercha?](#oleh-vyored-emet)
 
-### 111. In Tehillim 68:14, the word תְּפִלָּתִי (tefilati) has no dagesh in the first ת after the word וַאֲנִי (va'ani). Why is there no dagesh here, when usually a word beginning with ת after ואני would get a dagesh?
+### 110. In Tehillim 68:14, the word תְּפִלָּתִי (tefilati) has no dagesh in the first ת after the word וַאֲנִי (va'ani). Why is there no dagesh here, when usually a word beginning with ת after ואני would get a dagesh?
 
 In Tehillim 68:14, the phrase וַאֲנִי תְפִלָּתִי (va'ani tefilati) has the first ת without a dagesh — it's תְ (shva) not תְּ (dagesh). The question is why this word doesn't get the expected dagesh after ואני.
 
@@ -3541,7 +3538,7 @@ In Tehillim 68:14, the phrase וַאֲנִי תְפִלָּתִי (va'ani tefila
 - [Why is פרה אדומה (Parah Adumah) with a rafeh פּ even though it's not after אהוי? What are the exceptions to the dagesh kal rule?](#dagesh-kal-exceptions)
 - [What is the taamei emet system and how does it differ from standard Torah trope? Where can I learn more?](#taamei-emet-overview)
 
-### 112. Why is וַיִּקַּח קֹרַח not subject to nasog achor (accent retraction) even though it appears to be mil'eil? Does the same apply in Sifrei Emet?
+### 111. Why is וַיִּקַּח קֹרַח not subject to nasog achor (accent retraction) even though it appears to be mil'eil? Does the same apply in Sifrei Emet?
 
 In Tehillim/Mishlei/Iyov (Sifrei Emet), the question of nasog achor with a word like וַיִּקַּח (vayikach) arises because of the different trop system. However, even in the Torah trop system, this is a relevant question.
 
@@ -3554,7 +3551,7 @@ In Tehillim/Mishlei/Iyov (Sifrei Emet), the question of nasog achor with a word 
 
 **In Sifrei Emet specifically:**
 - The same principle applies: the dagesh chazak creates a geminate (double) consonant, closing the syllable
-- In Tehillim/Mishlei/Iyov, where the ta'amei emet system allows for more nuanced melodic patterns, this rule still holds
+- In Tehillim/Mishlei/Iyov, where the ta'amei emet system allows for more varied melodic patterns, this rule still holds
 - The word וַיִּזְרַח (toward the end of Kel Adon) is another example where NA is commonly but incorrectly applied for the same reason — the first syllable is closed
 
 **The dagesh chazak in וַיִּקַּח:**
@@ -3584,6 +3581,39 @@ In Tehillim/Mishlei/Iyov (Sifrei Emet), the question of nasog achor with a word 
 - [When does nasog achor (accent retraction) apply? Is ויאמרו (לו חכמיו) mil'eil or milra?](#nasog-achor-examples)
 - [Why doesn't nasog achor apply to a word like וַיִּקַּח (vayikach)? What does a dagesh chazak have to do with accent retraction?](#nasog-achor-closed-syllable)
 - [What are the full rules for when a dagesh kal falls away at word boundaries? What about the 'revii ruach' debate?](#dagesh-boundary-rules)
+
+### 112. What is the oleh v'yored (עולה ויורד) in taamei emet, and how is it different from regular mercha?
+
+The oleh v'yored (also called oleh we-yored, 'going up and going down') is a distinctive trop mark in the Taamei Emet system (Psalms, Proverbs, Job). It consists of two small marks: one above the word (oleh) and one below (yored). It functions as a conjunctive-disjunctive pair within the Emet system, serving a role similar to mercha in the standard system but with key differences.
+
+The oleh v'yored appears in specific structural positions:
+- It often precedes a sof passuk, analogous to how mercha precedes sof passuk in Torah trop
+- However, its musical motif is distinct: it has a 'rising and falling' pattern that gives it its name
+- In some editions (like Breuer), an azla geresh may replace the oleh v'yored in certain positions
+
+Different manuscript traditions show different nuschaot:
+- Heidenheim and Koren sometimes differ from Breuer on whether a word gets an oleh v'yored or a different trop mark
+- The word 'קטנתי' in Vayishlach (Bereishis 32:11) is sometimes marked with azla geresh and sometimes with revii, depending on the edition
+
+Understanding the oleh v'yored is important for ba'alei k'riah who leyne Megillas Rus (which uses a modified trop system) or who want to read Tehillim properly with taamei emet.
+
+**Examples:**
+
+- Oleh v'yored before sof pasuk in Tehillim — analogous to mercha in standard trop but musically distinct
+- קטנתי (Bereishis 32:11) — azla geresh vs revii in different editions
+- Different traditions for the oleh v'yored's musical motif (minor vs major third)
+
+**Sources:**
+
+- MJ (2026-05-26) #msg18375
+- Dror Maor (2026-05-26) #msg18376
+- MJ (2026-05-26) #msg18387
+- MJ (2024-06-13) #msg2082
+
+**See also:**
+
+- [What is the taamei emet system and how does it differ from standard Torah trope? Where can I learn more?](#taamei-emet-overview)
+- [What is mercha kefulah (double mercha) and how does the tipcha-mercha-sof pasuk pattern work?](#mercha-kefulah)
 
 ---
 
@@ -3855,7 +3885,7 @@ The Sofrim call this minhag of writing the first four chapters of Eicha with a �
 
 ### 125. When different chumashim/tikkunim show different nikkud or trop, is that a 'machloket' (dispute)?
 
-Usually it is better described as different GIRSA'OT (textual versions) rather than a 'machloket.' Better manuscripts and editions tend to converge on a reading (e.g. a revia on וְאַנִּי in Vayeitzei appears in the superior mss/editions, where a weaker tikkun might show gershayim). The Masorah sometimes explicitly gives the sofer/editor OPTIONS (e.g. לֻקְחָה may be written with a shva or as chataf kamatz — there are manuscripts with just a shva that Minchat Shai did not have). Crucially, such variations often do NOT change pronunciation (e.g. shva vs chataf-kamatz on לֻקְחָה sounds the same); they reflect scribal/masoretic notation choices. So 'why does my tikkun differ?' is usually answered by 'different girsa/edition,' and the question becomes which has the stronger manuscript basis.
+Usually it is better described as different GIRSA'OT (textual versions) rather than a 'machloket.' Better manuscripts and editions tend to converge on a reading (e.g. a revia on וְאַנִּי in Vayeitzei appears in the superior mss/editions, where a weaker tikkun might show gershayim). The Masorah sometimes explicitly gives the sofer/editor OPTIONS (e.g. לֻקְחָה may be written with a shva or as chataf kamatz — there are manuscripts with just a shva that Minchat Shai did not have). Such variations often do NOT change pronunciation (e.g. shva vs chataf-kamatz on לֻקְחָה sounds the same); they reflect scribal/masoretic notation choices. So 'why does my tikkun differ?' is usually answered by 'different girsa/edition,' and the question becomes which has the stronger manuscript basis.
 
 **Examples:**
 
@@ -4023,39 +4053,7 @@ Yes — the difference in vocalization reflects a difference in meaning:
 - [Is a chataf kamatz always a kamatz katan (KK)? And how should a chataf that indicates neither shva-na nor KK be pronounced?](#kamatz-katan-vs-chataf)
 - [What are pausal forms and why do they sometimes seem to 'override' the plain meaning?](#pausal-forms)
 
-### 132. Is it proper to say 'Adoshem' instead of 'Adonai' when not davening? What do the Kitzur Shulchan Aruch and Mishna Berura say?
-
-There is a discussion about whether saying 'Adoshem' (a portmanteau of Ad-nai + Hashem) is an appropriate way to refer to Hashem's name when not in a formal davening context.
-
-**The Kitzur Shulchan Aruch's view:**
-- Kitzur SA Siman 6, end of se'if 3: 'When one wants to mention the Name, he should say the word "Hashem" — and not like the common people who err and say "Adoshem", because this is not a way of respect for Above'
-- The Kitzur explicitly discourages saying 'Adoshem' — he considers it disrespectful
-
-**The Mishna Berura's silence:**
-- Reuven Levitin noted: 'The Kitzur says it's not appropriate, but the MB makes no mention of this inyan'
-- This raises the question: when the Kitzur says something and the Mishna Berura is silent, do we assume the MB agrees (שתיקה כהודאה) or not?
-- Some argue that since the MB doesn't mention it, it's not a significant concern
-
-**The practical common practice:**
-- 'Adoshem' is very commonly used in Orthodox communities as a way to avoid saying 'Adonai' outside of davening
-- Many consider it a respectful euphemism
-- The Kitzur's objection seems to be that it's a 'made-up' word that combines the two names improperly
-- The alternative that the Kitzur prefers is simply saying 'Hashem' (or 'Elokim' for Elokim)
-
-**For ba'alei k'riah:**
-- When referring to Hashem's name outside of davening, saying 'Hashem' is the most universally accepted form
-- 'Adoshem' is very common but has some halachic opposition
-- When learning or quoting pesukim outside of davening, say 'Hashem' (or 'Adonai' if you hold it's fine) — but be consistent with your practice
-- The safest approach: use 'Hashem' alone, avoiding the compound form entirely
-
-**Examples:**
-
-- Kitzur SA: say 'Hashem', not 'Adoshem' — not a derech kavod
-- Mishna Berura: no mention of this issue (silence = agreement?)
-- Common practice: 'Adoshem' widely used despite Kitzur's objection
-- MJ: 'When you quote a pasuk, please cite the site where it's cited'
-
-### 133. Why is בְּאֵר שֶׁבַע sometimes written as שָׁבַע (shava) with a kamatz and sometimes as שֶׁבַע (sheva) with a segol? What does Seforno say about it?
+### 132. Why is בְּאֵר שֶׁבַע sometimes written as שָׁבַע (shava) with a kamatz and sometimes as שֶׁבַע (sheva) with a segol? What does Seforno say about it?
 
 The name בְּאֵר שֶׁבַע (Be'er Sheva) appears in Tanach with two different vocalizations of the second word — שֶׁבַע (sheva, with segol) and שָׁבַע (shava, with kamatz). The difference is debated.
 
@@ -4099,7 +4097,7 @@ The name בְּאֵר שֶׁבַע (Be'er Sheva) appears in Tanach with two diff
 - [What are pausal forms and why do they sometimes seem to 'override' the plain meaning?](#pausal-forms)
 - [There are words where different editions show a segol vs a tzeire (e.g., בנזק, מלמטה). Which is correct and how do you determine?](#segol-vs-tzeire)
 
-### 134. Is the name Rachel (רָחֵל) pronounced mil'eil or milra, and does the Tanach form differ from common usage?
+### 133. Is the name Rachel (רָחֵל) pronounced mil'eil or milra, and does the Tanach form differ from common usage?
 
 Most people name their daughter רָחֵל mil'eil, but the name as it appears in the Torah is milra (רָחֵל with final stress). This is one of several cases where the common/colloquial pronunciation of a name differs from its Tanach form. Note this is about PERSON names; the same spelling can carry different stress. (Related recurring group discussions: לֵב/לֲיְבּ — Yiddish names follow Yiddish, not loshon haKodesh, dikduk; מִיכַל the boy's name has a shva under the chaf while מִיכָל the girl's name does not, and they are genuinely two different names.)
 
@@ -4116,7 +4114,7 @@ Most people name their daughter רָחֵל mil'eil, but the name as it appears i
 
 - [What is nasog achor (נסוג אחור), and when a word 'retreats' its accent, why does it sometimes happen even when the next word looks milra?](#nasog-achor)
 
-### 135. Why is the name Mordechai (מרדכי) sometimes pronounced with a chirik under the כ (Mordechi) and sometimes with a kamatz (Mordechai)? Does the nikkud change depending on the context?
+### 134. Why is the name Mordechai (מרדכי) sometimes pronounced with a chirik under the כ (Mordechi) and sometimes with a kamatz (Mordechai)? Does the nikkud change depending on the context?
 
 The name מרדכי (Mordechai) appears in Tanach with a chataf kamatz under the dalet and a chirik under the chaf: מָרְדֳּכַי (Mor-de-chai). However, in other contexts (like the sefer 'Mordechai' or the hagahos Mordechai), it sometimes appears with a plain shva under the dalet and a chirik under the chaf: מָרְדְּכִי (Mor-de-chi).
 
@@ -4163,7 +4161,7 @@ The name מרדכי (Mordechai) appears in Tanach with a chataf kamatz under the
 - [What are pausal forms and why do they sometimes seem to 'override' the plain meaning?](#pausal-forms)
 - [In names like ישמעאל and דניאל, why is the tzeire under the ayin/yud and not under the aleph?](#tzeire-placement-names)
 
-### 136. What is nasog achor (נסוג אחור), and when a word 'retreats' its accent, why does it sometimes happen even when the next word looks milra?
+### 135. What is nasog achor (נסוג אחור), and when a word 'retreats' its accent, why does it sometimes happen even when the next word looks milra?
 
 Nasog achor is the rule that when a mil'eil word is followed by a milra (or one-syllable) word, the accent of the first word 'retreats' to an earlier syllable so the two stresses don't collide. A subtlety: a word can BE milra for nasog-achor purposes even if it begins with a shva na (i.e. it is a single syllable word, or effectively one). So אִם לִמְקָרָא וְלִמְסֹרֶת — 'how can it be nasog achor if the next word is not mil'eil?' — it IS mil'eil (really a single-syllable word) even though it starts with a shva na; there are many nasog achor cases of this sort. Nasog achor rarely occurs with קַדְמָא וְאַזְלָא — something about how the tunes of those ta'amim make the words bind together. If we knew the exact original tunes we would likely understand why perfectly.
 
@@ -4183,7 +4181,7 @@ Nasog achor is the rule that when a mil'eil word is followed by a milra (or one-
 
 - [Is the name Rachel (רָחֵל) pronounced mil'eil or milra, and does the Tanach form differ from common usage?](#mil'eil-vs-milra)
 
-### 137. In names like ישמעאל and דניאל, why is the tzeire under the ayin/yud and not under the aleph?
+### 136. In names like ישמעאל and דניאל, why is the tzeire under the ayin/yud and not under the aleph?
 
 In compound names ending in אל (meaning 'God'), the tzeirei is under the letter before the lamed, not under the aleph of אל. For example:
 - ישמעאל (Yishmael): the tzeirei is under the ayin, not under the aleph
@@ -4206,7 +4204,7 @@ If the tzeirei were under the aleph, the ayin would need a vowel — either a sh
 - ~ Avi Herzog #msg12568
 - ~ Elliot Pisem #msg12579
 
-### 138. Is there a minhag to read יִשָּׂשכָר (Yissachar) the first time with two sins, or should the second sin be silent? What does the Masoretic tradition say?
+### 137. Is there a minhag to read יִשָּׂשכָר (Yissachar) the first time with two sins, or should the second sin be silent? What does the Masoretic tradition say?
 
 The name Yissachar (יִשָּׂשכָר) has a complex masoretic history with a three-way dispute among the Ba'alei HaMasorah.
 
@@ -4250,6 +4248,50 @@ The name Yissachar (יִשָּׂשכָר) has a complex masoretic history with a
 
 - [Why is 'hee' (she) almost always spelled הוא (masculine 'he') in Tanach?](#kri-ketiv-hou)
 - [Which seforim are used to look up Masorah lists (e.g. missing mappikim, exceptional readings)?](#mesora-reference-works)
+
+### 138. Is it proper to say 'Adoshem' instead of 'Adonai' when not davening? What do the Kitzur Shulchan Aruch and Mishna Berura say?
+
+There is a discussion about whether saying 'Adoshem' (a portmanteau of Ad-nai + Hashem) is an appropriate way to refer to Hashem's name when not in a formal davening context.
+
+**The Kitzur Shulchan Aruch's view:**
+- Kitzur SA Siman 6, end of se'if 3: 'When one wants to mention the Name, he should say the word "Hashem" — and not like the common people who err and say "Adoshem", because this is not a way of respect for Above'
+- The Kitzur explicitly discourages saying 'Adoshem' — he considers it disrespectful
+
+**The Mishna Berura's silence:**
+- Reuven Levitin noted: 'The Kitzur says it's not appropriate, but the MB makes no mention of this inyan'
+- This raises the question: when the Kitzur says something and the Mishna Berura is silent, do we assume the MB agrees (שתיקה כהודאה) or not?
+- Some argue that since the MB doesn't mention it, it's not a significant concern
+
+**The practical common practice:**
+- 'Adoshem' is very commonly used in Orthodox communities as a way to avoid saying 'Adonai' outside of davening
+- Many consider it a respectful euphemism
+- The Kitzur's objection seems to be that it's a 'made-up' word that combines the two names improperly
+- The alternative that the Kitzur prefers is simply saying 'Hashem' (or 'Elokim' for Elokim)
+
+**For ba'alei k'riah:**
+- When referring to Hashem's name outside of davening, saying 'Hashem' is the most universally accepted form
+- 'Adoshem' is very common but has some halachic opposition
+- When learning or quoting pesukim outside of davening, say 'Hashem' (or 'Adonai' if you hold it's fine) — but be consistent with your practice
+- The safest approach: use 'Hashem' alone, avoiding the compound form entirely
+- MJ confirmed: 'When you quote a pasuk, please cite the site where it's cited' (meaning, just say the pasuk in context rather than focusing on the name issue)
+
+**Examples:**
+
+- Kitzur SA: say 'Hashem', not 'Adoshem' — not a derech kavod
+- Mishna Berura: no mention of this issue (silence = agreement?)
+- Common practice: 'Adoshem' widely used despite Kitzur's objection
+- MJ: 'When you quote a pasuk, please cite the site where it's cited'
+
+**Sources:**
+
+- Reuven Levitin #msg4802
+- MJ #msg4805
+
+**See also:**
+
+- [names](#names)
+- [tefilla](#tefilla)
+- [sources](#sources)
 
 ---
 
@@ -4321,30 +4363,7 @@ The חֲצִי קַדִּישׁ serves as a מַפְסִיק (separator) between
 - ~ Dror Maor #msg3018
 - ~ Avi Herzog #msg3020
 
-### 142. Is Kol Nidrei a neder (vow) annulment, a hataras nedarim, or something else? And why does it have such a distinctive tune?
-
-Kol Nidrei declares all vows made 'from this Yom Kippur to the next' as null and void. There is extensive discussion about:
-
-1. **Legal mechanism**: Is it a retroactive annulment (hataras nedarim/anullment) or a conditional neder? The Ba'alei HaTosafos and the Ran debate whether it works at all — if the neder was made without the condition, how can retracting it work? Some say it only applies to nedarim that one will make in the future (opposite of the plain text).
-
-2. **Tune**: The famous tune is not just for drama — it reflects the gravity of standing before Hashem and the need to be released from unfulfilled vows. Different communities have different versions of the tune, but all share a plaintive, drawn-out quality.
-
-3. **Text**: 'From this Yom Kippur to the next Yom Kippur' — the Geonim already questioned how you can be matir a neder that hasn't been made yet, leading to textual variants where some say 'from the previous Yom Kippur.'
-
-4. **Modern practice**: In most shuls, the chazzan recites Kol Nidrei three times to establish it halachically (beis din requirement for hataras nedarim). The congregation stands throughout.
-
-For ba'alei k'riah, Kol Nidrei is interesting because:
-- The trope-like chanting is one of the most recognizable nuscha'os in the year
-- The bracha before Kol Nidrei (על דעת המקום) has a unique tune
-- It's one of the few times the chazzan uses a non-standard nusach that is universally followed
-
-**Examples:**
-
-- Kol Nidrei tune — one of the most recognizable nuscha'os in the Jewish year
-- Declares vows null 'from this Yom Kippur to the next' — debate about future vs past
-- Recited 3 times to fulfill beis din requirement
-
-### 143. What is the rarest Shemoneh Esrei? What is the rarest aliyah in the Torah reading cycle?
+### 142. What is the rarest Shemoneh Esrei? What is the rarest aliyah in the Torah reading cycle?
 
 **Rarest Shemoneh Esrei:**
 - Motza'ei Shabbos Chanukah Rosh Chodesh with ותן ברכה before December 4 (in Chutz La'Aretz)
@@ -4356,7 +4375,7 @@ For ba'alei k'riah, Kol Nidrei is interesting because:
 **Rarest Aliyah:**
 - A Chazak aliyah when Pekudei falls on Parshas Shekalim and Rosh Chodesh Adar Sheini
 - The group debated: Shishi Chazak (6th aliyah ending Chazak)? No, that's not the rarest
-- The rarest is more nuanced and depends on the specific calendar combination
+- The rarest depends on the specific calendar combination
 
 **Other rare trivia discussed:**
 - The six columns in the Torah that don't start with a vav
@@ -4380,13 +4399,13 @@ For ba'alei k'riah, these are fun trivia but rarely practical. If you ever encou
 - ~ Gedaliah Levin #msg3312
 - ~ MG #msg3316
 
-### 144. Is the blessing 'שהכל נהיה בדברו' pronounced with a kamatz or segol under the yud of נהיה? What do the major poskim say?
+### 143. Is the blessing 'שהכל נהיה בדברו' pronounced with a kamatz or segol under the yud of נהיה? What do the major poskim say?
 
 There is a known machlokes about the nikkud of the word נהיה in the bracha 'שהכל נהיה בדברו':
 
 1. **Segol under the yud** (נֶהְיֶה) — this is a nif'al participle (present tense), meaning 'is brought into being'. This form matches most other brachos which use present tense (e.g., בורא, נותן). This is the view of the Chachmas Menuchah, quoted by the Magen Avraham.
 
-2. **Kamatz under the yud** (נֶהְיָה) — this would be a nif'al past tense ('was brought into being'). The Magen Avraham (OC 167:8) ultimately paskens that it should be with a kamatz. He mentions that the segol form has an additional meaning problem: it could also be read as the first-person plural kal future ('we will become'). The Pri Megadim and Machatzis HaShekel explain further.
+2. **Kamatz under the yud** (נֶהְיָה) — this would be a nif'al past tense ('was brought into being'). The Magen Avraham (OC 167:8) paskens that it should be with a kamatz. He mentions that the segol form has an additional meaning problem: it could also be read as the first-person plural kal future ('we will become'). The Pri Megadim and Machatzis HaShekel explain further.
 
 3. The Gra (Vilna Gaon) said it with a segol (Maaseh Rav §76).
 
@@ -4407,7 +4426,7 @@ The Mishnah Berurah does not address this explicitly. The Pri Megadim leans towa
 - ~ Ephraim Slepoy #msg2632
 - ~ MJ #msg2633
 
-### 145. How should שוכן עד מרום וקדוש שמו be parsed in davening — does the punctuation differ between Shabbos and Yom Tov?
+### 144. How should שוכן עד מרום וקדוש שמו be parsed in davening — does the punctuation differ between Shabbos and Yom Tov?
 
 There is a well-known difference in how this phrase from Yeshayahu 57:15 is chanted:
 
@@ -4434,7 +4453,7 @@ A practical solution for Shabbos: use the regular nusach but insert a deliberate
 
 - [Where should one pause in common tefilla phrases like מלך אוהב צדקה ומשפט, שומר עמו ישראל לעד, and זה א-לי ענו ואמרו?](#tefilla-punctuation)
 
-### 146. When reciting the brachos before/after reading a megillah or other sefer, do you use the trop of what you are about to read?
+### 145. When reciting the brachos before/after reading a megillah or other sefer, do you use the trop of what you are about to read?
 
 Some people do: they cantillate the brachos in the tune of the leining that follows (e.g. the bracha before leining Koheles in Koheles trop). However, this is not universal. When reciting a bracha before a haftarah, many do use the haftarah trop melody. The bracha itself has a standard trop pattern: pashta-munach-zakef / tipcha-munach-etnachta / mahapach-pashta-zakef / tipcha-mercha-sof pasuk. On the Yomim Noraim, some olim cantillate the brachos in the same tune as the leining. In Chutz La'Aretz, some do not make the bracha at all before leining Koheles outside of Purim — a matter of minhag.
 
@@ -4446,7 +4465,7 @@ Some people do: they cantillate the brachos in the tune of the leining that foll
 - ~ Donny Rose #msg6309
 - ~ Allen Schreier #msg6311
 
-### 147. Where should one pause in common tefilla phrases like מלך אוהב צדקה ומשפט, שומר עמו ישראל לעד, and זה א-לי ענו ואמרו?
+### 146. Where should one pause in common tefilla phrases like מלך אוהב צדקה ומשפט, שומר עמו ישראל לעד, and זה א-לי ענו ואמרו?
 
 Many tefilla phrases are routinely mispunctuated by chazzanim. The key is that smaller words (like לעד, ואמרו) frequently modify what follows rather than what precedes them:
 
@@ -4479,7 +4498,7 @@ Ba'alei tefilla should look up the trop in the source passuk for any phrase quot
 
 - [How should שוכן עד מרום וקדוש שמו be parsed in davening — does the punctuation differ between Shabbos and Yom Tov?](#shochen-ad-parsing)
 
-### 148. On Tisha b'Av morning, why is kaddish said BEFORE the haftarah instead of after?
+### 147. On Tisha b'Av morning, why is kaddish said BEFORE the haftarah instead of after?
 
 This is a longstanding puzzle. Normally, whenever the acharon (last oleh) reads the haftarah, the kaddish comes after the haftarah. Tisha b'Av is the exception where kaddish precedes it. One explanation: שְׁלִישִׁי is also מַפְטִיר by שַׁחֲרִית on Tisha b'Av, which may affect the ordering. The order on Tisha b'Av night is: kaddish after leining, then Aleinu. During the day, some communities (including Sefardim in some versions) may say kaddish after the first keri'ah as well, though this varies.
 
@@ -4494,6 +4513,34 @@ This is a longstanding puzzle. Normally, whenever the acharon (last oleh) reads 
 **See also:**
 
 - [How is the haftarah of Shabbos Chazon / Tisha b'Av leined — from which pasuk does the Eicha tune start and where do you switch back?](#haftarah-tunes-shabbos-chazon)
+
+### 148. Is Kol Nidrei a neder (vow) annulment, a hataras nedarim, or something else? And why does it have such a distinctive tune?
+
+Kol Nidrei declares all vows made 'from this Yom Kippur to the next' as null and void. There is extensive discussion about:
+
+1. **Legal mechanism**: Is it a retroactive annulment (hataras nedarim/anullment) or a conditional neder? The Ba'alei HaTosafos and the Ran debate whether it works at all — if the neder was made without the condition, how can retracting it work? Some say it only applies to nedarim that one will make in the future (opposite of the plain text).
+
+2. **Tune**: The famous tune is not just for drama — it reflects the gravity of standing before Hashem and the need to be released from unfulfilled vows. Different communities have different versions of the tune, but all share a plaintive, drawn-out quality.
+
+3. **Text**: 'From this Yom Kippur to the next Yom Kippur' — the Geonim already questioned how you can be matir a neder that hasn't been made yet, leading to textual variants where some say 'from the previous Yom Kippur.'
+
+4. **Modern practice**: In most shuls, the chazzan recites Kol Nidrei three times to establish it halachically (beis din requirement for hataras nedarim). The congregation stands throughout.
+
+For ba'alei k'riah, Kol Nidrei is interesting because:
+- The trope-like chanting is one of the most recognizable nuscha'os in the year
+- The bracha before Kol Nidrei (על דעת המקום) has a unique tune
+- It's one of the few times the chazzan uses a non-standard nusach that is universally followed
+
+**Examples:**
+
+- Kol Nidrei tune — one of the most recognizable nuscha'os in the Jewish year
+- Declares vows null 'from this Yom Kippur to the next' — debate about future vs past
+- Recited 3 times to fulfill beis din requirement
+
+**Sources:**
+
+- MJ (2024-05-05) #msg352
+- Avi Herzog (2024-05-05) #msg353
 
 ---
 
@@ -4590,7 +4637,7 @@ As a general rule from the group: when Torat HaKore gives a first option, and th
 - The accurate reading is with a kamatz (kikar)
 - Most ta'amei hamikra experts follow kamatz
 - If your tikkun shows patach, you may want to correct it based on the manuscript evidence
-- Sefaria had a debate about this and changed their text — a testament to how debated this question is
+- Sefaria had a debate about this and changed their text — showing how debated this question is
 
 **Examples:**
 
@@ -4805,19 +4852,7 @@ The majority minhag is to use a special tune for Az Yashir, acknowledging that t
 - [Why do some ba'alei k'riah use a special tune for the Nesi'im (tribal princes) in Parshas Naso? Is it the same as the tune for Az Yashir or the Masa'os?](#nesiim-special-tune)
 - [Why does the Masa'os (the journeys in Masei, Bamidbar 33) get a special tune? Is it the same as the Nesi'im tune?](#masaos-special-tune)
 
-### 159. What is the origin of the custom for a Bar Mitzvah boy to read Maftir and Haftarah? And is Maftir a distinguished aliyah?
-
-The custom for a Bar Mitzvah boy to read Maftir and Haftarah developed as a practical rite of passage. Historically, the Bar Mitzvah boy was called up for his first aliyah on the Shabbos after turning 13, and reading the haftarah (which requires brachos and can be done by a non-Kohen/Levi) became the natural culminating honor. The earliest Bar Mitzvah celebrations involved the boy reading from the Torah — the specific focus on Maftir + Haftarah emerged in medieval Ashkenazi practice.
-
-Contrary to modern perception, Maftir is technically not the most distinguished aliyah. It is a 'supplementary' aliyah — the required seven aliyos are the main ones, and Maftir was added so that the haftarah could be read from a navi scroll. However, in common practice, Maftir has become seen as a prominent honor because it includes both the Torah reading and the haftarah with its brachos. The Bar Mitzvah boy reading Maftir is a minhag that varies by community — some call the boy up for a regular aliyah instead.
-
-**Examples:**
-
-- Most Ashkenazi shuls: Bar Mitzvah boy reads Maftir + Haftarah
-Some Sephardi/Eretz Yisrael minhagim: boy gets an aliyah during the main seven
-- Maftir was created so someone could read from the Navi scroll — it's a separate 'bonus' aliyah, not one of the required seven
-
-### 160. If someone tries to differentiate between letters (e.g. ח/כ) authentically but sometimes slips, is that worse than never making any distinction at all (bedi'avad)?
+### 159. If someone tries to differentiate between letters (e.g. ח/כ) authentically but sometimes slips, is that worse than never making any distinction at all (bedi'avad)?
 
 The prevailing view: if you don't think you can be consistent, it is better to read ח like a כ in general than to attempt a distinction you can't maintain. If you are confident you can consistently differentiate, that is a different story. The underlying logic: an inconsistent distinction can sound like a mistake (as if you mispronounced), whereas a consistent non-distinction is simply the accepted bedi'avad practice most communities accept. Related: there is concern (intuitive, with support from poskim on being מאריך too much in the ח of אחד vs the ד — מקלקל התבה) that taking a breath mid-word to draw out a sound (e.g. shaking lulav while elongating נא־ in אנא ה' הושיעה נא) may be a hefsek that splits the word.
 
@@ -4837,7 +4872,7 @@ The prevailing view: if you don't think you can be consistent, it is better to r
 
 - [Should someone who can't carry a tune (or who is slow) be allowed to daven at the amud for a yahrzeit, or is it tircha d'tzibura?](#chiyuv-vs-baal-tefilla-tircha)
 
-### 161. Does taking a breath in the middle of a word constitute a hefsek (interruption) that disqualifies it?
+### 160. Does taking a breath in the middle of a word constitute a hefsek (interruption) that disqualifies it?
 
 The consensus leans toward yes — it splits the word in two, which is problematic. The common example is someone shaking the lulav while singing אַנָּא ה׳ הוֹשִׁיעַה נָּא and drawing out the נָּא to get two directions of the lulav, thereby taking a breath mid-word. A source brought: poskim who say that being מְאָרִיךְ too much in the ח of אֶחָד instead of in the ד is a problem because it is מְקַלְקֵל הַתֵּבָה (distorts the word). By analogy, breathing mid-word should be a hefsek. One caveat: some argue this may fall under the category of קְרָא וְלֹא דַקְדֵּק (read but was not precise) rather than being מְעַכֵּב (invalidating).
 
@@ -4858,7 +4893,7 @@ The consensus leans toward yes — it splits the word in two, which is problemat
 
 - [If someone tries to differentiate between letters (e.g. ח/כ) authentically but sometimes slips, is that worse than never making any distinction at all (bedi'avad)?](#bediavad-pronunciation-acceptance)
 
-### 162. Should someone who can't carry a tune (or who is slow) be allowed to daven at the amud for a yahrzeit, or is it tircha d'tzibura?
+### 161. Should someone who can't carry a tune (or who is slow) be allowed to daven at the amud for a yahrzeit, or is it tircha d'tzibura?
 
 This is a perennial debate in the group, with several positions: (1) The Gemara's bar on a categorically unqualified person (one who mixes up letters / can't pronounce Hebrew) clearly applies; beyond that there is room for judgment. (2) Tircha d'tzibura (delaying/bothering the congregation) IS a well-established halachic concept — someone markedly slower than the norm should be told, and if unable to speed up may be prevented from davening. (3) Against that, many people find davening on a yahrzeit deeply meaningful, and most who genuinely can't hold a tune are aware of it and do not WANT to daven but feel duty-bound for the עילוי נשמה; good middos would have the tzibbur be mevater on its enjoyment for the one day. (4) A middle position: enact a shul rule (seen in some kehillos, e.g. Hager's) that only the regular Shabbos ba'alei tefilla may daven on a yahrzeit. (5) Mussaf and Kabbolas Shabbos are less of a chiyuv and arguably fine for anyone, being short חזרת הש״ץ; if one is makpid even there, where to draw the line? (6) Some personally decline: e.g. one member with yahrzeit on Yom Tov will not daven der Amud because he can't sing well, to avoid סניגור נעשה קטיגור and tircha — he recites only kaddish after Aleinu. Practical note: a Rov who forbade a ba'al teshuva from davening (as not מרוצה לקהל due to weak reading) did so discreetly to avoid embarrassment. (Also: a person is never 'a chiyuv'; a person HAS a chiyuv — common phrasing notwithstanding.)
 
@@ -4881,7 +4916,7 @@ This is a perennial debate in the group, with several positions: (1) The Gemara'
 - [If someone tries to differentiate between letters (e.g. ח/כ) authentically but sometimes slips, is that worse than never making any distinction at all (bedi'avad)?](#bediavad-pronunciation-acceptance)
 - [Do we need to show the oleh where the aliyah starts (and ends)?](#showing-oleh-the-place)
 
-### 163. In a double parsha (e.g. Behar-Bechukosai), which aliyah do you combine the parshiyos at, when the usual revi'i won't work?
+### 162. In a double parsha (e.g. Behar-Bechukosai), which aliyah do you combine the parshiyos at, when the usual revi'i won't work?
 
 Normally there is a preference to combine at revi'i. But in a double parsha where you would end up ending the 7th aliyah too early (e.g. Bechukosai is short, so combining at revi'i would land you at the 6th pasuk of Bechukosai for the end of 7), the Biur Halacha says explicitly that you combine at shishi instead. General principle: the revi'i preference yields when it is structurally impossible. (Guest ba'alei koreh have reported variants: e.g. when Bechukosai was alone and aliyos needed readjustment, one shul combined the first two aliyos for the kohen, the BK took tochacha as Levi, and revi'i was split into two.)
 
@@ -4895,7 +4930,7 @@ Normally there is a preference to combine at revi'i. But in a double parsha wher
 - Josh #msg387
 - ~ Aharon Gaffen #msg378
 
-### 164. Should the mapik heh be pronounced in Kaddish, or is it dropped in Aramaic?
+### 163. Should the mapik heh be pronounced in Kaddish, or is it dropped in Aramaic?
 
 Some people do not pronounce the mapik ה in kaddish (e.g. יִתְהַלַּל without the mapik on the ל, or omitting it elsewhere), claiming that in Aramaic the mapik is not pronounced. However, the prevailing view in the group is that this is not an official minhag or mesorah — there is no documented tradition to drop the mapik in Aramaic specifically. One should simply pronounce it correctly. That said, there is also concern about an overly 'performed' pronunciation — articulating the mapik with exaggerated emphasis ('like I'll show em') is inappropriate. The right approach is quiet consistency.
 
@@ -4913,7 +4948,7 @@ Some people do not pronounce the mapik ה in kaddish (e.g. יִתְהַלַּל 
 - [Does a mapik heh change the meaning of a word?](#mapik-heh-meaning-change)
 - [Are there places where a mappik heh is expected but missing, and where can one find the lists?](#dagesh-mapik-omitted-list)
 
-### 165. Why does the Masa'os (the journeys in Masei, Bamidbar 33) get a special tune? Is it the same as the Nesi'im tune?
+### 164. Why does the Masa'os (the journeys in Masei, Bamidbar 33) get a special tune? Is it the same as the Nesi'im tune?
 
 The Masa'os (42 journeys of Bnei Yisrael in the desert, Bamidbar 33) is traditionally read with a special tune, similar to the one used for the Nesi'im (tribal princes) in Naso and Az Yashir (Shiras HaYam).
 
@@ -4951,7 +4986,7 @@ Not all communities observe all three. Check your shul's minhag before doing any
 - [What is the special tune for Az Yashir (Shiras HaYam)? How do ba'alei k'riah handle the conflict between the special tune and following the trop accurately?](#az-yashir-tune)
 - [Why do some ba'alei k'riah use a special tune for the Nesi'im (tribal princes) in Parshas Naso? Is it the same as the tune for Az Yashir or the Masa'os?](#nesiim-special-tune)
 
-### 166. Why do some ba'alei k'riah use a special tune for the Nesi'im (tribal princes) in Parshas Naso? Is it the same as the tune for Az Yashir or the Masa'os?
+### 165. Why do some ba'alei k'riah use a special tune for the Nesi'im (tribal princes) in Parshas Naso? Is it the same as the tune for Az Yashir or the Masa'os?
 
 The 12 days of the Nesi'im (Bamidbar 7) are traditionally read with a special 'marching' tune in many communities. The reasons given include:
 
@@ -4988,7 +5023,7 @@ If your shul has no strong tradition, follow the shul's custom or skip the tune 
 - [What is the special tune for Az Yashir (Shiras HaYam)? How do ba'alei k'riah handle the conflict between the special tune and following the trop accurately?](#az-yashir-tune)
 - [Why does the Masa'os (the journeys in Masei, Bamidbar 33) get a special tune? Is it the same as the Nesi'im tune?](#masaos-special-tune)
 
-### 167. Is a break (revach/רווח) needed between the words 'בני ישראל' to avoid the yud sounding like part of the previous nun? And what are the general rules for revach bein had'vakim?
+### 166. Is a break (revach/רווח) needed between the words 'בני ישראל' to avoid the yud sounding like part of the previous nun? And what are the general rules for revach bein had'vakim?
 
 Revach bein had'vakim (space between the connected/doubled letters) is the concept of inserting a slight pause between two words where the last letter of the first word and the first letter of the second word are the same or could be elided together. The concern is that without a break, the two words would sound like one word with a dagesh chazak.
 
@@ -5018,7 +5053,7 @@ Examples where breaks are needed: 'כלל לא', 'בבר־מצוה', etc. But th
 - ~ Ian Beider #msg7222
 - ~ Moish #msg7223
 
-### 168. Does the ba'al k'riah have to show the oleh (person called up) where he will be reading from? Is this halacha or minhag?
+### 167. Does the ba'al k'riah have to show the oleh (person called up) where he will be reading from? Is this halacha or minhag?
 
 The question of whether the ba'al k'riah must physically indicate to the oleh where the aliyah starts is not a clear halacha but rather a matter of minhag and common practice.
 
@@ -5050,7 +5085,7 @@ The question of whether the ba'al k'riah must physically indicate to the oleh wh
 - ~ Dror Maor #msg4180
 - ~ . #msg4212
 
-### 169. Do we need to show the oleh where the aliyah starts (and ends)?
+### 168. Do we need to show the oleh where the aliyah starts (and ends)?
 
 Showing the oleh where the aliyah starts is rooted in the chiyuv to know what one is making a bracha on — so even though most kohanim can find Bereishis, we point to the place. This applies to perhaps half a dozen places in the Torah (notably the start of each sefer). Showing where the aliyah ENDS is a separate minhag kept by Chabad and other chasidic communities (some ask where the aliyah ends before saying ברכו); it is understood as helping the oleh prepare, not as a strict requirement.
 
@@ -5064,7 +5099,7 @@ Showing the oleh where the aliyah starts is rooted in the chiyuv to know what on
 
 - [Should someone who can't carry a tune (or who is slow) be allowed to daven at the amud for a yahrzeit, or is it tircha d'tzibura?](#chiyuv-vs-baal-tefilla-tircha)
 
-### 170. Who takes the aliyah of the tochacha (admonition), and why is the ba'al koreh often called up without being formally 'called'?
+### 169. Who takes the aliyah of the tochacha (admonition), and why is the ba'al koreh often called up without being formally 'called'?
 
 The minhag that the ba'al koreh takes the tochacha without being formally called up is so that it not appear that the congregation is singling out / 'talking to' anyone in particular. The Mishna Berura adds: in כי תבוא, if the ba'al koreh is a kohen, one should make seven aliyos before the tochacha and call the ba'al koreh for אחרון. Many have the minhag that the ba'al koreh is oleh without being called up at all. Note: this only works if the BK is eligible for that aliyah (e.g. if he were a Levi, it couldn't work for a kohen's aliyah). Some (e.g. the Rav, Rav Soloveitchik) were makpid to receive the tochacha because of its importance.
 
@@ -5084,7 +5119,7 @@ The minhag that the ba'al koreh takes the tochacha without being formally called
 
 - [Do we need to show the oleh where the aliyah starts (and ends)?](#showing-oleh-the-place)
 
-### 171. In Kiddush, should ורצה בנו (vartzah banu) be pronounced with a mil'eil accent (VAR-tzah) due to nasog achor? Does it change the meaning?
+### 170. In Kiddush, should ורצה בנו (vartzah banu) be pronounced with a mil'eil accent (VAR-tzah) due to nasog achor? Does it change the meaning?
 
 Yes — ורצה (vartzah, 'and He desired') should be pronounced mil'eil (VAR-tzah) due to nasog achor, because the following word בָּנוּ (banu) is milra (or monosyllabic for NA purposes).
 
@@ -5129,6 +5164,23 @@ Yes — ורצה (vartzah, 'and He desired') should be pronounced mil'eil (VAR-t
 - [Why doesn't nasog achor apply to a word like וַיִּקַּח (vayikach)? What does a dagesh chazak have to do with accent retraction?](#nasog-achor-closed-syllable)
 - [Why is וַיִּקַּח קֹרַח not subject to nasog achor (accent retraction) even though it appears to be mil'eil? Does the same apply in Sifrei Emet?](#vayikach-korach-nasog-achor)
 
+### 171. What is the origin of the custom for a Bar Mitzvah boy to read Maftir and Haftarah? And is Maftir a distinguished aliyah?
+
+The custom for a Bar Mitzvah boy to read Maftir and Haftarah developed as a practical rite of passage. Historically, the Bar Mitzvah boy was called up for his first aliyah on the Shabbos after turning 13, and reading the haftarah (which requires brachos and can be done by a non-Kohen/Levi) became the natural culminating honor. The earliest Bar Mitzvah celebrations involved the boy reading from the Torah — the specific focus on Maftir + Haftarah emerged in medieval Ashkenazi practice.
+
+Contrary to modern perception, Maftir is technically not the most distinguished aliyah. It is a 'supplementary' aliyah — the required seven aliyos are the main ones, and Maftir was added so that the haftarah could be read from a navi scroll. However, in common practice, Maftir has become seen as a prominent honor because it includes both the Torah reading and the haftarah with its brachos. The Bar Mitzvah boy reading Maftir is a minhag that varies by community — some call the boy up for a regular aliyah instead.
+
+**Examples:**
+
+- Most Ashkenazi shuls: Bar Mitzvah boy reads Maftir + Haftarah
+Some Sephardi/Eretz Yisrael minhagim: boy gets an aliyah during the main seven
+- Maftir was created so someone could read from the Navi scroll — it's a separate 'bonus' aliyah, not one of the required seven
+
+**Sources:**
+
+- Ari (2025-12-15) #msg15152
+- Dovy Pollack (2025-12-15) #msg15153
+
 ---
 
 ## Glossary
@@ -5139,7 +5191,7 @@ Yes — ורצה (vartzah, 'and He desired') should be pronounced mil'eil (VAR-t
 
 **Dagesh Kal (Dagesh Lene)** — A dot inside בגדכפת letters indicating a plosive (stop) pronunciation, as opposed to fricative. Occurs at the beginning of a syllable after a closed syllable or at the start of a word.
 
-**Dagesh Chazak (Dagesh Forte)** — A dot inside any letter (except gutturals) indicating gemination (doubling) of the consonant. Often corrects a vowel issue or marks a missing letter.
+**Dagesh Chazak (Dagesh Forte)** — A dot inside any letter (except gutturals) indicating gemination (doubling) of the consonant. It often compensates for a missing or assimilated letter, or is a characteristic of certain binyanim (verb conjugations).
 
 **Mappik** — A dot inside the letter ה at the end of a word, indicating that the ה is consonantal (not a vowel letter).
 
@@ -5153,23 +5205,23 @@ Yes — ורצה (vartzah, 'and He desired') should be pronounced mil'eil (VAR-t
 
 **Etnachta** — The main pause (caesura) in a verse, analogous to a semicolon or period. It divides the verse into two halves.
 
-**Sof Passuk / Silluq** — The final cantillation mark at the end of a verse, always accompanied by a silluq on the last word.
+**Sof Passuk / Silluq** — The final cantillation mark (Silluq) appears as a small vertical line under the stressed syllable of the last word in a verse, and is always followed by the Sof Passuk (the two dots resembling a colon at the very end).
 
-**Munach** — A conjunctive trop mark that connects to the following word (typically with a disjunctive like etnachta or revii). Also known as 'shofar munach' for the High Holiday notes.
+**Munach** — A conjunctive trop mark that connects to the following word (typically before a disjunctive like etnachta or zakef). In some traditions and earlier grammatical works, it is referred to by its full name 'shofar munach' (as opposed to 'shofar holech', which is a mahpach).
 
 **Pashta** — A disjunctive trop mark that often appears on the penultimate or last word before a zakef katon, indicating a minor pause.
 
-**Segol / Segolta** — Disjunctive trop marks. Segolta is used for a stronger division within a verse, appearing above the word with a dot at the top and a dot at the bottom.
+**Segol / Segolta** — A disjunctive trop mark used for a major division within the first half of a verse, appearing above the word as a cluster of three dots.
 
 **Chataf / Hataf** — A composite sheva (chataf patach, chataf segol, chataf kamatz) indicating an extra-short vowel. Always appears under guttural letters (א, ה, ח, ע, ר) where a simple shva cannot be pronounced.
 
-**Patach Ganuv (G'nuvah)** — A patach vowel inserted under a guttural letter (ח or ע) at the end of a word, pronounced before the guttural even though written under it. Example: שָׁמַע — the patach is under the ayin but pronounced before it.
+**Patach Ganuv (G'nuvah)** — A patach vowel inserted under a guttural letter (ח, ע, or ה with a mappik) at the end of a word, pronounced before the guttural even though written under it. Example: נֹחַ — the patach is under the chet but pronounced before it.
 
 **Nikkud / Nikud** — The system of vowel markings (dots and dashes) placed under, above, or inside letters to indicate the vowel sounds in Biblical Hebrew.
 
 **Binyan (Pl. Binyanim)** — A verb conjugation pattern (building) in Hebrew. Common binyanim include Pa'al (Kal), Nif'al, Pi'el, Pu'al, Hif'il, Huf'al, and Hitpa'el. Each changes the meaning and vowels of the root.
 
-**Mesora / Masorah** — The tradition of the biblical text's precise spelling, pronunciation, cantillation, and letter count, transmitted from generation to generation. Also refers to the Masoretic notes in the margins of a Sefer Torah.
+**Mesora / Masorah** — The tradition of the biblical text's precise spelling, pronunciation, cantillation, and letter count, transmitted from generation to generation. Also refers to the Masoretic notes traditionally printed in the margins of a Chumash or Tikkun.
 
 **Sefer Torah** — A Torah scroll handwritten on parchment by a qualified sofer, containing the Five Books of Moses. Must meet precise halachic requirements for kri'ah (public reading).
 
@@ -5195,4 +5247,4 @@ Yes — ורצה (vartzah, 'and He desired') should be pronounced mil'eil (VAR-t
 
 - Total entries: 171
 - Categories: 15
-- Messages referenced: 630
+- Messages referenced: 642
