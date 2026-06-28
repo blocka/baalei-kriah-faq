@@ -96,6 +96,24 @@ header .stats { font-size: .85rem; color: var(--text-muted); margin-top: 8px; }
   display: inline-flex; align-items: center; gap: 4px;
 }
 .ai-toggle:hover { text-decoration: underline; }
+.ai-result-entry {
+  margin-bottom: 12px; padding: 12px;
+  border: 1px solid var(--border); border-radius: 8px;
+  background: var(--surface);
+}
+.ai-result-score {
+  font-size: .75rem; color: var(--text-muted); margin-bottom: 2px;
+}
+.ai-result-q {
+  font-weight: 500; font-size: .9rem; margin-bottom: 4px;
+}
+.ai-result-q a {
+  color: var(--accent); text-decoration: none;
+}
+.ai-result-q a:hover { text-decoration: underline; }
+.ai-result-a {
+  font-size: .85rem; color: var(--text); line-height: 1.5;
+}
 
 .category { margin-bottom: 32px; }
 .category h2 {
@@ -237,15 +255,12 @@ footer a { color: var(--accent); text-decoration: none; }
 </div>
 
 <div class="ai-panel" id="aiPanel">
-<h3>&#9889; AI-powered search</h3>
+<h3>&#9889; Semantic search</h3>
 <div class="ai-input">
 <input type="text" id="aiQuery" placeholder="Ask a question in natural language..." onkeydown="if(event.key==='Enter')askAI()">
 <button id="aiBtn" onclick="askAI()">Ask</button>
 </div>
-<div id="aiKeyArea" class="ai-key-hint">
-Get a free Gemini API key at <a href="https://aistudio.google.com/apikey" target="_blank">aistudio.google.com/apikey</a>
-&middot; <a href="#" onclick="setApiKey()">set key</a>
-</div>
+<div id="aiStatus" class="ai-key-hint">Loading AI model (~23MB) on first use...</div>
 <div class="ai-results" id="aiResults"></div>
 </div>
 
@@ -3272,17 +3287,9 @@ function filterEntries() {
   document.getElementById('count').textContent = visible + ' / ' + entries.length;
 }
 
-// --- AI powered search via Gemini ---
-function getApiKey() {
-  return localStorage.getItem('gemini_key') || '';
-}
-
-function setApiKey() {
-  const key = prompt('Enter your free Gemini API key from https://aistudio.google.com/apikey');
-  if (key) {
-    localStorage.setItem('gemini_key', key.trim());
-    document.getElementById('aiKeyArea').innerHTML = '&#9989; API key saved';
-  }
+// --- Semantic search with Transformers.js (in-browser) ---
+function escapeHTML(str) {
+  return str.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
 }
 
 function toggleAI() {
@@ -3290,75 +3297,99 @@ function toggleAI() {
   panel.classList.toggle('visible');
   if (panel.classList.contains('visible')) {
     document.getElementById('aiQuery').focus();
-    if (getApiKey()) {
-      document.getElementById('aiKeyArea').innerHTML = '&#9989; API key set';
-    }
   }
 }
+
+let _extractor = null;
+let _faqEmbeddings = null;
+
+async function _ensureModel() {
+  if (_extractor) return;
+  const s = document.getElementById('aiStatus');
+  if (s) s.textContent = 'Loading AI model (~23MB, one-time)...';
+  const { pipeline } = await import('https://cdn.jsdelivr.net/npm/@xenova/transformers@2.17.2/dist/transformers.min.js');
+  try {
+    _extractor = await pipeline('feature-extraction', 'Xenova/all-MiniLM-L6-v2');
+  } catch (e) {
+    if (s) s.innerHTML = 'AI model failed: ' + e.message;
+    throw e;
+  }
+}
+
+async function _computeEmbeddings() {
+  if (_faqEmbeddings) return _faqEmbeddings;
+  await _ensureModel();
+  const s = document.getElementById('aiStatus');
+  if (s) s.textContent = 'Computing FAQ embeddings...';
+  const texts = ENTRIES.map(e => e.q + ' ' + (e.a || '').substring(0, 500));
+  const batchSize = 50;
+  const all = [];
+  for (let i = 0; i < texts.length; i += batchSize) {
+    const batch = texts.slice(i, i + batchSize);
+    const output = await _extractor(batch, { pooling: 'mean', normalize: true });
+    all.push(...output.tolist());
+  }
+  _faqEmbeddings = all;
+  if (s) s.textContent = 'AI model ready \u2014 ' + _faqEmbeddings.length + ' entries indexed';
+  return all;
+}
+
+function _cosineSimilarity(a, b) {
+  let dot = 0, na = 0, nb = 0;
+  for (let i = 0; i < a.length; i++) {
+    dot += a[i] * b[i];
+    na += a[i] * a[i];
+    nb += b[i] * b[i];
+  }
+  return dot / (Math.sqrt(na) * Math.sqrt(nb));
+}
+
+window.__semanticSearch = async function(query) {
+  const embs = await _computeEmbeddings();
+  const output = await _extractor(query, { pooling: 'mean', normalize: true });
+  const qVec = output.tolist()[0];
+  const scores = embs.map((emb, i) => ({
+    score: _cosineSimilarity(qVec, emb),
+    idx: i,
+  }));
+  scores.sort((a, b) => b.score - a.score);
+  return scores.slice(0, 8);
+};
+
+// Preload model + compute embeddings in background
+setTimeout(() => _ensureModel().then(() => _computeEmbeddings()).catch(() => {}), 200);
 
 async function askAI() {
   const query = document.getElementById('aiQuery').value.trim();
   if (!query) return;
-  const key = getApiKey();
-  if (!key) {
-    document.getElementById('aiResults').innerHTML = '<div class="ai-error">Set a free Gemini API key first (<a href="https://aistudio.google.com/apikey" target="_blank">get one here</a>)</div>';
-    return;
-  }
-
   const btn = document.getElementById('aiBtn');
   const results = document.getElementById('aiResults');
   btn.disabled = true;
-  results.innerHTML = '<div class="ai-answer">Thinking...</div>';
-
-  // Find relevant entries via keyword search
-  const qTokens = tokenize(query);
-  const qLower = query.toLowerCase();
-  const scored = [];
-  document.querySelectorAll('.entry').forEach(function(e) {
-    const result = scoreEntry(qTokens, qLower, e);
-    if (result.score > 0) scored.push({ el: e, score: result.score, id: e.dataset.id });
-  });
-  scored.sort((a, b) => b.score - a.score);
-  const top = scored.slice(0, 8);
-
-  if (top.length === 0) {
-    results.innerHTML = '<div class="ai-error">No relevant FAQ entries found for this query.</div>';
-    btn.disabled = false;
-    return;
-  }
-
-  // Build context for Gemini
-  let context = '';
-  const topIds = [];
-  for (const t of top) {
-    const e = ENTRIES.find(x => x.id === t.id);
-    if (e) {
-      topIds.push(e.id);
-      context += `Q: ${e.q}\nA: ${e.a}\n\n`;
-    }
-  }
-
-  const prompt = `You are a Hebrew cantillation expert. Answer the following question based SOLELY on the FAQ entries below. If the entries don't fully answer the question, say so. Cite the relevant entries by number (Q: ...). Keep your answer concise (2-4 paragraphs). Hebrew terms are fine.\n\nQuestion: ${query}\n\nRelevant FAQ entries:\n${context}\n\nAnswer:`;
+  results.innerHTML = '<div class="ai-answer">Searching...</div>';
 
   try {
-    const resp = await fetch('https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash-lite:generateContent?key=' + key, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ contents: [{ parts: [{ text: prompt }] }] })
-    });
-    const data = await resp.json();
-    if (data.error) {
-      results.innerHTML = '<div class="ai-error">API error: ' + data.error.message + '</div>';
+    if (!window.__semanticSearch) {
+      results.innerHTML = '<div class="ai-error">AI model is still loading. Please wait a moment and try again.</div>';
       btn.disabled = false;
       return;
     }
-    const text = data.candidates?.[0]?.content?.parts?.[0]?.text || 'No answer generated.';
-    const srcLinks = topIds.map(id => {
-      const e = ENTRIES.find(x => x.id === id);
-      return '<a href="#' + id + '" onclick="scrollToEntry(\'' + id + '\');return false">' + (e ? e.q.substring(0, 60) + '&hellip;' : id) + '</a>';
-    }).join('<br>');
-    results.innerHTML = '<div class="ai-answer">' + text.replace(/\n/g, '<br>') + '</div>' +
-      '<div class="ai-sources"><strong>Sources:</strong><br>' + srcLinks + '</div>';
+    const top = await window.__semanticSearch(query);
+    if (top.length === 0) {
+      results.innerHTML = '<div class="ai-error">No relevant entries found.</div>';
+      btn.disabled = false;
+      return;
+    }
+    let html = '';
+    for (const t of top) {
+      const e = ENTRIES[t.idx];
+      const pct = Math.round(t.score * 100);
+      html += '<div class="ai-result-entry">';
+      html += '<div class="ai-result-score">Relevance: ' + pct + '%</div>';
+      html += '<div class="ai-result-q"><a href="#' + e.id + '" onclick="scrollToEntry(\'' + e.id + '\');return false">' + escapeHTML(e.q) + '</a></div>';
+      html += '<div class="ai-result-a">' + (e.a || '').substring(0, 400).replace(/\n/g, '<br>') + '</div>';
+      html += '</div>';
+    }
+    results.innerHTML = html;
   } catch (err) {
     results.innerHTML = '<div class="ai-error">Error: ' + err.message + '</div>';
   }
