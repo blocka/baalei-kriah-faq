@@ -655,6 +655,9 @@
       "related": [
         "shva-na-vs-nach",
         "shva-nach-under-aleph"
+      ],
+      "parshiyot": [
+        "Haazinu"
       ]
     },
     {
@@ -701,6 +704,9 @@
       ],
       "related": [
         "dagesh-kal-meaning"
+      ],
+      "parshiyot": [
+        "Haazinu"
       ]
     },
     {
@@ -2233,6 +2239,9 @@
       ],
       "related": [
         "shva-nach-under-aleph"
+      ],
+      "parshiyot": [
+        "Behaalotecha"
       ]
     },
     {
@@ -2643,7 +2652,12 @@
           "sender": "~ Dovid H"
         }
       ],
-      "related": []
+      "related": [],
+      "parshiyot": [
+        "Vaera",
+        "Miketz",
+        "Matot"
+      ]
     },
     {
       "id": "yiddish-dikduk-rules",
@@ -3273,6 +3287,9 @@
       "related": [
         "revii-trop-debates",
         "haftarah-brachos-trop"
+      ],
+      "parshiyot": [
+        "Vayishlach"
       ]
     },
     {
@@ -3402,6 +3419,10 @@
       "related": [
         "taam-elyon-tachton",
         "dagesh-after-mafsik"
+      ],
+      "parshiyot": [
+        "Yitro",
+        "Vaetchanan"
       ]
     },
     {
@@ -3443,6 +3464,10 @@
       ],
       "related": [
         "distinguishing-trop-marks"
+      ],
+      "parshiyot": [
+        "Yitro",
+        "Vaetchanan"
       ]
     },
     {
@@ -4349,6 +4374,9 @@
       ],
       "related": [
         "he-of-haazinu"
+      ],
+      "parshiyot": [
+        "Ki Tetzei"
       ]
     },
     {
@@ -5022,6 +5050,9 @@
       "related": [
         "shochen-ad-parsing",
         "tefilla-punctuation"
+      ],
+      "parshiyot": [
+        "Nasso"
       ]
     },
     {
@@ -5365,6 +5396,9 @@
       ],
       "related": [
         "kamatz-katan-vs-chataf"
+      ],
+      "parshiyot": [
+        "Terumah"
       ]
     },
     {
@@ -6217,6 +6251,12 @@
       ],
       "related": [
         "pazer-trop"
+      ],
+      "parshiyot": [
+        "Vayera",
+        "Chayei Sara",
+        "Vayeshev",
+        "Tzav"
       ]
     },
     {
@@ -6293,6 +6333,9 @@
       ],
       "related": [
         "shva-binyan-meaning"
+      ],
+      "parshiyot": [
+        "Vaera"
       ]
     }
   ]
