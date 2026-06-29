@@ -6232,19 +6232,10 @@
       "id": "shalshelet",
       "category": "trop",
       "question": "What is the shalshelet (שלשלת) trop mark and where does it appear?",
-      "answer": "The shalshelet (meaning 'chain') is one of the rarest and most distinctive trop marks in the Torah. It appears as a wavy, zigzag line above a word and has a unique musical motif — a long, undulating melody that suggests hesitation or dramatic tension.\n\nThere are only a few occurrences of the shalshelet in the entire Torah:\n- Bereishis 19:16 — 'וַיִּתְמַהְמָהּ' (Vayitmahmah — 'and he lingered'), describing Lot hesitating before leaving Sodom\n- Bereishis 24:12 — 'וַיֹּאמֶר' (Vayomer — 'and he said'), Eliezer's prayer\n- Bereishis 39:8 — 'וַיְמָאֵן' (Vayema'en — 'and he refused'), Joseph refusing Potiphar's wife\n- Vayikra 8:23 — 'וַיִּשְׁחָט' (Vayishchat — 'and he slaughtered'), the inauguration of the Mishkan\n\nMusically, the shalshelet is essentially a chain of three or four repeated notes that rise and fall, reflecting the dramatic weight of the moment. It is related to the pazer trop but distinct in its musical execution and rarity.\n\nFor a ba'al k'riah, the shalshelet requires special preparation because of its unusual musical demands. In some traditions, it is essentially a long pazer with an extended cadence.",
-      "examples": [
-        "וַיִּתְמַהְמָהּ (Bereishis 19:16) — Lot hesitating, the most famous shalshelet",
-        "וַיְמָאֵן (Bereishis 39:8) — Joseph refusing Potiphar's wife"
-      ],
+      "answer": "The shalshelet (meaning \"chain\") is a rare trop mark. In printed versions of the Torah it appears as a zigzag line above a word, but in manuscript form it appears as a symbol resembling two horns (תק followed by תג). It is related to the pazer (פזר) trop and is essentially a form of pazer gadol (פזר גדול).",
       "source_refs": [
         {
           "seq": 3233,
-          "date": "2024-09-02",
-          "sender": "MJ"
-        },
-        {
-          "seq": 3234,
           "date": "2024-09-02",
           "sender": "MJ"
         }
